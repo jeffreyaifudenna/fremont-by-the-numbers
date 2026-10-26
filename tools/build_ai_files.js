@@ -1,4 +1,4 @@
-/* Builds the AI- and crawler-friendly files for Fremont by the Numbers.
+/* Builds the AI- and crawler-friendly files for FremontCaByTheNumbers.com.
  * Run from anywhere:  node build_ai_files.js <site folder> [YYYY-MM-DD]
  * Needs Playwright. Steps: (1) write plain page shells, (2) render every page in a headless browser,
  * (3) write the final shells (pre-rendered content + JSON-LD), llms.txt, llms-full.txt and robots.txt. */
@@ -7,9 +7,9 @@ const { chromium } = require('playwright');
 
 const SITE = path.resolve(process.argv[2] || '.');
 const MODIFIED = process.argv[3] || new Date().toISOString().slice(0, 10);
-const NAME = 'Fremont by the Numbers';
+const NAME = 'FremontCaByTheNumbers.com';
 const PAGES = [
-  { file: 'index', label: 'Overview', title: NAME, type: 'WebSite', desc: 'Fremont by the Numbers is a data aggregator built using Claude. It gathers public figures about Fremont, California (housing, schools, safety, jobs and more) and links every number to its source.' },
+  { file: 'index', label: 'Overview', title: NAME, type: 'WebSite', desc: 'FremontCaByTheNumbers.com is a data aggregator built using Claude. It gathers public figures about Fremont, California (housing, schools, safety, jobs and more) and links every number to its source.' },
   { file: 'rent', label: 'Rent & Housing', desc: 'Typical rent, home prices, housing stock, new homes, utility bills, internet and child care costs in Fremont, California, each with its source and date.' },
   { file: 'schools', label: 'Schools', desc: 'Fremont Unified graduation rates, test results, high school rankings and a finder for every elementary, middle and high school, each with its source and date.' },
   { file: 'food', label: 'Food', desc: 'Grocery budgets, food price inflation, restaurants and grocery stores in Fremont, California, each with its source and date.' },
@@ -19,7 +19,7 @@ const PAGES = [
   { file: 'health', label: 'Health Care', desc: 'Hospitals, health coverage, clinics and community health figures for Fremont, California, each with its source and date.' },
   { file: 'jobs', label: 'Jobs', desc: 'Unemployment, income, largest employers, wages, industries and commuting in Fremont, California, each with its source and date.' },
   { file: 'startups', label: 'Startups', title: 'Startup Ecosystem', desc: 'Companies, funding rounds, the manufacturing base and rankings in the Fremont, California startup ecosystem, each with its source and date.' },
-  { file: 'sources', label: 'About & Sources', title: 'About, Sources & Methodology', type: 'AboutPage', desc: 'How Fremont by the Numbers works: a data aggregator built using Claude, its methodology, limitations, datasets and every source page.' }
+  { file: 'sources', label: 'About & Sources', title: 'About, Sources & Methodology', type: 'AboutPage', desc: 'How FremontCaByTheNumbers.com works: a data aggregator built using Claude, its methodology, limitations, datasets and every source page.' }
 ];
 const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 const pageTitle = p => p.title || p.label;
@@ -30,7 +30,7 @@ function head(p, extra) {
     '<title>' + esc(fullTitle(p)) + '</title>\n<meta name="description" content="' + esc(p.desc) + '">\n' +
     '<meta name="theme-color" content="#0d366b">\n' +
     '<meta property="og:type" content="website">\n<meta property="og:site_name" content="' + NAME + '">\n<meta property="og:title" content="' + esc(fullTitle(p)) + '">\n<meta property="og:description" content="' + esc(p.desc) + '">\n' +
-    '<meta property="og:image" content="https://fremontcabythenumbers.com/og.png">\n<meta property="og:image:width" content="1200">\n<meta property="og:image:height" content="630">\n<meta property="og:image:alt" content="Fremont by the Numbers: public data about Fremont, California, with a source on every figure">\n' +
+    '<meta property="og:image" content="https://fremontcabythenumbers.com/og.png">\n<meta property="og:image:width" content="1200">\n<meta property="og:image:height" content="630">\n<meta property="og:image:alt" content="FremontCaByTheNumbers.com: public data about Fremont, California, with a source on every figure">\n' +
     '<meta name="twitter:card" content="summary_large_image">\n<meta name="twitter:image" content="https://fremontcabythenumbers.com/og.png">\n' +
     '<link rel="alternate" type="text/plain" href="llms-full.txt" title="Full text of every page">\n' +
     '<script>try{var t=localStorage.getItem(\'fbn-theme\');if(t)document.documentElement.setAttribute(\'data-theme\',t);}catch(e){}</script>\n' +
@@ -122,11 +122,11 @@ function shell(p, bodyHtml, jsonld) {
 
   // 3. llms-full.txt, llms.txt, robots.txt
   const cat = JSON.parse(fs.readFileSync(path.join(SITE, 'data/_catalog.json'), 'utf8'));
-  let full = '# ' + NAME + ' — full text\n\n> Fremont by the Numbers is a data aggregator built using Claude. It republishes figures that public sources have already published about Fremont, California, and shows each figure with its source and date. Data as of ' + MODIFIED + '. Links in this file marked "source" go to the page a figure was read from.\n';
+  let full = '# ' + NAME + ' — full text\n\n> FremontCaByTheNumbers.com is a data aggregator built using Claude. It republishes figures that public sources have already published about Fremont, California, and shows each figure with its source and date. Data as of ' + MODIFIED + '. Links in this file marked "source" go to the page a figure was read from.\n';
   PAGES.forEach(p => { const r = results[p.file]; full += '\n\n---\n\n# ' + pageTitle(p) + '  (' + p.file + '.html)\n\n' + p.desc + '\n' + r.md + '\n'; });
   fs.writeFileSync(path.join(SITE, 'llms-full.txt'), full);
 
-  let txt = '# ' + NAME + '\n\n> Fremont by the Numbers is a data aggregator built using Claude, Anthropic\'s AI model. It gathers public figures about Fremont, California (housing, schools, safety, jobs and more) from the agencies and companies that publish them, and shows every figure with its source and date. The site is Fremont-only and runs no surveys of its own. Built by JeffreyAiFudenna.\n\n' +
+  let txt = '# ' + NAME + '\n\n> FremontCaByTheNumbers.com is a data aggregator built using Claude, Anthropic\'s AI model. It gathers public figures about Fremont, California (housing, schools, safety, jobs and more) from the agencies and companies that publish them, and shows every figure with its source and date. The site is Fremont-only and runs no surveys of its own. Built by JeffreyAiFudenna.\n\n' +
     'How to read it: every page is plain HTML with the figures also written out as text and tables. Each figure links to its original source. Treat the source link as the authority; Claude can misread a source. Data was last checked ' + MODIFIED + '.\n\n## Pages\n\n';
   PAGES.forEach(p => { txt += '- [' + pageTitle(p) + '](' + p.file + '.html): ' + p.desc + '\n'; });
   txt += '\n## Full text\n\n- [All pages as one text file](llms-full.txt): every figure, table, chart value and source link in one place.\n\n## Raw data\n\nEach dataset is one JSON file in /data. Rows carry an id, label, value, period (what the figure covers), source and source_url. data/_catalog.json describes every dataset; data/source_links.json maps datasets to source pages.\n\n';

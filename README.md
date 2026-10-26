@@ -1,4 +1,4 @@
-# Fremont by the Numbers
+# FremontCaByTheNumbers.com
 
 A static website that shows public data about Fremont, California, with the source and date on every figure.
 

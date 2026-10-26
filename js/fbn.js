@@ -1,11 +1,11 @@
-/* Fremont by the Numbers — shared renderer.
+/* FremontCaByTheNumbers.com — shared renderer.
    Pages describe themselves in js/pages/*.js; numbers live in data/*.json.
    Nothing here contains a figure. */
 (function () {
   'use strict';
 
   const SITE = {
-    name: 'Fremont by the Numbers',
+    name: 'FremontCaByTheNumbers.com',
     updated: 'Oct 25, 2026',
     nav: [
       { key: 'index', href: 'index.html', label: 'Overview' },

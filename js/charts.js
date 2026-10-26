@@ -1,4 +1,4 @@
-/* Tiny SVG chart renderer for Fremont by the Numbers: line, bar, hbar (grouped or stacked).
+/* Tiny SVG chart renderer for FremontCaByTheNumbers.com: line, bar, hbar (grouped or stacked).
    No dependencies. Colors are CSS variables so dark mode needs no redraw. */
 (function () {
   'use strict';

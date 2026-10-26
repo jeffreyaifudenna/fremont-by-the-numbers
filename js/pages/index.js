@@ -2,10 +2,10 @@
 FBN.page({
   key: 'index',
   bare: true,
-  title: 'Fremont by the Numbers',
+  title: 'FremontCaByTheNumbers.com',
   kicker: 'Data aggregator · built using Claude',
   hint: 'Start with a topic below, or click any number under “Fremont at a glance” to open its source in a new tab.',
-  lede: 'Fremont by the Numbers is a data aggregator built using Claude. It gathers public figures about Fremont, California (housing, schools, safety, jobs and more) from the agencies and companies that publish them, and shows each number with its source and date.',
+  lede: 'FremontCaByTheNumbers.com is a data aggregator built using Claude. It gathers public figures about Fremont, California (housing, schools, safety, jobs and more) from the agencies and companies that publish them, and shows each number with its source and date.',
   uses: ['employers', 'dof_population', 'census_profile', 'zillow_market', 'schools', 'police_facts', 'city_rankings', 'business', 'parks_summary', 'city_facts', 'people_more', 'jobs_more', 'living_facts', 'health_places', 'high_schools', 'school_list', 'crime_oj'],
   sections: function (data, row) {
     const v = (ds, id, key) => (row(ds, id, key) || {}).value;
@@ -53,7 +53,7 @@ FBN.page({
       {
         html: '<div class="about-box"><h2>About this site</h2>' +
           '<p class="about-sub">A data aggregator built by JeffreyAiFudenna using Claude to gather data and write the code</p>' +
-          '<p><strong>Fremont by the Numbers does not run its own surveys or measurements.</strong> It collects figures that public sources have already published (the City of Fremont, the U.S. Census Bureau, California state agencies, Zillow, Redfin, news reports and others) and puts them in one place.</p>' +
+          '<p><strong>FremontCaByTheNumbers.com does not run its own surveys or measurements.</strong> It collects figures that public sources have already published (the City of Fremont, the U.S. Census Bureau, California state agencies, Zillow, Redfin, news reports and others) and puts them in one place.</p>' +
           '<p><strong>Claude did the gathering.</strong> Claude, Anthropic’s AI model, read each source, recorded the figure with the page it came from and the date it was read, and wrote the code for this site. AI can misread a source, so every number links back to where it came from: click it to open the source in a new tab and check.</p>' +
           '<p><a href="sources.html">Read the full methodology and source list</a></p></div>'
       }

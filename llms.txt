@@ -1,12 +1,12 @@
-# Fremont by the Numbers
+# FremontCaByTheNumbers.com
 
-> Fremont by the Numbers is a data aggregator built using Claude, Anthropic's AI model. It gathers public figures about Fremont, California (housing, schools, safety, jobs and more) from the agencies and companies that publish them, and shows every figure with its source and date. The site is Fremont-only and runs no surveys of its own. Built by JeffreyAiFudenna.
+> FremontCaByTheNumbers.com is a data aggregator built using Claude, Anthropic's AI model. It gathers public figures about Fremont, California (housing, schools, safety, jobs and more) from the agencies and companies that publish them, and shows every figure with its source and date. The site is Fremont-only and runs no surveys of its own. Built by JeffreyAiFudenna.
 
 How to read it: every page is plain HTML with the figures also written out as text and tables. Each figure links to its original source. Treat the source link as the authority; Claude can misread a source. Data was last checked 2026-10-26.
 
 ## Pages
 
-- [Fremont by the Numbers](index.html): Fremont by the Numbers is a data aggregator built using Claude. It gathers public figures about Fremont, California (housing, schools, safety, jobs and more) and links every number to its source.
+- [FremontCaByTheNumbers.com](index.html): FremontCaByTheNumbers.com is a data aggregator built using Claude. It gathers public figures about Fremont, California (housing, schools, safety, jobs and more) and links every number to its source.
 - [Rent & Housing](rent.html): Typical rent, home prices, housing stock, new homes, utility bills, internet and child care costs in Fremont, California, each with its source and date.
 - [Schools](schools.html): Fremont Unified graduation rates, test results, high school rankings and a finder for every elementary, middle and high school, each with its source and date.
 - [Food](food.html): Grocery budgets, food price inflation, restaurants and grocery stores in Fremont, California, each with its source and date.
@@ -16,7 +16,7 @@ How to read it: every page is plain HTML with the figures also written out as te
 - [Health Care](health.html): Hospitals, health coverage, clinics and community health figures for Fremont, California, each with its source and date.
 - [Jobs](jobs.html): Unemployment, income, largest employers, wages, industries and commuting in Fremont, California, each with its source and date.
 - [Startup Ecosystem](startups.html): Companies, funding rounds, the manufacturing base and rankings in the Fremont, California startup ecosystem, each with its source and date.
-- [About, Sources & Methodology](sources.html): How Fremont by the Numbers works: a data aggregator built using Claude, its methodology, limitations, datasets and every source page.
+- [About, Sources & Methodology](sources.html): How FremontCaByTheNumbers.com works: a data aggregator built using Claude, its methodology, limitations, datasets and every source page.
 
 ## Full text
 

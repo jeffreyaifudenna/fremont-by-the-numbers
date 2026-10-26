@@ -3,7 +3,7 @@ FBN.page({
   key: 'sources',
   title: 'About, Sources & Methodology',
   kicker: 'Data aggregator · built using Claude',
-  lede: 'Fremont by the Numbers is a data aggregator built using Claude. This page explains what that means, how each number is handled, and lists every page the figures came from.',
+  lede: 'FremontCaByTheNumbers.com is a data aggregator built using Claude. This page explains what that means, how each number is handled, and lists every page the figures came from.',
   uses: 'all',
   sections: function (data, row) {
     const cat = FBN.catalog() || {};
@@ -24,9 +24,9 @@ FBN.page({
         id: 'how',
         html: '<div class="prose">' +
           '<h2>A data aggregator built using Claude</h2>' +
-          '<p><strong>Fremont by the Numbers is a data aggregator.</strong> It does not run its own surveys, counts or measurements. It gathers figures that public sources have already published, such as the City of Fremont’s reports and dashboards, the U.S. Census Bureau, California state agencies, Zillow, Redfin and news coverage, and shows them in one place for people who live in, or are thinking about moving to, Fremont, California. Every number carries its source and the date it was read.</p>' +
+          '<p><strong>FremontCaByTheNumbers.com is a data aggregator.</strong> It does not run its own surveys, counts or measurements. It gathers figures that public sources have already published, such as the City of Fremont’s reports and dashboards, the U.S. Census Bureau, California state agencies, Zillow, Redfin and news coverage, and shows them in one place for people who live in, or are thinking about moving to, Fremont, California. Every number carries its source and the date it was read.</p>' +
           '<h2>Built by JeffreyAiFudenna</h2>' +
-          '<p>Fremont by the Numbers was built by <strong>JeffreyAiFudenna</strong>, using Claude to gather the data and write the code.</p>' +
+          '<p>FremontCaByTheNumbers.com was built by <strong>JeffreyAiFudenna</strong>, using Claude to gather the data and write the code.</p>' +
           '<h2>The dataset was created using Claude</h2>' +
           '<p>The research and data collection behind this site were done with Claude, Anthropic’s AI model, working from public sources. Claude read each source, recorded the figure together with the page it came from and the date it was read, flagged caveats such as incomplete years or county-level data, and wrote the code for this site. The site owner reviews the dataset before publishing. Because an AI can misread a source, the site is built so that you can check any number yourself.</p>' +
           '<h2>Click a number to see where it came from</h2>' +

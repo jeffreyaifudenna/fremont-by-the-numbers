@@ -1,13 +1,13 @@
-# Fremont by the Numbers — full text
+# FremontCaByTheNumbers.com — full text
 
-> Fremont by the Numbers is a data aggregator built using Claude. It republishes figures that public sources have already published about Fremont, California, and shows each figure with its source and date. Data as of 2026-10-26. Links in this file marked "source" go to the page a figure was read from.
+> FremontCaByTheNumbers.com is a data aggregator built using Claude. It republishes figures that public sources have already published about Fremont, California, and shows each figure with its source and date. Data as of 2026-10-26. Links in this file marked "source" go to the page a figure was read from.
 
 
 ---
 
-# Fremont by the Numbers  (index.html)
+# FremontCaByTheNumbers.com  (index.html)
 
-Fremont by the Numbers is a data aggregator built using Claude. It gathers public figures about Fremont, California (housing, schools, safety, jobs and more) and links every number to its source.
+FremontCaByTheNumbers.com is a data aggregator built using Claude. It gathers public figures about Fremont, California (housing, schools, safety, jobs and more) and links every number to its source.
 
 ## Fremont at a glance
 Click any number to open its source in a new tab.
@@ -31,7 +31,7 @@ Click any number to open its source in a new tab.
 
 ## About this site
 A data aggregator built by JeffreyAiFudenna using Claude to gather data and write the code
-Fremont by the Numbers does not run its own surveys or measurements. It collects figures that public sources have already published (the City of Fremont, the U.S. Census Bureau, California state agencies, Zillow, Redfin, news reports and others) and puts them in one place.
+FremontCaByTheNumbers.com does not run its own surveys or measurements. It collects figures that public sources have already published (the City of Fremont, the U.S. Census Bureau, California state agencies, Zillow, Redfin, news reports and others) and puts them in one place.
 Claude did the gathering. Claude, Anthropic’s AI model, read each source, recorded the figure with the page it came from and the date it was read, and wrote the code for this site. AI can misread a source, so every number links back to where it came from: click it to open the source in a new tab and check.
 Read the full methodology and source list
 
@@ -1833,13 +1833,13 @@ Note: City-level patent counts could not be retrieved: the USPTO PatentsView ser
 
 # About, Sources & Methodology  (sources.html)
 
-How Fremont by the Numbers works: a data aggregator built using Claude, its methodology, limitations, datasets and every source page.
+How FremontCaByTheNumbers.com works: a data aggregator built using Claude, its methodology, limitations, datasets and every source page.
 
 ## A data aggregator built using Claude
-Fremont by the Numbers is a data aggregator. It does not run its own surveys, counts or measurements. It gathers figures that public sources have already published, such as the City of Fremont’s reports and dashboards, the U.S. Census Bureau, California state agencies, Zillow, Redfin and news coverage, and shows them in one place for people who live in, or are thinking about moving to, Fremont, California. Every number carries its source and the date it was read.
+FremontCaByTheNumbers.com is a data aggregator. It does not run its own surveys, counts or measurements. It gathers figures that public sources have already published, such as the City of Fremont’s reports and dashboards, the U.S. Census Bureau, California state agencies, Zillow, Redfin and news coverage, and shows them in one place for people who live in, or are thinking about moving to, Fremont, California. Every number carries its source and the date it was read.
 
 ## Built by JeffreyAiFudenna
-Fremont by the Numbers was built by JeffreyAiFudenna, using Claude to gather the data and write the code.
+FremontCaByTheNumbers.com was built by JeffreyAiFudenna, using Claude to gather the data and write the code.
 
 ## The dataset was created using Claude
 The research and data collection behind this site were done with Claude, Anthropic’s AI model, working from public sources. Claude read each source, recorded the figure together with the page it came from and the date it was read, flagged caveats such as incomplete years or county-level data, and wrote the code for this site. The site owner reviews the dataset before publishing. Because an AI can misread a source, the site is built so that you can check any number yourself.
