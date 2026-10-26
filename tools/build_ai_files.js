@@ -30,8 +30,8 @@ function head(p, extra) {
     '<title>' + esc(fullTitle(p)) + '</title>\n<meta name="description" content="' + esc(p.desc) + '">\n' +
     '<meta name="theme-color" content="#0d366b">\n' +
     '<meta property="og:type" content="website">\n<meta property="og:site_name" content="' + NAME + '">\n<meta property="og:title" content="' + esc(fullTitle(p)) + '">\n<meta property="og:description" content="' + esc(p.desc) + '">\n' +
-    '<meta property="og:image" content="https://fremont-by-the-numbers.vercel.app/og.png">\n<meta property="og:image:width" content="1200">\n<meta property="og:image:height" content="630">\n<meta property="og:image:alt" content="Fremont by the Numbers: public data about Fremont, California, with a source on every figure">\n' +
-    '<meta name="twitter:card" content="summary_large_image">\n<meta name="twitter:image" content="https://fremont-by-the-numbers.vercel.app/og.png">\n' +
+    '<meta property="og:image" content="https://fremontcabythenumbers.com/og.png">\n<meta property="og:image:width" content="1200">\n<meta property="og:image:height" content="630">\n<meta property="og:image:alt" content="Fremont by the Numbers: public data about Fremont, California, with a source on every figure">\n' +
+    '<meta name="twitter:card" content="summary_large_image">\n<meta name="twitter:image" content="https://fremontcabythenumbers.com/og.png">\n' +
     '<link rel="alternate" type="text/plain" href="llms-full.txt" title="Full text of every page">\n' +
     '<script>try{var t=localStorage.getItem(\'fbn-theme\');if(t)document.documentElement.setAttribute(\'data-theme\',t);}catch(e){}</script>\n' +
     '<link rel="stylesheet" href="css/tokens.css">\n<link rel="stylesheet" href="css/site.css">\n<link rel="icon" href="favicon.svg" type="image/svg+xml">\n' + (extra || '');
@@ -134,7 +134,7 @@ function shell(p, bodyHtml, jsonld) {
   txt += '\n## Optional\n\n- [About, methodology and sources](sources.html): how the data was gathered, known limitations, and every source page.\n';
   fs.writeFileSync(path.join(SITE, 'llms.txt'), txt);
 
-  const ORIGIN = 'https://fremont-by-the-numbers.vercel.app'; // change when a custom domain is added
+  const ORIGIN = 'https://fremontcabythenumbers.com'; // change when a custom domain is added
   fs.writeFileSync(path.join(SITE, 'robots.txt'), ['# Everything on this site is public and meant to be read, by people and by AI tools.', 'User-agent: *', 'Allow: /', '', 'Sitemap: ' + ORIGIN + '/sitemap.xml', ''].join(String.fromCharCode(10)));
   fs.writeFileSync(path.join(SITE, 'sitemap.xml'), ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
     .concat(PAGES.map(p => '  <url><loc>' + ORIGIN + '/' + (p.file === 'index' ? '' : p.file + '.html') + '</loc><lastmod>' + MODIFIED + '</lastmod></url>'), ['</urlset>', '']).join(String.fromCharCode(10)));

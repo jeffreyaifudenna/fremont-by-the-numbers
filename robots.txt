@@ -2,4 +2,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://fremont-by-the-numbers.vercel.app/sitemap.xml
+Sitemap: https://fremontcabythenumbers.com/sitemap.xml
