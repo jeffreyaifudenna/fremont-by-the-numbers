@@ -639,7 +639,7 @@ Eligible for free or reduced-price meals
 Source note: CDE via Ed-Data. The low-income share has nearly doubled since 2016–17.View source: Ed-Data: Fremont Unified district and school profiles
 
 ## Every Fremont Unified school
-Elementary, middle and high schools with test results, attendance and U.S. News state rank where published.
+Elementary, middle and high schools with test results, attendance and U.S. News state rank; click a rank to open that school’s U.S. News page.
 
 ### School finder
 Grouped by school level, then sorted by English results
@@ -686,7 +686,7 @@ Grouped by school level, then sorted by English results
 | Brier Elementary | K-5 | 583 | 44.5% | 40.8% | 12.9% | 56.4% | #3688 [source](https://www.ed-data.org/district/Alameda/Fremont-Unified) |
 | John Blacow Elementary | K-5 | 509 | 36.4% | 36.6% | 20.1% | 56.6% | #4439 [source](https://www.ed-data.org/district/Alameda/Fremont-Unified) |
 | Cabrillo Elementary | K-5 | 264 | 30.9% | 26.9% | 13.5% | 72.0% | #4440-5920 [source](https://www.ed-data.org/district/Alameda/Fremont-Unified) |
-| James Leitch Elementary | K-2 | 491 | — | — | 8.8% | 21.4% | — [source](https://www.ed-data.org/district/Alameda/Fremont-Unified) |
+| James Leitch Elementary | K-2 | 491 | — | — | 8.8% | 21.4% | Unranked [source](https://www.ed-data.org/district/Alameda/Fremont-Unified) |
 Source note: CAASPP 2025–26 results (share meeting standard); DataQuest 2025–26 enrollment; Ed-Data 2024–25 chronic absence and 2025–26 low-income share; U.S. News 2027 edition elementary and middle school state ranks, 2026–27 for high schools.View source: Ed-Data: Fremont Unified district and school profiles
 
 ## Beyond Fremont Unified

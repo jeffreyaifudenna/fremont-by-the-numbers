@@ -16,7 +16,8 @@
   "ap_took": 91,
   "ap_passed": 88,
   "ela_11": 85.33,
-  "math_11": 83.01
+  "math_11": 83.01,
+  "usn_url": "https://www.usnews.com/education/best-high-schools/california/districts/fremont-unified-school-district/mission-san-jose-high-school-2208"
  },
  {
   "school": "Irvington",
@@ -35,7 +36,8 @@
   "ap_took": 71,
   "ap_passed": 66,
   "ela_11": 85.95,
-  "math_11": 75.1
+  "math_11": 75.1,
+  "usn_url": "https://www.usnews.com/education/best-high-schools/california/districts/fremont-unified-school-district/irvington-high-school-2206"
  },
  {
   "school": "American",
@@ -54,7 +56,8 @@
   "ap_took": 70,
   "ap_passed": 65,
   "ela_11": 88.55,
-  "math_11": 77.36
+  "math_11": 77.36,
+  "usn_url": "https://www.usnews.com/education/best-high-schools/california/districts/fremont-unified-school-district/american-high-school-2205"
  },
  {
   "school": "Washington",
@@ -73,7 +76,8 @@
   "ap_took": 46,
   "ap_passed": 38,
   "ela_11": 69.63,
-  "math_11": 54.08
+  "math_11": 54.08,
+  "usn_url": "https://www.usnews.com/education/best-high-schools/california/districts/fremont-unified-school-district/washington-high-school-2210"
  },
  {
   "school": "John F. Kennedy",
@@ -92,7 +96,8 @@
   "ap_took": 44,
   "ap_passed": 30,
   "ela_11": 58.08,
-  "math_11": 32.42
+  "math_11": 32.42,
+  "usn_url": "https://www.usnews.com/education/best-high-schools/california/districts/fremont-unified-school-district/john-f-kennedy-high-school-2207"
  },
  {
   "school": "Fremont Unified, all 11th graders",

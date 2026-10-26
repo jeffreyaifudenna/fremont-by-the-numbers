@@ -121,7 +121,7 @@ main { padding-bottom: 48px; }
 .source-line { font-size: 13px; color: var(--muted); line-height: 1.45; }
 .source-line a { color: var(--muted); }
 
-.table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.table-wrap { position: relative; overflow-x: auto; -webkit-overflow-scrolling: touch; }
 table { border-collapse: collapse; width: 100%; font-size: 14px; }
 th, td { text-align: left; padding: 9px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
 th { font-weight: 600; color: var(--ink-2); font-size: 13px; white-space: nowrap; }

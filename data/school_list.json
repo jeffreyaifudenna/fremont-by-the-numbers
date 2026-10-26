@@ -13,7 +13,8 @@
 "chronic_absent": 6.9,
 "suspension": 0.6,
 "low_income": 18.5,
-"usn_state": "158"
+"usn_state": "158",
+"usn_url": "https://www.usnews.com/education/k12/california/ardenwood-elementary-234803"
 },
 {
 "school": "Brier",
@@ -29,7 +30,8 @@
 "chronic_absent": 12.9,
 "suspension": 0.6,
 "low_income": 56.4,
-"usn_state": "3688"
+"usn_state": "3688",
+"usn_url": "https://www.usnews.com/education/k12/california/brier-elementary-235079"
 },
 {
 "school": "Brookvale",
@@ -45,7 +47,8 @@
 "chronic_absent": 5.9,
 "suspension": 0.9,
 "low_income": 30.2,
-"usn_state": "618"
+"usn_state": "618",
+"usn_url": "https://www.usnews.com/education/k12/california/brookvale-elementary-235104"
 },
 {
 "school": "Cabrillo",
@@ -61,7 +64,8 @@
 "chronic_absent": 13.5,
 "suspension": 0.3,
 "low_income": 72.0,
-"usn_state": "4440-5920"
+"usn_state": "4440-5920",
+"usn_url": "https://www.usnews.com/education/k12/california/cabrillo-elementary-235164"
 },
 {
 "school": "E. M. Grimmer",
@@ -77,7 +81,8 @@
 "chronic_absent": 14.8,
 "suspension": 0.7,
 "low_income": 51.1,
-"usn_state": "594"
+"usn_state": "594",
+"usn_url": "https://www.usnews.com/education/k12/california/e-m-grimmer-elementary-235741"
 },
 {
 "school": "Forest Park",
@@ -93,7 +98,8 @@
 "chronic_absent": 8.2,
 "suspension": 0.2,
 "low_income": 23.0,
-"usn_state": "570"
+"usn_state": "570",
+"usn_url": "https://www.usnews.com/education/k12/california/forest-park-elementary-236029"
 },
 {
 "school": "Fred E. Weibel",
@@ -109,7 +115,8 @@
 "chronic_absent": 3.7,
 "suspension": 0.0,
 "low_income": 16.6,
-"usn_state": "118"
+"usn_state": "118",
+"usn_url": "https://www.usnews.com/education/k12/california/fred-e-weibel-elementary-236096"
 },
 {
 "school": "Glenmoor",
@@ -125,7 +132,8 @@
 "chronic_absent": 14.1,
 "suspension": 0.2,
 "low_income": 46.0,
-"usn_state": "987"
+"usn_state": "987",
+"usn_url": "https://www.usnews.com/education/k12/california/glenmoor-elementary-236215"
 },
 {
 "school": "Harvey Green",
@@ -141,7 +149,8 @@
 "chronic_absent": 7.8,
 "suspension": 1.0,
 "low_income": 41.6,
-"usn_state": "309"
+"usn_state": "309",
+"usn_url": "https://www.usnews.com/education/k12/california/harvey-green-elementary-236367"
 },
 {
 "school": "J. Haley Durham",
@@ -157,7 +166,8 @@
 "chronic_absent": 11.9,
 "suspension": 0.5,
 "low_income": 40.9,
-"usn_state": "1468"
+"usn_state": "1468",
+"usn_url": "https://www.usnews.com/education/k12/california/j-haley-durham-elementary-236608"
 },
 {
 "school": "James Leitch",
@@ -173,7 +183,8 @@
 "chronic_absent": 8.8,
 "suspension": 0.2,
 "low_income": 21.4,
-"usn_state": null
+"usn_state": null,
+"usn_url": "https://www.usnews.com/education/k12/california/james-leitch-elementary-251272"
 },
 {
 "school": "John Blacow",
@@ -189,7 +200,8 @@
 "chronic_absent": 20.1,
 "suspension": 0.0,
 "low_income": 56.6,
-"usn_state": "4439"
+"usn_state": "4439",
+"usn_url": "https://www.usnews.com/education/k12/california/john-blacow-elementary-236704"
 },
 {
 "school": "John G. Mattos",
@@ -205,7 +217,8 @@
 "chronic_absent": 11.7,
 "suspension": 0.4,
 "low_income": 17.9,
-"usn_state": "1236"
+"usn_state": "1236",
+"usn_url": "https://www.usnews.com/education/k12/california/john-g-mattos-elementary-236720"
 },
 {
 "school": "John Gomes",
@@ -221,7 +234,8 @@
 "chronic_absent": 5.0,
 "suspension": 1.0,
 "low_income": 17.0,
-"usn_state": "200"
+"usn_state": "200",
+"usn_url": "https://www.usnews.com/education/k12/california/john-gomes-elementary-236721"
 },
 {
 "school": "Joseph Azevada",
@@ -237,7 +251,8 @@
 "chronic_absent": 15.6,
 "suspension": 3.4,
 "low_income": 37.4,
-"usn_state": "1026"
+"usn_state": "1026",
+"usn_url": "https://www.usnews.com/education/k12/california/joseph-azevada-elementary-236758"
 },
 {
 "school": "Joshua Chadbourne",
@@ -253,7 +268,8 @@
 "chronic_absent": 9.4,
 "suspension": 0.6,
 "low_income": 20.6,
-"usn_state": "72"
+"usn_state": "72",
+"usn_url": "https://www.usnews.com/education/k12/california/joshua-chadbourne-elementary-236766"
 },
 {
 "school": "Lila Bringhurst",
@@ -269,7 +285,8 @@
 "chronic_absent": 7.8,
 "suspension": 0.3,
 "low_income": 26.5,
-"usn_state": "205"
+"usn_state": "205",
+"usn_url": "https://www.usnews.com/education/k12/california/lila-bringhurst-elementary-432067"
 },
 {
 "school": "Mission San Jose",
@@ -285,7 +302,8 @@
 "chronic_absent": 6.8,
 "suspension": 0.2,
 "low_income": 24.6,
-"usn_state": "45"
+"usn_state": "45",
+"usn_url": "https://www.usnews.com/education/k12/california/mission-san-jose-elementary-237451"
 },
 {
 "school": "Mission Valley",
@@ -301,7 +319,8 @@
 "chronic_absent": 8.4,
 "suspension": 0.5,
 "low_income": 23.8,
-"usn_state": "314"
+"usn_state": "314",
+"usn_url": "https://www.usnews.com/education/k12/california/mission-valley-elementary-237452"
 },
 {
 "school": "Niles",
@@ -317,7 +336,8 @@
 "chronic_absent": 6.4,
 "suspension": 3.1,
 "low_income": 28.1,
-"usn_state": "632"
+"usn_state": "632",
+"usn_url": "https://www.usnews.com/education/k12/california/niles-elementary-237626"
 },
 {
 "school": "O. N. Hirsch",
@@ -333,7 +353,8 @@
 "chronic_absent": 8.5,
 "suspension": 1.3,
 "low_income": 36.1,
-"usn_state": "452"
+"usn_state": "452",
+"usn_url": "https://www.usnews.com/education/k12/california/o-n-hirsch-elementary-237710"
 },
 {
 "school": "Oliveira",
@@ -349,7 +370,8 @@
 "chronic_absent": 13.8,
 "suspension": 1.2,
 "low_income": 41.4,
-"usn_state": "919"
+"usn_state": "919",
+"usn_url": "https://www.usnews.com/education/k12/california/oliveira-elementary-237774"
 },
 {
 "school": "Parkmont",
@@ -365,7 +387,8 @@
 "chronic_absent": 10.8,
 "suspension": 0.9,
 "low_income": 25.0,
-"usn_state": "697"
+"usn_state": "697",
+"usn_url": "https://www.usnews.com/education/k12/california/parkmont-elementary-237871"
 },
 {
 "school": "Patterson",
@@ -381,7 +404,8 @@
 "chronic_absent": 11.4,
 "suspension": 0.5,
 "low_income": 27.7,
-"usn_state": "786"
+"usn_state": "786",
+"usn_url": "https://www.usnews.com/education/k12/california/patterson-elementary-237900"
 },
 {
 "school": "Steven Millard",
@@ -397,7 +421,8 @@
 "chronic_absent": 13.4,
 "suspension": 4.5,
 "low_income": 35.5,
-"usn_state": "1954"
+"usn_state": "1954",
+"usn_url": "https://www.usnews.com/education/k12/california/steven-millard-elementary-238608"
 },
 {
 "school": "Tom Maloney",
@@ -413,7 +438,8 @@
 "chronic_absent": 11.1,
 "suspension": 0.5,
 "low_income": 45.3,
-"usn_state": "1508"
+"usn_state": "1508",
+"usn_url": "https://www.usnews.com/education/k12/california/tom-maloney-elementary-238780"
 },
 {
 "school": "Vallejo Mill",
@@ -429,7 +455,8 @@
 "chronic_absent": 19.8,
 "suspension": 1.8,
 "low_income": 45.3,
-"usn_state": "2186"
+"usn_state": "2186",
+"usn_url": "https://www.usnews.com/education/k12/california/vallejo-mill-elementary-238868"
 },
 {
 "school": "Warm Springs",
@@ -445,7 +472,8 @@
 "chronic_absent": 8.1,
 "suspension": 0.0,
 "low_income": 17.3,
-"usn_state": "53"
+"usn_state": "53",
+"usn_url": "https://www.usnews.com/education/k12/california/warm-springs-elementary-277337"
 },
 {
 "school": "Warwick",
@@ -461,7 +489,8 @@
 "chronic_absent": 8.5,
 "suspension": 0.0,
 "low_income": 28.9,
-"usn_state": "274"
+"usn_state": "274",
+"usn_url": "https://www.usnews.com/education/k12/california/warwick-elementary-238994"
 },
 {
 "school": "Centerville",
@@ -477,7 +506,8 @@
 "chronic_absent": 12.1,
 "suspension": 7.3,
 "low_income": 39.4,
-"usn_state": "513"
+"usn_state": "513",
+"usn_url": "https://www.usnews.com/education/k12/california/centerville-middle-254873"
 },
 {
 "school": "G. M. Walters",
@@ -493,7 +523,8 @@
 "chronic_absent": 15.8,
 "suspension": 6.3,
 "low_income": 49.0,
-"usn_state": "797"
+"usn_state": "797",
+"usn_url": "https://www.usnews.com/education/k12/california/g-m-walters-middle-255246"
 },
 {
 "school": "John M. Horner",
@@ -509,7 +540,8 @@
 "chronic_absent": 6.4,
 "suspension": 3.3,
 "low_income": 24.8,
-"usn_state": "52"
+"usn_state": "52",
+"usn_url": "https://www.usnews.com/education/k12/california/john-m-horner-middle-255520"
 },
 {
 "school": "Thornton",
@@ -525,7 +557,8 @@
 "chronic_absent": 6.0,
 "suspension": 7.7,
 "low_income": 24.7,
-"usn_state": "78"
+"usn_state": "78",
+"usn_url": "https://www.usnews.com/education/k12/california/thornton-middle-256494"
 },
 {
 "school": "William Hopkins",
@@ -541,7 +574,8 @@
 "chronic_absent": 4.6,
 "suspension": 2.5,
 "low_income": 20.9,
-"usn_state": "9"
+"usn_state": "9",
+"usn_url": "https://www.usnews.com/education/k12/california/william-hopkins-middle-256686"
 },
 {
 "school": "American",
@@ -557,7 +591,8 @@
 "chronic_absent": 9.9,
 "suspension": 1.8,
 "low_income": 27.2,
-"usn_state": "49"
+"usn_state": "49",
+"usn_url": "https://www.usnews.com/education/best-high-schools/california/districts/fremont-unified-school-district/american-high-school-2205"
 },
 {
 "school": "Irvington",
@@ -573,7 +608,8 @@
 "chronic_absent": 10.7,
 "suspension": 1.1,
 "low_income": 26.8,
-"usn_state": "48"
+"usn_state": "48",
+"usn_url": "https://www.usnews.com/education/best-high-schools/california/districts/fremont-unified-school-district/irvington-high-school-2206"
 },
 {
 "school": "John F. Kennedy",
@@ -589,7 +625,8 @@
 "chronic_absent": 15.9,
 "suspension": 5.9,
 "low_income": 55.7,
-"usn_state": "779"
+"usn_state": "779",
+"usn_url": "https://www.usnews.com/education/best-high-schools/california/districts/fremont-unified-school-district/john-f-kennedy-high-school-2207"
 },
 {
 "school": "Mission San Jose",
@@ -605,7 +642,8 @@
 "chronic_absent": 10.8,
 "suspension": 0.8,
 "low_income": 19.1,
-"usn_state": "10"
+"usn_state": "10",
+"usn_url": "https://www.usnews.com/education/best-high-schools/california/districts/fremont-unified-school-district/mission-san-jose-high-school-2208"
 },
 {
 "school": "Washington",
@@ -621,6 +659,7 @@
 "chronic_absent": 12.7,
 "suspension": 4.5,
 "low_income": 37.1,
-"usn_state": "363"
+"usn_state": "363",
+"usn_url": "https://www.usnews.com/education/best-high-schools/california/districts/fremont-unified-school-district/washington-high-school-2210"
 }
 ]
