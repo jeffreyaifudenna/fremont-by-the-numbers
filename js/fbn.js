@@ -492,6 +492,7 @@
     const sm = document.createElement('summary');
     sm.innerHTML = '<span class="fold-t">' + esc(spec.title || 'Details') + '</span><span class="fold-h">Show details</span>';
     d.appendChild(sm); d.appendChild(panel);
+    if (panel.querySelector('.chart-box')) d.addEventListener('toggle', () => { if (d.open) redrawCharts(); });  // a closed fold has no width to draw into
     return d;
   }
   function section(spec) {
@@ -559,6 +560,7 @@
       if (spec.key !== 'index') jumpList(wrap);
       if (spec.uses !== 'all' && spec.key !== 'index') wrap.appendChild(usedDatasets(collectDatasets(secs).concat(uses)));
       if (spec.after) spec.after(wrap, data, row);
+      redrawCharts();  // charts were first drawn before their panels were on the page, so at a guessed size
     }).catch(e => {
       console.error(e);
       if (prerendered) { main.replaceChildren(...kept); return; }   // the pre-rendered copy stays up

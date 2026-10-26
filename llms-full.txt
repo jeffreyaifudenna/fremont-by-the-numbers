@@ -670,22 +670,22 @@ Grouped by school level, then sorted by English results
 | Niles Elementary | K-5 | 452 | 74.6% | 78.1% | 6.4% | 28.1% | #632 [source](https://www.ed-data.org/district/Alameda/Fremont-Unified) |
 | Harvey Green Elementary | K-5 | 375 | 73.4% | 75.5% | 7.8% | 41.6% | #309 [source](https://www.ed-data.org/district/Alameda/Fremont-Unified) |
 | Lila Bringhurst Elementary | K-5 | 1,178 | 72.0% | 77.6% | 7.8% | 26.5% | #205 [source](https://www.ed-data.org/district/Alameda/Fremont-Unified) |
-| Joseph Azevada Elementary | K-5 | 388 | 71.3% | 72.0% | 15.6% | 37.4% | #1026 [source](https://www.ed-data.org/district/Alameda/Fremont-Unified) |
+| Joseph Azevada Elementary | K-5 | 388 | 71.3% | 72.0% | 15.6% | 37.4% | #1,026 [source](https://www.ed-data.org/district/Alameda/Fremont-Unified) |
 | Oliveira Elementary | K-5 | 483 | 70.1% | 62.4% | 13.8% | 41.4% | #919 [source](https://www.ed-data.org/district/Alameda/Fremont-Unified) |
-| John G. Mattos Elementary | K-5 | 535 | 69.9% | 67.2% | 11.7% | 17.9% | #1236 [source](https://www.ed-data.org/district/Alameda/Fremont-Unified) |
+| John G. Mattos Elementary | K-5 | 535 | 69.9% | 67.2% | 11.7% | 17.9% | #1,236 [source](https://www.ed-data.org/district/Alameda/Fremont-Unified) |
 | Forest Park Elementary | K-5 | 717 | 69.6% | 71.7% | 8.2% | 23.0% | #570 [source](https://www.ed-data.org/district/Alameda/Fremont-Unified) |
 | O. N. Hirsch Elementary | K-5 | 435 | 67.9% | 64.3% | 8.5% | 36.1% | #452 [source](https://www.ed-data.org/district/Alameda/Fremont-Unified) |
 | Brookvale Elementary | K-5 | 461 | 66.1% | 67.4% | 5.9% | 30.2% | #618 [source](https://www.ed-data.org/district/Alameda/Fremont-Unified) |
 | Patterson Elementary | K-5 | 592 | 65.9% | 70.0% | 11.4% | 27.7% | #786 [source](https://www.ed-data.org/district/Alameda/Fremont-Unified) |
 | Glenmoor Elementary | K-5 | 550 | 61.1% | 57.3% | 14.1% | 46.0% | #987 [source](https://www.ed-data.org/district/Alameda/Fremont-Unified) |
 | E. M. Grimmer Elementary | K-5 | 229 | 61.1% | 57.5% | 14.8% | 51.1% | #594 [source](https://www.ed-data.org/district/Alameda/Fremont-Unified) |
-| Tom Maloney Elementary | K-5 | 532 | 57.8% | 60.4% | 11.1% | 45.3% | #1508 [source](https://www.ed-data.org/district/Alameda/Fremont-Unified) |
-| Steven Millard Elementary | K-5 | 453 | 57.6% | 58.8% | 13.4% | 35.5% | #1954 [source](https://www.ed-data.org/district/Alameda/Fremont-Unified) |
-| J. Haley Durham Elementary | K-5 | 702 | 57.0% | 59.2% | 11.9% | 40.9% | #1468 [source](https://www.ed-data.org/district/Alameda/Fremont-Unified) |
-| Vallejo Mill Elementary | K-5 | 373 | 46.3% | 41.7% | 19.8% | 45.3% | #2186 [source](https://www.ed-data.org/district/Alameda/Fremont-Unified) |
-| Brier Elementary | K-5 | 583 | 44.5% | 40.8% | 12.9% | 56.4% | #3688 [source](https://www.ed-data.org/district/Alameda/Fremont-Unified) |
-| John Blacow Elementary | K-5 | 509 | 36.4% | 36.6% | 20.1% | 56.6% | #4439 [source](https://www.ed-data.org/district/Alameda/Fremont-Unified) |
-| Cabrillo Elementary | K-5 | 264 | 30.9% | 26.9% | 13.5% | 72.0% | #4440-5920 [source](https://www.ed-data.org/district/Alameda/Fremont-Unified) |
+| Tom Maloney Elementary | K-5 | 532 | 57.8% | 60.4% | 11.1% | 45.3% | #1,508 [source](https://www.ed-data.org/district/Alameda/Fremont-Unified) |
+| Steven Millard Elementary | K-5 | 453 | 57.6% | 58.8% | 13.4% | 35.5% | #1,954 [source](https://www.ed-data.org/district/Alameda/Fremont-Unified) |
+| J. Haley Durham Elementary | K-5 | 702 | 57.0% | 59.2% | 11.9% | 40.9% | #1,468 [source](https://www.ed-data.org/district/Alameda/Fremont-Unified) |
+| Vallejo Mill Elementary | K-5 | 373 | 46.3% | 41.7% | 19.8% | 45.3% | #2,186 [source](https://www.ed-data.org/district/Alameda/Fremont-Unified) |
+| Brier Elementary | K-5 | 583 | 44.5% | 40.8% | 12.9% | 56.4% | #3,688 [source](https://www.ed-data.org/district/Alameda/Fremont-Unified) |
+| John Blacow Elementary | K-5 | 509 | 36.4% | 36.6% | 20.1% | 56.6% | #4,439 [source](https://www.ed-data.org/district/Alameda/Fremont-Unified) |
+| Cabrillo Elementary | K-5 | 264 | 30.9% | 26.9% | 13.5% | 72.0% | #4,440–5,920 [source](https://www.ed-data.org/district/Alameda/Fremont-Unified) |
 | James Leitch Elementary | K-2 | 491 | — | — | 8.8% | 21.4% | Unranked [source](https://www.ed-data.org/district/Alameda/Fremont-Unified) |
 Source note: CAASPP 2025–26 results (share meeting standard); DataQuest 2025–26 enrollment; Ed-Data 2024–25 chronic absence and 2025–26 low-income share; U.S. News 2027 edition elementary and middle school state ranks, 2026–27 for high schools.View source: U.S. News, Fremont Unified elementary schools View source: U.S. News, Fremont Unified middle schools View source: U.S. News, Fremont Unified high schools
 
@@ -1543,7 +1543,7 @@ Note: Kaiser Fremont reports no ER timeliness or visit counts to the public data
 
 ## How healthy are Fremont adults?
 CDC PLACES estimates for the city, mostly from the 2023 Behavioral Risk Factor Surveillance System.
-- Adults with a routine checkup in the past year: **72.7** — 2023 · Adult health (CDC PLACES) [source](https://www.cdc.gov/places/index.html)
+- Adults with a routine checkup in the past year: **72.7%** — 2023 · Adult health (CDC PLACES) [source](https://www.cdc.gov/places/index.html)
 - Healthiest Cities rank (WalletHub): **#19** — of 182 cities · Mar 30, 2026 [source](https://wallethub.com/edu/healthiest-cities/31072)
 
 ### Share of adults, by measure

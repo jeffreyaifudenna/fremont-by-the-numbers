@@ -28,7 +28,7 @@ FBN.page({
         charts: [{
           ds: 'food_cpi', type: 'line', x: r => r.month + ' ' + r.year, format: 'pct1', zero: false,
           title: 'Food price inflation, year over year', sub: 'Each August, 2018–2026',
-          series: [{ key: 'food_at_home_yoy_pct', label: 'Groceries' }, { key: 'food_away_yoy_pct', label: 'Restaurants', color: 2 }, { key: 'all_items_yoy_pct', label: 'All items', color: '--axis', dashed: true }],
+          series: [{ key: 'food_at_home_yoy_pct', label: 'Groceries' }, { key: 'food_away_yoy_pct', label: 'Restaurants', color: 2 }, { key: 'all_items_yoy_pct', label: 'All items', color: '--muted', dashed: true }],
           url: 'https://www.bls.gov/regions/west/news-release/consumerpriceindex_sanfrancisco.htm', urlName: 'BLS: Consumer Price Index, San Francisco area',
           source: 'BLS Consumer Price Index news releases, San Francisco–Oakland–Hayward (CPI-U). Of the eight Augusts shown, grocery inflation was highest in August 2022, at 11.6%.'
         }, {

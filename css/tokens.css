@@ -9,6 +9,7 @@
   --header: #0d366b;
   --header-ink: #ffffff;
   --header-muted: #cde2fb;
+  --navy-accent: #0d366b;
   --line: #dce5ee;
   --axis: #b9c7d6;
   --ink: #0f2233;
@@ -46,6 +47,7 @@
   --header: #0b2446;
   --header-ink: #eaf1f7;
   --header-muted: #9ec5f4;
+  --navy-accent: #5d84b8;
   --line: #22344a;
   --axis: #3a4f68;
   --ink: #eaf1f7;
@@ -78,6 +80,7 @@
     --header: #0b2446;
     --header-ink: #eaf1f7;
     --header-muted: #9ec5f4;
+    --navy-accent: #5d84b8;
     --line: #22344a;
     --axis: #3a4f68;
     --ink: #eaf1f7;

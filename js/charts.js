@@ -21,7 +21,7 @@
     for (let v = lo; v <= hi + step / 2; v += step) ticks.push(Math.round(v / step) * step);
     return { lo, hi, ticks };
   }
-  function wrap(text, max) {
+  function wrapAll(text, max) {
     const words = String(text).split(' ');
     const lines = [];
     let cur = '';
@@ -29,6 +29,10 @@
       if ((cur + ' ' + w).trim().length > max && cur) { lines.push(cur); cur = w; } else cur = (cur + ' ' + w).trim();
     });
     if (cur) lines.push(cur);
+    return lines;
+  }
+  function wrap(text, max) {
+    const lines = wrapAll(text, max);
     if (lines.length > 2) { lines.length = 2; lines[1] = lines[1].replace(/.{3}$/, '') + '…'; }
     return lines;
   }
@@ -36,7 +40,9 @@
 
   function draw(box, spec) {
     box.innerHTML = '';
-    const W = box.clientWidth || 600, H = box.clientHeight || 280;
+    box.style.height = '';  // a phone-width hbar sets its own height; let CSS decide again before measuring
+    const W = box.clientWidth || 600;
+    let H = box.clientHeight || 280;
     const svg = el('svg', { viewBox: '0 0 ' + W + ' ' + H, width: '100%', height: '100%', role: 'img', 'aria-label': spec.alt || '' }, box);
     const labels = spec.labels || [];
     const ds = spec.datasets || [];
@@ -57,24 +63,64 @@
     if (spec.ymin !== undefined) vmin = spec.ymin;
     if (spec.ymax !== undefined) vmax = spec.ymax;
     if (vmin === vmax) vmax = vmin + 1;
-    const nt = niceTicks(vmin, vmax, horizontal ? 4 : 5);
-    if (spec.ymin !== undefined) nt.lo = spec.ymin;
-    const tickLabels = nt.ticks.filter(t => t >= nt.lo - 1e-9 && t <= nt.hi + 1e-9).map(t => ({ v: t, s: String(fmt(t)) }));
-
-    // margins
     const charW = 6.8;
-    let left, bottom = 26, top = 8, right = 10;
+    // On phones an hbar puts each label on its own line above its bar, so labels get the full width.
+    const stackLabels = horizontal && W < 480;
+    let nt, tickLabels, left, bottom = 26, top = 8, right = 10, pw;
     let catLines = [];
-    if (horizontal) {
-      catLines = labels.map(l => wrap(l, Math.max(14, Math.floor((W * 0.42) / charW))));
-      const maxc = Math.max(...catLines.map(ls => Math.max(...ls.map(s => s.length))), 4);
-      left = Math.min(W * 0.45, maxc * charW + 10);
-      bottom = 24;
-      right = Math.max(10, Math.max(...tickLabels.map(t => t.s.length)) * charW / 2 + 6);
-    } else {
-      left = Math.max(...tickLabels.map(t => t.s.length), 2) * charW + 10;
+    // the value axis of an hbar runs across the width: use fewer ticks until their labels fit side by side
+    for (let count = horizontal ? 4 : 5; ; count--) {
+      nt = niceTicks(vmin, vmax, count);
+      if (spec.ymin !== undefined) nt.lo = spec.ymin;
+      tickLabels = nt.ticks.filter(t => t >= nt.lo - 1e-9 && t <= nt.hi + 1e-9).map(t => ({ v: t, s: String(fmt(t)) }));
+      const maxt = Math.max(...tickLabels.map(t => t.s.length));
+      if (horizontal) {
+        if (stackLabels) {
+          catLines = labels.map(l => wrap(l, Math.floor((W - 8) / charW)));
+          left = Math.max(4, tickLabels[0].s.length * charW / 2 + 2);
+        } else {
+          catLines = labels.map(l => wrap(l, Math.max(14, Math.floor((W * 0.42) / charW))));
+          const maxc = Math.max(...catLines.map(ls => Math.max(...ls.map(s => s.length))), 4);
+          left = Math.min(W * 0.45, maxc * charW + 10);
+        }
+        bottom = 24;
+        right = Math.max(10, maxt * charW / 2 + 6);
+      } else {
+        left = Math.max(maxt, 2) * charW + 10;
+      }
+      pw = Math.max(10, W - left - right);
+      if (!horizontal || count <= 1 || pw / Math.max(1, tickLabels.length - 1) >= maxt * charW + 12) break;
     }
-    const pw = Math.max(10, W - left - right), ph = Math.max(10, H - top - bottom);
+
+    // phone hbar: rows of [label lines, bars], and the chart grows to fit them
+    const groupsH = stacked ? 1 : ds.length;
+    const rowBar = 16, rowGap = 12, lineH = 14;
+    const rowTop = [];
+    if (stackLabels) {
+      let y = 0;
+      catLines.forEach(ls => { rowTop.push(y); y += ls.length * lineH + 4 + groupsH * rowBar + rowGap; });
+      H = Math.round(top + y + bottom);
+      box.style.height = H + 'px';
+    }
+
+    // column chart: wrap category labels onto two lines when that lets every label show
+    let colLines = null, colEvery = 1, colFont = 12;
+    if (isBar && !horizontal) {
+      const band = pw / Math.max(1, labels.length);
+      const textW = (s, size) => { const t = el('text', Object.assign({}, TEXT, { 'font-size': size }), svg); t.textContent = s; const w = t.getComputedTextLength(); svg.removeChild(t); return w; };
+      for (const size of [12, 11]) {
+        const all = labels.map(l => wrapAll(l, Math.max(1, Math.floor((band - 4) / (size * 0.5)))));
+        if (all.every(ls => ls.length <= 2 && ls.every(s => textW(s, size) <= band - (size === 12 ? 4 : 2)))) { colLines = all; colFont = size; break; }
+      }
+      if (colLines) {
+        if (colLines.some(ls => ls.length > 1)) bottom = 40;
+      } else {
+        const lw = Math.min(14, Math.max(...labels.map(l => String(l).length))) * 7.2 + 8;
+        colEvery = Math.max(1, Math.ceil(lw / band));
+      }
+    }
+    const ph = Math.max(10, H - top - bottom);
+    svg.setAttribute('viewBox', '0 0 ' + W + ' ' + H);
     const g = el('g', { transform: 'translate(' + left + ',' + top + ')' }, svg);
 
     const vScale = v => horizontal ? (v - nt.lo) / (nt.hi - nt.lo) * pw : ph - (v - nt.lo) / (nt.hi - nt.lo) * ph;
@@ -96,7 +142,24 @@
     const hollow = (d, i) => d.hollow && d.hollow[i];
     const tipRows = [];  // per index: {x, y, items}
 
-    if (horizontal) {
+    if (horizontal && stackLabels) {
+      labels.forEach((l, i) => {
+        const y0 = rowTop[i] + catLines[i].length * lineH + 4;
+        let acc = 0;
+        ds.forEach((d, j) => {
+          const v = d.data[i]; if (v == null || isNaN(v)) return;
+          const start = stacked ? acc : 0, end = stacked ? acc + v : v;
+          const x1 = vScale(Math.min(start, end)), x2 = vScale(Math.max(start, end));
+          el('rect', { x: x1, y: stacked ? y0 : y0 + j * rowBar, width: Math.max(0, x2 - x1), height: rowBar - 2, rx: 3, fill: hollow(d, i) ? 'var(--surface)' : d.color, stroke: d.color, 'stroke-width': hollow(d, i) ? 2 : 0 }, g);
+          if (stacked) acc += v;
+        });
+        catLines[i].forEach((line, k) => {
+          el('text', Object.assign({}, TEXT, { x: 0, y: rowTop[i] + (k + 1) * lineH - 3, 'text-anchor': 'start', fill: 'var(--ink-2)' }), g).textContent = line;
+        });
+        const h = (i + 1 < n ? rowTop[i + 1] : ph) - rowTop[i];
+        tipRows.push({ x: 0, y: rowTop[i], w: pw, h, label: l, items: ds.map(d => ({ label: d.label, color: d.color, value: d.data[i] })) });
+      });
+    } else if (horizontal) {
       const band = ph / Math.max(1, n);
       const inner = band * 0.72;
       const groups = stacked ? 1 : ds.length;
@@ -133,11 +196,13 @@
         });
         tipRows.push({ x: i * band, y: 0, w: band, h: ph, label: l, items: ds.map(d => ({ label: d.label, color: d.color, value: d.data[i] })) });
       });
-      // x labels: show as many as fit
-      const lw = Math.min(14, Math.max(...labels.map(l => String(l).length))) * 7.2 + 8;
-      const every = Math.max(1, Math.ceil(lw / band));
+      // x labels: every label (wrapped to two lines) when they fit, else as many as fit
       labels.forEach((l, i) => {
-        if ((n - 1 - i) % every !== 0) return;
+        if (colLines) {
+          colLines[i].forEach((line, k) => { el('text', Object.assign({ x: i * band + band / 2, y: ph + 18 + k * 14, 'text-anchor': 'middle' }, TEXT, { 'font-size': colFont }), g).textContent = line; });
+          return;
+        }
+        if ((n - 1 - i) % colEvery !== 0) return;
         el('text', Object.assign({ x: i * band + band / 2, y: ph + 18, 'text-anchor': 'middle' }, TEXT), g).textContent = String(l).length > 14 ? String(l).slice(0, 13) + '…' : l;
       });
     } else {
@@ -158,8 +223,11 @@
       });
       const maxLabels = Math.max(2, Math.floor(pw / 72));
       const every = Math.max(1, Math.ceil((n - 1) / (maxLabels - 1)));
+      // labels count back from the latest point; the first point also gets one, replacing a neighbour that would crowd it
+      const r = (n - 1) % every, stepPx = n > 1 ? pw / (n - 1) : pw;
+      const shown = i => i === 0 || ((n - 1 - i) % every === 0 && !(i === r && r * stepPx < 80));
       labels.forEach((l, i) => {
-        if ((n - 1 - i) % every !== 0) return;
+        if (!shown(i)) return;
         el('text', Object.assign({ x: xs(i), y: ph + 18, 'text-anchor': i === 0 ? 'start' : i === n - 1 ? 'end' : 'middle' }, TEXT), g).textContent = l;
       });
       labels.forEach((l, i) => {

@@ -62,7 +62,7 @@ FBN.page({
         title: 'How healthy are Fremont adults?',
         sub: 'CDC PLACES estimates for the city, mostly from the 2023 Behavioral Risk Factor Surveillance System.',
         cards: [
-          { ds: 'health_places', id: 'CHECKUP', label: 'Adults with a routine checkup in the past year', icon: 'check', color: 1 },
+          { ds: 'health_places', id: 'CHECKUP', label: 'Adults with a routine checkup in the past year', format: 'pct', icon: 'check', color: 1 },
           { ds: 'city_rankings', id: 'healthiest', label: 'Healthiest Cities rank (WalletHub)', value: healthiest.rank, format: 'rank', icon: 'star', color: 4, meta: 'of ' + healthiest.of + ' cities · ' + healthiest.published }
         ],
         charts: [{

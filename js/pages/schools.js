@@ -9,6 +9,8 @@ FBN.page({
     const usnLink = (r, text) => r.usn_url
       ? '<a class="src-link" href="' + r.usn_url + '" target="_blank" rel="noopener noreferrer" aria-label="' + text + ' in California: ' + (r.full_name || r.school) + ' on U.S. News (opens in a new tab)" title="Open this school’s U.S. News page in a new tab">' + text + '</a>'
       : text;
+    /* state ranks are stored as text ("1026", "4440-5920"): add thousands commas and an en dash for ranges */
+    const rk = s => '#' + String(s).replace(/\d{4,}/g, d => Number(d).toLocaleString('en-US')).replace('-', '–');
     return [
       {
         title: 'Fremont Unified at a glance',
@@ -31,7 +33,7 @@ FBN.page({
           columns: [
             { key: 'school', label: 'School' },
             { key: r => r.usn_national, label: 'U.S. rank', format: 'rank' },
-            { key: r => usnLink(r, '#' + r.usn_state) + ' <span class="dim">(#' + r.usn_state_prior + ')</span>', label: 'California rank', html: true, num: false },
+            { key: r => usnLink(r, rk(r.usn_state)) + ' <span class="dim">(' + rk(r.usn_state_prior) + ')</span>', label: 'California rank', html: true, num: false },
             { key: r => r.usn_metro, label: 'SF Bay Area rank', format: 'rank' },
             { key: 'enrollment', label: 'Students', format: 'int' },
             { key: 'grad_rate', label: 'Graduation', format: 'pct' },
@@ -110,7 +112,7 @@ FBN.page({
             { key: 'math', label: 'Math', format: 'pct1' },
             { key: 'chronic_absent', label: 'Chronic absence', format: 'pct1' },
             { key: 'low_income', label: 'Low income', format: 'pct1' },
-            { key: r => usnLink(r, r.usn_state ? '#' + r.usn_state : 'Unranked'), label: 'U.S. News CA rank', html: true, num: false }
+            { key: r => usnLink(r, r.usn_state ? rk(r.usn_state) : 'Unranked'), label: 'U.S. News CA rank', html: true, num: false }
           ],
           source: 'CAASPP 2025–26 results (share meeting standard); DataQuest 2025–26 enrollment; Ed-Data 2024–25 chronic absence and 2025–26 low-income share; U.S. News 2027 edition elementary and middle school state ranks, 2026–27 for high schools.'
         }]
