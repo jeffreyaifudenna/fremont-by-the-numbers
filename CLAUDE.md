@@ -8,6 +8,7 @@ Static site (plain HTML/CSS/JS + JSON in data/). Data aggregator for Fremont, CA
 - The .html files are PRE-RENDERED snapshots (for crawlers). After changing any data, js or page spec, rebuild:
   `STANDALONE=1 node tools/build_ai_files.js . YYYY-MM-DD`   (needs Node + `npm i playwright` once; uses python3 http.server on port 8767). Also set SITE.updated in js/fbn.js first.
   STANDALONE=1 makes index.html a full document (required for Vercel).
+- Speed: pages show the pre-rendered copy at once and fbn.js swaps in the live render when the data arrives. The build stamps css/js/data URLs with ?v=<hash of css/, js/, data/>, and vercel.json caches ?v= URLs for a year. So ALWAYS rebuild before deploying a data/js/css change, or returning visitors keep the old files.
 - tools/refresh_zillow.py updates Zillow home value/rent from Zillow's public CSVs (dry run against the real files worked Oct 26, 2026). tools/refresh_schedule.json lists when each dataset is next due. Scheduled refreshes are NOT set up (owner will decide if the site proves useful).
 - tools/factcheck_corrections.md: Oct 25, 2026 fact check; its "could not be checked" list still needs a person or browser.
 

@@ -2,7 +2,7 @@
  * Run from anywhere:  node build_ai_files.js <site folder> [YYYY-MM-DD]
  * Needs Playwright. Steps: (1) write plain page shells, (2) render every page in a headless browser,
  * (3) write the final shells (pre-rendered content + JSON-LD), llms.txt, llms-full.txt and robots.txt. */
-const fs = require('fs'), path = require('path'), cp = require('child_process');
+const fs = require('fs'), path = require('path'), cp = require('child_process'), crypto = require('crypto');
 const { chromium } = require('playwright');
 
 const SITE = path.resolve(process.argv[2] || '.');
@@ -21,6 +21,16 @@ const PAGES = [
   { file: 'startups', label: 'Startups', title: 'Startup Ecosystem', desc: 'Companies, funding rounds, the manufacturing base and rankings in the Fremont, California startup ecosystem, each with its source and date.' },
   { file: 'sources', label: 'About & Sources', title: 'About, Sources & Methodology', type: 'AboutPage', desc: 'How FremontCaByTheNumbers.com works: a data aggregator built using Claude, its methodology, limitations, datasets and every source page.' }
 ];
+// One hash of css/, js/ and data/: asset URLs carry ?v=<hash>, so browsers can cache them for good (vercel.json)
+// and a rebuild after any change hands out new URLs.
+const VER = (() => {
+  const h = crypto.createHash('sha1');
+  const walk = d => fs.readdirSync(d, { withFileTypes: true }).sort((a, b) => a.name < b.name ? -1 : 1).forEach(e => {
+    const f = path.join(d, e.name); if (e.isDirectory()) walk(f); else { h.update(path.relative(SITE, f)); h.update(fs.readFileSync(f)); }
+  });
+  ['css', 'js', 'data'].forEach(d => walk(path.join(SITE, d)));
+  return h.digest('hex').slice(0, 10);
+})();
 const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 const pageTitle = p => p.title || p.label;
 const fullTitle = p => p.file === 'index' ? NAME : pageTitle(p) + ' · ' + NAME;
@@ -33,17 +43,19 @@ function head(p, extra) {
     '<meta property="og:image" content="https://fremontcabythenumbers.com/og.png">\n<meta property="og:image:width" content="1200">\n<meta property="og:image:height" content="630">\n<meta property="og:image:alt" content="FremontCaByTheNumbers.com: public data about Fremont, California, with a source on every figure">\n' +
     '<meta name="twitter:card" content="summary_large_image">\n<meta name="twitter:image" content="https://fremontcabythenumbers.com/og.png">\n' +
     '<link rel="alternate" type="text/plain" href="llms-full.txt" title="Full text of every page">\n' +
-    '<script>try{var t=localStorage.getItem(\'fbn-theme\');if(t)document.documentElement.setAttribute(\'data-theme\',t);}catch(e){}</script>\n' +
-    '<link rel="stylesheet" href="css/tokens.css">\n<link rel="stylesheet" href="css/site.css">\n<link rel="icon" href="favicon.svg" type="image/svg+xml">\n' + (extra || '');
+    // Theme before first paint (saved choice, else the device setting), matching currentTheme() in fbn.js.
+    '<script>(function(){var t;try{t=localStorage.getItem(\'fbn-theme\');}catch(e){}if(!t&&window.matchMedia&&matchMedia(\'(prefers-color-scheme: dark)\').matches)t=\'dark\';if(t)document.documentElement.setAttribute(\'data-theme\',t);})();</script>\n' +
+    '<link rel="stylesheet" href="css/tokens.css?v=' + VER + '">\n<link rel="stylesheet" href="css/site.css?v=' + VER + '">\n<link rel="icon" href="favicon.svg" type="image/svg+xml">\n' +
+    // Deferred: they download while the page parses and run after it, so the pre-rendered page paints without waiting on them.
+    '<script defer src="js/charts.js?v=' + VER + '"></script>\n<script defer src="js/fbn.js?v=' + VER + '" data-v="' + VER + '"></script>\n<script defer src="js/pages/' + p.file + '.js?v=' + VER + '"></script>\n' + (extra || '');
 }
 function shell(p, bodyHtml, jsonld) {
-  const scripts = '<script src="js/charts.js"></script>\n<script src="js/fbn.js"></script>\n<script src="js/pages/' + p.file + '.js"></script>\n';
   const ld = jsonld ? '<script type="application/ld+json">' + JSON.stringify(jsonld).replace(/</g, '\\u003c') + '</script>\n' : '';
   if (p.file === 'index' && !process.env.STANDALONE) {
     // index.html is published inside the artifact wrapper, which supplies <html>, <head> and <body>.
-    return head(p, ld) + (bodyHtml || '<main></main>') + '\n' + scripts;
+    return head(p, ld) + (bodyHtml || '<main></main>') + '\n';
   }
-  return '<!doctype html>\n<html lang="en">\n<head>\n' + head(p, ld) + '</head>\n<body>\n' + (bodyHtml ? bodyHtml : '<main></main>') + '\n' + scripts + '</body>\n</html>\n';
+  return '<!doctype html>\n<html lang="en">\n<head>\n' + head(p, ld) + '</head>\n<body>\n' + (bodyHtml ? bodyHtml : '<main></main>') + '\n</body>\n</html>\n';
 }
 
 (async () => {
