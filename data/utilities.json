@@ -148,11 +148,11 @@
   "label": "Verizon 5G Home Internet, base tier, monthly price without a Verizon mobile plan",
   "value": 60,
   "format": "usd",
-  "period": "Mar 2025",
-  "source": "Cord Cutters News, Verizon increases 5G Home Plus price",
-  "source_url": "https://cordcuttersnews.com/verizon-increases-5g-home-plus-internet-price-by-10-for-wireless-customers/",
-  "kind": "News report",
-  "note": "National pricing. $35 with Verizon wireless plan; 5G Home Plus $80 ($55 with mobile plan). Verizon 5G Home listed at 99% of Fremont locations (BroadbandMap.com). Read Oct 24, 2026.",
+  "period": "Oct 2026",
+  "source": "Verizon, 5G Home Internet plans page",
+  "source_url": "https://www.verizon.com/home/internet/5g/",
+  "kind": "Company price list",
+  "note": "National pricing: 5G Home $60, 5G Home Plus $70, 5G Home Ultimate $85 a month; lower with a Verizon mobile plan (from $35). Verizon 5G Home listed at 99% of Fremont locations (BroadbandMap.com). Read Oct 26, 2026.",
   "geo": "California"
  }
 ]

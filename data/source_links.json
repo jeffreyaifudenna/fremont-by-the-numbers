@@ -30,8 +30,8 @@
    "name": "U.S. Census Bureau: QuickFacts, Fremont"
   },
   "city_facts": {
-   "url": "https://hoodline.com/2026/07/fremont-council-slams-brakes-on-half-cent-tax-hike-before-november-vote-6944803/",
-   "name": "Hoodline: Fremont budget and tax coverage"
+   "url": "https://www.fremont.gov/home/showpublisheddocument/21162/639252581230269794",
+   "name": "City of Fremont: FY 2026/27 Adopted Operating Budget"
   },
   "city_parks": {
    "url": "https://fremont-ca-open-data-cofgis.hub.arcgis.com/",
@@ -201,10 +201,6 @@
    "url": "https://www.fremont.gov/government/departments/transportation-engineering/traffic-safety/safety-data-and-trends",
    "name": "City of Fremont: Traffic Safety, Safety Data and Trends"
   },
-  "vacancy": {
-   "url": "https://kidder.com/wp-content/uploads/market_report/office-market-research-silicon-valley-2026-3q.pdf",
-   "name": "Kidder Mathews: 3Q 2026 market reports"
-  },
   "zillow_history": {
    "url": "https://www.zillow.com/research/data/",
    "name": "Zillow Research: ZHVI and ZORI"
@@ -291,16 +287,6 @@
    "name": "U.S. Census Bureau: QuickFacts, Fremont"
   },
   {
-   "match": "Citizen Portal report of the proposed budget",
-   "url": "https://citizenportal.ai/articles/8258598/California/Alameda-County/Fremont/Fremont-proposes-2891-million-operating-budget-for-202627-council-asks-for-deferredmaintenance-list",
-   "name": "Citizen Portal: proposed FY 2026–27 budget"
-  },
-  {
-   "match": "Hoodline (Jul 24, 2026)",
-   "url": "https://hoodline.com/2026/07/fremont-council-slams-brakes-on-half-cent-tax-hike-before-november-vote-6944803/",
-   "name": "Hoodline: Fremont budget and tax coverage"
-  },
-  {
    "match": "Fremont Police Department annual report",
    "url": "https://www.fremontpolice.gov/about-us/transparency-portal/yearly-summaries",
    "name": "Fremont Police Department: yearly summaries"
@@ -369,11 +355,6 @@
    "match": "Capitol Corridor",
    "url": "https://www.capitolcorridor.org/trainschedule/Train_Schedules.pdf",
    "name": "Capitol Corridor: train schedules"
-  },
-  {
-   "match": "Great American Stations",
-   "url": "https://www.greatamericanstations.com/?p=7139",
-   "name": "Amtrak Great American Stations: Fremont"
   },
   {
    "match": "CDTFA",

@@ -1,21 +1,23 @@
 [
  {
   "id": "budget",
-  "label": "City operating budget, all funds",
-  "value": 427000000,
+  "label": "City operating budget, all funds (total uses)",
+  "value": 427121000,
   "format": "usdc",
-  "period": "FY 2026–27, as proposed (May 2026)",
-  "source": "Hoodline (Jul 24, 2026) and Citizen Portal (May 12, 2026), reporting the City's proposed budget",
-  "kind": "Reported, approximate"
+  "period": "FY 2026–27, adopted",
+  "source": "City of Fremont FY 2026/27 Adopted Operating Budget, Summary of All Funds (p. 32)",
+  "kind": "Official budget",
+  "source_url": "https://www.fremont.gov/home/showpublisheddocument/21162/639252581230269794"
  },
  {
   "id": "general_fund",
   "label": "General fund spending",
-  "value": 289100000,
+  "value": 289089000,
   "format": "usdc",
-  "period": "FY 2026–27, proposed",
-  "source": "Citizen Portal report of the proposed budget (May 12, 2026)",
-  "kind": "Reported"
+  "period": "FY 2026–27, adopted",
+  "source": "City of Fremont FY 2026/27 Adopted Operating Budget, Summary of All Funds (p. 32)",
+  "kind": "Official budget",
+  "source_url": "https://www.fremont.gov/home/showpublisheddocument/21162/639252581230269794"
  },
  {
   "id": "calls",

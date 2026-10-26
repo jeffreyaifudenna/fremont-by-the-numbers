@@ -29,7 +29,7 @@ FBN.page({
       { href: 'safety.html', icon: 'shield', color: 1, title: 'Crime & Safety', v: f(crime24.violent, 'int'), l: 'violent crimes reported in 2024 (CA DOJ)' },
       { href: 'health.html', icon: 'heart', color: 2, title: 'Health Care', v: f(v('census_profile', 'uninsured'), 'pct'), l: 'of residents under 65 are uninsured (ACS 2020–2024)' },
       { href: 'jobs.html', icon: 'briefcase', color: 3, title: 'Jobs', v: f(unemp.value, 'pct1'), l: 'unemployment rate, ' + (unemp.period || '') + ' (BLS/EDD); median household income ' + f(v('census_profile', 'mhi'), 'usd') },
-      { href: 'startups.html', icon: 'rocket', color: 4, title: 'Startups', v: f(tesla.employees, 'int'), l: 'Tesla employees in Fremont, the city’s largest employer (City financial report, FY2024)' }
+      { href: 'startups.html', icon: 'rocket', color: 4, title: 'Startups', v: f(tesla.employees, 'int'), l: 'Tesla employees in Fremont, the city’s largest employer (City financial report, FY2025)' }
     ];
     const catHtml = '<div class="cat-grid">' + cats.map(c =>
       '<a class="cat-card" href="' + c.href + '"><div class="cat-top"><span class="chip" style="background:var(--s' + c.color + ')">' + FBN.icon(c.icon, c.color === 4 ? ' style="stroke:#0f2233"' : '') + '</span><h2>' + c.title + '</h2></div>' +

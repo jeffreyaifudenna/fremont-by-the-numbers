@@ -36,7 +36,7 @@
  },
  "city_facts": {
   "title": "City services and budget",
-  "description": "FY 2026–27 budget (proposed general fund $289.1M plus about $138M other funds, about $427M in all; adopted Jun 9, 2026), police calls for service, and Fremont Unified enrollment. From news reports and agency pages, read Oct 24, 2026.",
+  "description": "FY 2026–27 adopted budget (general fund $289.1M; all funds $427.1M total uses), police calls for service, and Fremont Unified enrollment. From the City's adopted budget and agency pages; budget read Oct 26, 2026.",
   "updated": "2026-10-24T17:45:00Z"
  },
  "city_parks": {
@@ -286,7 +286,7 @@
  },
  "startup_rounds": {
   "title": "Largest funding rounds",
-  "description": "Largest recent funding rounds and IPOs by Fremont-linked companies, 2022–2026 (some have contested or dual headquarters, noted in each row), each row citing its own source; not an exhaustive total. Read Oct 24, 2026.",
+  "description": "Largest recent funding rounds and IPOs by Fremont-linked companies, 2022–2026 (several are Fremont sites or U.S. offices rather than headquarters, noted in each row), each row citing a company, investor, SEC or press source; not an exhaustive total. Sources re-checked Oct 26, 2026.",
   "updated": "2026-10-25T06:00:00Z"
  },
  "food_prices": {
@@ -311,12 +311,12 @@
  },
  "jobs_more": {
   "title": "Unemployment, wages and jobs",
-  "description": "Fremont city unemployment rate (BLS/EDD LAUS via YCharts), jobs located in Fremont vs employed residents (Housing Element/LEHD), city minimum wage, median earnings (ACS 2024), WARN layoffs, commute shares. Read Oct 24, 2026.",
-  "updated": "2026-10-25T15:52:14Z"
+  "description": "Fremont city unemployment rate (BLS LAUS), jobs located in Fremont vs employed residents (Housing Element/LEHD), city minimum wage, median earnings (ACS 2024), WARN layoffs (EDD), commute shares. Read Oct 24, 2026; unemployment, WARN, minimum wage and Tesla rows re-checked Oct 26, 2026.",
+  "updated": "2026-10-26T18:00:00Z"
  },
  "employers": {
   "title": "Largest employers",
-  "description": "Fremont's ten largest employers from the City's FY2024 Annual Comprehensive Financial Report principal-employers table, as transcribed on Wikipedia; the FY2025 ACFR (Dec 2025) should be used to refresh. Read Oct 24, 2026.",
-  "updated": "2026-10-25T15:55:00Z"
+  "description": "Fremont's largest employers (12 with ties) from the City's FY2025 Annual Comprehensive Financial Report, Schedule 15: Principal Employers, p. 202. Read Oct 26, 2026.",
+  "updated": "2026-10-26T18:00:00Z"
  }
 }

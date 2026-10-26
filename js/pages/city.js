@@ -55,7 +55,7 @@ FBN.page({
           { ds: 'civic_facts', id: 'city_fte', label: 'City employees (full-time equivalent)', icon: 'users', color: 2 },
           { ds: 'civic_facts', id: 'credit', label: 'S&P bond rating', icon: 'award', color: 3 },
         ],
-        notes: ['!Budget figures are from the City’s proposed FY 2026–27 budget, as reported by Hoodline and Citizen Portal in May and July 2026. The council adopted a budget on June 9, 2026, but the adopted document was not found online, so adopted totals may differ. The employee count is from the FY 2025/26 proposed budget and the bond rating from the City’s FY 2024-25 financial report (AA+, stable); it was not checked against S&P directly.']
+        notes: ['Budget figures are from the City’s FY 2026/27 Adopted Operating Budget (Summary of All Funds). The all-funds total is total uses, which includes transfers between funds; spending before transfers is about $408 million. The employee count is from the FY 2025/26 proposed budget and the bond rating from the City’s FY 2024-25 financial report (AA+, stable); it was not checked against S&P directly.']
       },
       {
         title: 'Voters and elections',

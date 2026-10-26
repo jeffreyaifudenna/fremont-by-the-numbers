@@ -29,11 +29,12 @@
  {
   "id": "amtrak_riders",
   "group": "Transit",
-  "label": "Fremont-Centerville station, annual Amtrak riders",
-  "value": 33060,
+  "label": "Fremont-Centerville station, Amtrak boardings plus alightings",
+  "value": 32781,
   "format": "int",
   "period": "FY 2025",
-  "source": "Great American Stations (Amtrak)"
+  "source": "Amtrak Fact Sheet FY2025, State of California",
+  "source_url": "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/statefactsheets/CALIFORNIA25.pdf"
  },
  {
   "id": "sales_tax",

@@ -27,7 +27,7 @@ Click any number to open its source in a new tab.
 - [Crime & Safety](safety.html): 436 violent crimes reported in 2024 (CA DOJ)
 - [Health Care](health.html): 2.8% of residents under 65 are uninsured (ACS 2020–2024)
 - [Jobs](jobs.html): 4.5% unemployment rate, Aug 2026 (BLS/EDD); median household income $181,506
-- [Startups](startups.html): 25,000 Tesla employees in Fremont, the city’s largest employer (City financial report, FY2024)
+- [Startups](startups.html): 23,000 Tesla employees in Fremont, the city’s largest employer (City financial report, FY2025)
 
 ## About this site
 A data aggregator built by JeffreyAiFudenna using Claude to gather data and write the code
@@ -473,7 +473,7 @@ Who serves Fremont and what the advertised prices are.
 | AT&T Fiber 300 Mbps, monthly price (Fremont)Plus taxes and fees; price after the autopay and paperless-billing discount; limited availability. The same page lists 500 Mbps at $60/mo and 1 Gig at $70/mo. Re-checked Oct 25, 2026. | $50 | Oct 2026 | AT&T, AT&T Fiber in Fremont, CA [source](https://www.att.com/local/fiber/california/fremont) |
 | AT&T Fiber 1 Gig, monthly price (Fremont)Plus taxes and fees; price after the autopay and paperless-billing discount ($10/mo with a bank account). AT&T also advertises a $50/mo, 12-month 1 Gig offer that needs eligible AT&T wireless service. 2 Gig and 5 Gig prices are not listed on the Fremont page. Re-checked Oct 25, 2026. | $70 | Oct 2026 | AT&T, AT&T Fiber in Fremont, CA [source](https://www.att.com/local/fiber/california/fremont) |
 | T-Mobile 5G Home Internet, Rely tier, monthly price with autopayNational pricing, not Fremont-specific. $35 with a T-Mobile voice line. Amplified $60, All-In $70. T-Mobile 5G Home listed at 99% of Fremont locations (BroadbandMap.com). Read Oct 24, 2026. | $50 | Announced Nov 10, 2025 | ConsumerAffairs, T-Mobile revamps 5G Home Internet [source](https://www.consumeraffairs.com/news/t-mobile-revamps-5g-home-internet-with-new-tiers-faster-wi-fi-and-streaming-perks-111025.html) |
-| Verizon 5G Home Internet, base tier, monthly price without a Verizon mobile planNational pricing. $35 with Verizon wireless plan; 5G Home Plus $80 ($55 with mobile plan). Verizon 5G Home listed at 99% of Fremont locations (BroadbandMap.com). Read Oct 24, 2026. | $60 | Mar 2025 | Cord Cutters News, Verizon increases 5G Home Plus price [source](https://cordcuttersnews.com/verizon-increases-5g-home-plus-internet-price-by-10-for-wireless-customers/) |
+| Verizon 5G Home Internet, base tier, monthly price without a Verizon mobile planNational pricing: 5G Home $60, 5G Home Plus $70, 5G Home Ultimate $85 a month; lower with a Verizon mobile plan (from $35). Verizon 5G Home listed at 99% of Fremont locations (BroadbandMap.com). Read Oct 26, 2026. | $60 | Oct 2026 | Verizon, 5G Home Internet plans page [source](https://www.verizon.com/home/internet/5g/) |
 Note: Promotional prices change often and usually require autopay; check the provider for your address. Fiber availability differs by source (26% to 76% of addresses). Sonic does not appear to serve Fremont.
 
 ## Child care
@@ -1041,11 +1041,11 @@ Source note: Census ACS table DP05 (alone).View source: Census ACS 2020–2024, 
 Note: Census American Community Survey five-year estimates for 2020–2024 unless noted. The 2025 one-year estimates are due Oct 29, 2026.
 
 ## City government and budget
-- Operating budget, all funds: **$427M** — FY 2026–27, as proposed · Hoodline [source](https://hoodline.com/2026/07/fremont-council-slams-brakes-on-half-cent-tax-hike-before-november-vote-6944803/)
-- General fund spending: **$289M** — FY 2026–27, proposed · Citizen Portal report of the proposed budget [source](https://citizenportal.ai/articles/8258598/California/Alameda-County/Fremont/Fremont-proposes-2891-million-operating-budget-for-202627-council-asks-for-deferredmaintenance-list)
+- Operating budget, all funds: **$427M** — FY 2026–27, adopted · City of Fremont FY 2026/27 Adopted Operating Budget [source](https://www.fremont.gov/home/showpublisheddocument/21162/639252581230269794)
+- General fund spending: **$289M** — FY 2026–27, adopted · City of Fremont FY 2026/27 Adopted Operating Budget [source](https://www.fremont.gov/home/showpublisheddocument/21162/639252581230269794)
 - City employees (full-time equivalent): **1,006.6** — FY 2025–26 proposed budget · City of Fremont FY 2025/26 Proposed Budget [source](https://www.fremont.gov/home/showpublisheddocument/18117/638828954844570000)
 - S&P bond rating: **AA+ (stable)** — As reported in the FY 2024-25 Annual Comprehensive Financial Report · City of Fremont FY 2024-25 Annual Comprehensive Financial Report [source](https://www.fremont.gov/home/showpublisheddocument/19533)
-Note: Budget figures are from the City’s proposed FY 2026–27 budget, as reported by Hoodline and Citizen Portal in May and July 2026. The council adopted a budget on June 9, 2026, but the adopted document was not found online, so adopted totals may differ. The employee count is from the FY 2025/26 proposed budget and the bond rating from the City’s FY 2024-25 financial report (AA+, stable); it was not checked against S&P directly.
+Note: Budget figures are from the City’s FY 2026/27 Adopted Operating Budget (Summary of All Funds). The all-funds total is total uses, which includes transfers between funds; spending before transfers is about $408 million. The employee count is from the FY 2025/26 proposed budget and the bond rating from the City’s FY 2024-25 financial report (AA+, stable); it was not checked against S&P directly.
 
 ## Voters and elections
 - Registered voters: **122,891** — May 18, 2026 · CA Secretary of State [source](https://elections.cdn.sos.ca.gov/ror/15day-primary-2026/politicalsub.pdf)
@@ -1235,7 +1235,7 @@ Source note: WalletHub ranking pages and Trust for Public Land ParkScore. Rankin
 - Census counts and estimate: Decennial Census counts for Fremont 1960–2020 (1960–2000 as compiled by MTC in 2021) and the Census Bureau's Vintage 2025 estimate for Jul 1, 2025 from QuickFacts. Read Oct 24, 2026.
 - Languages at home: Language spoken at home, residents 5 and older, ACS 2020–2024 table C16001. Read Oct 24, 2026.
 - Asian communities: Share of Fremont residents by Asian group (alone), ACS 2020–2024 table DP05. Read Oct 24, 2026.
-- City services and budget: FY 2026–27 budget (proposed general fund $289.1M plus about $138M other funds, about $427M in all; adopted Jun 9, 2026), police calls for service, and Fremont Unified enrollment. From news reports and agency pages, read Oct 24, 2026.
+- City services and budget: FY 2026–27 adopted budget (general fund $289.1M; all funds $427.1M total uses), police calls for service, and Fremont Unified enrollment. From the City's adopted budget and agency pages; budget read Oct 26, 2026.
 - Voters and city facts: Nov 2024 turnout (Alameda County ROV), May 2026 registration by party (CA Secretary of State), affordable units, city FTEs and credit rating (City of Fremont). Read Oct 24, 2026.
 - FremontApp requests summary: Service requests created, closed and open and average days to close for Jul 1–Sep 30, 2026 (the dashboard's default range), from the city's FremontApp dashboard.
 - Top FremontApp requests: Ten most common FremontApp request types, Jul 1–Sep 30, 2026, from the city's FremontApp dashboard.
@@ -1539,7 +1539,7 @@ Note: Kaiser Fremont reports no ER timeliness or visit counts to the public data
 | Bay Area Community Health (formerly Tri-City Health Center) clinic sites in FremontAll 8 Alameda County sites are in Fremont (Liberty, Mowry I/II/III, Main Street Village, Irvington Dave clinic, vision, acupuncture/chiropractic). BACH also operates sites in Santa Clara County; 21 fixed sites + 5 mobile units total. read 2026-10-24 | 8 | Oct 2026 | Bay Area Community Health, Alameda County Locations [source](https://bach.health/alameda-county-locations/) |
 | Patients served by Bay Area Community Health (all sites, Alameda + Santa Clara counties)489,274 visits. Payer mix: Medi-Cal 74%, uninsured 16%, Medicare 5%, private 5%. Organization-wide, not Fremont-only. read 2026-10-24 | 67,087 | 2024 | Alameda Health Consortium, BACH Infographic – 2024 UDS Data (HRSA Uniform Data System) [source](https://www.alamedahealthconsortium.org/wp-content/uploads/2026/01/BACH_Infographic-2024-UDS-Data.pdf) |
 | Share of Bay Area Community Health patients who are uninsuredMedi-Cal 74%. Organization-wide. read 2026-10-24 | 16% | 2024 | Alameda Health Consortium, BACH Infographic – 2024 UDS Data [source](https://www.alamedahealthconsortium.org/wp-content/uploads/2026/01/BACH_Infographic-2024-UDS-Data.pdf) |
-| Health systems with a verified walk-in urgent care in FremontSutter page: https://www.sutterhealth.org/find-location/facility/fremont-center-urgent-care (M–F 8am–8pm, Sa–Su 8am–5pm). Kaiser Fremont has an ED and a members-only Minor Injury Clinic; Carbon Health and other retail urgent cares not verified from operator sites. Stanford Health Care has specialty clinics at 2557 Mowry Ave. read 2026-10-24 | Washington Health (2682 Mowry Ave, opened Dec 17, 2025); Sutter Health Fremont Center (3200 Kearney St) | Oct 2026 | Washington Health news release Dec 31, 2025; Sutter Health location page [source](https://www.washingtonhealth.com/news/2025/december/washington-health-urgent-care-now-open/) |
+| Health systems with a verified walk-in urgent care in FremontSutter page: https://www.sutterhealth.org/find-location/facility/fremont-urgent-care-1043246913 (M–F 8am–8pm, Sa–Su 8am–5pm). Kaiser Fremont has an ED and a members-only Minor Injury Clinic; Carbon Health and other retail urgent cares not verified from operator sites. Stanford Health Care has specialty clinics at 2557 Mowry Ave. read 2026-10-24 | Washington Health (2682 Mowry Ave, opened Dec 17, 2025); Sutter Health Fremont Center (3200 Kearney St) | Oct 2026 | Washington Health news release Dec 31, 2025; Sutter Health location page [source](https://www.washingtonhealth.com/news/2025/december/washington-health-urgent-care-now-open/) |
 
 ## How healthy are Fremont adults?
 CDC PLACES estimates for the city, mostly from the 2023 Behavioral Risk Factor Surveillance System.
@@ -1585,7 +1585,7 @@ Source note: CDC PLACES 2025 release (place-level model estimates; 95% ranges ar
 Unemployment, income, largest employers, wages, industries and commuting in Fremont, California, each with its source and date.
 
 ## Headline numbers
-- Fremont unemployment rate: **4.5%** — Aug 2026 · BLS/EDD Local Area Unemployment Statistics. A year earlier: 4.9%. Not seasonally adjusted. [source](https://ycharts.com/indicators/fremont_ca_unemployment_rate)
+- Fremont unemployment rate: **4.5%** — Aug 2026 · U.S. Bureau of Labor Statistics. A year earlier: 4.9%. Not seasonally adjusted. [source](https://data.bls.gov/timeseries/LAUCT062600000000003)
 - Median household income: **$181,506** — 2020–2024 · Census QuickFacts profile [source](https://www.census.gov/quickfacts/fact/table/fremontcitycalifornia/PST045225)
 - Income per person: **$77,049** — 2020–2024 · Census QuickFacts profile [source](https://www.census.gov/quickfacts/fact/table/fremontcitycalifornia/PST045225)
 - Fremont minimum wage, per hour: **$18.05** — Effective Jul 1, 2026 · City of Fremont news release 'Fremont Minimum Wage Increase to $18.05 on July 1. California: $16.90. Rises each July 1 with inflation. [source](https://www.fremont.gov/Home/Components/News/News/1724/1067)
@@ -1600,42 +1600,46 @@ In the City’s Housing Element, Fremont had about 5% more jobs than employed re
 - Employed Fremont residents, 2024 (ACS): **118,511** — 2024 (ACS) · Data USA. A newer survey count. Do not compare it with the c. 2018 jobs figure. [source](https://datausa.io/profile/geo/fremont-ca)
 - Private-sector jobs in Fremont ZIP codes (Census): **125,388** — Mar 2023 · More resident facts [source](https://data.census.gov/table/CBP2023.CB2300CBP?g=860XX00US94536,94538,94539,94555)
 - Fremont jobs related to manufacturing (City of Fremont): **35%** — Undated · City of Fremont Economic Development [source](https://www.fremont.gov/government/departments/economic-development/local-economy-overview/city-profile)
-- Workers covered by layoff (WARN) notices in 2025: **513** — 2025 · LaborCurrent [source](https://laborcurrent.com/layoffs/california/fremont)
+- Workers covered by layoff (WARN) notices in 2025: **358** — 2025 (12 notices) · California EDD [source](https://edd.ca.gov/en/jobs_and_training/layoff_services_warn)
 Note: The first three cards come from one table in the City’s 2023–2031 Housing Element, which draws on Census LEHD data from about 2018 (jobs come from administrative records, employed residents from survey data). The 2024 residents count (Census ACS) and the 2023 ZIP-code job count (Census County Business Patterns, which covers a wider area than the city limits) use different methods and are not meant to be compared with them.
 
 ## Largest employers
 
-### Fremont’s ten largest employers
-Employees, as reported in the City’s FY2024 financial report
+### Fremont’s largest employers
+Employees, as reported in the City’s FY2025 financial report (ties share a rank)
 | Item | Employees |
 | --- | --- |
-| Tesla, Inc. | 25,000 |
-| Lam Research | 4,000 |
+| Tesla, Inc. | 23,000 |
+| Lam Research | 4,400 |
 | Washington Hospital | 2,400 |
+| Quanta Computer | 2,000 |
 | Kaiser Permanente | 1,600 |
 | Synnex (TD Synnex) | 1,400 |
 | Western Digital | 1,100 |
 | City of Fremont | 1,000 |
+| Thermo Fisher Scientific | 1,000 |
 | Fremont Unified School District | 800 |
 | Boehringer Ingelheim | 800 |
 | Sutter Health | 775 |
-Source note: City of Fremont Annual Comprehensive Financial Report, FY ended June 30, 2024, principal-employers table (as transcribed on Wikipedia). Figures are rounded.View source: City of Fremont ACFR FY2024, Principal Employers (via Wikipedia)
+Source note: City of Fremont Annual Comprehensive Financial Report, FY ended June 30, 2025, Schedule 15: Principal Employers (p. 202; the City’s source is its Economic Development Department). Figures are rounded.View source: City of Fremont ACFR FY2025, Schedule 15: Principal Employers (p. 202)
 
 ### Employers, with sources
 | # | Employer | Employees | As of | Source |
 | --- | --- | --- | --- | --- |
-| 1 | Tesla, Inc. | 25,000 | FY2024 | City of Fremont ACFR FY2024, Principal Employers (via Wikipedia) [source](https://en.wikipedia.org/wiki/Fremont,_California) |
-| 2 | Lam Research | 4,000 | FY2024 | City of Fremont ACFR FY2024, Principal Employers (via Wikipedia) [source](https://en.wikipedia.org/wiki/Fremont,_California) |
-| 3 | Washington Hospital | 2,400 | FY2024 | City of Fremont ACFR FY2024, Principal Employers (via Wikipedia) [source](https://en.wikipedia.org/wiki/Fremont,_California) |
-| 4 | Kaiser Permanente | 1,600 | FY2024 | City of Fremont ACFR FY2024, Principal Employers (via Wikipedia) [source](https://en.wikipedia.org/wiki/Fremont,_California) |
-| 5 | Synnex (TD Synnex) | 1,400 | FY2024 | City of Fremont ACFR FY2024, Principal Employers (via Wikipedia) [source](https://en.wikipedia.org/wiki/Fremont,_California) |
-| 6 | Western Digital | 1,100 | FY2024 | City of Fremont ACFR FY2024, Principal Employers (via Wikipedia) [source](https://en.wikipedia.org/wiki/Fremont,_California) |
-| 7 | City of Fremont | 1,000 | FY2024 | City of Fremont ACFR FY2024, Principal Employers (via Wikipedia) [source](https://en.wikipedia.org/wiki/Fremont,_California) |
-| 8 | Fremont Unified School District | 800 | FY2024 | City of Fremont ACFR FY2024, Principal Employers (via Wikipedia) [source](https://en.wikipedia.org/wiki/Fremont,_California) |
-| 9 | Boehringer Ingelheim | 800 | FY2024 | City of Fremont ACFR FY2024, Principal Employers (via Wikipedia) [source](https://en.wikipedia.org/wiki/Fremont,_California) |
-| 10 | Sutter Health | 775 | FY2024 | City of Fremont ACFR FY2024, Principal Employers (via Wikipedia) [source](https://en.wikipedia.org/wiki/Fremont,_California) |
-Source note: View source: City of Fremont ACFR FY2024, Principal Employers (via Wikipedia)
-Note: The City’s FY2025 financial report (December 2025) has a newer table that could not be read automatically; it is the next refresh for this section.
+| 1 | Tesla, Inc. | 23,000 | FY2025 | City of Fremont ACFR FY2025, Schedule 15: Principal Employers (p. 202) [source](https://www.fremont.gov/home/showpublisheddocument/19533) |
+| 2 | Lam Research | 4,400 | FY2025 | City of Fremont ACFR FY2025, Schedule 15: Principal Employers (p. 202) [source](https://www.fremont.gov/home/showpublisheddocument/19533) |
+| 3 | Washington Hospital | 2,400 | FY2025 | City of Fremont ACFR FY2025, Schedule 15: Principal Employers (p. 202) [source](https://www.fremont.gov/home/showpublisheddocument/19533) |
+| 4 | Quanta Computer | 2,000 | FY2025 | City of Fremont ACFR FY2025, Schedule 15: Principal Employers (p. 202) [source](https://www.fremont.gov/home/showpublisheddocument/19533) |
+| 5 | Kaiser Permanente | 1,600 | FY2025 | City of Fremont ACFR FY2025, Schedule 15: Principal Employers (p. 202) [source](https://www.fremont.gov/home/showpublisheddocument/19533) |
+| 6 | Synnex (TD Synnex) | 1,400 | FY2025 | City of Fremont ACFR FY2025, Schedule 15: Principal Employers (p. 202) [source](https://www.fremont.gov/home/showpublisheddocument/19533) |
+| 7 | Western Digital | 1,100 | FY2025 | City of Fremont ACFR FY2025, Schedule 15: Principal Employers (p. 202) [source](https://www.fremont.gov/home/showpublisheddocument/19533) |
+| 8 | City of Fremont | 1,000 | FY2025 | City of Fremont ACFR FY2025, Schedule 15: Principal Employers (p. 202) [source](https://www.fremont.gov/home/showpublisheddocument/19533) |
+| 8 | Thermo Fisher Scientific | 1,000 | FY2025 | City of Fremont ACFR FY2025, Schedule 15: Principal Employers (p. 202) [source](https://www.fremont.gov/home/showpublisheddocument/19533) |
+| 10 | Fremont Unified School District | 800 | FY2025 | City of Fremont ACFR FY2025, Schedule 15: Principal Employers (p. 202) [source](https://www.fremont.gov/home/showpublisheddocument/19533) |
+| 10 | Boehringer Ingelheim | 800 | FY2025 | City of Fremont ACFR FY2025, Schedule 15: Principal Employers (p. 202) [source](https://www.fremont.gov/home/showpublisheddocument/19533) |
+| 12 | Sutter Health | 775 | FY2025 | City of Fremont ACFR FY2025, Schedule 15: Principal Employers (p. 202) [source](https://www.fremont.gov/home/showpublisheddocument/19533) |
+Source note: View source: City of Fremont ACFR FY2025, Schedule 15: Principal Employers (p. 202)
+Note: The table lists 12 employers because of ties at 8th and 10th place. Compared with FY2024, Tesla is down from 25,000 to 23,000, Lam Research is up from 4,000 to 4,400, and Quanta Computer and Thermo Fisher Scientific are new to the list.
 
 ## Wages
 What Fremont residents earn, and the minimum wage. Wages by occupation are not published for Fremont alone.
@@ -1647,7 +1651,7 @@ What Fremont residents earn, and the minimum wage. Wages by occupation are not p
 | --- | --- | --- | --- |
 | Fremont city minimum wage (all employers)Up from $17.75 (Jul 1, 2025). California state minimum is $16.90 in 2026. Read Oct 24, 2026. | $18.05 | Effective Jul 1, 2026 | City of Fremont news release 'Fremont Minimum Wage Increase to $18.05 on July 1, 2026' (Apr 3, 2026) and official wage bulletin [source](https://www.fremont.gov/Home/Components/News/News/1724/1067) |
 | Fremont minimum wage the year beforeRead Oct 24, 2026. | $17.75 | Jul 1, 2025 - Jun 30, 2026 | City of Fremont minimum wage bulletin (multilingual notices) / Davis Wright Tremaine local minimum wage summary [source](https://www.fremont.gov/home/showpublisheddocument/20110/639104640133270000) |
-| California state minimum wageComparison figure; neighbouring rates 7/1/2026: Emeryville $20.34, Berkeley $19.61, San Francisco $19.61, Milpitas $18.50, Alameda $17.76. Read Oct 24, 2026. | $16.90 | 2026 | Davis Wright Tremaine, 'California Local Minimum Wage Increases Effective July 1, 2026' [source](https://www.dwt.com/blogs/employment-labor-and-benefits/2026/06/california-local-minimum-wage-increases-july-2026) |
+| California state minimum wageRises from $16.50 to $16.90 on Jan 1, 2026. Neighbouring local rates from Jul 1, 2026 (Davis Wright Tremaine summary): Emeryville $20.34, Berkeley $19.61, San Francisco $19.61, Milpitas $18.50, Alameda $17.76. Read Oct 26, 2026. | $16.90 | 2026 | California Department of Industrial Relations, news release 2025-118 (Dec 5, 2025) [source](https://www.dir.ca.gov/DIRNews/2025/2025-118.html) |
 | Median earnings, male Fremont residents (full-time, year-round)MOE ±$4,835. Data USA does not state whether 1-year or 5-year ACS; verify in ACS table S2001/B20017 on data.census.gov (JS-only, not fetchable here). Read Oct 24, 2026. | $122,523 | 2024 (ACS) | Data USA, Fremont, CA profile (Census ACS) [source](https://datausa.io/profile/geo/fremont-ca) |
 | Median earnings, female Fremont residents (full-time, year-round)MOE ±$3,133. Same caveat as male figure. Read Oct 24, 2026. | $79,251 | 2024 (ACS) | Data USA, Fremont, CA profile (Census ACS) [source](https://datausa.io/profile/geo/fremont-ca) |
 
@@ -1681,8 +1685,8 @@ Source note: Census ACS table DP03. Nearly one in three works from home.View sou
 ### Unemployment, in detail
 | Measure | Value | Covers | Source |
 | --- | --- | --- | --- |
-| Fremont unemployment rate (city, not seasonally adjusted)LAUS sub-county estimate. Read Oct 24, 2026 via YCharts because EDD's lfmonth files and data.ca.gov API were not fetchable from this session; verify against EDD 'Labor force data for cities and census places' when accessible. Sep 2026 city data due Oct 28, 2026. | 4.5% | Aug 2026 | BLS/EDD Local Area Unemployment Statistics, Fremont city series, as republished by YCharts (I:FCAU58FC) [source](https://ycharts.com/indicators/fremont_ca_unemployment_rate) |
-| Fremont unemployment rate one year earlierSame series as the latest month; Jul 2026 was 4.4%. Read Oct 24, 2026. | 4.9% | Aug 2025 | BLS/EDD Local Area Unemployment Statistics, Fremont city series, via YCharts [source](https://ycharts.com/indicators/fremont_ca_unemployment_rate) |
+| Fremont unemployment rate (city, not seasonally adjusted)LAUS sub-county estimate, not seasonally adjusted; 5,323 unemployed in a labor force of 117,096. Checked against the BLS data API Oct 26, 2026. Sep 2026 city data due Oct 28, 2026. | 4.5% | Aug 2026 | U.S. Bureau of Labor Statistics, Local Area Unemployment Statistics, Fremont city (series LAUCT062600000000003) [source](https://data.bls.gov/timeseries/LAUCT062600000000003) |
+| Fremont unemployment rate one year earlierSame BLS series as the latest month; Jul 2026 was 4.4%. Read Oct 26, 2026. | 4.9% | Aug 2025 | U.S. Bureau of Labor Statistics, Local Area Unemployment Statistics, Fremont city (series LAUCT062600000000003) [source](https://data.bls.gov/timeseries/LAUCT062600000000003) |
 | Fremont unemployment rate as cited in a local agency financial reportOfficial document quoting EDD city data; Newark 4.6%, Union City 4.8%, California 5.4%, US 4.1% in the same table. Read Oct 24, 2026. | 4.7% | Jun 2025 | Alameda County Water District, FY 2024/25 Annual Comprehensive Financial Report, Letter of Transmittal (pp. xiv-xv) [source](https://acwd.org/DocumentCenter/View/7831/FY-24-25-ACFR) |
 
 ### Businesses (City of Fremont figures)
@@ -1692,7 +1696,7 @@ Source note: Census ACS table DP03. Nearly one in three works from home.View sou
 | High-tech, life science and clean-tech firms in FremontStated as 'over 1,200'. 2023 State of the City separately cited 'more than 150 life sciences companies'. Read Oct 24, 2026. | 1,200 | Undated (City profile page, read 2026) | City of Fremont Economic Development, City Profile [source](https://www.fremont.gov/government/departments/economic-development/local-economy-overview/city-profile) |
 | Small businesses in FremontStated as 'over 3,600'. No count of active business tax accounts was published. Read Oct 24, 2026. | 3,600 | Undated (City profile page, read 2026) | City of Fremont Economic Development, City Profile [source](https://www.fremont.gov/government/departments/economic-development/local-economy-overview/city-profile) |
 | Eateries and restaurants in FremontRead Oct 24, 2026. | 500 | Undated (City profile page, read 2026) | City of Fremont Economic Development, City Profile [source](https://www.fremont.gov/government/departments/economic-development/local-economy-overview/city-profile) |
-| Workers covered by WARN layoff/closure notices filed for Fremont sites in 2025Aggregator of EDD WARN notices; the total may include duplicate filings (for example Building Robotics and Benchmark appear twice on the aggregator page), so the count of unique workers may be lower. Largest were Flagship Facility Services (141 across 9 notices), Boston Scientific (86), Building Robotics (96 incl. duplicate filing), Celestica (72). No 2026 Fremont notices listed as of read date. Read Oct 24, 2026. | 513 | 2025 (20 notices, through Oct 1, 2025) | LaborCurrent (compiled from California EDD WARN filings), Fremont, CA page [source](https://laborcurrent.com/layoffs/california/fremont) |
+| Workers covered by WARN layoff/closure notices filed for Fremont sites in 2025Counts notices with a Fremont work-site address and a 2025 notice date. Largest were Confluent Medical Technologies (102), Celestica (72), Building Robotics (48) and Benchmark Precision (42). In 2026 so far, 6 Fremont notices covered 351 workers (largest: Canteen Vending 110, Meta 81, Kidango 59). Replaces an earlier figure (513) from an aggregator that included non-Fremont sites. Read Oct 26, 2026. | 358 | 2025 (12 notices) | California EDD, WARN reports for Jul 1, 2024 to Jun 30, 2025 and Jul 1, 2025 to Jun 30, 2026 [source](https://edd.ca.gov/en/jobs_and_training/layoff_services_warn) |
 
 ## Workplaces
 - Business establishments in Fremont ZIP codes: **5,562** — 2023 · Census ZIP Code Business Patterns [source](https://data.census.gov/table/CBP2023.CB2300CBP?g=860XX00US94536,94538,94539,94555)
@@ -1705,13 +1709,13 @@ Kidder Mathews, third quarter 2026
 | Market | Square feet | Total vacancy | Direct vacancy |
 | --- | --- | --- | --- |
 | Office (Fremont) | 5,271,095 | 20.5% | 6.9% [source](https://kidder.com/wp-content/uploads/market_report/office-market-research-silicon-valley-2026-3q.pdf) |
-| Research and development (Fremont) | 17,745,059 | 11.5% | 9.2% [source](https://kidder.com/wp-content/uploads/market_report/office-market-research-silicon-valley-2026-3q.pdf) |
-| Industrial (Fremont/Newark) | 58,575,070 | 6.8% | 5.4% [source](https://kidder.com/wp-content/uploads/market_report/office-market-research-silicon-valley-2026-3q.pdf) |
-Source note: Kidder Mathews quarterly market reports (Silicon Valley office and R&D; East Bay industrial, Fremont/Newark submarket). Office vacancy is high; industrial space stays tight.View source: Kidder Mathews: 3Q 2026 market reports
-- Unemployment, wages and jobs: Fremont city unemployment rate (BLS/EDD LAUS via YCharts), jobs located in Fremont vs employed residents (Housing Element/LEHD), city minimum wage, median earnings (ACS 2024), WARN layoffs, commute shares. Read Oct 24, 2026.
+| Research and development (Fremont) | 17,745,059 | 11.5% | 9.2% [source](https://kidder.com/wp-content/uploads/market_report/rd-market-research-silicon-valley-2026-3q.pdf) |
+| Industrial (Fremont/Newark) | 58,575,070 | 6.8% | 5.4% [source](https://kidder.com/market-reports/east-bay-industrial-market-report/) |
+Source note: Kidder Mathews quarterly market reports (Silicon Valley office and R&D; East Bay industrial, Fremont/Newark submarket). Office vacancy is high; industrial space stays tight.View source: Kidder Mathews, Silicon Valley Office 3Q 2026 View source: Kidder Mathews, Silicon Valley R&D 3Q 2026 View source: Kidder Mathews, East Bay Industrial 3Q 2026
+- Unemployment, wages and jobs: Fremont city unemployment rate (BLS LAUS), jobs located in Fremont vs employed residents (Housing Element/LEHD), city minimum wage, median earnings (ACS 2024), WARN layoffs (EDD), commute shares. Read Oct 24, 2026; unemployment, WARN, minimum wage and Tesla rows re-checked Oct 26, 2026.
 - Census QuickFacts profile: Fremont city profile from Census QuickFacts: mostly ACS 2020–2024 5-year survey estimates, with age and race from Census population estimates. Read Oct 24, 2026.
 - More resident facts: ACS 2020–2024 measures (age, households, income, housing stock, cost burden, veterans, disability) and County Business Patterns 2023 jobs. Read Oct 24, 2026.
-- Largest employers: Fremont's ten largest employers from the City's FY2024 Annual Comprehensive Financial Report principal-employers table, as transcribed on Wikipedia; the FY2025 ACFR (Dec 2025) should be used to refresh. Read Oct 24, 2026.
+- Largest employers: Fremont's largest employers (12 with ties) from the City's FY2025 Annual Comprehensive Financial Report, Schedule 15: Principal Employers, p. 202. Read Oct 26, 2026.
 - Residents' industries: Employed residents 16+ by industry, top seven, ACS 2020–2024 table C24050. Read Oct 24, 2026.
 - How Fremont gets to work: Census ACS 2020–2024 table DP03: workers 16+ by way of getting to work. Read Oct 24, 2026.
 - Shopping and dining: Restaurant and retail counts, jobs, taxable sales and major centers, from Census County Business Patterns, CDTFA and the City of Fremont. Read Oct 24, 2026.
@@ -1753,7 +1757,7 @@ Source note: Crunchbase and VCBacked.co, read Oct 24, 2026. Both are crowdsource
 
 ## Big rounds, unicorns and IPOs
 - Weee! valuation at its Series E, Fremont’s clearest unicorn: **$4,100,000,000** — Feb 2022 · Built In SF [source](https://www.builtinsf.com/articles/sf-top-funding-rounds-february-2022)
-- Alamar Biosciences IPO, April 2026: **$191,000,000** — Apr 17, 2026 · Renaissance Capital [source](https://www.renaissancecapital.com/IPO-Center/News/118387/Protein-biomarker-detection-platform-Alamar-Biosciences-prices-upsized-IPO-)
+- Alamar Biosciences IPO, April 2026: **$191,000,000** — Apr 17, 2026 · Alamar Biosciences press release [source](https://investors.alamarbio.com/news-releases/news-release-details/alamar-biosciences-announces-pricing-upsized-initial-public)
 - Ultima Genomics, raised at launch (2022): **$600,000,000** — Jun 2022 · General Atlantic press release [source](https://www.generalatlantic.com/media-article/ultima-genomics-seeks-to-deliver-the-100-genome/)
 - Tandem PV solar factory, megawatts per year (opened 2026): **40** — Opened Apr 2026 · pv magazine USA [source](https://pv-magazine-usa.com/2026/04/20/tandem-pv-launches-commercial-perovskite-silicon-manufacturing-in-california/)
 
@@ -1761,30 +1765,30 @@ Source note: Crunchbase and VCBacked.co, read Oct 24, 2026. Both are crowdsource
 2022–2026; not exhaustive; see the “Fremont link” column
 | Company | What it does | Amount | Round | Date | Fremont link | Source |
 | --- | --- | --- | --- | --- | --- | --- |
-| Pacific Fusion | Fusion energy | $900M | Series A | 2024-10 | HQ Fremont, CA per Power Engineering | Power Engineering [source](https://www.power-eng.com/nuclear/a-new-nuclear-fusion-startup-has-raised-900m-in-series-a-funding/) |
-| Neuralink | Brain-computer interface | $650M | Series E | 2025-06 | Described as Fremont, California-based by Crunchbase News; ~$9B valuation reported | Crunchbase News [source](https://news.crunchbase.com/health-wellness-biotech/braintech-funding-semiconductors-neuralink/) |
+| Pacific Fusion | Fusion energy | $900M | Series A | 2024-10 | Based in Fremont per the company; paid in stages | Pacific Fusion founders’ letter (Oct 25, 2024) [source](https://www.pacificfusion.com/updates/founders-letter) |
+| Neuralink | Brain-computer interface | $650M | Series E | 2025-06 | One of three Neuralink sites; ~$9B valuation reported | Neuralink [source](https://neuralink.com/updates/neuralink-raises-650m-series-e/) |
 | Weee! | Online grocery | $425M | Series E | 2022-02 | Fremont HQ; $4.1B valuation, led by SoftBank Vision Fund 2 | Built In SF [source](https://www.builtinsf.com/articles/sf-top-funding-rounds-february-2022) |
 | EnerVenue | Metal-hydrogen batteries | $300M | Series B extension | 2026-03 | Press release dateline Fremont, Calif.; led by Full Vision Capital | EnerVenue press release [source](https://www.enervenue.com/press/henning-rath-ceo-300m-series-b) |
-| Pony.ai | Autonomous driving | $260M | IPO (Nasdaq: PONY) | 2024-11 | Dual HQ Guangzhou and Fremont; 20M ADS at $13 | S&P Global AutoTechInsight [source](https://autotechinsight.spglobal.com/news/5279272/ponyai-debuts-on-nasdaq-raising-funds-for-autonomous-vehicle-advancement) |
-| Alamar Biosciences | Proteomics / diagnostics | $191M | IPO (Nasdaq: ALMR) | 2026-04 | Fremont HQ; 11.3M shares at $17; prior $128M Series C Feb 2024 and $50M convertible note Jan 2026 | Renaissance Capital [source](https://www.renaissancecapital.com/IPO-Center/News/118387/Protein-biomarker-detection-platform-Alamar-Biosciences-prices-upsized-IPO-) |
-| Alamar Biosciences | Proteomics / diagnostics | $128M | Series C | 2024-02 | Fremont campus, 47071 Bayside Parkway | Hoodline [source](https://hoodline.com/2026/03/fremont-lab-star-alamar-races-toward-ipo-after-hiring-blitz/) |
-| Nitricity | Organic fertilizer / cleantech | $50M | Series B | 2025-09 | Office in Fremont, CA; co-led by World Fund and Khosla Ventures. Axios (Jul 2025) reported ~$63M including earlier tranche; VCBacked lists $64M | Fertilizer Daily [source](https://www.fertilizerdaily.com/20250917-nitricity-raises-50m-to-scale-organic-fertilizer-production-in-california-made-from-almond-waste/md/) |
-| Tandem PV | Perovskite solar | $50M | Series A | 2025-04 | Press-release dateline San Jose; 40 MW factory opened in Fremont Apr 2026; $83M total raised incl. debt and grants | Business Wire (Tandem PV) [source](https://www.businesswire.com/news/home/20250423269574/en) |
-| Everestlabs.AI | Recycling robotics / AI | $16.1M | Series A | 2022-09 | Fremont HQ per VCBacked | VCBacked.co [source](https://www.vcbacked.co/company/everestlabsai) |
+| Pony.ai | Autonomous driving | $260M | IPO (Nasdaq: PONY) | 2024-11 | Principal office Guangzhou, China; U.S. offices in Fremont; 20M ADS at $13 | Pony.ai final prospectus (SEC Form 424B4) [source](https://www.sec.gov/Archives/edgar/data/1969302/000110465924123680/tm2310344-35_424b4.htm) |
+| Alamar Biosciences | Proteomics / diagnostics | $191M | IPO (Nasdaq: ALMR) | 2026-04 | Fremont HQ; 11.25M shares at $17 (about $220M after the underwriters’ extra shares); prior $128M Series C Feb 2024 and $50M convertible note Jan 2026 | Alamar Biosciences press release (Apr 2026) [source](https://investors.alamarbio.com/news-releases/news-release-details/alamar-biosciences-announces-pricing-upsized-initial-public) |
+| Alamar Biosciences | Proteomics / diagnostics | $128M | Series C | 2024-02 | Fremont-datelined release; $100M first close plus $28M expected later | Alamar Biosciences press release (Feb 26, 2024), via BioSpace [source](https://www.biospace.com/alamar-biosciences-raises-128-million-in-oversubscribed-series-c-financing-to-accelerate-commercialization-of-its-proteomics-platform) |
+| Nitricity | Organic fertilizer / cleantech | $50M | Series B | 2025-09 | Pilot plant in Fremont, CA; co-led by World Fund and Khosla Ventures | World Fund (co-lead investor), Sep 2025 [source](https://worldfund.vc/articles/nitricity-raises-50m-to-go-global-with-unique-tech-transforming-almond-waste-into-organic-fertilizer) |
+| Tandem PV | Perovskite solar | $50M | Series A and debt | 2025-03 | Fremont address; release datelined San Jose; 40 MW factory opened in Fremont Apr 2026; $83M total raised incl. debt and grants | Tandem PV press release (Mar 4, 2025) [source](https://www.tandempv.com/news/tandem-pv-raises-%2450m-to-take-back-u.s.-leadership-with-new-perovskite-solar-manufacturing) |
+| Everestlabs.AI | Recycling robotics / AI | $16.1M | Series A | 2022-09 | Fremont address (48820 Kato Rd) per trade press; led by Translink Capital | TechCrunch (Sep 28, 2022) [source](https://techcrunch.com/2022/09/28/everestlabs-raises-16-1m-for-ai-that-sorts-recyclables/) |
 Source note: Compiled from company press releases, SEC filings and news reports; each row cites its own. Neuralink and Pony.ai have contested or dual headquarters, Nitricity has an office in Fremont, and Tandem PV’s press release is datelined San Jose (its factory is in Fremont).
 
 ### Unicorns and IPOs
 | Measure | Value | Covers | Source |
 | --- | --- | --- | --- |
 | Valuation of Weee!, Fremont-headquartered online grocer, at its Series E$425M Series E led by SoftBank Vision Fund 2. StartupBlink lists Weee! as Fremont's only unicorn. Valuation has not been publicly re-marked since. | $4,100,000,000 | Feb 2022 | Built In SF, 'These 5 Bay Area Tech Companies Raised $3.1B+ Total in February' [source](https://www.builtinsf.com/articles/sf-top-funding-rounds-february-2022) |
-| Raised by Fremont-based Alamar Biosciences in its April 2026 Nasdaq IPO (ALMR)11.3M shares at $17, top of range. Company campus at 47071 Bayside Parkway, Fremont. | $191,000,000 | Apr 17, 2026 | Renaissance Capital, 'Alamar Biosciences prices upsized IPO' [source](https://www.renaissancecapital.com/IPO-Center/News/118387/Protein-biomarker-detection-platform-Alamar-Biosciences-prices-upsized-IPO-) |
+| Raised by Fremont-based Alamar Biosciences in its April 2026 Nasdaq IPO (ALMR)11.3M shares at $17, top of range. Company campus at 47071 Bayside Parkway, Fremont. | $191,000,000 | Apr 17, 2026 | Alamar Biosciences press release (Apr 2026) [source](https://investors.alamarbio.com/news-releases/news-release-details/alamar-biosciences-announces-pricing-upsized-initial-public) |
 | Gross proceeds of Fremont-based Cytek Biosciences' July 2021 Nasdaq IPO (CTKB)Approximately $200M expected gross proceeds at $17/share; HQ 47215 Lakeview Blvd, Fremont per 10-K. | $200,000,000 | Jul 22, 2021 | Cytek Biosciences, IPO pricing press release [source](https://investors.cytekbio.com/news-releases/news-release-details/cytek-biosciences-announces-pricing-its-initial-public-offering) |
-| Raised by Pony.ai (dual HQ Fremont and Guangzhou) in its Nov 2024 Nasdaq IPO (PONY)20M ADS at $13. Wikipedia lists HQ as Guangzhou, China and Fremont, California; primarily a Chinese company with US base in Fremont. | $260,000,000 | Nov 27, 2024 | S&P Global AutoTechInsight, 'Pony.ai debuts on Nasdaq' [source](https://autotechinsight.spglobal.com/news/5279272/ponyai-debuts-on-nasdaq-raising-funds-for-autonomous-vehicle-advancement) |
+| Raised by Pony.ai (U.S. offices in Fremont) in its Nov 2024 Nasdaq IPO (PONY)20M ADS at $13, $260M gross. The prospectus gives Guangzhou, China as the principal executive office; Fremont is its U.S. office. Read Oct 26, 2026. | $260,000,000 | Nov 27, 2024 | Pony.ai final prospectus (SEC Form 424B4) [source](https://www.sec.gov/Archives/edgar/data/1969302/000110465924123680/tm2310344-35_424b4.htm) |
 
 ## The manufacturing base
 - Manufacturing jobs in Fremont (City economic development): **45,000** — Read Oct 24, 2026 · Think Silicon Valley [source](https://www.thinksiliconvalley.com/advanced-manufacturing/)
 - Residents who work in manufacturing: **16.2%** — 2020–2024 · Census ACS [source](https://data.census.gov/table/ACSDT5Y2024.C24050?g=160XX00US0626000)
-- Employees at Tesla’s Fremont factory: **25,000** — FY ended June 30, 2024 · City of Fremont [source](https://en.wikipedia.org/wiki/Fremont,_California)
+- Employees at Tesla’s Fremont factory: **23,000** — FY ended June 30, 2025 · City of Fremont [source](https://www.fremont.gov/home/showpublisheddocument/19533)
 - Square feet of industrial space (City of Fremont): **50,000,000** — Read Oct 24, 2026 · City of Fremont Economic Development [source](https://www.fremont.gov/government/departments/economic-development/local-economy-overview/employment-hubs)
 - Small businesses (City of Fremont): **3,600** — Read Oct 24, 2026 · City of Fremont Economic Development [source](https://www.fremont.gov/government/departments/economic-development/local-economy-overview/city-profile)
 
@@ -1793,9 +1797,9 @@ Inventory and vacancy, Q3 2026
 | Market | Square feet | Total vacancy |
 | --- | --- | --- |
 | Office (Fremont) | 5,271,095 | 20.5% [source](https://kidder.com/wp-content/uploads/market_report/office-market-research-silicon-valley-2026-3q.pdf) |
-| Research and development (Fremont) | 17,745,059 | 11.5% [source](https://kidder.com/wp-content/uploads/market_report/office-market-research-silicon-valley-2026-3q.pdf) |
-| Industrial (Fremont/Newark) | 58,575,070 | 6.8% [source](https://kidder.com/wp-content/uploads/market_report/office-market-research-silicon-valley-2026-3q.pdf) |
-Source note: Kidder Mathews quarterly reports. The industrial figure covers the Fremont/Newark submarket, so it includes Newark. Industrial space and R&D space are each several times the size of the office market. The City’s own figure for industrial space in Fremont is 50 million square feet.View source: Kidder Mathews: 3Q 2026 market reports
+| Research and development (Fremont) | 17,745,059 | 11.5% [source](https://kidder.com/wp-content/uploads/market_report/rd-market-research-silicon-valley-2026-3q.pdf) |
+| Industrial (Fremont/Newark) | 58,575,070 | 6.8% [source](https://kidder.com/market-reports/east-bay-industrial-market-report/) |
+Source note: Kidder Mathews quarterly reports. The industrial figure covers the Fremont/Newark submarket, so it includes Newark. Industrial space and R&D space are each several times the size of the office market. The City’s own figure for industrial space in Fremont is 50 million square feet.View source: Kidder Mathews, Silicon Valley Office 3Q 2026 View source: Kidder Mathews, Silicon Valley R&D 3Q 2026 View source: Kidder Mathews, East Bay Industrial 3Q 2026
 
 ### Places to build: Warm Springs and Ardenwood
 | Measure | Value | Covers | Source |
@@ -1822,9 +1826,9 @@ Source note: Kidder Mathews quarterly reports. The industrial figure covers the 
 | Fremont's rank as a place to start a business in Northern California (NerdWallet, cited by City)Undated on the city page; the original NerdWallet study was not located. | 6 | Year not stated by city | City of Fremont, Awards page (citing NerdWallet) [source](https://www.fremont.gov/about/awards) |
 Note: City-level patent counts could not be retrieved: the USPTO PatentsView service was not reachable from the research session. This is on the list to add.
 - Startup ecosystem: Company counts from Crunchbase and VCBacked.co (crowdsourced directories), unicorns and IPOs, the City of Fremont's own claims on tech and manufacturing firms, patent holders, Warm Springs Innovation District and rankings. Read Oct 24, 2026.
-- Largest funding rounds: Largest recent funding rounds and IPOs by Fremont-linked companies, 2022–2026 (some have contested or dual headquarters, noted in each row), each row citing its own source; not an exhaustive total. Read Oct 24, 2026.
+- Largest funding rounds: Largest recent funding rounds and IPOs by Fremont-linked companies, 2022–2026 (several are Fremont sites or U.S. offices rather than headquarters, noted in each row), each row citing a company, investor, SEC or press source; not an exhaustive total. Sources re-checked Oct 26, 2026.
 - Residents' industries: Employed residents 16+ by industry, top seven, ACS 2020–2024 table C24050. Read Oct 24, 2026.
-- Unemployment, wages and jobs: Fremont city unemployment rate (BLS/EDD LAUS via YCharts), jobs located in Fremont vs employed residents (Housing Element/LEHD), city minimum wage, median earnings (ACS 2024), WARN layoffs, commute shares. Read Oct 24, 2026.
+- Unemployment, wages and jobs: Fremont city unemployment rate (BLS LAUS), jobs located in Fremont vs employed residents (Housing Element/LEHD), city minimum wage, median earnings (ACS 2024), WARN layoffs (EDD), commute shares. Read Oct 24, 2026; unemployment, WARN, minimum wage and Tesla rows re-checked Oct 26, 2026.
 - Commercial vacancy: Office, R&D and industrial vacancy for the Fremont submarkets, Kidder Mathews 3Q 2026 reports. Read Oct 24, 2026.
 - Shopping and dining: Restaurant and retail counts, jobs, taxable sales and major centers, from Census County Business Patterns, CDTFA and the City of Fremont. Read Oct 24, 2026.
 
@@ -1877,7 +1881,7 @@ Each dataset is one file; its description says what it holds and when it was rea
 - Child care and utilities: Alameda County child care costs (2022) and licensed spaces (2023) from kidsdata.org; electricity rate and bill (Ava/PG&E, Mar 2026); ACWD water use per person (FY 2023–24). Read Oct 24, 2026.
 - City parks list: City of Fremont parks by name, type, status and acreage, from the city's park inventory. Read Oct 24, 2026.
 - City rankings: Fremont's rank in 2025–26 national city rankings, read from each WalletHub ranking table (and Trust for Public Land ParkScore) on Oct 24, 2026, with category ranks and publication dates.
-- City services and budget: FY 2026–27 budget (proposed general fund $289.1M plus about $138M other funds, about $427M in all; adopted Jun 9, 2026), police calls for service, and Fremont Unified enrollment. From news reports and agency pages, read Oct 24, 2026.
+- City services and budget: FY 2026–27 adopted budget (general fund $289.1M; all funds $427.1M total uses), police calls for service, and Fremont Unified enrollment. From the City's adopted budget and agency pages; budget read Oct 26, 2026.
 - Climate indicators: EVs registered, trees planted and pounds of food recovered in 2025, from the city's Climate Action dashboard.
 - Commercial vacancy: Office, R&D and industrial vacancy for the Fremont submarkets, Kidder Mathews 3Q 2026 reports. Read Oct 24, 2026.
 - Costs, transit and services: Utility bills, tax rates, transit ridership, hospitals, voters, energy and hazards, each from the agency named in its row. Read Oct 24, 2026.
@@ -1905,8 +1909,8 @@ Each dataset is one file; its description says what it holds and when it was rea
 - Housing target by income: RHNA target, units permitted 2023–2025, units remaining, and 2025 permits by income level, from the city's 2025 Annual Progress Report staff report. ADUs are assigned to income levels using ABAG affordability assumptions.
 - How Fremont gets to work: Census ACS 2020–2024 table DP03: workers 16+ by way of getting to work. Read Oct 24, 2026.
 - Languages at home: Language spoken at home, residents 5 and older, ACS 2020–2024 table C16001. Read Oct 24, 2026.
-- Largest employers: Fremont's ten largest employers from the City's FY2024 Annual Comprehensive Financial Report principal-employers table, as transcribed on Wikipedia; the FY2025 ACFR (Dec 2025) should be used to refresh. Read Oct 24, 2026.
-- Largest funding rounds: Largest recent funding rounds and IPOs by Fremont-linked companies, 2022–2026 (some have contested or dual headquarters, noted in each row), each row citing its own source; not an exhaustive total. Read Oct 24, 2026.
+- Largest employers: Fremont's largest employers (12 with ties) from the City's FY2025 Annual Comprehensive Financial Report, Schedule 15: Principal Employers, p. 202. Read Oct 26, 2026.
+- Largest funding rounds: Largest recent funding rounds and IPOs by Fremont-linked companies, 2022–2026 (several are Fremont sites or U.S. offices rather than headquarters, noted in each row), each row citing a company, investor, SEC or press source; not an exhaustive total. Sources re-checked Oct 26, 2026.
 - Leapfrog safety grades: Leapfrog Hospital Safety Grades for Washington Hospital and Kaiser Fremont, Spring 2023 to Spring 2026. Read Oct 24, 2026.
 - More resident facts: ACS 2020–2024 measures (age, households, income, housing stock, cost burden, veterans, disability) and County Business Patterns 2023 jobs. Read Oct 24, 2026.
 - OTS crash rankings: California Office of Traffic Safety 2023 crash rankings for Fremont among 62 cities of 100,001–250,000 people (1 = worst). Read Oct 24, 2026.
@@ -1927,7 +1931,7 @@ Each dataset is one file; its description says what it holds and when it was rea
 - Stores by type: Retail establishments in Fremont by category (437 stores in all), 2022 Economic Census, retail trade, Fremont city. The total matches the 2022 Economic Census retail store count. Read Oct 24, 2026.
 - Streets and traffic facts: Street network facts from the City of Fremont, Fremont PD and MTC, fatal-crash victim shares, and the 2025 Community Survey traffic results. Each row names its source. Read Oct 24, 2026.
 - Top FremontApp requests: Ten most common FremontApp request types, Jul 1–Sep 30, 2026, from the city's FremontApp dashboard.
-- Unemployment, wages and jobs: Fremont city unemployment rate (BLS/EDD LAUS via YCharts), jobs located in Fremont vs employed residents (Housing Element/LEHD), city minimum wage, median earnings (ACS 2024), WARN layoffs, commute shares. Read Oct 24, 2026.
+- Unemployment, wages and jobs: Fremont city unemployment rate (BLS LAUS), jobs located in Fremont vs employed residents (Housing Element/LEHD), city minimum wage, median earnings (ACS 2024), WARN layoffs (EDD), commute shares. Read Oct 24, 2026; unemployment, WARN, minimum wage and Tesla rows re-checked Oct 26, 2026.
 - Vehicles by fuel and ZIP: Light-duty registrations by fuel type for Fremont ZIPs 94536, 94538, 94539, 94555, as of Jan 1, 2020 and Dec 31, 2025. California DMV via data.ca.gov. Read Oct 24, 2026.
 - Voters and city facts: Nov 2024 turnout (Alameda County ROV), May 2026 registration by party (CA Secretary of State), affordable units, city FTEs and credit rating (City of Fremont). Read Oct 24, 2026.
 - Weather by month: NOAA 1991–2020 climate normals for the Fremont station: average high, low and rainfall by month. Read Oct 24, 2026.
@@ -1935,7 +1939,7 @@ Each dataset is one file; its description says what it holds and when it was rea
 - Zillow home value and rent: Zillow Research figures for Fremont from Zillow's city home values page (data through Sep 30, 2026; sales measures through Aug 31), read Oct 24, 2026. Zillow requires clear attribution.
 
 ## Every source page
-202 pages, grouped by publisher. Each link is the page a figure was read from.
+201 pages, grouped by publisher. Each link is the page a figure was read from.
 -  <https://www.bls.gov/regions/west/news-release/2018/consumerpriceindex_sanfrancisco_20180913.htm>
 -  <https://www.bls.gov/regions/west/news-release/2019/consumerpriceindex_sanfrancisco_20190912.htm>
 -  <https://www.bls.gov/regions/west/news-release/2020/consumerpriceindex_sanfrancisco_20200911.htm>
@@ -1946,6 +1950,8 @@ Each dataset is one file; its description says what it holds and when it was rea
 -  <https://www.bls.gov/regions/west/news-release/2025/consumerpriceindex_sanfrancisco_20250911.htm>
 - 510 Families, Fremont's Aqua Adventure Water Park (Jul 2, 2026)Aqua Adventure general admission, non-resident (over 4 ft tall) <https://www.510families.com/aqua-adventure-waterpark>
 - AT&T, AT&T Fiber in Fremont, CAAT&T Fiber 300 Mbps, monthly price (Fremont) <https://www.att.com/local/fiber/california/fremont>
+- Alamar Biosciences press release (Apr 2026) <https://investors.alamarbio.com/news-releases/news-release-details/alamar-biosciences-announces-pricing-upsized-initial-public>
+- Alamar Biosciences press release (Feb 26, 2024), via BioSpace <https://www.biospace.com/alamar-biosciences-raises-128-million-in-oversubscribed-series-c-financing-to-accelerate-commercialization-of-its-proteomics-platform>
 - FY 2025–26 tax rates memoProperty tax base rate <https://www.acgov.org/board/bos_calendar/documents/DocsAgendaReg_09_09_25/GENERAL%20ADMINISTRATION/Regular%20Calendar/Auditor_391480.pdf>
 - Irvington Library closureLibrary branches in Fremont <https://www.aclibrary.org/irvington>
 - Alameda County Library, FY 2024-25 Early Budget Work Session PresentationAlameda County Library visits, all branches <https://budget.alamedacountyca.gov/Content/pdf/FY24-25/Library%20%20FY%202024-25%20Early%20Budget%20Work%20Session%20Presentation.pdf>
@@ -1954,7 +1960,7 @@ Each dataset is one file; its description says what it holds and when it was rea
 - Water ratesTypical water bill <https://acwd.org/115/Water-Rates>
 - Alameda County Water District, FY 2024/25 Annual Comprehensive Financial Report, Letter of Transmittal (pp. xiv-xv)Fremont unemployment rate as cited in a local agency financial report <https://acwd.org/DocumentCenter/View/7831/FY-24-25-ACFR>
 - Alameda Health Consortium, BACH Infographic – 2024 UDS Data (HRSA Uniform Data System)Patients served by Bay Area Community Health (all sites, Alameda + Santa Clara counties) <https://www.alamedahealthconsortium.org/wp-content/uploads/2026/01/BACH_Infographic-2024-UDS-Data.pdf>
-- Great American Stations: Fremont, CAStation ridership, FY 2025 <https://www.greatamericanstations.com/?p=7139>
+- Amtrak Fact Sheet FY2025: State of CaliforniaFremont-Centerville station boardings plus alightings, FY 2025 <https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/statefactsheets/CALIFORNIA25.pdf>
 - FremontElectricity accounts, solar accounts, default plan <https://avaenergy.org/community/who-we-serve/fremont/>
 - Ava Community Energy, Plans and RatesAva Community Energy Bright Choice generation rate discount vs PG&E <https://avaenergy.org/your-energy-options/plans-and-rates/rates/>
 - 2026 Joint Rate Comparison (rates as of Mar 2026)Electricity rate and average bill <https://avaenergy.org/wp-content/uploads/2026/06/Joint-Rate-Mailer-2025-Power-Mix-2025-Vintage-260616_Eng.pdf>
@@ -1962,7 +1968,6 @@ Each dataset is one file; its description says what it holds and when it was rea
 - BART Daily Station Exits datasetAverage weekday exits at Fremont and Warm Springs, FY 2019, 2024, 2025 <https://data.sf.gov/resource/m2xz-p7ja.json>
 - Member profile: Alameda County Water DistrictResidential water use per person <https://bawsca.org/members/profiles/alameda>
 - BLS, Consumer Price Index, San Francisco-Oakland-Hayward – August 2026 (released Sep 11, 2026)Grocery prices (food at home) change over the past year, SF–Oakland–Hayward CPI <https://www.bls.gov/regions/west/news-release/consumerpriceindex_sanfrancisco.htm>
-- BLS/EDD Local Area Unemployment Statistics, Fremont city series, as republished by YCharts (I:FCAU58FC)Fremont unemployment rate (city, not seasonally adjusted) <https://ycharts.com/indicators/fremont_ca_unemployment_rate>
 - Spare the Air ozone and PM dataDays over national air quality standards <https://www.sparetheair.org/Understanding-Air-Quality/Data-and-Records/Ozone-Data>
 - Bay Area Community Health, Alameda County LocationsBay Area Community Health (formerly Tri-City Health Center) clinic sites in Fremont <https://bach.health/alameda-county-locations/>
 - Bay Area Consumers' Checkbook, Which Grocery Stores Offer the Best Prices and QualityHow much more a 150-item basket costs at Safeway than at WinCo, Bay Area survey <https://www.checkbook.org/san-francisco-bay-area/supermarkets/articles/Which-Grocery-Stores-Offer-the-Best-Prices-and-Quality-2054>
@@ -1971,7 +1976,6 @@ Each dataset is one file; its description says what it holds and when it was rea
 - BroadbandMap.com (FCC Broadband Data Collection), Fremont, CAShare of Fremont locations with Xfinity cable internet available <https://broadbandmap.com/internet-providers/fremont-ca>
 - BroadbandNow, Internet Providers in Fremont, CAInternet providers listed as serving Fremont <https://broadbandnow.com/california/fremont>
 - Built In SF <https://www.builtinsf.com/articles/sf-top-funding-rounds-february-2022>
-- Business Wire (Tandem PV) <https://www.businesswire.com/news/home/20250423269574/en>
 - CA DHCS, Medi-Cal Certified Eligibles by County, January 2026Alameda County residents enrolled in Medi-Cal <https://www.dhcs.ca.gov/hy/dataandstats/statistics/Documents/Medi-Cal-Eligibles-County-Populations-JAN2026.pdf>
 - California School Directory, FremontPublic schools by level; private schools <https://sd.cde.ca.gov/SchoolDirectory/Results?Title=California+School+Directory&search=1&status=1&city=Fremont&items=200>
 - District profile: Fremont UnifiedEnrollment and English learners, 2025–26 <https://www.cde.ca.gov/sdprofile/details.aspx?cds=01611760000000>
@@ -1981,11 +1985,13 @@ Each dataset is one file; its description says what it holds and when it was rea
 - E-1 2026 press releaseState population estimates, Jan 2025 and Jan 2026 <https://dof.ca.gov/media/docs/forecasting/demographics/estimates/e-1_2026_press_release.Pdf>
 - E-1 estimates and methodologyHow the state estimate is made <https://dof.ca.gov/forecasting/demographics/estimates-e1/>
 - Housing element annual progress reportsRelease calendar: April 1 filing deadline <https://hcd.ca.gov/planning-and-community-development/annual-progress-reports>
-- Labor force data for cities and census placesWhy the county is used: city data last released for June 2024 <https://labormarketinfo.edd.ca.gov/data/labor-force-and-unemployment-for-cities-and-census-areas.html>
+- 2026 minimum wage announcementState minimum wage, 2026 <https://www.dir.ca.gov/DIRNews/2025/2025-118.html>
+- Labor force data for cities and census placesCity and county labor force data <https://labormarketinfo.edd.ca.gov/data/labor-force-and-unemployment-for-cities-and-census-areas.html>
 - Labor force data, February 2026 (revised)County unemployment, Feb 2026 <https://labormarketinfo.edd.ca.gov/file/lfmonth/2602rmsa.pdf>
 - Labor force data, January 2026 (revised)County unemployment, Jan 2026 <https://labormarketinfo.edd.ca.gov/file/lfmonth/2601rmsa.pdf>
 - Labor force data, March 2026 (revised)County unemployment, Mar 2026 <https://labormarketinfo.edd.ca.gov/file/lfmonth/2603rmsa.pdf>
 - September 2026 unemployment releaseCounty unemployment, Sep 2026 (preliminary) <https://edd.ca.gov/en/about_edd/news_releases_and_announcements/unemployment-september-2026/>
+- WARN reportsLayoff and closure notices <https://edd.ca.gov/en/jobs_and_training/layoff_services_warn>
 - Report of registration, 60-day primary 2026Registered voters <https://elections.cdn.sos.ca.gov/ror/60day-primary-2026/politicalsub.pdf>
 - PLACES: Local Data for Better Health, Place Data, 2025 releaseModeled adult health measures for Fremont <https://data.cdc.gov/resource/eav7-hnsx.json?stateabbr=CA&locationname=Fremont&datavaluetypeid=CrdPrv>
 - California sales and use tax ratesSales tax rate <https://cdtfa.ca.gov/taxes-and-fees/rates.aspx>
@@ -2003,8 +2009,6 @@ Each dataset is one file; its description says what it holds and when it was rea
 - Report of Registration as of May 18, 2026Registered voters by party <https://elections.cdn.sos.ca.gov/ror/15day-primary-2026/politicalsub.pdf>
 - 2024 Traffic Volumes (AADT) GIS serviceDaily vehicles on I-880, I-680, SR-84, SR-238 and SR-262 <https://caltrans-gis.dot.ca.gov/arcgis/rest/services/CHHighway/Traffic_AADT/MapServer/0>
 - Train schedulesTrains stopping at Fremont-Centerville <https://www.capitolcorridor.org/trainschedule/Train_Schedules.pdf>
-- Fremont council adopts FY 2026–27 operating budgetBudget adoption date <https://citizenportal.ai/articles/8258611/california/alameda-county/fremont/fremont-council-adopts-fy-202627-operating-budget-after-second-public-hearing>
-- Fremont proposes $289.1 million operating budget for 2026–27General fund and other-fund spending, proposed <https://citizenportal.ai/articles/8258598/California/Alameda-County/Fremont/Fremont-proposes-2891-million-operating-budget-for-202627-council-asks-for-deferredmaintenance-list>
 - 2023 State of the City address (Jun 8, 2023)Tesla employment in Fremont <https://fremont.gov/home/showpublisheddocument/13359/638218280428600000>
 - 2025 Annual Progress Report on the General Plan and Housing Element2025 permits, ADUs, progress by income category <https://fremontcityca.iqm2.com/Citizens/Detail_LegiFile.aspx?CssClass=&Frame=&ID=5659&MediaPosition=&MeetingID=2073&amp=&amp=&amp=&amp=>
 - Affordable Housing Development Projects in Fremont (updated Oct 17, 2025)Regulated affordable rental homes <https://www.fremont.gov/home/showpublisheddocument/449/638977635550300000>
@@ -2020,6 +2024,7 @@ Each dataset is one file; its description says what it holds and when it was rea
 - Fremont App service requests dashboardService requests, Jul–Sep 2026; app downloads <https://www.fremont.gov/government/citywide-initiatives/data-dashboards/fremont-app>
 - Fremont Fire incidents dashboardFire incidents by year and type, inspections, stations <https://www.fremont.gov/government/citywide-initiatives/data-dashboards/fremont-fire>
 - FY 2025/26 Proposed Budget; FY 2024/25 Adopted Operating BudgetCity employees (FTE) and credit rating <https://www.fremont.gov/home/showpublisheddocument/18117/638828954844570000>
+- FY 2026/27 Adopted Operating BudgetOperating budget, all funds and general fund <https://www.fremont.gov/home/showpublisheddocument/21162/639252581230269794>
 - Homeless Response dashboardMonthly cleanups, encampments cleared, outreach visits; point-in-time counts <https://www.fremont.gov/government/citywide-initiatives/data-dashboards/homeless-response>
 - Housing Element2023–2031 housing target <https://fremont.gov/government/departments/community-development/planning-building-permit-services/plans-maps-guidelines/general-plan/housing-element>
 - Traffic Safety: Safety Data and TrendsFatal crashes by year, pedestrian and bicyclist shares <https://www.fremont.gov/government/departments/transportation-engineering/traffic-safety/safety-data-and-trends>
@@ -2031,7 +2036,6 @@ Each dataset is one file; its description says what it holds and when it was rea
 - City of Fremont, New Community Center at Central ParkSize of new Central Park Community Center, Phase 1 (sq ft) <https://www.my.fremont.gov/newcommunitycenter>
 - City of Fremont, Housing Element 2023-2031, Chapter 4 Housing Needs Assessment, 'Balance of Jobs and Workers in Fremont'Jobs located in Fremont (LEHD, as reported in the City's Housing Element) <https://fremont.gov/home/showpublisheddocument/12773/638151808164530000>
 - 2025 Community Survey (Dec 2025)How safe residents feel, views on crime, police, traffic and congestion <https://www.fremont.gov/home/showpublisheddocument/19926/639087261651070000>
-- City of Fremont ACFR FY2024, Principal Employers (via Wikipedia) <https://en.wikipedia.org/wiki/Fremont,_California>
 - City of Fremont Economic Development, City ProfileHigh-tech, life science and clean technology firms in Fremont (City of Fremont) <https://www.fremont.gov/government/departments/economic-development/local-economy-overview/city-profile>
 - City of Fremont Economic Development, Employment HubsIndustrial space in Fremont (City of Fremont) <https://www.fremont.gov/government/departments/economic-development/local-economy-overview/employment-hubs>
 - City of Fremont Fire Department, incident summaries (2025)Incidents in 2025 (full year) <https://www.fremont.gov/government/departments/fire/about-us-mission-responsibilities-goals/fire-divisions/operations/incident-summaries>
@@ -2039,13 +2043,10 @@ Each dataset is one file; its description says what it holds and when it was rea
 - City of Fremont minimum wage bulletin (multilingual notices) / Davis Wright Tremaine local minimum wage summaryFremont minimum wage the year before <https://www.fremont.gov/home/showpublisheddocument/20110/639104640133270000>
 - City of Fremont news release 'Fremont Minimum Wage Increase to $18.05 on July 1, 2026' (Apr 3, 2026) and official wage bulletinFremont city minimum wage (all employers) <https://www.fremont.gov/Home/Components/News/News/1724/1067>
 - ConsumerAffairs, T-Mobile revamps 5G Home InternetT-Mobile 5G Home Internet, Rely tier, monthly price with autopay <https://www.consumeraffairs.com/news/t-mobile-revamps-5g-home-internet-with-new-tiers-faster-wi-fi-and-streaming-perks-111025.html>
-- Cord Cutters News, Verizon increases 5G Home Plus priceVerizon 5G Home Internet, base tier, monthly price without a Verizon mobile plan <https://cordcuttersnews.com/verizon-increases-5g-home-plus-internet-price-by-10-for-wireless-customers/>
 - Crunchbase, hub 'Fremont Companies'Organizations headquartered in Fremont listed on Crunchbase <https://www.crunchbase.com/hub/fremont-companies>
 - Crunchbase, hub 'Fremont Startups'Early-stage startups headquartered in Fremont on Crunchbase's 'Fremont Startups' hub <https://www.crunchbase.com/hub/fremont-startups>
-- Crunchbase News <https://news.crunchbase.com/health-wellness-biotech/braintech-funding-semiconductors-neuralink/>
 - Cytek Biosciences, IPO pricing press releaseGross proceeds of Fremont-based Cytek Biosciences' July 2021 Nasdaq IPO (CTKB) <https://investors.cytekbio.com/news-releases/news-release-details/cytek-biosciences-announces-pricing-its-initial-public-offering>
 - Data USA, Fremont, CA profile (Census ACS)Median earnings, male Fremont residents (full-time, year-round) <https://datausa.io/profile/geo/fremont-ca>
-- Davis Wright Tremaine, 'California Local Minimum Wage Increases Effective July 1, 2026'California state minimum wage <https://www.dwt.com/blogs/employment-labor-and-benefits/2026/06/california-local-minimum-wage-increases-july-2026>
 - Coyote Hills expansion opensAcres added in 2026 <https://www.ebparks.org/about-us/whats-new/news/grand-opening-coyote-hills-project-adds-nearly-300-acres-coyote-hills>
 - Coyote Hills Regional ParkRegional park acres <https://www.ebparks.org/parks/coyote-hills>
 - Dumbarton Quarry CampgroundRegional park acres <https://www.ebparks.org/maps/dumbarton-quarry>
@@ -2055,7 +2056,6 @@ Each dataset is one file; its description says what it holds and when it was rea
 - Fremont Unified district profileSchool enrollment, 2025–26 <https://www.ed-data.org/district/alameda/fremont-unified>
 - Fremont Unified district and school profilesEnrollment trend, graduation, UC/CSU readiness, chronic absence, suspension, spending, teacher salary, low-income share; state comparisons <https://www.ed-data.org/district/Alameda/Fremont-Unified>
 - EnerVenue press release <https://www.enervenue.com/press/henning-rath-ceo-300m-series-b>
-- Fertilizer Daily <https://www.fertilizerdaily.com/20250917-nitricity-raises-50m-to-scale-organic-fertilizer-production-in-california-made-from-almond-waste/md/>
 - Fremont Chamber of Commerce, Fremont Festival of the Arts – AboutYear of the first Fremont Festival of the Arts <https://fremontfestival.net/about>
 - 5-year crime comparison, 2017–2021Cross-check of 2017–2021 crime counts (matches state data) <https://fremontpolice.gov/home/showpublisheddocument/646/637817280148230000>
 - Annual report and yearly summariesPolice calls for service, 2025 <https://www.fremontpolice.gov/about-us/transparency-portal/yearly-summaries>
@@ -2069,36 +2069,38 @@ Each dataset is one file; its description says what it holds and when it was rea
 - Kaiser Foundation Hospital – FremontLicensed beds <https://hcai.ca.gov/facility/kaiser-foundation-hospital-fremont/>
 - Washington Hospital – FremontLicensed beds <https://hcai.ca.gov/facility/washington-hospital-fremont/>
 - Capital at City Center set to break groundAffordable homes starting construction <https://hoodline.com/2026/10/fremont-project-set-to-break-ground-on-335-unit-downtown-development-first-of-918-affordable-homes/>
-- Fremont council slams brakes on half-cent tax hikeOperating budget total, sales tax vote and projection <https://hoodline.com/2026/07/fremont-council-slams-brakes-on-half-cent-tax-hike-before-november-vote-6944803/>
-- Hoodline <https://hoodline.com/2026/03/fremont-lab-star-alamar-races-toward-ipo-after-hiring-blitz/>
 - Pacific Commons sale listingPacific Commons size <https://invest.jll.com/us/en/listings/retail/pacific-commons>
-- 3Q 2026 market reports: Silicon Valley Office, Silicon Valley R&D, East Bay IndustrialOffice, R&D and industrial vacancy <https://kidder.com/wp-content/uploads/market_report/office-market-research-silicon-valley-2026-3q.pdf>
+- 3Q 2026 Silicon Valley Office reportOffice vacancy, Fremont submarket <https://kidder.com/wp-content/uploads/market_report/office-market-research-silicon-valley-2026-3q.pdf>
+- 3Q 2026 Silicon Valley R&D reportR&D vacancy, Fremont submarket <https://kidder.com/wp-content/uploads/market_report/rd-market-research-silicon-valley-2026-3q.pdf>
+- East Bay industrial market reportIndustrial vacancy, Fremont/Newark <https://kidder.com/market-reports/east-bay-industrial-market-report/>
 - Fremont Hub property pageFremont Hub size <https://www.kimcorealty.com/109510>
-- LaborCurrent (compiled from California EDD WARN filings), Fremont, CA pageWorkers covered by WARN layoff/closure notices filed for Fremont sites in 2025 <https://laborcurrent.com/layoffs/california/fremont>
 - MIT Living Wage Calculator, Alameda County, CaliforniaAnnual food cost for one adult in a living-wage budget, Alameda County <https://livingwage.mit.edu/counties/06001>
 - Macaroni KID Fremont, Dog Parks in Fremont, Newark, and Union CityOff-leash dog parks in Fremont <https://fremont.macaronikid.com/guides/606e76bdc5999c19f4cb4671/dog-parks-in-fremont-newark-and-union-city>
 - City of Fremont Census data, 1960–2020Census counts, 1960–2000 <https://files.mtc.ca.gov/library/pub/48117_Place_FremontCity.pdf>
 - Pavement Condition Index table, 2024 data (Jan 2026)Pavement condition for Fremont and the Bay Area <https://mtc.ca.gov/sites/default/files/documents/2026-01/PCI_table2024DataJanuary2026Update.pdf>
 - NBC Bay Area, The 42nd Fremont Festival of the ArtsFremont Festival of the Arts attendees each year <https://www.nbcbayarea.com/community/the-42nd-fremont-festival-of-the-arts/4097266/?amp=1>
 - 1991–2020 climate normals, Fremont station USC00043244Monthly temperature and rainfall <https://www.ncei.noaa.gov/access/services/data/v1?dataset=normals-monthly-1991-2020&stations=USC00043244&format=json&dataTypes=MLY-TMAX-NORMAL,MLY-TMIN-NORMAL,MLY-PRCP-NORMAL>
+- Neuralink <https://neuralink.com/updates/neuralink-raises-650m-series-e/>
 - PG&E, Gas Rate Advisory (March 2026)PG&E bundled residential gas rate, non-CARE, per therm <https://www.pge.com/assets/pge/docs/account/rate-plans/gas-rate-advisory-0326.pdf>
+- Pacific Fusion founders’ letter (Oct 25, 2024) <https://www.pacificfusion.com/updates/founders-letter>
 - Patch Fremont, Beloved Antique Fair & Flea Market ReturnsVendors at the Niles Antique Faire & Flea Market <https://patch.com/california/fremont/beloved-antique-fair-flea-market-returns>
-- Power Engineering <https://www.power-eng.com/nuclear/a-new-nuclear-fusion-startup-has-raised-900m-in-series-a-funding/>
+- Pony.ai final prospectus (SEC Form 424B4) <https://www.sec.gov/Archives/edgar/data/1969302/000110465924123680/tm2310344-35_424b4.htm>
 - Ratcliff Architects, Kaiser Fremont Master Plan Emergency Department project pageKaiser Fremont Medical Center — emergency department treatment bays (expansion design) <https://www.ratcliffarch.com/projects/kaiser-fremont-master-plan-emergency-department>
 - 94536 housing marketZIP 94536 sales <https://www.redfin.com/zipcode/94536/housing-market>
 - 94538 housing marketZIP 94538 sales <https://www.redfin.com/zipcode/94538/housing-market>
 - 94539 housing marketZIP 94539 sales <https://www.redfin.com/zipcode/94539/housing-market>
 - 94555 housing marketZIP 94555 sales <https://www.redfin.com/zipcode/94555/housing-market>
 - Fremont housing marketCity median sale price and sales measures <https://www.redfin.com/city/6671/CA/Fremont/housing-market>
-- Renaissance Capital <https://www.renaissancecapital.com/IPO-Center/News/118387/Protein-biomarker-detection-platform-Alamar-Biosciences-prices-upsized-IPO->
 - Fremont city rates 2026–2027Garbage rates <https://www.republicservices.com/sites/default/files/legacy_documents/Muni/California/Fremont/Fremont-City-Rates-2026-2027.pdf>
-- S&P Global AutoTechInsight <https://autotechinsight.spglobal.com/news/5279272/ponyai-debuts-on-nasdaq-raising-funds-for-autonomous-vehicle-advancement>
 - San Francisco Bay University press release (Business Wire)Launch date of Innovate Bay, San Francisco Bay University's startup incubator in Fremont <https://www.businesswire.com/news/home/20250829685842/en/San-Francisco-Bay-University-to-Launch-New-Business-Incubator-Innovate-Bay>
+- Tandem PV press release (Mar 4, 2025) <https://www.tandempv.com/news/tandem-pv-raises-%2450m-to-take-back-u.s.-leadership-with-new-perovskite-solar-manufacturing>
+- TechCrunch (Sep 28, 2022) <https://techcrunch.com/2022/09/28/everestlabs-raises-16-1m-for-ai-that-sorts-recyclables/>
 - The Leapfrog Group, Hospital Safety GradeWashington Hospital — Leapfrog Hospital Safety Grade <https://www.hospitalsafetygrade.org/h/washington-hospital-healthcare-system>
 - The Leapfrog Group, Hospital Safety GradeKaiser Fremont Medical Center — Leapfrog Hospital Safety Grade <https://www.hospitalsafetygrade.org/h/kaiser-permanente-fremont-medical-center>
 - Think Silicon Valley (City of Fremont economic development site), Advanced ManufacturingManufacturing jobs in Fremont (City economic development site) <https://www.thinksiliconvalley.com/advanced-manufacturing/>
 - Think Silicon Valley (City of Fremont economic development site), InnovationSize of the Warm Springs Innovation District (City of Fremont) <https://www.thinksiliconvalley.com/innovation-2/>
 - ParkServe: Fremont, CAParkScore rank, walk access, parkland share <https://parkserve.tpl.org/downloads/pdfs/Fremont_CA.pdf>
+- Local Area Unemployment Statistics: Fremont cityFremont unemployment rate <https://data.bls.gov/timeseries/LAUCT062600000000003>
 - 2022 Economic Census, accommodation and food services, FremontRestaurants and food service businesses <https://data.census.gov/table/ECNBASIC2022.EC2272BASIC?g=160XX00US0626000>
 - 2022 Economic Census, retail trade, FremontRetail stores by type and retail sales <https://data.census.gov/table/ECNBASIC2022.EC2244BASIC?g=160XX00US0626000>
 - 2023 ZIP Code Business Patterns, Fremont ZIPsBusiness establishments and private-sector jobs <https://data.census.gov/table/CBP2023.CB2300CBP?g=860XX00US94536,94538,94539,94555>
@@ -2123,14 +2125,15 @@ Each dataset is one file; its description says what it holds and when it was rea
 - 2027 Best Elementary and Middle Schools, Fremont UnifiedElementary and middle school ranks <https://www.usnews.com/education/k12/elementary-schools/california/fremont-unified-school-district-111898>
 - Best High Schools 2026–2027: Fremont Unified School DistrictHigh school rankings, graduation rate, AP exams, enrollment, student-teacher ratio <https://www.usnews.com/education/best-high-schools/california/districts/fremont-unified-school-district-111898>
 - Ordinance 31.41 (sewer charges)Sewer charge <https://unionsanitary.ca.gov/wp-content/uploads/2025/02/Ordinance-No.-31.41.pdf>
-- VCBacked.co <https://www.vcbacked.co/company/everestlabsai>
 - VCBacked.co, 'VC-Backed Startups in Fremont, California (2026)'Venture-backed startups in Fremont listed by VCBacked.co <https://www.vcbacked.co/directory/cities/united-states/california/fremont>
+- Verizon, 5G Home Internet plans pageVerizon 5G Home Internet, base tier, monthly price without a Verizon mobile plan <https://www.verizon.com/home/internet/5g/>
 - 2026 city rankings: Happiest Cities, Best Places to Raise a Family, Least Stressed, Best for Women, Most Caring, Greenest, Safest, Healthiest, and othersCity rankings (each ranking links to its own page in the rankings table) <https://wallethub.com/edu/happiest-places-to-live/32619>
 - WalletHub, 'Best Large Cities to Start a Business (2026)'Fremont's rank among 100 large U.S. cities in WalletHub's Best Large Cities to Start a Business <https://wallethub.com/edu/best-cities-to-start-a-business/2281>
 - Washington Health news release Dec 31, 2025; Sutter Health location pageHealth systems with a verified walk-in urgent care in Fremont <https://www.washingtonhealth.com/news/2025/december/washington-health-urgent-care-now-open/>
 - Washington Township Health Care District, Board packet Aug 12, 2026, Operating Indicators (FYTD June 2026)Washington Hospital — emergency room visits, fiscal year <https://www.washingtonhealth.com/images/08.12.2026-BOD-PACKET-2.pdf>
 - Wikipedia, Mission PeakMission Peak summit elevation (feet) <https://en.wikipedia.org/wiki/Mission_Peak>
 - Wikipedia, Aqua AdventureYear Aqua Adventure water park opened in Central Park <https://en.wikipedia.org/wiki/Aqua_Adventure>
+- World Fund (co-lead investor), Sep 2025 <https://worldfund.vc/articles/nitricity-raises-50m-to-go-global-with-unique-tech-transforming-almond-waste-into-organic-fertilizer>
 - Xfinity, Fremont CA local pageXfinity 300 Mbps plan, promotional monthly price (Fremont) <https://www.xfinity.com/local/ca/fremont>
 - Fremont, CA home valuesTypical home value, typical rent, listings and sales measures <https://www.zillow.com/fremont-ca/home-values/>
 - Public data terms (real estate metrics)Attribution requirement <https://zillowgroup.com/developers/api/public-data/real-estate-metrics>

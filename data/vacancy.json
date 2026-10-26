@@ -4,20 +4,26 @@
 "total_vacancy": 20.5,
 "direct_vacancy": 6.9,
 "inventory_sf": 5271095,
-"report": "Kidder Mathews, Silicon Valley Office 3Q 2026"
+"report": "Kidder Mathews, Silicon Valley Office 3Q 2026",
+"source": "Kidder Mathews, Silicon Valley Office 3Q 2026",
+"source_url": "https://kidder.com/wp-content/uploads/market_report/office-market-research-silicon-valley-2026-3q.pdf"
 },
 {
 "market": "Research and development (Fremont)",
 "total_vacancy": 11.5,
 "direct_vacancy": 9.2,
 "inventory_sf": 17745059,
-"report": "Kidder Mathews, Silicon Valley R&D 3Q 2026"
+"report": "Kidder Mathews, Silicon Valley R&D 3Q 2026",
+"source": "Kidder Mathews, Silicon Valley R&D 3Q 2026",
+"source_url": "https://kidder.com/wp-content/uploads/market_report/rd-market-research-silicon-valley-2026-3q.pdf"
 },
 {
 "market": "Industrial (Fremont/Newark)",
 "total_vacancy": 6.8,
 "direct_vacancy": 5.4,
 "inventory_sf": 58575070,
-"report": "Kidder Mathews, East Bay Industrial 3Q 2026"
+"report": "Kidder Mathews, East Bay Industrial 3Q 2026",
+"source": "Kidder Mathews, East Bay Industrial 3Q 2026",
+"source_url": "https://kidder.com/market-reports/east-bay-industrial-market-report/"
 }
 ]

@@ -35,15 +35,15 @@ FBN.page({
         title: 'Largest employers',
         charts: [{
           ds: 'employers', type: 'hbar', x: 'employer', format: 'int', sort: 'employees', size: 'tall',
-          title: 'Fremont’s ten largest employers', sub: 'Employees, as reported in the City’s FY2024 financial report',
+          title: 'Fremont’s largest employers', sub: 'Employees, as reported in the City’s FY2025 financial report (ties share a rank)',
           series: [{ key: 'employees', label: 'Employees' }],
-          source: 'City of Fremont Annual Comprehensive Financial Report, FY ended June 30, 2024, principal-employers table (as transcribed on Wikipedia). Figures are rounded.'
+          source: 'City of Fremont Annual Comprehensive Financial Report, FY ended June 30, 2025, Schedule 15: Principal Employers (p. 202; the City’s source is its Economic Development Department). Figures are rounded.'
         }],
         tables: [{
           ds: 'employers', title: 'Employers, with sources', sort: (a, b) => a.rank - b.rank,
           columns: [{ key: 'rank', label: '#', format: 'int' }, { key: 'employer', label: 'Employer' }, { key: 'employees', label: 'Employees', format: 'int' }, { key: 'year', label: 'As of' }, { key: 'source', label: 'Source' }]
         }],
-        notes: ['!The City’s FY2025 financial report (December 2025) has a newer table that could not be read automatically; it is the next refresh for this section.']
+        notes: ['The table lists 12 employers because of ties at 8th and 10th place. Compared with FY2024, Tesla is down from 25,000 to 23,000, Lam Research is up from 4,000 to 4,400, and Quanta Computer and Thermo Fisher Scientific are new to the list.']
       },
       {
         title: 'Wages',

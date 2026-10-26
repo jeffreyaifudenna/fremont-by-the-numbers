@@ -71,8 +71,8 @@
   "value": 191000000,
   "format": "usd",
   "period": "Apr 17, 2026",
-  "source": "Renaissance Capital, 'Alamar Biosciences prices upsized IPO'",
-  "source_url": "https://www.renaissancecapital.com/IPO-Center/News/118387/Protein-biomarker-detection-platform-Alamar-Biosciences-prices-upsized-IPO-",
+  "source": "Alamar Biosciences press release (Apr 2026)",
+  "source_url": "https://investors.alamarbio.com/news-releases/news-release-details/alamar-biosciences-announces-pricing-upsized-initial-public",
   "kind": "News report",
   "note": "11.3M shares at $17, top of range. Company campus at 47071 Bayside Parkway, Fremont.",
   "geo": "Fremont"
@@ -93,14 +93,14 @@
  {
   "id": "ponyai_ipo_2024",
   "group": "Unicorns and IPOs",
-  "label": "Raised by Pony.ai (dual HQ Fremont and Guangzhou) in its Nov 2024 Nasdaq IPO (PONY)",
+  "label": "Raised by Pony.ai (U.S. offices in Fremont) in its Nov 2024 Nasdaq IPO (PONY)",
   "value": 260000000,
   "format": "usd",
   "period": "Nov 27, 2024",
-  "source": "S&P Global AutoTechInsight, 'Pony.ai debuts on Nasdaq'",
-  "source_url": "https://autotechinsight.spglobal.com/news/5279272/ponyai-debuts-on-nasdaq-raising-funds-for-autonomous-vehicle-advancement",
-  "kind": "News report",
-  "note": "20M ADS at $13. Wikipedia lists HQ as Guangzhou, China and Fremont, California; primarily a Chinese company with US base in Fremont.",
+  "source": "Pony.ai final prospectus (SEC Form 424B4)",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/1969302/000110465924123680/tm2310344-35_424b4.htm",
+  "kind": "Official count",
+  "note": "20M ADS at $13, $260M gross. The prospectus gives Guangzhou, China as the principal executive office; Fremont is its U.S. office. Read Oct 26, 2026.",
   "geo": "Fremont"
  },
  {

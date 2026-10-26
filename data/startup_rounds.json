@@ -5,11 +5,11 @@
   "round": "Series A",
   "date": "2024-10",
   "sector": "Fusion energy",
-  "hq_note": "HQ Fremont, CA per Power Engineering",
-  "source": "Power Engineering",
-  "source_url": "https://www.power-eng.com/nuclear/a-new-nuclear-fusion-startup-has-raised-900m-in-series-a-funding/",
+  "hq_note": "Based in Fremont per the company; paid in stages",
+  "source": "Pacific Fusion founders\u2019 letter (Oct 25, 2024)",
+  "source_url": "https://www.pacificfusion.com/updates/founders-letter",
   "what": "Fusion energy",
-  "hq": "HQ Fremont, CA per Power Engineering"
+  "hq": "Based in Fremont per the company; paid in stages"
  },
  {
   "company": "Neuralink",
@@ -17,11 +17,11 @@
   "round": "Series E",
   "date": "2025-06",
   "sector": "Brain-computer interface",
-  "hq_note": "Described as Fremont, California-based by Crunchbase News; ~$9B valuation reported",
-  "source": "Crunchbase News",
-  "source_url": "https://news.crunchbase.com/health-wellness-biotech/braintech-funding-semiconductors-neuralink/",
+  "hq_note": "One of three Neuralink sites; ~$9B valuation reported",
+  "source": "Neuralink",
+  "source_url": "https://neuralink.com/updates/neuralink-raises-650m-series-e/",
   "what": "Brain-computer interface",
-  "hq": "Described as Fremont, California-based by Crunchbase News; ~$9B valuation reported"
+  "hq": "One of three Neuralink sites; ~$9B valuation reported"
  },
  {
   "company": "Weee!",
@@ -53,11 +53,11 @@
   "round": "IPO (Nasdaq: PONY)",
   "date": "2024-11",
   "sector": "Autonomous driving",
-  "hq_note": "Dual HQ Guangzhou and Fremont; 20M ADS at $13",
-  "source": "S&P Global AutoTechInsight",
-  "source_url": "https://autotechinsight.spglobal.com/news/5279272/ponyai-debuts-on-nasdaq-raising-funds-for-autonomous-vehicle-advancement",
+  "hq_note": "Principal office Guangzhou, China; U.S. offices in Fremont; 20M ADS at $13",
+  "source": "Pony.ai final prospectus (SEC Form 424B4)",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/1969302/000110465924123680/tm2310344-35_424b4.htm",
   "what": "Autonomous driving",
-  "hq": "Dual HQ Guangzhou and Fremont; 20M ADS at $13"
+  "hq": "Principal office Guangzhou, China; U.S. offices in Fremont; 20M ADS at $13"
  },
  {
   "company": "Alamar Biosciences",
@@ -65,11 +65,11 @@
   "round": "IPO (Nasdaq: ALMR)",
   "date": "2026-04",
   "sector": "Proteomics / diagnostics",
-  "hq_note": "Fremont HQ; 11.3M shares at $17; prior $128M Series C Feb 2024 and $50M convertible note Jan 2026",
-  "source": "Renaissance Capital",
-  "source_url": "https://www.renaissancecapital.com/IPO-Center/News/118387/Protein-biomarker-detection-platform-Alamar-Biosciences-prices-upsized-IPO-",
+  "hq_note": "Fremont HQ; 11.25M shares at $17 (about $220M after the underwriters\u2019 extra shares); prior $128M Series C Feb 2024 and $50M convertible note Jan 2026",
+  "source": "Alamar Biosciences press release (Apr 2026)",
+  "source_url": "https://investors.alamarbio.com/news-releases/news-release-details/alamar-biosciences-announces-pricing-upsized-initial-public",
   "what": "Proteomics / diagnostics",
-  "hq": "Fremont HQ; 11.3M shares at $17; prior $128M Series C Feb 2024 and $50M convertible note Jan 2026"
+  "hq": "Fremont HQ; 11.25M shares at $17 (about $220M after the underwriters\u2019 extra shares); prior $128M Series C Feb 2024 and $50M convertible note Jan 2026"
  },
  {
   "company": "Alamar Biosciences",
@@ -77,11 +77,11 @@
   "round": "Series C",
   "date": "2024-02",
   "sector": "Proteomics / diagnostics",
-  "hq_note": "Fremont campus, 47071 Bayside Parkway",
-  "source": "Hoodline",
-  "source_url": "https://hoodline.com/2026/03/fremont-lab-star-alamar-races-toward-ipo-after-hiring-blitz/",
+  "hq_note": "Fremont-datelined release; $100M first close plus $28M expected later",
+  "source": "Alamar Biosciences press release (Feb 26, 2024), via BioSpace",
+  "source_url": "https://www.biospace.com/alamar-biosciences-raises-128-million-in-oversubscribed-series-c-financing-to-accelerate-commercialization-of-its-proteomics-platform",
   "what": "Proteomics / diagnostics",
-  "hq": "Fremont campus, 47071 Bayside Parkway"
+  "hq": "Fremont-datelined release; $100M first close plus $28M expected later"
  },
  {
   "company": "Nitricity",
@@ -89,23 +89,23 @@
   "round": "Series B",
   "date": "2025-09",
   "sector": "Organic fertilizer / cleantech",
-  "hq_note": "Office in Fremont, CA; co-led by World Fund and Khosla Ventures. Axios (Jul 2025) reported ~$63M including earlier tranche; VCBacked lists $64M",
-  "source": "Fertilizer Daily",
-  "source_url": "https://www.fertilizerdaily.com/20250917-nitricity-raises-50m-to-scale-organic-fertilizer-production-in-california-made-from-almond-waste/md/",
+  "hq_note": "Pilot plant in Fremont, CA; co-led by World Fund and Khosla Ventures",
+  "source": "World Fund (co-lead investor), Sep 2025",
+  "source_url": "https://worldfund.vc/articles/nitricity-raises-50m-to-go-global-with-unique-tech-transforming-almond-waste-into-organic-fertilizer",
   "what": "Organic fertilizer / cleantech",
-  "hq": "Office in Fremont, CA; co-led by World Fund and Khosla Ventures. Axios (Jul 2025) reported ~$63M including earlier tranche; VCBacked lists $64M"
+  "hq": "Pilot plant in Fremont, CA; co-led by World Fund and Khosla Ventures"
  },
  {
   "company": "Tandem PV",
   "amount_usd": 50000000,
-  "round": "Series A",
-  "date": "2025-04",
+  "round": "Series A and debt",
+  "date": "2025-03",
   "sector": "Perovskite solar",
-  "hq_note": "Press-release dateline San Jose; 40 MW factory opened in Fremont Apr 2026; $83M total raised incl. debt and grants",
-  "source": "Business Wire (Tandem PV)",
-  "source_url": "https://www.businesswire.com/news/home/20250423269574/en",
+  "hq_note": "Fremont address; release datelined San Jose; 40 MW factory opened in Fremont Apr 2026; $83M total raised incl. debt and grants",
+  "source": "Tandem PV press release (Mar 4, 2025)",
+  "source_url": "https://www.tandempv.com/news/tandem-pv-raises-%2450m-to-take-back-u.s.-leadership-with-new-perovskite-solar-manufacturing",
   "what": "Perovskite solar",
-  "hq": "Press-release dateline San Jose; 40 MW factory opened in Fremont Apr 2026; $83M total raised incl. debt and grants"
+  "hq": "Fremont address; release datelined San Jose; 40 MW factory opened in Fremont Apr 2026; $83M total raised incl. debt and grants"
  },
  {
   "company": "Everestlabs.AI",
@@ -113,10 +113,10 @@
   "round": "Series A",
   "date": "2022-09",
   "sector": "Recycling robotics / AI",
-  "hq_note": "Fremont HQ per VCBacked",
-  "source": "VCBacked.co",
-  "source_url": "https://www.vcbacked.co/company/everestlabsai",
+  "hq_note": "Fremont address (48820 Kato Rd) per trade press; led by Translink Capital",
+  "source": "TechCrunch (Sep 28, 2022)",
+  "source_url": "https://techcrunch.com/2022/09/28/everestlabs-raises-16-1m-for-ai-that-sorts-recyclables/",
   "what": "Recycling robotics / AI",
-  "hq": "Fremont HQ per VCBacked"
+  "hq": "Fremont address (48820 Kato Rd) per trade press; led by Translink Capital"
  }
 ]

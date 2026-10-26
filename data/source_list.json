@@ -116,7 +116,7 @@
   "publisher": "CA Employment Development Dept.",
   "title": "Labor force data for cities and census places",
   "url": "https://labormarketinfo.edd.ca.gov/data/labor-force-and-unemployment-for-cities-and-census-areas.html",
-  "supports": "Why the county is used: city data last released for June 2024"
+  "supports": "City and county labor force data"
  },
  {
   "n": 19,
@@ -138,27 +138,6 @@
   "title": "Capital at City Center set to break ground",
   "url": "https://hoodline.com/2026/10/fremont-project-set-to-break-ground-on-335-unit-downtown-development-first-of-918-affordable-homes/",
   "supports": "Affordable homes starting construction"
- },
- {
-  "n": 22,
-  "publisher": "Citizen Portal",
-  "title": "Fremont proposes $289.1 million operating budget for 2026–27",
-  "url": "https://citizenportal.ai/articles/8258598/California/Alameda-County/Fremont/Fremont-proposes-2891-million-operating-budget-for-202627-council-asks-for-deferredmaintenance-list",
-  "supports": "General fund and other-fund spending, proposed"
- },
- {
-  "n": 23,
-  "publisher": "Citizen Portal",
-  "title": "Fremont council adopts FY 2026–27 operating budget",
-  "url": "https://citizenportal.ai/articles/8258611/california/alameda-county/fremont/fremont-council-adopts-fy-202627-operating-budget-after-second-public-hearing",
-  "supports": "Budget adoption date"
- },
- {
-  "n": 24,
-  "publisher": "Hoodline",
-  "title": "Fremont council slams brakes on half-cent tax hike",
-  "url": "https://hoodline.com/2026/07/fremont-council-slams-brakes-on-half-cent-tax-hike-before-november-vote-6944803/",
-  "supports": "Operating budget total, sales tax vote and projection"
  },
  {
   "n": 25,
@@ -450,9 +429,9 @@
  {
   "n": 68,
   "publisher": "Amtrak",
-  "title": "Great American Stations: Fremont, CA",
-  "url": "https://www.greatamericanstations.com/?p=7139",
-  "supports": "Station ridership, FY 2025"
+  "title": "Amtrak Fact Sheet FY2025: State of California",
+  "url": "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/statefactsheets/CALIFORNIA25.pdf",
+  "supports": "Fremont-Centerville station boardings plus alightings, FY 2025"
  },
  {
   "n": 69,
@@ -723,9 +702,9 @@
  {
   "n": 107,
   "publisher": "Kidder Mathews",
-  "title": "3Q 2026 market reports: Silicon Valley Office, Silicon Valley R&D, East Bay Industrial",
+  "title": "3Q 2026 Silicon Valley Office report",
   "url": "https://kidder.com/wp-content/uploads/market_report/office-market-research-silicon-valley-2026-3q.pdf",
-  "supports": "Office, R&D and industrial vacancy"
+  "supports": "Office vacancy, Fremont submarket"
  },
  {
   "n": 108,
@@ -796,5 +775,47 @@
   "title": "FY 2025/26 Proposed Budget; FY 2024/25 Adopted Operating Budget",
   "url": "https://www.fremont.gov/home/showpublisheddocument/18117/638828954844570000",
   "supports": "City employees (FTE) and credit rating"
+ },
+ {
+  "n": 119,
+  "publisher": "City of Fremont",
+  "title": "FY 2026/27 Adopted Operating Budget",
+  "url": "https://www.fremont.gov/home/showpublisheddocument/21162/639252581230269794",
+  "supports": "Operating budget, all funds and general fund"
+ },
+ {
+  "n": 120,
+  "publisher": "Kidder Mathews",
+  "title": "3Q 2026 Silicon Valley R&D report",
+  "url": "https://kidder.com/wp-content/uploads/market_report/rd-market-research-silicon-valley-2026-3q.pdf",
+  "supports": "R&D vacancy, Fremont submarket"
+ },
+ {
+  "n": 121,
+  "publisher": "Kidder Mathews",
+  "title": "East Bay industrial market report",
+  "url": "https://kidder.com/market-reports/east-bay-industrial-market-report/",
+  "supports": "Industrial vacancy, Fremont/Newark"
+ },
+ {
+  "n": 122,
+  "publisher": "U.S. Bureau of Labor Statistics",
+  "title": "Local Area Unemployment Statistics: Fremont city",
+  "url": "https://data.bls.gov/timeseries/LAUCT062600000000003",
+  "supports": "Fremont unemployment rate"
+ },
+ {
+  "n": 123,
+  "publisher": "CA Employment Development Dept.",
+  "title": "WARN reports",
+  "url": "https://edd.ca.gov/en/jobs_and_training/layoff_services_warn",
+  "supports": "Layoff and closure notices"
+ },
+ {
+  "n": 124,
+  "publisher": "CA Dept. of Industrial Relations",
+  "title": "2026 minimum wage announcement",
+  "url": "https://www.dir.ca.gov/DIRNews/2025/2025-118.html",
+  "supports": "State minimum wage, 2026"
  }
 ]
