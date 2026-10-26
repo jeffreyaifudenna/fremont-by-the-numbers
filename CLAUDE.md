@@ -18,7 +18,7 @@ Static site (plain HTML/CSS/JS + JSON in data/). Data aggregator for Fremont, CA
 - Check the work: rebuild, diff against the previous output, test at 390px and 1280px, light and dark.
 
 ## Next steps
-1. DONE Oct 26, 2026: repo github.com/jeffreyaifudenna/fremont-by-the-numbers; live at https://fremont-by-the-numbers.vercel.app via `vercel deploy --prod` (Git auto-deploy is NOT connected: link the repo in the Vercel dashboard, or redeploy by CLI after each push). Git commits use the GitHub noreply email.
+1. DONE Oct 26, 2026: repo github.com/jeffreyaifudenna/fremont-by-the-numbers; live at https://fremont-by-the-numbers.vercel.app via `vercel deploy --prod` (GitHub repo is connected to the Vercel project, so pushes to main auto-deploy). Git commits use the GitHub noreply email.
 2. Done: report-an-error link, privacy note, sitemap.xml + robots Sitemap line (ORIGIN in tools/build_ai_files.js; change it if a custom domain is added). Still to do: preview image, domain choice, visitor counts.
 3. Optional later: monthly refresh (GitHub Actions or manual).
 Full project notes live in the Claude project "Fremont By The Numbers" (claude/site-build-notes.md, claude/ai-readability.md).
