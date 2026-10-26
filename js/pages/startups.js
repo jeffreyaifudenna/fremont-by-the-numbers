@@ -68,7 +68,7 @@ FBN.page({
           { ds: 'startups', id: 'nerdwallet_start_business_norcal', label: 'NerdWallet rank for starting a business in Northern California (cited by the City, undated)', format: 'rank', icon: 'star', color: 4 }
         ],
         facts: [{ ds: 'startups', title: 'Patents', group: 'Patents' }, { ds: 'startups', title: 'Rankings', group: 'Rankings' }],
-        notes: ['City-level patent counts could not be retrieved: the USPTO PatentsView service was not reachable from the research session. This is on the list to add.']
+        notes: ['USPTO patent counts for Fremont are not included yet.']
       }
     ];
   }

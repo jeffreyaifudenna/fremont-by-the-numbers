@@ -6,7 +6,7 @@ FBN.page({
   kicker: 'Data aggregator · built using Claude',
   hint: 'Start with a topic below, or click any number under “Fremont at a glance” to open its source in a new tab.',
   lede: 'FremontCaByTheNumbers.com is a data aggregator built using Claude. It gathers public figures about Fremont, California (housing, schools, safety, jobs and more) from the agencies and companies that publish them, and shows each number with its source and date.',
-  uses: ['employers', 'dof_population', 'census_profile', 'zillow_market', 'schools', 'police_facts', 'city_rankings', 'business', 'parks_summary', 'city_facts', 'people_more', 'jobs_more', 'living_facts', 'health_places', 'high_schools', 'school_list', 'crime_oj'],
+  uses: ['startup_rounds', 'dof_population', 'census_profile', 'zillow_market', 'schools', 'police_facts', 'city_rankings', 'business', 'parks_summary', 'city_facts', 'people_more', 'jobs_more', 'living_facts', 'health_places', 'high_schools', 'school_list', 'crime_oj'],
   sections: function (data, row) {
     const v = (ds, id, key) => (row(ds, id, key) || {}).value;
     const f = FBN.fmt;
@@ -18,7 +18,8 @@ FBN.page({
     const top100 = ranked.filter(r => r.n <= 100);
     const byLevel = lv => top100.filter(r => r.level === lv).length;
     const crime24 = data('crime_oj').find(r => r.city === 'Fremont' && r.year === 2024) || {};
-    const tesla = data('employers').find(r => /^Tesla/.test(r.employer)) || {};
+    const topRound = data('startup_rounds').slice().sort((a, b) => b.amount_usd - a.amount_usd)[0] || {};
+    const roundWhen = topRound.date ? new Date(topRound.date + '-15').toLocaleString('en-US', { month: 'short', year: 'numeric' }) : '';
 
     const cats = [
       { href: 'rent.html', icon: 'home', color: 1, title: 'Rent & Housing', v: f(v('zillow_market', 'zori'), 'usd'), l: 'typical asking rent, Sep 2026 (Zillow)' },
@@ -29,7 +30,7 @@ FBN.page({
       { href: 'safety.html', icon: 'shield', color: 1, title: 'Crime & Safety', v: f(crime24.violent, 'int'), l: 'violent crimes reported in 2024 (CA DOJ)' },
       { href: 'health.html', icon: 'heart', color: 2, title: 'Health Care', v: f(v('census_profile', 'uninsured'), 'pct'), l: 'of residents under 65 are uninsured (ACS 2020–2024)' },
       { href: 'jobs.html', icon: 'briefcase', color: 3, title: 'Jobs', v: f(unemp.value, 'pct1'), l: 'unemployment rate, ' + (unemp.period || '') + ' (BLS/EDD); median household income ' + f(v('census_profile', 'mhi'), 'usd') },
-      { href: 'startups.html', icon: 'rocket', color: 4, title: 'Startups', v: f(tesla.employees, 'int'), l: 'Tesla employees in Fremont, the city’s largest employer (City financial report, FY2025)' }
+      { href: 'startups.html', icon: 'rocket', color: 4, title: 'Startups', v: f(topRound.amount_usd, 'usdc'), l: 'largest recent funding round by a Fremont-linked company (' + [topRound.company, topRound.round, roundWhen].filter(Boolean).join(', ') + ')' }
     ];
     const catHtml = '<div class="cat-grid">' + cats.map(c =>
       '<a class="cat-card" href="' + c.href + '"><div class="cat-top"><span class="chip" style="background:var(--s' + c.color + ')">' + FBN.icon(c.icon, c.color === 4 ? ' style="stroke:#0f2233"' : '') + '</span><h2>' + c.title + '</h2></div>' +

@@ -50,7 +50,7 @@ FBN.page({
           '<h2>Privacy</h2>' +
           '<p>This site has no accounts, forms, ads or tracking cookies, and it does not collect personal information. The only thing it stores on your device is your light or dark mode choice. The site is hosted on Vercel, which keeps standard server logs and may count visits.</p>' +
           '<h2>Updates</h2>' +
-          '<p>On Oct 25, 2026 the site was trimmed: figures that were out of date, duplicated on another page, or not about Fremont itself (county, Bay Area, national or worldwide) were removed, so each fact now appears once. Each figure is refreshed when its source publishes a new release; the release calendar on the home page lists what is due next. The date in the header is the date the dataset was last checked. Corrections are welcome.</p>' +
+          '<p>On Oct 25, 2026 the site was trimmed: figures that were out of date, duplicated on another page, or not about Fremont itself (county, Bay Area, national or worldwide) were removed, so each fact now appears once. Each figure is refreshed when its source publishes a new release. Each topic page shows the date its figures were last checked, and each figure shows the date of its own source. Corrections are welcome.</p>' +
           '</div>'
       },
       {

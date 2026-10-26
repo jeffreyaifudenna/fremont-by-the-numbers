@@ -9,7 +9,7 @@
   "source": "CMS Provider Data Catalog, Hospital General Information (xubh-q36u), facility 050195",
   "source_url": "https://data.cms.gov/provider-data/api/1/datastore/query/xubh-q36u/0?conditions[0][property]=citytown&conditions[0][value]=FREMONT&conditions[1][property]=state&conditions[1][value]=CA&limit=20",
   "kind": "Official count",
-  "note": "read 2026-10-24",
+  "note": "Read Oct 24, 2026.",
   "geo": "Fremont"
  },
  {
@@ -22,7 +22,7 @@
   "source": "CMS Provider Data Catalog, Hospital General Information (xubh-q36u), facility 050512",
   "source_url": "https://data.cms.gov/provider-data/api/1/datastore/query/xubh-q36u/0?conditions[0][property]=citytown&conditions[0][value]=FREMONT&conditions[1][property]=state&conditions[1][value]=CA&limit=20",
   "kind": "Official count",
-  "note": "read 2026-10-24",
+  "note": "Read Oct 24, 2026.",
   "geo": "Fremont"
  },
  {
@@ -35,7 +35,7 @@
   "source": "CMS Provider Data Catalog, HCAHPS (dgck-syfz), H_STAR_RATING",
   "source_url": "https://data.cms.gov/provider-data/api/1/datastore/query/dgck-syfz/0?conditions[0][property]=facility_id&conditions[0][value]=050195&conditions[1][property]=hcahps_measure_id&conditions[1][value]=H_STAR_RATING&limit=10",
   "kind": "Survey estimate",
-  "note": "812 completed surveys, 19% response rate. read 2026-10-24",
+  "note": "812 completed surveys, 19% response rate. Read Oct 24, 2026.",
   "geo": "Fremont"
  },
  {
@@ -48,7 +48,7 @@
   "source": "CMS Provider Data Catalog, HCAHPS (dgck-syfz), H_STAR_RATING",
   "source_url": "https://data.cms.gov/provider-data/api/1/datastore/query/dgck-syfz/0?conditions[0][property]=facility_id&conditions[0][value]=050512&conditions[1][property]=hcahps_measure_id&conditions[1][value]=H_STAR_RATING&limit=10",
   "kind": "Survey estimate",
-  "note": "753 completed surveys, 23% response rate. read 2026-10-24",
+  "note": "753 completed surveys, 23% response rate. Read Oct 24, 2026.",
   "geo": "Fremont"
  },
  {
@@ -61,7 +61,7 @@
   "source": "The Leapfrog Group, Hospital Safety Grade",
   "source_url": "https://www.hospitalsafetygrade.org/h/washington-hospital-healthcare-system",
   "kind": "Modeled",
-  "note": "First A on record; prior grades were B (Spring 2025), C (Fall 2025, Fall 2024, Spring 2024, Spring 2023), B (Fall 2023). Hospital press release dated May 6, 2026 confirms. read 2026-10-24",
+  "note": "First A on record; prior grades were B (Spring 2025), C (Fall 2025, Fall 2024, Spring 2024, Spring 2023), B (Fall 2023). Hospital press release dated May 6, 2026 confirms. Read Oct 24, 2026.",
   "geo": "Fremont"
  },
  {
@@ -74,7 +74,7 @@
   "source": "The Leapfrog Group, Hospital Safety Grade",
   "source_url": "https://www.hospitalsafetygrade.org/h/kaiser-permanente-fremont-medical-center",
   "kind": "Modeled",
-  "note": "Prior: B Fall 2025, B Spring 2025, B Fall 2024, C Spring 2024, B Fall 2023, A Spring 2023. read 2026-10-24",
+  "note": "Prior: B Fall 2025, B Spring 2025, B Fall 2024, C Spring 2024, B Fall 2023, A Spring 2023. Read Oct 24, 2026.",
   "geo": "Fremont"
  },
  {
@@ -87,7 +87,7 @@
   "source": "CMS Provider Data Catalog, Timely & Effective Care (yv7e-xc69)",
   "source_url": "https://data.cms.gov/provider-data/api/1/datastore/query/yv7e-xc69/0?conditions[0][property]=facility_id&conditions[0][value]=050195&limit=50",
   "kind": "Official count",
-  "note": "Excludes psychiatric and transferred patients; sample 372. Including those patients (OP-18a): 173 min. CMS rates Washington's ED volume 'very high'. Kaiser Fremont reports 'Not Available' for this measure. read 2026-10-24",
+  "note": "Excludes psychiatric and transferred patients; sample 372. Including those patients (OP-18a): 173 min. CMS rates Washington's ED volume 'very high'. Kaiser Fremont reports 'Not Available' for this measure. Read Oct 24, 2026.",
   "geo": "Fremont"
  },
  {
@@ -100,7 +100,7 @@
   "source": "CMS Provider Data Catalog, Timely & Effective Care (yv7e-xc69), OP-22",
   "source_url": "https://data.cms.gov/provider-data/api/1/datastore/query/yv7e-xc69/0?conditions[0][property]=facility_id&conditions[0][value]=050195&limit=50",
   "kind": "Official count",
-  "note": "Denominator 61,783 ER visits. read 2026-10-24",
+  "note": "Denominator 61,783 ER visits. Read Oct 24, 2026.",
   "geo": "Fremont"
  },
  {
@@ -113,7 +113,7 @@
   "source": "CMS Provider Data Catalog, Timely & Effective Care (yv7e-xc69)",
   "source_url": "https://data.cms.gov/provider-data/api/1/datastore/query/yv7e-xc69/0?conditions[0][property]=facility_id&conditions[0][value]=050195&limit=50",
   "kind": "Official count",
-  "note": "Kaiser Fremont also 90% (sample 91). read 2026-10-24",
+  "note": "Kaiser Fremont also 90% (sample 91). Read Oct 24, 2026.",
   "geo": "Fremont"
  },
  {
@@ -126,7 +126,7 @@
   "source": "CMS Provider Data Catalog, Timely & Effective Care (yv7e-xc69)",
   "source_url": "https://data.cms.gov/provider-data/api/1/datastore/query/yv7e-xc69/0?conditions[0][property]=facility_id&conditions[0][value]=050195&limit=50",
   "kind": "Official count",
-  "note": "Kaiser Fremont: 53%. read 2026-10-24",
+  "note": "Kaiser Fremont: 53%. Read Oct 24, 2026.",
   "geo": "Fremont"
  },
  {
@@ -139,7 +139,7 @@
   "source": "Washington Township Health Care District, Board packet Aug 12, 2026, Operating Indicators (FYTD June 2026)",
   "source_url": "https://www.washingtonhealth.com/images/08.12.2026-BOD-PACKET-2.pdf",
   "kind": "Company figure",
-  "note": "Unaudited district operating report. FY2025 projected was 62,519; FY2026 budget 63,086. read 2026-10-24",
+  "note": "Unaudited district operating report. FY2025 projected was 62,519; FY2026 budget 63,086. Read Oct 24, 2026.",
   "geo": "Fremont"
  },
  {
@@ -152,7 +152,7 @@
   "source": "Washington Township Health Care District, Board packet Aug 12, 2026, Operating Indicators",
   "source_url": "https://www.washingtonhealth.com/images/08.12.2026-BOD-PACKET-2.pdf",
   "kind": "Company figure",
-  "note": "Patient days 66,648; surgical cases 6,628. read 2026-10-24",
+  "note": "Patient days 66,648; surgical cases 6,628. Read Oct 24, 2026.",
   "geo": "Fremont"
  },
  {
@@ -165,7 +165,7 @@
   "source": "Washington Township Health Care District, Board packet Aug 12, 2026, Operating Indicators",
   "source_url": "https://www.washingtonhealth.com/images/08.12.2026-BOD-PACKET-2.pdf",
   "kind": "Company figure",
-  "note": "read 2026-10-24",
+  "note": "Read Oct 24, 2026.",
   "geo": "Fremont"
  },
  {
@@ -178,7 +178,7 @@
   "source": "Washington Township Health Care District, Board packet Aug 12, 2026, Operating Indicators",
   "source_url": "https://www.washingtonhealth.com/images/08.12.2026-BOD-PACKET-2.pdf",
   "kind": "Company figure",
-  "note": "June 2026 month: 1,783.1 total FTEs. FTEs, not headcount. read 2026-10-24",
+  "note": "June 2026 month: 1,783.1 total FTEs. FTEs, not headcount. Read Oct 24, 2026.",
   "geo": "Fremont"
  },
  {
@@ -191,7 +191,7 @@
   "source": "Washington Township Health Care District, Board packet Aug 12, 2026, Medical Staff Report (Jul 8, 2026)",
   "source_url": "https://www.washingtonhealth.com/images/08.12.2026-BOD-PACKET-2.pdf",
   "kind": "Company figure",
-  "note": "383 are active-category members. read 2026-10-24",
+  "note": "383 are active-category members. Read Oct 24, 2026.",
   "geo": "Fremont"
  },
  {
@@ -204,7 +204,7 @@
   "source": "CA HCAI, Hospital Profile: Washington Hospital – Fremont",
   "source_url": "https://hcai.ca.gov/facility/washington-hospital-fremont/",
   "kind": "Official count",
-  "note": "Sum of inpatient $292,331,591 and outpatient $252,294,375 as shown on page. read 2026-10-24",
+  "note": "Sum of inpatient $292,331,591 and outpatient $252,294,375 as shown on page. Read Oct 24, 2026.",
   "geo": "Fremont"
  },
  {
@@ -217,7 +217,7 @@
   "source": "CA HCAI, Hospital Profile: Washington Hospital – Fremont (payer mix)",
   "source_url": "https://hcai.ca.gov/facility/washington-hospital-fremont/",
   "kind": "Official count",
-  "note": "34.7% Medicare FFS + 11.5% Medicare managed care. Medi-Cal 22.2% (4.4% + 17.8%); statewide inpatient Medi-Cal 31.4%. read 2026-10-24",
+  "note": "34.7% Medicare FFS + 11.5% Medicare managed care. Medi-Cal 22.2% (4.4% + 17.8%); statewide inpatient Medi-Cal 31.4%. Read Oct 24, 2026.",
   "geo": "Fremont"
  },
  {
@@ -230,7 +230,7 @@
   "source": "CA HCAI, Hospital Profile: Washington Hospital – Fremont",
   "source_url": "https://hcai.ca.gov/facility/washington-hospital-fremont/",
   "kind": "Official count",
-  "note": "Kaiser Fremont: 5.0 days (CY2023). read 2026-10-24",
+  "note": "Kaiser Fremont: 5.0 days (CY2023). Read Oct 24, 2026.",
   "geo": "Fremont"
  },
  {
@@ -243,7 +243,7 @@
   "source": "CA HCAI, Hospital Profile: Kaiser Foundation Hospital – Fremont",
   "source_url": "https://hcai.ca.gov/facility/kaiser-foundation-hospital-fremont/",
   "kind": "Official count",
-  "note": "Sum of inpatient $95,146,684 and outpatient $216,710,268. Kaiser is an integrated plan, so hospital revenue is not comparable to a fee-for-service hospital. read 2026-10-24",
+  "note": "Sum of inpatient $95,146,684 and outpatient $216,710,268. Kaiser is an integrated plan, so hospital revenue is not comparable to a fee-for-service hospital. Read Oct 24, 2026.",
   "geo": "Fremont"
  },
  {
@@ -256,7 +256,7 @@
   "source": "CA HCAI, Hospital Profile: Kaiser Foundation Hospital – Fremont (payer mix)",
   "source_url": "https://hcai.ca.gov/facility/kaiser-foundation-hospital-fremont/",
   "kind": "Official count",
-  "note": "Medi-Cal 5.4% (0.8% FFS + 4.6% managed care); other third-party 28.8%. read 2026-10-24",
+  "note": "Medi-Cal 5.4% (0.8% FFS + 4.6% managed care); other third-party 28.8%. Read Oct 24, 2026.",
   "geo": "Fremont"
  },
  {
@@ -269,7 +269,7 @@
   "source": "Ratcliff Architects, Kaiser Fremont Master Plan Emergency Department project page",
   "source_url": "https://www.ratcliffarch.com/projects/kaiser-fremont-master-plan-emergency-department",
   "kind": "Company figure",
-  "note": "Architect's project page: 20,000 sq ft ED. Not an official hospital statistic; no completion date shown. read 2026-10-24",
+  "note": "Architect's project page: 20,000 sq ft ED. Not an official hospital statistic; no completion date shown. Read Oct 24, 2026.",
   "geo": "Fremont"
  },
  {
@@ -282,7 +282,7 @@
   "source": "Bay Area Community Health, Alameda County Locations",
   "source_url": "https://bach.health/alameda-county-locations/",
   "kind": "Company figure",
-  "note": "All 8 Alameda County sites are in Fremont (Liberty, Mowry I/II/III, Main Street Village, Irvington Dave clinic, vision, acupuncture/chiropractic). BACH also operates sites in Santa Clara County; 21 fixed sites + 5 mobile units total. read 2026-10-24",
+  "note": "All 8 Alameda County sites are in Fremont (Liberty, Mowry I/II/III, Main Street Village, Irvington Dave clinic, vision, acupuncture/chiropractic). BACH also operates sites in Santa Clara County; 21 fixed sites + 5 mobile units total. Read Oct 24, 2026.",
   "geo": "Fremont"
  },
  {
@@ -295,7 +295,7 @@
   "source": "Alameda Health Consortium, BACH Infographic – 2024 UDS Data (HRSA Uniform Data System)",
   "source_url": "https://www.alamedahealthconsortium.org/wp-content/uploads/2026/01/BACH_Infographic-2024-UDS-Data.pdf",
   "kind": "Official count",
-  "note": "489,274 visits. Payer mix: Medi-Cal 74%, uninsured 16%, Medicare 5%, private 5%. Organization-wide, not Fremont-only. read 2026-10-24",
+  "note": "489,274 visits. Payer mix: Medi-Cal 74%, uninsured 16%, Medicare 5%, private 5%. Organization-wide, not Fremont-only. Read Oct 24, 2026.",
   "geo": "Fremont"
  },
  {
@@ -308,20 +308,33 @@
   "source": "Alameda Health Consortium, BACH Infographic – 2024 UDS Data",
   "source_url": "https://www.alamedahealthconsortium.org/wp-content/uploads/2026/01/BACH_Infographic-2024-UDS-Data.pdf",
   "kind": "Official count",
-  "note": "Medi-Cal 74%. Organization-wide. read 2026-10-24",
+  "note": "Medi-Cal 74%. Organization-wide. Read Oct 24, 2026.",
   "geo": "Fremont"
  },
  {
-  "id": "urgent_care_operators",
+  "id": "urgent_care_washington",
   "group": "Clinics",
-  "label": "Health systems with a verified walk-in urgent care in Fremont",
-  "value": "Washington Health (2682 Mowry Ave, opened Dec 17, 2025); Sutter Health Fremont Center (3200 Kearney St)",
+  "label": "Walk-in urgent care: Washington Health",
+  "value": "2682 Mowry Ave",
   "format": "text",
-  "period": "Oct 2026",
-  "source": "Washington Health news release Dec 31, 2025; Sutter Health location page",
+  "period": "Opened Dec 17, 2025",
+  "source": "Washington Health news release Dec 31, 2025",
   "source_url": "https://www.washingtonhealth.com/news/2025/december/washington-health-urgent-care-now-open/",
   "kind": "Company figure",
-  "note": "Sutter page: https://www.sutterhealth.org/find-location/facility/fremont-urgent-care-1043246913 (M–F 8am–8pm, Sa–Su 8am–5pm). Kaiser Fremont has an ED and a members-only Minor Injury Clinic; Carbon Health and other retail urgent cares not verified from operator sites. Stanford Health Care has specialty clinics at 2557 Mowry Ave. read 2026-10-24",
+  "note": "One of two health systems with a verified walk-in urgent care in Fremont. Read Oct 24, 2026.",
+  "geo": "Fremont"
+ },
+ {
+  "id": "urgent_care_sutter",
+  "group": "Clinics",
+  "label": "Walk-in urgent care: Sutter Health Fremont Center",
+  "value": "3200 Kearney St",
+  "format": "text",
+  "period": "Oct 2026",
+  "source": "Sutter Health location page",
+  "source_url": "https://www.sutterhealth.org/find-location/facility/fremont-urgent-care-1043246913",
+  "kind": "Company figure",
+  "note": "Open M–F 8am–8pm, Sa–Su 8am–5pm. Kaiser Fremont has an emergency department and a members-only Minor Injury Clinic. Carbon Health and other retail urgent cares were not verified from operator sites. Stanford Health Care has specialty clinics at 2557 Mowry Ave. Read Oct 24, 2026.",
   "geo": "Fremont"
  },
  {
@@ -334,7 +347,7 @@
   "source": "U.S. Census Bureau, ACS 2024 1-year, table C27004 (Employer-Based Health Insurance by Sex by Age), Fremont city",
   "source_url": "https://data.census.gov/api/access/data/table?id=ACSDT1Y2024.C27004&g=160XX00US0626000",
   "kind": "Survey estimate",
-  "note": "158,155 of 227,349 civilian noninstitutionalized residents; summed across six sex-by-age cells. People may hold more than one coverage type. read 2026-10-24",
+  "note": "158,155 of 227,349 civilian noninstitutionalized residents; summed across six sex-by-age cells. People may hold more than one coverage type. Read Oct 24, 2026.",
   "geo": "Fremont"
  },
  {
@@ -347,7 +360,7 @@
   "source": "U.S. Census Bureau, ACS 2024 1-year, table C27005, Fremont city",
   "source_url": "https://data.census.gov/api/access/data/table?id=ACSDT1Y2024.C27005&g=160XX00US0626000",
   "kind": "Survey estimate",
-  "note": "22,342 of 227,349; summed across cells. read 2026-10-24",
+  "note": "22,342 of 227,349; summed across cells. Read Oct 24, 2026.",
   "geo": "Fremont"
  },
  {
@@ -360,7 +373,7 @@
   "source": "U.S. Census Bureau, ACS 2024 1-year, table C27006, Fremont city",
   "source_url": "https://data.census.gov/api/access/data/table?id=ACSDT1Y2024.C27006&g=160XX00US0626000",
   "kind": "Survey estimate",
-  "note": "31,778 of 227,349. Among residents 65+, 89.0% (29,651 of 33,307) have Medicare. read 2026-10-24",
+  "note": "31,778 of 227,349. Among residents 65+, 89.0% (29,651 of 33,307) have Medicare. Read Oct 24, 2026.",
   "geo": "Fremont"
  },
  {
@@ -373,7 +386,7 @@
   "source": "U.S. Census Bureau, ACS 2024 1-year, table C27007, Fremont city",
   "source_url": "https://data.census.gov/api/access/data/table?id=ACSDT1Y2024.C27007&g=160XX00US0626000",
   "kind": "Survey estimate",
-  "note": "39,064 of 227,349; summed across cells. read 2026-10-24",
+  "note": "39,064 of 227,349; summed across cells. Read Oct 24, 2026.",
   "geo": "Fremont"
  },
  {
@@ -386,7 +399,7 @@
   "source": "CA DHCS, Medi-Cal Certified Eligibles by County, January 2026",
   "source_url": "https://www.dhcs.ca.gov/hy/dataandstats/statistics/Documents/Medi-Cal-Eligibles-County-Populations-JAN2026.pdf",
   "kind": "Official count",
-  "note": "476,073 eligibles of 1,649,199 county population (DOF 2025 projection). Statewide 35.4%. County-level; Fremont city share is lower (see ACS). read 2026-10-24",
+  "note": "476,073 eligibles of 1,649,199 county population (DOF 2025 projection). Statewide 35.4%. County-level; Fremont city share is lower (see ACS). Read Oct 24, 2026.",
   "geo": "Alameda County"
  },
  {
@@ -399,7 +412,7 @@
   "source": "CA DHCS, Medi-Cal Certified Eligibles by County, January 2026",
   "source_url": "https://www.dhcs.ca.gov/hy/dataandstats/statistics/Documents/Medi-Cal-Eligibles-County-Populations-JAN2026.pdf",
   "kind": "Official count",
-  "note": "read 2026-10-24",
+  "note": "Read Oct 24, 2026.",
   "geo": "Alameda County"
  }
 ]

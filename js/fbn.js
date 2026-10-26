@@ -426,7 +426,7 @@
   }
   function tablePanel(spec) {
     const panel = document.createElement('div');
-    panel.className = 'panel' + (spec.navy ? ' navy' : '');
+    panel.className = 'panel' + (spec.navy ? ' navy' : '') + (spec.columns.length >= 7 ? ' wide' : '');  // 7+ columns need the full row on desktop
     let rows = spec.rows ? spec.rows(data, row) : data(spec.ds).slice();
     if (spec.filter) rows = rows.filter(typeof spec.filter === 'function' ? spec.filter : r => Object.keys(spec.filter).every(k => r[k] === spec.filter[k]));
     if (spec.sort) rows.sort(typeof spec.sort === 'function' ? spec.sort : (a, b) => (b[spec.sort] || 0) - (a[spec.sort] || 0));
