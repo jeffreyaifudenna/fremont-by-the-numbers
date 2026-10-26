@@ -127,9 +127,11 @@
   let catalog = null;
   let links = null;   // data/source_links.json: where each number can be checked
   const base = (document.currentScript && document.currentScript.getAttribute('data-base')) || '';
-  function dataUrl(f) { return base + 'data/' + f; }
+  // data-v is a hash of css/, js/ and data/ written by the build; versioned files can be cached for good (see vercel.json).
+  const ver = (document.currentScript && document.currentScript.getAttribute('data-v')) || '';
+  function dataUrl(f) { return base + 'data/' + f + (ver ? '?v=' + ver : ''); }
   function loadJSON(path) {
-    return fetch(path, { cache: 'no-cache' }).then(r => { if (!r.ok) throw new Error(path + ' ' + r.status); return r.json(); });
+    return fetch(path, ver ? {} : { cache: 'no-cache' }).then(r => { if (!r.ok) throw new Error(path + ' ' + r.status); return r.json(); });
   }
   function load(ids) {
     const want = Array.from(new Set(ids));
@@ -534,15 +536,22 @@
     document.title = (spec.key === 'index' ? SITE.name : spec.title + ' · ' + SITE.name);
     chrome(spec.key);
     const main = document.querySelector('main') || document.body.appendChild(document.createElement('main'));
-    if (spec.bare) { main.innerHTML = '<div class="wrap"><h1 class="sr-only">' + esc(spec.title) + '</h1><p class="loading">Loading figures…</p></div>'; }
-    else main.innerHTML = '<div class="wrap"><div class="page-head">' + (spec.kicker ? '<p class="kicker">' + esc(spec.kicker) + '</p>' : '') + '<h1>' + esc(spec.title) + '</h1>' + (spec.lede ? '<p class="lede">' + esc(spec.lede) + '</p>' : '') +
+    const head = spec.bare ? '<div class="wrap"><h1 class="sr-only">' + esc(spec.title) + '</h1><p class="loading">Loading figures…</p></div>'
+      : '<div class="wrap"><div class="page-head">' + (spec.kicker ? '<p class="kicker">' + esc(spec.kicker) + '</p>' : '') + '<h1>' + esc(spec.title) + '</h1>' + (spec.lede ? '<p class="lede">' + esc(spec.lede) + '</p>' : '') +
       (spec.key !== 'sources' ? '<p class="click-hint"><span aria-hidden="true">↗</span> ' + esc(spec.hint || 'Click any number, card or table row to open its source in a new tab.') + '</p>' : '') + '<p class="last-checked">Figures last checked ' + esc(SITE.updated) + '. Each figure shows the date of its own source.</p></div><p class="loading">Loading figures…</p></div>';
-    const wrap = main.querySelector('.wrap');
+    // The .html files ship pre-rendered. Keep that copy on screen while the data loads, then swap in the live page
+    // in one go (same task, so nothing paints in between). Only a bare shell shows "Loading figures…".
+    const prerendered = !!main.querySelector('.section');
+    const kept = prerendered ? Array.from(main.childNodes) : null;
+    let wrap = null;
+    const fresh = () => { main.innerHTML = head; wrap = main.querySelector('.wrap'); };
+    if (!prerendered) fresh();
     const uses = spec.uses === 'all' ? [] : (spec.uses || []);
     // Discover datasets: probe a function-built spec with empty data so every ds reference is collected.
     let probe = spec.sections;
     if (typeof spec.sections === 'function') { try { probe = spec.sections(() => [], () => null); } catch (e) { probe = []; } }
     load(collectDatasets(probe).concat(collectDatasets(spec)).concat(uses)).then(() => spec.uses === 'all' ? load(Object.keys(catalog || {})) : null).then(() => {
+      if (prerendered) fresh();
       wrap.querySelector('.loading').remove();
       const secs = typeof spec.sections === 'function' ? spec.sections(data, row) : spec.sections;
       secs.forEach(s => wrap.appendChild(section(s)));
@@ -550,8 +559,9 @@
       if (spec.uses !== 'all' && spec.key !== 'index') wrap.appendChild(usedDatasets(collectDatasets(secs).concat(uses)));
       if (spec.after) spec.after(wrap, data, row);
     }).catch(e => {
-      wrap.querySelector('.loading').textContent = 'The figures could not be loaded. If you opened this page as a file, it needs to be served from a web server (or published) for the data files to load.';
       console.error(e);
+      if (prerendered) { main.replaceChildren(...kept); return; }   // the pre-rendered copy stays up
+      wrap.querySelector('.loading').textContent = 'The figures could not be loaded. If you opened this page as a file, it needs to be served from a web server (or published) for the data files to load.';
     });
   }
   function jumpList(wrap) {
