@@ -1,7 +1,7 @@
 # Fremont by the Numbers: fact-check results and correction list (Oct 25, 2026)
 
 Three independent reviewers re-checked about 258 rows (single figures or groups) against their sources. Totals: Confirmed 198 | Mismatch 7 | Stale 2 | Could not verify 51. No wrong-city mix-ups (Fremont MI/NE/OH) were found.
-Full reviewer reports (scratchpad): factcheck/report_A.md, report_B.md, report_C.md. Nothing on the site has been changed.
+Full reviewer reports (scratchpad): factcheck/report_A.md, report_B.md, report_C.md. Status Oct 26, 2026: every Section A item has been applied per its source (A1-A8, A10, A11 earlier; A9 Ultima Genomics row now cites General Atlantic's Jun 2, 2022 press release and no longer asserts a Fremont headquarters, which no primary source states). Sections B and C are still open.
 
 ## A. Fix before launch (reviewer evidence is specific)
 | # | Page | What the site says | What the source says | Proposed fix |

@@ -1754,7 +1754,7 @@ Source note: Crunchbase and VCBacked.co, read Oct 24, 2026. Both are crowdsource
 ## Big rounds, unicorns and IPOs
 - Weee! valuation at its Series E, Fremont’s clearest unicorn: **$4,100,000,000** — Feb 2022 · Built In SF [source](https://www.builtinsf.com/articles/sf-top-funding-rounds-february-2022)
 - Alamar Biosciences IPO, April 2026: **$191,000,000** — Apr 17, 2026 · Renaissance Capital [source](https://www.renaissancecapital.com/IPO-Center/News/118387/Protein-biomarker-detection-platform-Alamar-Biosciences-prices-upsized-IPO-)
-- Ultima Genomics, raised at launch (2022): **$600,000,000** — May 2022 · Wikipedia, 'Ultima Genomics' [source](https://en.wikipedia.org/wiki/Ultima_Genomics)
+- Ultima Genomics, raised at launch (2022): **$600,000,000** — Jun 2022 · General Atlantic press release [source](https://www.generalatlantic.com/media-article/ultima-genomics-seeks-to-deliver-the-100-genome/)
 - Tandem PV solar factory, megawatts per year (opened 2026): **40** — Opened Apr 2026 · pv magazine USA [source](https://pv-magazine-usa.com/2026/04/20/tandem-pv-launches-commercial-perovskite-silicon-manufacturing-in-california/)
 
 ### Largest recent funding rounds and IPOs by Fremont-linked companies
@@ -2064,6 +2064,7 @@ Each dataset is one file; its description says what it holds and when it was rea
 - 2025 California School Dashboard resultsGraduation rate, class of 2025 <https://fremontunified.org/news/2025-dash/>
 - Fremont’s Public High Schools Strong Ranking (Aug 19, 2025)Prior-year (2025–26) U.S. News state ranks <https://fremontunified.org/news/hs-strong-ranking/>
 - FUSD Celebrates Three High Schools Ranked Among California’s Best (Aug 18, 2026)Cross-check of 2026–27 U.S. News ranks <https://fremontunified.org/news/fusd-schools-ranked-among-best-by-usnews/>
+- General Atlantic press release, "Ultima Genomics Seeks to Deliver the $100 Genome" (Jun 2, 2022)Funding Ultima Genomics said it had secured when it came out of stealth <https://www.generalatlantic.com/media-article/ultima-genomics-seeks-to-deliver-the-100-genome/>
 - Fremont HospitalLicensed beds <https://hcai.ca.gov/facility/fremont-hospital/>
 - Kaiser Foundation Hospital – FremontLicensed beds <https://hcai.ca.gov/facility/kaiser-foundation-hospital-fremont/>
 - Washington Hospital – FremontLicensed beds <https://hcai.ca.gov/facility/washington-hospital-fremont/>
@@ -2130,7 +2131,6 @@ Each dataset is one file; its description says what it holds and when it was rea
 - Washington Township Health Care District, Board packet Aug 12, 2026, Operating Indicators (FYTD June 2026)Washington Hospital — emergency room visits, fiscal year <https://www.washingtonhealth.com/images/08.12.2026-BOD-PACKET-2.pdf>
 - Wikipedia, Mission PeakMission Peak summit elevation (feet) <https://en.wikipedia.org/wiki/Mission_Peak>
 - Wikipedia, Aqua AdventureYear Aqua Adventure water park opened in Central Park <https://en.wikipedia.org/wiki/Aqua_Adventure>
-- Wikipedia, 'Ultima Genomics'Venture capital raised by Fremont-headquartered Ultima Genomics when it came out of stealth <https://en.wikipedia.org/wiki/Ultima_Genomics>
 - Xfinity, Fremont CA local pageXfinity 300 Mbps plan, promotional monthly price (Fremont) <https://www.xfinity.com/local/ca/fremont>
 - Fremont, CA home valuesTypical home value, typical rent, listings and sales measures <https://www.zillow.com/fremont-ca/home-values/>
 - Public data terms (real estate metrics)Attribution requirement <https://zillowgroup.com/developers/api/public-data/real-estate-metrics>

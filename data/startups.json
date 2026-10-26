@@ -275,14 +275,14 @@
  {
   "id": "ultima_genomics_raise_2022",
   "group": "Notable companies",
-  "label": "Venture capital raised by Fremont-headquartered Ultima Genomics when it came out of stealth",
+  "label": "Funding Ultima Genomics said it had secured when it came out of stealth",
   "value": 600000000,
   "format": "usd",
-  "period": "May 2022",
-  "source": "Wikipedia, 'Ultima Genomics'",
-  "source_url": "https://en.wikipedia.org/wiki/Ultima_Genomics",
-  "kind": "News report",
-  "note": "Investors included General Atlantic, a16z, Khosla, Lightspeed, Founders Fund. Founded 2016.",
+  "period": "Jun 2022",
+  "source": "General Atlantic press release, \"Ultima Genomics Seeks to Deliver the $100 Genome\" (Jun 2, 2022)",
+  "source_url": "https://www.generalatlantic.com/media-article/ultima-genomics-seeks-to-deliver-the-100-genome/",
+  "kind": "Company figure",
+  "note": "The release says \"approximately $600 million\" from General Atlantic, Andreessen Horowitz, D1 Capital, Khosla Ventures, Lightspeed, Marius Nacht, aMoon, Playground Global and Founders Fund. Ultima's About page now says it has raised over $700 million (undated). The release does not give a headquarters city; Wikipedia lists Fremont and GenomeWeb described the company as Newark-based, so Fremont is not confirmed by a primary source. Re-checked Oct 26, 2026.",
   "geo": "Fremont"
  }
 ]
