@@ -91,7 +91,7 @@ FBN.page({
         title: 'Every Fremont Unified school',
         sub: 'Elementary, middle and high schools with test results, attendance and U.S. News state rank; click a rank to open that school’s U.S. News page.',
         tables: [{
-          ds: 'school_list', title: 'School finder', phone: [0, 2, 3, 4], sub: 'Grouped by school level, then sorted by English results',
+          ds: 'school_list', title: 'School finder', phoneCards: true,sub: 'Grouped by school level, then sorted by English results',
           links: [
             { url: 'https://www.usnews.com/education/k12/elementary-schools/california/fremont-unified-school-district-111898', name: 'U.S. News, Fremont Unified elementary schools' },
             { url: 'https://www.usnews.com/education/k12/middle-schools/california/fremont-unified-school-district-111898', name: 'U.S. News, Fremont Unified middle schools' },

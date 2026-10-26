@@ -410,8 +410,9 @@
   let rsT = null;
   window.addEventListener('resize', () => { clearTimeout(rsT); rsT = setTimeout(redrawCharts, 150); });
 
-  /* On phones a table shows only its first few columns, with a button for the rest. */
-  function phoneShow(n, list) { return new Set(list && list.length ? list : [0, 1, 2]); }
+  /* On phones a table shows only its first few columns, with a button for the rest,
+     or (phoneCards) turns each row into a small card with every figure labeled. */
+  function phoneShow(n, list, cards) { return new Set(cards ? Array.from({ length: n }, (_, i) => i) : (list && list.length ? list : [0, 1, 2])); }
   function clsAttr() { const c = Array.prototype.slice.call(arguments).filter(Boolean).join(' '); return c ? ' class="' + c + '"' : ''; }
   function trimToggle(panel, n, show) {
     if (n <= show.size) return;
@@ -430,7 +431,7 @@
     if (spec.filter) rows = rows.filter(typeof spec.filter === 'function' ? spec.filter : r => Object.keys(spec.filter).every(k => r[k] === spec.filter[k]));
     if (spec.sort) rows.sort(typeof spec.sort === 'function' ? spec.sort : (a, b) => (b[spec.sort] || 0) - (a[spec.sort] || 0));
     if (spec.limit) rows = rows.slice(0, spec.limit);
-    const showCols = phoneShow(spec.columns.length, spec.phone);
+    const showCols = phoneShow(spec.columns.length, spec.phone, spec.phoneCards);
     const head = '<thead><tr>' + spec.columns.map((c, ci) => '<th' + clsAttr((c.num !== false && c.format && c.format !== 'text' ? 'num' : ''), showCols.has(ci) ? '' : 'ph-x') + '>' + esc(c.label) + '</th>').join('') + '</tr></thead>';
     const fallback = panelLinks(spec)[0] || null;
     const rowLinkFor = r => spec.link === false ? null : ((spec.ds ? linkFor(spec.ds, r) : null) || fallback);
@@ -445,11 +446,11 @@
       return gh + '<tr' + (lk ? ' class="linked' + (spec.highlight && spec.highlight(r) ? ' hl' : '') + '" data-href="' + esc(absUrl(lk.url)) + '"' : (spec.highlight && spec.highlight(r) ? ' class="hl"' : '')) + '>' + spec.columns.map((c, ci) => {
         const v = typeof c.key === 'function' ? c.key(r) : r[c.key];
         const num = c.num !== false && c.format && c.format !== 'text';
-        return '<td' + clsAttr(num ? 'num' : '', showCols.has(ci) ? '' : 'ph-x') + '>' + (c.html ? v : esc(fmt(v, c.format || 'text'))) + (ci === last && spec.rowArrow !== false ? rowArrow(lk, firstTxt) : '') + '</td>';
+        return '<td' + clsAttr(num ? 'num' : '', showCols.has(ci) ? '' : 'ph-x') + (spec.phoneCards ? ' data-label="' + esc(c.label) + '"' : '') + '>' + (c.html ? v : esc(fmt(v, c.format || 'text'))) + (ci === last && spec.rowArrow !== false ? rowArrow(lk, firstTxt) : '') + '</td>';
       }).join('') + '</tr>';
     }).join('') + '</tbody>';
     panel.innerHTML = '<div class="panel-head"><h3>' + esc(spec.title || '') + '</h3>' + (spec.sub ? '<span class="sub">' + esc(spec.sub) + '</span>' : '') + '</div>' +
-      '<div class="table-wrap"><table>' + head + body + '</table></div>';
+      '<div class="table-wrap' + (spec.phoneCards ? ' ph-cards' : '') + '"><table>' + head + body + '</table></div>';
     const sl = sourceLine(spec); if (sl) panel.appendChild(sl);
     wireRows(panel);
     trimToggle(panel, spec.columns.length, showCols);
