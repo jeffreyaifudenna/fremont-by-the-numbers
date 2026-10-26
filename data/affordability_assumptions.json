@@ -1,0 +1,3 @@
+[
+  {"id": "base", "down_payment_share": 0.20, "term_years": 30, "property_tax_rate": 0.01, "insurance_per_year": 0, "housing_cost_share_rule": 0.30, "note": "20% down, 30-year fixed at the latest weekly national average rate, 1% base property tax only (voter-approved bonds add more), no insurance, HOA or mortgage insurance. 30% of gross income is the usual affordability rule."}
+]

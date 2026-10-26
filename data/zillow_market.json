@@ -1,0 +1,9 @@
+[
+  {"id": "zhvi", "metric": "Typical home value (ZHVI)", "value": 1439805, "format": "usd", "yoy_pct": -1.5, "as_of": "Sep 30, 2026", "kind": "Modeled index", "source": "Zillow Research"},
+  {"id": "zori", "metric": "Typical asking rent (ZORI)", "value": 3388, "format": "usd", "yoy_pct": 6.0, "as_of": "Sep 30, 2026", "kind": "Modeled index", "source": "Zillow Research"},
+  {"id": "inventory", "metric": "Homes for sale", "value": 372, "format": "int", "yoy_pct": null, "as_of": "Sep 30, 2026", "kind": "Listing count", "source": "Zillow Research"},
+  {"id": "new_listings", "metric": "New listings in the month", "value": 134, "format": "int", "yoy_pct": null, "as_of": "Sep 30, 2026", "kind": "Listing count", "source": "Zillow Research"},
+  {"id": "days_pending", "metric": "Median days to pending", "value": 20, "format": "int", "yoy_pct": null, "as_of": "Sep 30, 2026", "kind": "Listing measure", "source": "Zillow Research"},
+  {"id": "sale_to_list", "metric": "Median sale-to-list ratio", "value": 0.998, "format": "ratio", "yoy_pct": null, "as_of": "Aug 31, 2026", "kind": "Sales measure", "source": "Zillow Research"},
+  {"id": "over_list", "metric": "Sales over list price", "value": 47.5, "format": "pct", "yoy_pct": null, "as_of": "Aug 31, 2026", "kind": "Sales measure", "source": "Zillow Research"}
+]

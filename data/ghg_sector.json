@@ -1,0 +1,7 @@
+[
+  {"year": "2005", "kind": "Inventory", "transportation": 865002, "building_energy": 685372, "water_wastewater": 11235, "waste": 36256},
+  {"year": "2010", "kind": "Inventory", "transportation": 825264, "building_energy": 587362, "water_wastewater": 10448, "waste": 13493},
+  {"year": "2015", "kind": "Inventory", "transportation": 840187, "building_energy": 568977, "water_wastewater": 9098, "waste": 46820},
+  {"year": "2018", "kind": "Inventory", "transportation": 783601, "building_energy": 350137, "water_wastewater": 4712, "waste": 57018},
+  {"year": "2030 goal", "kind": "Goal", "transportation": 550293, "building_energy": 186892, "water_wastewater": 3782, "waste": 19281}
+]

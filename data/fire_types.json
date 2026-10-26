@@ -1,0 +1,58 @@
+[
+ {
+  "category": "Rescue and EMS",
+  "incidents": 12485,
+  "period": "2025, full year",
+  "source": "City of Fremont Fire Department, incident summaries (2025)",
+  "source_url": "https://www.fremont.gov/government/departments/fire/about-us-mission-responsibilities-goals/fire-divisions/operations/incident-summaries"
+ },
+ {
+  "category": "Good intent",
+  "incidents": 2686,
+  "period": "2025, full year",
+  "source": "City of Fremont Fire Department, incident summaries (2025)",
+  "source_url": "https://www.fremont.gov/government/departments/fire/about-us-mission-responsibilities-goals/fire-divisions/operations/incident-summaries"
+ },
+ {
+  "category": "False calls",
+  "incidents": 1462,
+  "period": "2025, full year",
+  "source": "City of Fremont Fire Department, incident summaries (2025)",
+  "source_url": "https://www.fremont.gov/government/departments/fire/about-us-mission-responsibilities-goals/fire-divisions/operations/incident-summaries"
+ },
+ {
+  "category": "Service calls",
+  "incidents": 1435,
+  "period": "2025, full year",
+  "source": "City of Fremont Fire Department, incident summaries (2025)",
+  "source_url": "https://www.fremont.gov/government/departments/fire/about-us-mission-responsibilities-goals/fire-divisions/operations/incident-summaries"
+ },
+ {
+  "category": "Fires",
+  "incidents": 633,
+  "period": "2025, full year",
+  "source": "City of Fremont Fire Department, incident summaries (2025)",
+  "source_url": "https://www.fremont.gov/government/departments/fire/about-us-mission-responsibilities-goals/fire-divisions/operations/incident-summaries"
+ },
+ {
+  "category": "Hazardous conditions",
+  "incidents": 273,
+  "period": "2025, full year",
+  "source": "City of Fremont Fire Department, incident summaries (2025)",
+  "source_url": "https://www.fremont.gov/government/departments/fire/about-us-mission-responsibilities-goals/fire-divisions/operations/incident-summaries"
+ },
+ {
+  "category": "Other",
+  "incidents": 19,
+  "period": "2025, full year",
+  "source": "City of Fremont Fire Department, incident summaries (2025)",
+  "source_url": "https://www.fremont.gov/government/departments/fire/about-us-mission-responsibilities-goals/fire-divisions/operations/incident-summaries"
+ },
+ {
+  "category": "Rupture or explosion",
+  "incidents": 10,
+  "period": "2025, full year",
+  "source": "City of Fremont Fire Department, incident summaries (2025)",
+  "source_url": "https://www.fremont.gov/government/departments/fire/about-us-mission-responsibilities-goals/fire-divisions/operations/incident-summaries"
+ }
+]

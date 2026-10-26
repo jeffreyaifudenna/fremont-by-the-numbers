@@ -1,0 +1,72 @@
+[
+ {
+  "hospital": "Washington Hospital",
+  "cycle": "Spring 2023",
+  "grade": "C"
+ },
+ {
+  "hospital": "Washington Hospital",
+  "cycle": "Fall 2023",
+  "grade": "B"
+ },
+ {
+  "hospital": "Washington Hospital",
+  "cycle": "Spring 2024",
+  "grade": "C"
+ },
+ {
+  "hospital": "Washington Hospital",
+  "cycle": "Fall 2024",
+  "grade": "C"
+ },
+ {
+  "hospital": "Washington Hospital",
+  "cycle": "Spring 2025",
+  "grade": "B"
+ },
+ {
+  "hospital": "Washington Hospital",
+  "cycle": "Fall 2025",
+  "grade": "C"
+ },
+ {
+  "hospital": "Washington Hospital",
+  "cycle": "Spring 2026",
+  "grade": "A"
+ },
+ {
+  "hospital": "Kaiser Fremont Medical Center",
+  "cycle": "Spring 2023",
+  "grade": "A"
+ },
+ {
+  "hospital": "Kaiser Fremont Medical Center",
+  "cycle": "Fall 2023",
+  "grade": "B"
+ },
+ {
+  "hospital": "Kaiser Fremont Medical Center",
+  "cycle": "Spring 2024",
+  "grade": "C"
+ },
+ {
+  "hospital": "Kaiser Fremont Medical Center",
+  "cycle": "Fall 2024",
+  "grade": "B"
+ },
+ {
+  "hospital": "Kaiser Fremont Medical Center",
+  "cycle": "Spring 2025",
+  "grade": "B"
+ },
+ {
+  "hospital": "Kaiser Fremont Medical Center",
+  "cycle": "Fall 2025",
+  "grade": "B"
+ },
+ {
+  "hospital": "Kaiser Fremont Medical Center",
+  "cycle": "Spring 2026",
+  "grade": "B"
+ }
+]

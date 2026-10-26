@@ -1,0 +1,6 @@
+[
+  {"category": "Very low income", "rhna": 3640, "to_date": 149, "remaining": 3491, "permits_2025": 53},
+  {"category": "Low income", "rhna": 2096, "to_date": 227, "remaining": 1869, "permits_2025": 56},
+  {"category": "Moderate income", "rhna": 1996, "to_date": 152, "remaining": 1844, "permits_2025": 55},
+  {"category": "Above moderate income", "rhna": 5165, "to_date": 962, "remaining": 4203, "permits_2025": 385}
+]

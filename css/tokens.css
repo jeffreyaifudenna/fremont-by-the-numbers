@@ -1,0 +1,95 @@
+/* Fremont by the Numbers — design tokens
+   Light = "Bayside", Dark = "Night Shift". Decided Oct 24, 2026.
+   Series colors are for chart marks and legend swatches only; text never uses them. */
+
+:root {
+  --page: #eaf0f6;
+  --surface: #f6f9fc;
+  --surface-2: #ffffff;
+  --header: #0d366b;
+  --header-ink: #ffffff;
+  --header-muted: #cde2fb;
+  --line: #dce5ee;
+  --axis: #b9c7d6;
+  --ink: #0f2233;
+  --ink-2: #475669;
+  --muted: #586879;
+  --link: #1c5cab;
+
+  --s1: #2a78d6;   /* Fremont, always series 1 */
+  --s2: #eb6834;
+  --s3: #1baf7a;
+  --s4: #eda100;
+  --s5: #e87ba4;
+
+  /* soft tints for stat cards */
+  --t1: #e3eefb; --t1-line: #bcd6f5;
+  --t2: #fdebe3; --t2-line: #f6c5b0;
+  --t3: #def4ea; --t3-line: #b3e3cf;
+  --t4: #fcf0cf; --t4-line: #f3d98f;
+  --t5: #fbe6ee; --t5-line: #f3c2d4;
+
+  --ok: #0c7a0c;
+  --warn: #b36b00;
+
+  --radius: 16px;
+  --radius-sm: 10px;
+  --shadow: 0 1px 2px rgba(15, 34, 51, 0.04);
+  --font: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-num: ui-rounded, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+:root[data-theme="dark"] {
+  --page: #0a131b;
+  --surface: #0f1b26;
+  --surface-2: #142432;
+  --header: #0b2446;
+  --header-ink: #eaf1f7;
+  --header-muted: #9ec5f4;
+  --line: #22344a;
+  --axis: #3a4f68;
+  --ink: #eaf1f7;
+  --ink-2: #b8c6d6;
+  --muted: #9fb0c3;
+  --link: #6da7ec;
+
+  --s1: #3987e5;
+  --s2: #d95926;
+  --s3: #199e70;
+  --s4: #c98500;
+  --s5: #d55181;
+
+  --t1: #122b4a; --t1-line: #1f4576;
+  --t2: #3a1d10; --t2-line: #6b331b;
+  --t3: #0f3327; --t3-line: #1a5a44;
+  --t4: #3a2c05; --t4-line: #6b5210;
+  --t5: #3a1626; --t5-line: #6b2a48;
+
+  --ok: #4fd17a;
+  --warn: #f0b24a;
+  --shadow: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --page: #0a131b;
+    --surface: #0f1b26;
+    --surface-2: #142432;
+    --header: #0b2446;
+    --header-ink: #eaf1f7;
+    --header-muted: #9ec5f4;
+    --line: #22344a;
+    --axis: #3a4f68;
+    --ink: #eaf1f7;
+    --ink-2: #b8c6d6;
+    --muted: #9fb0c3;
+    --link: #6da7ec;
+    --s1: #3987e5; --s2: #d95926; --s3: #199e70; --s4: #c98500; --s5: #d55181;
+    --t1: #122b4a; --t1-line: #1f4576;
+    --t2: #3a1d10; --t2-line: #6b331b;
+    --t3: #0f3327; --t3-line: #1a5a44;
+    --t4: #3a2c05; --t4-line: #6b5210;
+    --t5: #3a1626; --t5-line: #6b2a48;
+    --ok: #4fd17a; --warn: #f0b24a; --shadow: none;
+  }
+}

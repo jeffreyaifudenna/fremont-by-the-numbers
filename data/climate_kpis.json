@@ -1,0 +1,5 @@
+[
+  {"id": "evs", "label": "EVs registered in Fremont", "value": 40084, "format": "int", "period": "2025"},
+  {"id": "trees", "label": "Trees planted", "value": 1540, "format": "int", "period": "2025"},
+  {"id": "food", "label": "Pounds of food recovered by local organizations", "value": 641741, "format": "int", "period": "2025"}
+]

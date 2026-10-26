@@ -1,0 +1,62 @@
+[
+{
+"year": 2014,
+"fatal_crashes": 8,
+"other_fatal": 0
+},
+{
+"year": 2015,
+"fatal_crashes": 8,
+"other_fatal": 0
+},
+{
+"year": 2016,
+"fatal_crashes": 4,
+"other_fatal": 0
+},
+{
+"year": 2017,
+"fatal_crashes": 10,
+"other_fatal": 2
+},
+{
+"year": 2018,
+"fatal_crashes": 4,
+"other_fatal": 1
+},
+{
+"year": 2019,
+"fatal_crashes": 7,
+"other_fatal": 0
+},
+{
+"year": 2020,
+"fatal_crashes": 4,
+"other_fatal": 0
+},
+{
+"year": 2021,
+"fatal_crashes": 9,
+"other_fatal": 0
+},
+{
+"year": 2022,
+"fatal_crashes": 8,
+"other_fatal": 0
+},
+{
+"year": 2023,
+"fatal_crashes": 6,
+"other_fatal": 1
+},
+{
+"year": 2024,
+"fatal_crashes": 12,
+"other_fatal": 3
+},
+{
+"year": 2025,
+"fatal_crashes": 7,
+"other_fatal": 0
+}
+]

@@ -1,0 +1,10 @@
+[
+  {"year": 1960, "population": 43790, "kind": "Census count", "period": "Apr 1960", "source": "Decennial Census, compiled by MTC (2021)"},
+  {"year": 1970, "population": 100869, "kind": "Census count", "period": "Apr 1970", "source": "Decennial Census, compiled by MTC (2021)"},
+  {"year": 1980, "population": 131945, "kind": "Census count", "period": "Apr 1980", "source": "Decennial Census, compiled by MTC (2021)"},
+  {"year": 1990, "population": 173339, "kind": "Census count", "period": "Apr 1990", "source": "Decennial Census, compiled by MTC (2021)"},
+  {"year": 2000, "population": 203413, "kind": "Census count", "period": "Apr 2000", "source": "Decennial Census, compiled by MTC (2021)"},
+  {"year": 2010, "population": 214089, "kind": "Census count", "period": "Apr 1, 2010", "source": "Census QuickFacts"},
+  {"year": 2020, "population": 230504, "kind": "Census count", "period": "Apr 1, 2020", "source": "Census QuickFacts"},
+  {"year": 2025, "population": 226442, "kind": "Estimate", "period": "Jul 1, 2025 (Vintage 2025)", "source": "Census Population Estimates via QuickFacts"}
+]

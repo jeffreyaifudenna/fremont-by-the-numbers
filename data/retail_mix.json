@@ -1,0 +1,38 @@
+[
+ {
+  "category": "Food and beverage stores",
+  "stores": 88
+ },
+ {
+  "category": "Sporting goods, hobby and other",
+  "stores": 66
+ },
+ {
+  "category": "Car and parts dealers",
+  "stores": 57
+ },
+ {
+  "category": "Furniture, electronics and appliances",
+  "stores": 48
+ },
+ {
+  "category": "Health and personal care",
+  "stores": 44
+ },
+ {
+  "category": "Gas stations",
+  "stores": 41
+ },
+ {
+  "category": "Clothing and accessories",
+  "stores": 36
+ },
+ {
+  "category": "Building and garden supply",
+  "stores": 31
+ },
+ {
+  "category": "General merchandise",
+  "stores": 26
+ }
+]

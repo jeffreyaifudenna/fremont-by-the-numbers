@@ -1,0 +1,12 @@
+[
+  {"request": "Encampment", "requests": 317},
+  {"request": "Outreach & support", "requests": 167},
+  {"request": "Sidewalk overgrown vegetation", "requests": 85},
+  {"request": "Traffic signals", "requests": 82},
+  {"request": "Vehicle repair/storage (illegal)", "requests": 82},
+  {"request": "Garbage & recycling issues", "requests": 74},
+  {"request": "City park concern", "requests": 73},
+  {"request": "Illegal dumping", "requests": 64},
+  {"request": "Illegal dumping on private property", "requests": 61},
+  {"request": "Other (City Manager's Office)", "requests": 49}
+]

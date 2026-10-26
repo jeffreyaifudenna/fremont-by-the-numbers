@@ -1,0 +1,672 @@
+{
+ "_comment": "Where each number on the site can be checked. fbn.js resolves a link in this order: the row's own source_url/url, then 'rows' (dataset:id), then 'sources' (matched against the row's source text), then the dataset default. Every URL here is also listed on the Sources page.",
+ "datasets": {
+  "app_summary": {
+   "url": "https://www.fremont.gov/government/citywide-initiatives/data-dashboards/fremont-app",
+   "name": "City of Fremont: FremontApp dashboard"
+  },
+  "app_top": {
+   "url": "https://www.fremont.gov/government/citywide-initiatives/data-dashboards/fremont-app",
+   "name": "City of Fremont: FremontApp dashboard"
+  },
+  "asian_groups": {
+   "url": "https://data.census.gov/table/ACSDP5Y2024.DP05?g=160XX00US0626000",
+   "name": "Census ACS 2020–2024, table DP05"
+  },
+  "bart_history": {
+   "url": "https://catalog.data.gov/dataset/bart-daily-station-exits",
+   "name": "BART Daily Station Exits (DataSF)"
+  },
+  "business": {
+   "url": "https://data.census.gov/table/CBP2023.CB2300CBP?g=860XX00US94536,94538,94539,94555",
+   "name": "U.S. Census Bureau: business patterns"
+  },
+  "census_population": {
+   "url": "https://www.census.gov/quickfacts/fact/table/fremontcitycalifornia/PST045225",
+   "name": "U.S. Census Bureau: QuickFacts, Fremont"
+  },
+  "census_profile": {
+   "url": "https://www.census.gov/quickfacts/fact/table/fremontcitycalifornia/PST045225",
+   "name": "U.S. Census Bureau: QuickFacts, Fremont"
+  },
+  "city_facts": {
+   "url": "https://hoodline.com/2026/07/fremont-council-slams-brakes-on-half-cent-tax-hike-before-november-vote-6944803/",
+   "name": "Hoodline: Fremont budget and tax coverage"
+  },
+  "city_parks": {
+   "url": "https://fremont-ca-open-data-cofgis.hub.arcgis.com/",
+   "name": "City of Fremont Open Data Hub: parks layer"
+  },
+  "civic_facts": {
+   "url": "https://elections.cdn.sos.ca.gov/ror/15day-primary-2026/politicalsub.pdf",
+   "name": "CA Secretary of State: Report of Registration"
+  },
+  "climate_kpis": {
+   "url": "https://www.fremont.gov/government/citywide-initiatives/data-dashboards/climate-action",
+   "name": "City of Fremont: Climate Action dashboard"
+  },
+  "climate_normals": {
+   "url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=normals-monthly-1991-2020&stations=USC00043244&format=json&dataTypes=MLY-TMAX-NORMAL,MLY-TMIN-NORMAL,MLY-PRCP-NORMAL",
+   "name": "NOAA NCEI: 1991–2020 climate normals"
+  },
+  "commute_modes": {
+   "url": "https://data.census.gov/table/ACSDP5Y2024.DP03?g=160XX00US0626000",
+   "name": "Census ACS 2020–2024, table DP03"
+  },
+  "crime_clearance": {
+   "url": "https://openjustice.doj.ca.gov/data",
+   "name": "California DOJ OpenJustice: Crimes and Clearances"
+  },
+  "crime_oj": {
+   "url": "https://openjustice.doj.ca.gov/data",
+   "name": "California DOJ OpenJustice: Crimes and Clearances"
+  },
+  "dof_population": {
+   "url": "https://dof.ca.gov/forecasting/demographics/estimates-e1/",
+   "name": "CA Dept. of Finance: E-1 population estimates"
+  },
+  "ev_permits": {
+   "url": "https://www.fremont.gov/government/citywide-initiatives/data-dashboards/climate-action",
+   "name": "City of Fremont: Climate Action dashboard"
+  },
+  "ev_zip": {
+   "url": "https://data.ca.gov/dataset/vehicle-fuel-type-count-by-zip-code",
+   "name": "California DMV: vehicle fuel type by ZIP"
+  },
+  "family_costs": {
+   "url": "https://m.kidsdata.org/table/127/alameda-county/1849/child-care-cost",
+   "name": "kidsdata.org: child care costs"
+  },
+  "fire_incidents": {
+   "url": "https://www.fremont.gov/government/citywide-initiatives/data-dashboards/fremont-fire",
+   "name": "City of Fremont: Fire incidents dashboard"
+  },
+  "fire_summary": {
+   "url": "https://www.fremont.gov/government/citywide-initiatives/data-dashboards/fremont-fire",
+   "name": "City of Fremont: Fire incidents dashboard"
+  },
+  "fire_types": {
+   "url": "https://www.fremont.gov/government/departments/fire/about-us-mission-responsibilities-goals/fire-divisions/operations/incident-summaries",
+   "name": "City of Fremont Fire: incident summaries"
+  },
+  "ghg_sector": {
+   "url": "https://www.fremont.gov/government/citywide-initiatives/data-dashboards/climate-action",
+   "name": "City of Fremont: Climate Action dashboard"
+  },
+  "hate_crimes": {
+   "url": "https://openjustice.doj.ca.gov/data",
+   "name": "California DOJ OpenJustice: hate crimes"
+  },
+  "health_places": {
+   "url": "https://www.cdc.gov/places/index.html",
+   "name": "CDC PLACES: Local Data for Better Health"
+  },
+  "high_schools": {
+   "url": "https://www.usnews.com/education/best-high-schools/california/districts/fremont-unified-school-district-111898",
+   "name": "U.S. News: Best High Schools, Fremont Unified"
+  },
+  "highway_aadt": {
+   "url": "https://caltrans-gis.dot.ca.gov/arcgis/rest/services/CHHighway/Traffic_AADT/MapServer/0",
+   "name": "Caltrans: 2024 traffic volumes"
+  },
+  "homeless_monthly": {
+   "url": "https://www.fremont.gov/government/citywide-initiatives/data-dashboards/homeless-response",
+   "name": "City of Fremont: Homeless Response dashboard"
+  },
+  "homeless_pit": {
+   "url": "https://www.fremont.gov/government/citywide-initiatives/data-dashboards/homeless-response",
+   "name": "City of Fremont: Homeless Response dashboard"
+  },
+  "housing_production": {
+   "url": "https://fremontcityca.iqm2.com/Citizens/Detail_LegiFile.aspx?CssClass=&Frame=&ID=5659&MediaPosition=&MeetingID=2073&amp=&amp=&amp=&amp=",
+   "name": "City of Fremont: 2025 Annual Progress Report"
+  },
+  "languages": {
+   "url": "https://data.census.gov/table/ACSDT5Y2024.C16001?g=160XX00US0626000",
+   "name": "Census ACS 2020–2024, table C16001"
+  },
+  "leapfrog_grades": {
+   "url": "https://www.hospitalsafetygrade.org/",
+   "name": "Leapfrog Hospital Safety Grade"
+  },
+  "living_facts": {
+   "url": "https://www.census.gov/quickfacts/fact/table/fremontcitycalifornia/PST045225",
+   "name": "U.S. Census Bureau: QuickFacts, Fremont"
+  },
+  "ots_rankings": {
+   "url": "https://www.ots.ca.gov/rankings/fremont-2023",
+   "name": "California Office of Traffic Safety: 2023 rankings"
+  },
+  "parks_summary": {
+   "url": "https://fremont.gov/home/showpublisheddocument/9619/638611250926530000",
+   "name": "City of Fremont: Parks & Recreation Master Plan"
+  },
+  "pavement": {
+   "url": "https://mtc.ca.gov/sites/default/files/documents/2026-01/PCI_table2024DataJanuary2026Update.pdf",
+   "name": "MTC: Pavement Condition Index"
+  },
+  "people_more": {
+   "url": "https://data.census.gov/",
+   "name": "Census ACS 2020–2024 (DP04, DP05, B-tables)"
+  },
+  "police_facts": {
+   "url": "https://www.fremontpolice.gov/about-us/transparency-portal/yearly-summaries",
+   "name": "Fremont Police Department: yearly summaries"
+  },
+  "police_staffing": {
+   "url": "https://openjustice.doj.ca.gov/data",
+   "name": "California DOJ OpenJustice: law enforcement personnel"
+  },
+  "redfin_market": {
+   "url": "https://www.redfin.com/city/6671/CA/Fremont/housing-market",
+   "name": "Redfin: Fremont housing market"
+  },
+  "regional_parks": {
+   "url": "https://www.ebparks.org/parks",
+   "name": "East Bay Regional Park District"
+  },
+  "rent_by_bedroom": {
+   "url": "https://data.census.gov/table/ACSDT5Y2024.B25031?g=160XX00US0626000",
+   "name": "Census ACS 2020–2024, table B25031"
+  },
+  "resident_industries": {
+   "url": "https://data.census.gov/table/ACSDT5Y2024.C24050?g=160XX00US0626000",
+   "name": "Census ACS 2020–2024, table C24050"
+  },
+  "retail_mix": {
+   "url": "https://data.census.gov/table/ECNBASIC2022.EC2244BASIC?g=160XX00US0626000",
+   "name": "Census 2022 Economic Census: retail trade, Fremont"
+  },
+  "rhna_by_income": {
+   "url": "https://fremontcityca.iqm2.com/Citizens/Detail_LegiFile.aspx?CssClass=&Frame=&ID=5659&MediaPosition=&MeetingID=2073&amp=&amp=&amp=&amp=",
+   "name": "City of Fremont: 2025 Annual Progress Report"
+  },
+  "school_list": {
+   "url": "https://www.ed-data.org/district/Alameda/Fremont-Unified",
+   "name": "Ed-Data: Fremont Unified district and school profiles"
+  },
+  "school_trends": {
+   "url": "https://www.ed-data.org/district/Alameda/Fremont-Unified",
+   "name": "Ed-Data: Fremont Unified district and school profiles"
+  },
+  "schools": {
+   "url": "https://www.cde.ca.gov/sdprofile/details.aspx?cds=01611760000000",
+   "name": "CDE: Fremont Unified district profile"
+  },
+  "traffic_facts": {
+   "url": "https://www.fremont.gov/government/departments/transportation-engineering/traffic-safety/safety-data-and-trends",
+   "name": "City of Fremont: Traffic Safety, Safety Data and Trends"
+  },
+  "traffic_fatal": {
+   "url": "https://www.fremont.gov/government/departments/transportation-engineering/traffic-safety/safety-data-and-trends",
+   "name": "City of Fremont: Traffic Safety, Safety Data and Trends"
+  },
+  "vacancy": {
+   "url": "https://kidder.com/wp-content/uploads/market_report/office-market-research-silicon-valley-2026-3q.pdf",
+   "name": "Kidder Mathews: 3Q 2026 market reports"
+  },
+  "zillow_history": {
+   "url": "https://www.zillow.com/research/data/",
+   "name": "Zillow Research: ZHVI and ZORI"
+  },
+  "zillow_market": {
+   "url": "https://www.zillow.com/fremont-ca/home-values/",
+   "name": "Zillow: Fremont home values"
+  }
+ },
+ "sources": [
+  {
+   "match": "EDD county labor force release (Apr 17, 2026)",
+   "url": "https://labormarketinfo.edd.ca.gov/file/lfmonth/2601rmsa.pdf",
+   "name": "CA EDD: labor force data, Jan 2026"
+  },
+  {
+   "match": "EDD county labor force release (May 1, 2026)",
+   "url": "https://labormarketinfo.edd.ca.gov/file/lfmonth/2602rmsa.pdf",
+   "name": "CA EDD: labor force data, Feb 2026"
+  },
+  {
+   "match": "EDD county labor force release (May 22, 2026)",
+   "url": "https://labormarketinfo.edd.ca.gov/file/lfmonth/2603rmsa.pdf",
+   "name": "CA EDD: labor force data, Mar 2026"
+  },
+  {
+   "match": "FRED series CAALAM1URN",
+   "url": "https://fred.stlouisfed.org/series/CAALAM1URN",
+   "name": "FRED: Alameda County unemployment rate"
+  },
+  {
+   "match": "EDD news release (Oct 16, 2026)",
+   "url": "https://edd.ca.gov/en/about_edd/news_releases_and_announcements/unemployment-september-2026/",
+   "name": "CA EDD: September 2026 unemployment release"
+  },
+  {
+   "match": "NAICS 7225",
+   "url": "https://data.census.gov/table/ECNBASIC2022.EC2272BASIC?g=160XX00US0626000",
+   "name": "Census 2022 Economic Census: food services, Fremont"
+  },
+  {
+   "match": "NAICS 722",
+   "url": "https://data.census.gov/table/ECNBASIC2022.EC2272BASIC?g=160XX00US0626000",
+   "name": "Census 2022 Economic Census: food services, Fremont"
+  },
+  {
+   "match": "NAICS 44-45",
+   "url": "https://data.census.gov/table/ECNBASIC2022.EC2244BASIC?g=160XX00US0626000",
+   "name": "Census 2022 Economic Census: retail trade, Fremont"
+  },
+  {
+   "match": "City of Fremont ACFR",
+   "url": "https://www.fremont.gov/home/showpublisheddocument/19533",
+   "name": "City of Fremont: Annual Comprehensive Financial Report, FY 2024–25"
+  },
+  {
+   "match": "ZIP Code Business Patterns",
+   "url": "https://data.census.gov/table/CBP2023.CB2300CBP?g=860XX00US94536,94538,94539,94555",
+   "name": "Census ZIP Code Business Patterns 2023"
+  },
+  {
+   "match": "Kimco",
+   "url": "https://www.kimcorealty.com/109510",
+   "name": "Kimco Realty: Fremont Hub"
+  },
+  {
+   "match": "JLL",
+   "url": "https://invest.jll.com/us/en/listings/retail/pacific-commons",
+   "name": "JLL: Pacific Commons listing"
+  },
+  {
+   "match": "compiled by MTC",
+   "url": "https://files.mtc.ca.gov/library/pub/48117_Place_FremontCity.pdf",
+   "name": "MTC: Fremont Census data, 1960–2020"
+  },
+  {
+   "match": "Census QuickFacts",
+   "url": "https://www.census.gov/quickfacts/fact/table/fremontcitycalifornia/PST045225",
+   "name": "U.S. Census Bureau: QuickFacts, Fremont"
+  },
+  {
+   "match": "Census Population Estimates",
+   "url": "https://www.census.gov/quickfacts/fact/table/fremontcitycalifornia/PST045225",
+   "name": "U.S. Census Bureau: QuickFacts, Fremont"
+  },
+  {
+   "match": "Citizen Portal report of the proposed budget",
+   "url": "https://citizenportal.ai/articles/8258598/California/Alameda-County/Fremont/Fremont-proposes-2891-million-operating-budget-for-202627-council-asks-for-deferredmaintenance-list",
+   "name": "Citizen Portal: proposed FY 2026–27 budget"
+  },
+  {
+   "match": "Hoodline (Jul 24, 2026)",
+   "url": "https://hoodline.com/2026/07/fremont-council-slams-brakes-on-half-cent-tax-hike-before-november-vote-6944803/",
+   "name": "Hoodline: Fremont budget and tax coverage"
+  },
+  {
+   "match": "Fremont Police Department annual report",
+   "url": "https://www.fremontpolice.gov/about-us/transparency-portal/yearly-summaries",
+   "name": "Fremont Police Department: yearly summaries"
+  },
+  {
+   "match": "Registrar of Voters",
+   "url": "https://acvote.alamedacountyca.gov/acvote-assets/02_election_information/SOV/20241105/District%20Canvas%20-%20General%20Election.pdf",
+   "name": "Alameda County Registrar of Voters: Nov 2024 statement of vote"
+  },
+  {
+   "match": "Secretary of State",
+   "url": "https://elections.cdn.sos.ca.gov/ror/15day-primary-2026/politicalsub.pdf",
+   "name": "CA Secretary of State: Report of Registration"
+  },
+  {
+   "match": "Affordable Housing Development Projects",
+   "url": "https://www.fremont.gov/home/showpublisheddocument/449/638977635550300000",
+   "name": "City of Fremont: affordable housing projects list"
+  },
+  {
+   "match": "Proposed Budget",
+   "url": "https://www.fremont.gov/home/showpublisheddocument/18117/638828954844570000",
+   "name": "City of Fremont: FY 2025/26 Proposed Budget"
+  },
+  {
+   "match": "Adopted Operating Budget",
+   "url": "https://www.fremont.gov/home/showpublisheddocument/18117/638828954844570000",
+   "name": "City of Fremont: FY 2024/25 Adopted Operating Budget"
+  },
+  {
+   "match": "kidsdata.org",
+   "url": "https://m.kidsdata.org/table/127/alameda-county/1849/child-care-cost",
+   "name": "kidsdata.org: child care costs and spaces"
+  },
+  {
+   "match": "Ava Community Energy / PG&E",
+   "url": "https://avaenergy.org/wp-content/uploads/2026/06/Joint-Rate-Mailer-2025-Power-Mix-2025-Vintage-260616_Eng.pdf",
+   "name": "Ava Community Energy / PG&E: 2026 joint rate comparison"
+  },
+  {
+   "match": "BAWSCA",
+   "url": "https://bawsca.org/members/profiles/alameda",
+   "name": "BAWSCA: Alameda County Water District profile"
+  },
+  {
+   "match": "Annual Progress Report staff report",
+   "url": "https://fremontcityca.iqm2.com/Citizens/Detail_LegiFile.aspx?CssClass=&Frame=&ID=5659&MediaPosition=&MeetingID=2073&amp=&amp=&amp=&amp=",
+   "name": "City of Fremont: 2025 Annual Progress Report"
+  },
+  {
+   "match": "Housing Element page",
+   "url": "https://fremont.gov/government/departments/community-development/planning-building-permit-services/plans-maps-guidelines/general-plan/housing-element",
+   "name": "City of Fremont: Housing Element"
+  },
+  {
+   "match": "Hoodline, citing East Bay Times",
+   "url": "https://hoodline.com/2026/10/fremont-project-set-to-break-ground-on-335-unit-downtown-development-first-of-918-affordable-homes/",
+   "name": "Hoodline: Capital at City Center"
+  },
+  {
+   "match": "BART Monthly Ridership",
+   "url": "https://www.bart.gov/sites/default/files/2026-10/202609%20Monthly%20Ridership%20Snapshot.pdf",
+   "name": "BART: Monthly Ridership Snapshot, Sep 2026"
+  },
+  {
+   "match": "Capitol Corridor",
+   "url": "https://www.capitolcorridor.org/trainschedule/Train_Schedules.pdf",
+   "name": "Capitol Corridor: train schedules"
+  },
+  {
+   "match": "Great American Stations",
+   "url": "https://www.greatamericanstations.com/?p=7139",
+   "name": "Amtrak Great American Stations: Fremont"
+  },
+  {
+   "match": "CDTFA",
+   "url": "https://cdtfa.ca.gov/taxes-and-fees/rates.aspx",
+   "name": "CDTFA: sales and use tax rates"
+  },
+  {
+   "match": "Alameda County Auditor",
+   "url": "https://www.acgov.org/board/bos_calendar/documents/DocsAgendaReg_09_09_25/GENERAL%20ADMINISTRATION/Regular%20Calendar/Auditor_391480.pdf",
+   "name": "Alameda County Auditor: FY 2025–26 tax rates"
+  },
+  {
+   "match": "Alameda County Water District",
+   "url": "https://acwd.org/115/Water-Rates",
+   "name": "Alameda County Water District: water rates"
+  },
+  {
+   "match": "Union Sanitary District",
+   "url": "https://unionsanitary.ca.gov/wp-content/uploads/2025/02/Ordinance-No.-31.41.pdf",
+   "name": "Union Sanitary District: Ordinance 31.41"
+  },
+  {
+   "match": "Republic Services",
+   "url": "https://www.republicservices.com/sites/default/files/legacy_documents/Muni/California/Fremont/Fremont-City-Rates-2026-2027.pdf",
+   "name": "Republic Services: Fremont rates 2026–27"
+  },
+  {
+   "match": "Ava Community Energy",
+   "url": "https://avaenergy.org/community/who-we-serve/fremont/",
+   "name": "Ava Community Energy: Fremont"
+  },
+  {
+   "match": "USGS",
+   "url": "https://pubs.usgs.gov/fs/2016/3020/fs20163020.pdf",
+   "name": "USGS: earthquake outlook for the Bay Area"
+  },
+  {
+   "match": "BAAQMD",
+   "url": "https://www.sparetheair.org/Understanding-Air-Quality/Data-and-Records/Ozone-Data",
+   "name": "BAAQMD: Spare the Air data"
+  },
+  {
+   "match": "Parks & Recreation Master Plan",
+   "url": "https://fremont.gov/home/showpublisheddocument/9619/638611250926530000",
+   "name": "City of Fremont: Parks & Recreation Master Plan"
+  },
+  {
+   "match": "Trust for Public Land",
+   "url": "https://parkserve.tpl.org/downloads/pdfs/Fremont_CA.pdf",
+   "name": "Trust for Public Land: ParkServe, Fremont"
+  },
+  {
+   "match": "Alameda County Library",
+   "url": "https://www.aclibrary.org/irvington",
+   "name": "Alameda County Library: Irvington"
+  },
+  {
+   "match": "City of Fremont Parks & Recreation",
+   "url": "https://www.fremont.gov/government/departments/parks-recreation/facilities-rentals/community-centers",
+   "name": "City of Fremont: community centers"
+  },
+  {
+   "match": "City of Fremont Human Services",
+   "url": "https://www.fremont.gov/government/departments/human-services/age-well-centers",
+   "name": "City of Fremont: Age Well Centers"
+  },
+  {
+   "match": "Yearly Summar",
+   "url": "https://www.fremontpolice.gov/about-us/transparency-portal/yearly-summaries",
+   "name": "Fremont Police Department: yearly summaries"
+  },
+  {
+   "match": "Annual Report",
+   "url": "https://www.fremontpolice.gov/about-us/transparency-portal/yearly-summaries",
+   "name": "Fremont Police Department: annual report"
+  },
+  {
+   "match": "organization chart",
+   "url": "https://www.fremontpolice.gov/about-us/transparency-portal/yearly-summaries",
+   "name": "Fremont Police Department"
+  },
+  {
+   "match": "Strategic Plan",
+   "url": "https://www.fremontpolice.gov/about-us/transparency-portal/yearly-summaries",
+   "name": "Fremont Police Department: Strategic Plan update"
+  },
+  {
+   "match": "2025 Community Survey",
+   "url": "https://www.fremont.gov/home/showpublisheddocument/19926/639087261651070000",
+   "name": "City of Fremont: 2025 Community Survey (FM3 Research)"
+  },
+  {
+   "match": "Traffic Signals page",
+   "url": "https://fremont.gov/government/departments/transportation-engineering/traffic-signals",
+   "name": "City of Fremont: Traffic Signals"
+  },
+  {
+   "match": "Red Light Camera",
+   "url": "https://www.fremontpolice.gov/about-us/patrol-division/traffic-unit/red-light-camera-program",
+   "name": "Fremont Police Department: Red Light Camera Program"
+  },
+  {
+   "match": "Active Transportation Plan",
+   "url": "https://fremont.gov/government/departments/transportation-engineering/traffic-signals",
+   "name": "City of Fremont: Active Transportation Plan"
+  },
+  {
+   "match": "MTC Pavement",
+   "url": "https://mtc.ca.gov/sites/default/files/documents/2026-01/PCI_table2024DataJanuary2026Update.pdf",
+   "name": "MTC: Pavement Condition Index"
+  },
+  {
+   "match": "Safety Data and Trends",
+   "url": "https://www.fremont.gov/government/departments/transportation-engineering/traffic-safety/safety-data-and-trends",
+   "name": "City of Fremont: Safety Data and Trends"
+  },
+  {
+   "match": "FUSD About",
+   "url": "https://fremontunified.org/about/",
+   "name": "Fremont Unified School District: About"
+  },
+  {
+   "match": "CDE private school directory",
+   "url": "https://www.cde.ca.gov/ds/si/ps/",
+   "name": "CDE: California Private School Directory"
+  },
+  {
+   "match": "CDE School Directory",
+   "url": "https://sd.cde.ca.gov/SchoolDirectory/Results?Title=California+School+Directory&search=1&status=1&city=Fremont&items=200",
+   "name": "CDE: California School Directory, Fremont"
+  },
+  {
+   "match": "CDE District Profile",
+   "url": "https://www.cde.ca.gov/sdprofile/details.aspx?cds=01611760000000",
+   "name": "CDE: Fremont Unified district profile"
+  },
+  {
+   "match": "adjusted cohort graduation",
+   "url": "https://fremontunified.org/news/2025-dash/",
+   "name": "Fremont Unified: 2025 California School Dashboard results"
+  },
+  {
+   "match": "CAASPP",
+   "url": "https://caaspp-elpac.ets.org/caaspp/DashViewReportSB?ps=true&lstTestYear=2026&lstTestType=B&lstGroup=1&lstSubGroup=1&lstSchoolType=A&lstGrade=13&lstCounty=01&lstDistrict=61176-000&lstSchool=0000000",
+   "name": "CDE / ETS: CAASPP results, Fremont Unified"
+  },
+  {
+   "match": "CDE staffing",
+   "url": "https://www.ed-data.org/district/Alameda/Fremont-Unified",
+   "name": "Ed-Data: Fremont Unified profile"
+  },
+  {
+   "match": "Ohlone College",
+   "url": "https://www.ohlone.edu/sites/default/files/groups/Faculty_Senate/2025-26/iser_draft_update_post_college_council.pdf",
+   "name": "Ohlone College: draft Institutional Self-Evaluation Report"
+  },
+  {
+   "match": "Ed-Data",
+   "url": "https://www.ed-data.org/district/alameda/fremont-unified",
+   "name": "Ed-Data: Fremont Unified district profile"
+  },
+  {
+   "match": "Redfin",
+   "url": "https://www.redfin.com/city/6671/CA/Fremont/housing-market",
+   "name": "Redfin: Fremont housing market"
+  },
+  {
+   "match": "HCD annual progress report",
+   "url": "https://hcd.ca.gov/planning-and-community-development/annual-progress-reports",
+   "name": "CA HCD: annual progress reports"
+  },
+  {
+   "match": "Zillow Research",
+   "url": "https://www.zillow.com/fremont-ca/home-values/",
+   "name": "Zillow: Fremont home values"
+  }
+ ],
+ "rows": {
+  "civic_facts:credit": {
+   "url": "https://www.fremont.gov/home/showpublisheddocument/19533",
+   "name": "City of Fremont: FY 2024-25 Annual Comprehensive Financial Report"
+  },
+  "zillow_market:zori": {
+   "url": "https://www.zillow.com/research/data/",
+   "name": "Zillow Research data: Observed Rent Index (ZORI)"
+  },
+  "people_more:median_age": {
+   "url": "https://data.census.gov/table/ACSDP5Y2024.DP05?g=160XX00US0626000",
+   "name": "Census ACS 2020–2024, table DP05"
+  },
+  "people_more:hh_kids": {
+   "url": "https://data.census.gov/table/ACSDT5Y2024.B11005?g=160XX00US0626000",
+   "name": "Census ACS 2020–2024, table B11005"
+  },
+  "people_more:inc_200k": {
+   "url": "https://data.census.gov/table/ACSDT5Y2024.B19001?g=160XX00US0626000",
+   "name": "Census ACS 2020–2024, table B19001"
+  },
+  "people_more:veterans": {
+   "url": "https://data.census.gov/table/ACSDT5Y2024.B21001?g=160XX00US0626000",
+   "name": "Census ACS 2020–2024, table B21001"
+  },
+  "people_more:disability": {
+   "url": "https://data.census.gov/table/ACSDT5Y2024.B18101?g=160XX00US0626000",
+   "name": "Census ACS 2020–2024, table B18101"
+  },
+  "people_more:housing_units": {
+   "url": "https://data.census.gov/table/ACSDP5Y2024.DP04?g=160XX00US0626000",
+   "name": "Census ACS 2020–2024, table DP04"
+  },
+  "people_more:vacancy": {
+   "url": "https://data.census.gov/table/ACSDP5Y2024.DP04?g=160XX00US0626000",
+   "name": "Census ACS 2020–2024, table DP04"
+  },
+  "people_more:owner_vacancy": {
+   "url": "https://data.census.gov/table/ACSDP5Y2024.DP04?g=160XX00US0626000",
+   "name": "Census ACS 2020–2024, table DP04"
+  },
+  "people_more:rental_vacancy": {
+   "url": "https://data.census.gov/table/ACSDP5Y2024.DP04?g=160XX00US0626000",
+   "name": "Census ACS 2020–2024, table DP04"
+  },
+  "people_more:year_built": {
+   "url": "https://data.census.gov/table/ACSDT5Y2024.B25035?g=160XX00US0626000",
+   "name": "Census ACS 2020–2024, table B25035"
+  },
+  "people_more:rent_burden": {
+   "url": "https://data.census.gov/table/ACSDT5Y2024.B25070?g=160XX00US0626000",
+   "name": "Census ACS 2020–2024, table B25070"
+  },
+  "people_more:owner_burden": {
+   "url": "https://data.census.gov/table/ACSDT5Y2024.B25091?g=160XX00US0626000",
+   "name": "Census ACS 2020–2024, table B25091"
+  },
+  "living_facts:hosp_washington": {
+   "url": "https://hcai.ca.gov/facility/washington-hospital-fremont/",
+   "name": "HCAI: Washington Hospital – Fremont"
+  },
+  "living_facts:hosp_kaiser": {
+   "url": "https://hcai.ca.gov/facility/kaiser-foundation-hospital-fremont/",
+   "name": "HCAI: Kaiser Foundation Hospital – Fremont"
+  },
+  "living_facts:hosp_fremont": {
+   "url": "https://hcai.ca.gov/facility/fremont-hospital/",
+   "name": "HCAI: Fremont Hospital"
+  },
+  "people_more:tesla": {
+   "url": "https://fremont.gov/home/showpublisheddocument/13359/638218280428600000",
+   "name": "City of Fremont: 2023 State of the City address"
+  },
+  "people_more:jobs_located": {
+   "url": "https://data.census.gov/table/CBP2023.CB2300CBP?g=860XX00US94536,94538,94539,94555",
+   "name": "Census ZIP Code Business Patterns 2023"
+  },
+  "redfin_market:Fremont": {
+   "url": "https://www.redfin.com/city/6671/CA/Fremont/housing-market",
+   "name": "Redfin: Fremont housing market"
+  },
+  "redfin_market:94536": {
+   "url": "https://www.redfin.com/zipcode/94536/housing-market",
+   "name": "Redfin: 94536 housing market"
+  },
+  "redfin_market:94538": {
+   "url": "https://www.redfin.com/zipcode/94538/housing-market",
+   "name": "Redfin: 94538 housing market"
+  },
+  "redfin_market:94539": {
+   "url": "https://www.redfin.com/zipcode/94539/housing-market",
+   "name": "Redfin: 94539 housing market"
+  },
+  "redfin_market:94555": {
+   "url": "https://www.redfin.com/zipcode/94555/housing-market",
+   "name": "Redfin: 94555 housing market"
+  },
+  "regional_parks:Mission Peak Regional Preserve": {
+   "url": "https://www.ebparks.org/parks/mission-peak",
+   "name": "EBRPD: Mission Peak"
+  },
+  "regional_parks:Coyote Hills Regional Park (before 2026 addition)": {
+   "url": "https://www.ebparks.org/parks/coyote-hills",
+   "name": "EBRPD: Coyote Hills"
+  },
+  "regional_parks:Vargas Plateau Regional Park": {
+   "url": "https://www.ebparks.org/parks/vargas-plateau",
+   "name": "EBRPD: Vargas Plateau"
+  },
+  "regional_parks:Quarry Lakes Regional Recreation Area": {
+   "url": "https://www.ebparks.org/parks/quarry-lakes",
+   "name": "EBRPD: Quarry Lakes"
+  },
+  "regional_parks:Dumbarton Quarry Campground": {
+   "url": "https://www.ebparks.org/maps/dumbarton-quarry",
+   "name": "EBRPD: Dumbarton Quarry"
+  }
+ }
+}

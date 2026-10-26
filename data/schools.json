@@ -1,0 +1,164 @@
+[
+ {
+  "id": "k12_schools",
+  "label": "K-12 schools in Fremont Unified",
+  "value": 41,
+  "format": "int",
+  "period": "2025\u201326",
+  "source": "FUSD About page (29 elementary, 5 middle, 5 high, 1 continuation, 1 alternative)",
+  "kind": "Count"
+ },
+ {
+  "id": "elem",
+  "label": "Elementary schools",
+  "value": 29,
+  "format": "int",
+  "period": "2025\u201326",
+  "source": "CDE School Directory",
+  "kind": "Count"
+ },
+ {
+  "id": "middle",
+  "label": "Middle schools",
+  "value": 5,
+  "format": "int",
+  "period": "2025\u201326",
+  "source": "CDE School Directory",
+  "kind": "Count"
+ },
+ {
+  "id": "high",
+  "label": "Comprehensive high schools",
+  "value": 5,
+  "format": "int",
+  "period": "2025\u201326",
+  "source": "CDE School Directory",
+  "kind": "Count"
+ },
+ {
+  "id": "private",
+  "label": "Private schools with a Fremont address",
+  "value": 17,
+  "format": "int",
+  "period": "2025\u201326 directory",
+  "source": "CDE private school directory (schools with 6+ students)",
+  "kind": "Count"
+ },
+ {
+  "id": "enrollment",
+  "label": "Fremont Unified enrollment",
+  "value": 32883,
+  "format": "int",
+  "period": "2025\u201326",
+  "source": "CDE District Profile and Ed-Data",
+  "kind": "Count"
+ },
+ {
+  "id": "el_share",
+  "label": "English learners",
+  "value": 16.3,
+  "format": "pct",
+  "period": "2025\u201326",
+  "source": "CDE District Profile",
+  "kind": "Count"
+ },
+ {
+  "id": "grad_rate",
+  "label": "Four-year graduation rate",
+  "value": 93.1,
+  "format": "pct",
+  "period": "Class of 2025 (2024\u201325)",
+  "source": "CDE adjusted cohort graduation rate, via Ed-Data",
+  "kind": "Reported"
+ },
+ {
+  "id": "grad_rate_state",
+  "label": "California four-year graduation rate",
+  "value": 87.5,
+  "format": "pct",
+  "period": "Class of 2025 (2024\u201325)",
+  "source": "CDE adjusted cohort graduation rate, via Ed-Data",
+  "kind": "Reported"
+ },
+ {
+  "id": "ela",
+  "label": "Proficient or advanced, English",
+  "value": 71.66,
+  "format": "pct",
+  "period": "2025\u201326",
+  "source": "CAASPP Smarter Balanced results",
+  "kind": "Test results"
+ },
+ {
+  "id": "math",
+  "label": "Proficient or advanced, math",
+  "value": 67.92,
+  "format": "pct",
+  "period": "2025\u201326",
+  "source": "CAASPP Smarter Balanced results",
+  "kind": "Test results"
+ },
+ {
+  "id": "ela_state",
+  "label": "California, English",
+  "value": 49.26,
+  "format": "pct",
+  "period": "2025\u201326",
+  "source": "CAASPP Smarter Balanced results",
+  "kind": "Test results"
+ },
+ {
+  "id": "math_state",
+  "label": "California, math",
+  "value": 38.35,
+  "format": "pct",
+  "period": "2025\u201326",
+  "source": "CAASPP Smarter Balanced results",
+  "kind": "Test results"
+ },
+ {
+  "id": "ela_prior",
+  "label": "Fremont Unified, English, prior year",
+  "value": 73.49,
+  "format": "pct",
+  "period": "2024\u201325",
+  "source": "CAASPP Smarter Balanced results",
+  "kind": "Test results"
+ },
+ {
+  "id": "math_prior",
+  "label": "Fremont Unified, math, prior year",
+  "value": 68.59,
+  "format": "pct",
+  "period": "2024\u201325",
+  "source": "CAASPP Smarter Balanced results",
+  "kind": "Test results"
+ },
+ {
+  "id": "ratio",
+  "label": "Students per teacher",
+  "value": 21.4,
+  "format": "dec1",
+  "period": "2025\u201326",
+  "source": "CDE staffing data, via Ed-Data",
+  "kind": "Reported"
+ },
+ {
+  "id": "ohlone",
+  "label": "Ohlone College annual headcount (all campuses)",
+  "value": 16806,
+  "format": "int",
+  "period": "2024\u201325",
+  "source": "Ohlone College draft self-evaluation report",
+  "kind": "Draft, unverified"
+ },
+ {
+  "id": "ratio_state",
+  "label": "California students per teacher",
+  "value": 20.4,
+  "format": "dec1",
+  "period": "2025\u201326",
+  "source": "CDE staffing data, via Ed-Data",
+  "kind": "Reported"
+ }
+]

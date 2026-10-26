@@ -1,0 +1,37 @@
+[
+{
+"industry": "Professional, scientific, management and administrative",
+"share_pct": 27.7,
+"workers": 32863
+},
+{
+"industry": "Education and health care",
+"share_pct": 17.7,
+"workers": 20977
+},
+{
+"industry": "Manufacturing",
+"share_pct": 16.2,
+"workers": 19206
+},
+{
+"industry": "Retail trade",
+"share_pct": 7.3,
+"workers": null
+},
+{
+"industry": "Finance, insurance and real estate",
+"share_pct": 5.8,
+"workers": null
+},
+{
+"industry": "Arts, entertainment, lodging and food service",
+"share_pct": 5.3,
+"workers": null
+},
+{
+"industry": "Information",
+"share_pct": 5.2,
+"workers": null
+}
+]

@@ -1,0 +1,6 @@
+# Everything on this site is public and meant to be read, by people and by AI tools.
+User-agent: *
+Allow: /
+
+# After you publish on your own domain, add a sitemap line here, for example:
+# Sitemap: https://YOUR-DOMAIN/sitemap.xml

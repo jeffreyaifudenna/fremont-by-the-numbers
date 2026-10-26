@@ -1,0 +1,7 @@
+[
+  {"bedrooms": "Studio", "order": 0, "acs_2015_2019": 1830, "acs_2020_2024": 2306, "top_coded_2024": false, "hud_fmr_fy2025": 1937, "hud_fmr_fy2026": 2142},
+  {"bedrooms": "1 bedroom", "order": 1, "acs_2015_2019": 2013, "acs_2020_2024": 2455, "top_coded_2024": false, "hud_fmr_fy2025": 2201, "hud_fmr_fy2026": 2385},
+  {"bedrooms": "2 bedrooms", "order": 2, "acs_2015_2019": 2392, "acs_2020_2024": 2950, "top_coded_2024": false, "hud_fmr_fy2025": 2682, "hud_fmr_fy2026": 2912},
+  {"bedrooms": "3 bedrooms", "order": 3, "acs_2015_2019": 2792, "acs_2020_2024": 3501, "top_coded_2024": true, "hud_fmr_fy2025": 3432, "hud_fmr_fy2026": 3724},
+  {"bedrooms": "4 bedrooms", "order": 4, "acs_2015_2019": 3127, "acs_2020_2024": 3501, "top_coded_2024": true, "hud_fmr_fy2025": 4077, "hud_fmr_fy2026": 4413}
+]

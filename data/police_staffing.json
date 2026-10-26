@@ -1,0 +1,68 @@
+[
+ {
+  "year": 2015,
+  "city": "Fremont",
+  "sworn": 179,
+  "civilian": 85
+ },
+ {
+  "year": 2016,
+  "city": "Fremont",
+  "sworn": 179,
+  "civilian": 84
+ },
+ {
+  "year": 2017,
+  "city": "Fremont",
+  "sworn": 177,
+  "civilian": 84
+ },
+ {
+  "year": 2018,
+  "city": "Fremont",
+  "sworn": 181,
+  "civilian": 84
+ },
+ {
+  "year": 2019,
+  "city": "Fremont",
+  "sworn": 181,
+  "civilian": 84
+ },
+ {
+  "year": 2020,
+  "city": "Fremont",
+  "sworn": 195,
+  "civilian": 92
+ },
+ {
+  "year": 2021,
+  "city": "Fremont",
+  "sworn": 189,
+  "civilian": 88
+ },
+ {
+  "year": 2022,
+  "city": "Fremont",
+  "sworn": 177,
+  "civilian": 76
+ },
+ {
+  "year": 2023,
+  "city": "Fremont",
+  "sworn": 172,
+  "civilian": 83
+ },
+ {
+  "year": 2024,
+  "city": "Fremont",
+  "sworn": 172,
+  "civilian": 84
+ },
+ {
+  "year": 2025,
+  "city": "Fremont",
+  "sworn": 190,
+  "civilian": 94
+ }
+]

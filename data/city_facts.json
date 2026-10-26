@@ -1,0 +1,38 @@
+[
+ {
+  "id": "budget",
+  "label": "City operating budget, all funds",
+  "value": 427000000,
+  "format": "usdc",
+  "period": "FY 2026–27, as proposed (May 2026)",
+  "source": "Hoodline (Jul 24, 2026) and Citizen Portal (May 12, 2026), reporting the City's proposed budget",
+  "kind": "Reported, approximate"
+ },
+ {
+  "id": "general_fund",
+  "label": "General fund spending",
+  "value": 289100000,
+  "format": "usdc",
+  "period": "FY 2026–27, proposed",
+  "source": "Citizen Portal report of the proposed budget (May 12, 2026)",
+  "kind": "Reported"
+ },
+ {
+  "id": "calls",
+  "label": "Police calls for service",
+  "value": 102395,
+  "format": "int",
+  "period": "Calendar 2025",
+  "source": "Fremont Police Department annual report page",
+  "kind": "Reported"
+ },
+ {
+  "id": "fusd",
+  "label": "Fremont Unified enrollment",
+  "value": 32883,
+  "format": "int",
+  "period": "2025–26 school year",
+  "source": "Ed-Data (CDE, EdSource, FCMAT)",
+  "kind": "Count"
+ }
+]

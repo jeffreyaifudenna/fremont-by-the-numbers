@@ -1,0 +1,74 @@
+[
+ {
+  "id": "childcare_infant",
+  "group": "Child care (Alameda County)",
+  "label": "Infant care at a center, median per year",
+  "value": 26827,
+  "format": "usd",
+  "period": "2022",
+  "source": "kidsdata.org (U.S. DOL National Database of Childcare Prices)"
+ },
+ {
+  "id": "childcare_infant_fcc",
+  "group": "Child care (Alameda County)",
+  "label": "Infant care in a family child care home, median per year",
+  "value": 18754,
+  "format": "usd",
+  "period": "2022",
+  "source": "kidsdata.org (U.S. DOL National Database of Childcare Prices)"
+ },
+ {
+  "id": "childcare_pre",
+  "group": "Child care (Alameda County)",
+  "label": "Preschool care at a center, median per year",
+  "value": 21233,
+  "format": "usd",
+  "period": "2022",
+  "source": "kidsdata.org (U.S. DOL National Database of Childcare Prices)"
+ },
+ {
+  "id": "childcare_pre_fcc",
+  "group": "Child care (Alameda County)",
+  "label": "Preschool care in a family child care home, median per year",
+  "value": 17960,
+  "format": "usd",
+  "period": "2022",
+  "source": "kidsdata.org (U.S. DOL National Database of Childcare Prices)"
+ },
+ {
+  "id": "childcare_slots",
+  "group": "Child care (Alameda County)",
+  "label": "Licensed child care spaces in the county",
+  "value": 52538,
+  "format": "int",
+  "period": "2023",
+  "source": "kidsdata.org (CA Child Care Resource & Referral Network)"
+ },
+ {
+  "id": "elec_rate",
+  "group": "Utilities",
+  "label": "Electricity, Ava Bright Choice on PG&E E-TOU-C, per kWh (generation + delivery)",
+  "value": 0.40936,
+  "format": "usd_kwh",
+  "period": "Rates as of Mar 2026",
+  "source": "Ava Community Energy / PG&E 2026 joint rate comparison (service-area average)"
+ },
+ {
+  "id": "elec_bill",
+  "group": "Utilities",
+  "label": "Average monthly electric bill at 338 kWh, Ava Bright Choice",
+  "value": 138.33,
+  "format": "usd2",
+  "period": "Rates as of Mar 2026",
+  "source": "Ava Community Energy / PG&E 2026 joint rate comparison"
+ },
+ {
+  "id": "water_gpcd",
+  "group": "Utilities",
+  "label": "Residential water use per person per day (gallons)",
+  "value": 61,
+  "format": "int",
+  "period": "FY 2023\u201324",
+  "source": "BAWSCA profile of Alameda County Water District (Fremont, Newark, Union City)"
+ }
+]

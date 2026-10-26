@@ -1,0 +1,62 @@
+[
+{
+"route": "I-880",
+"location": "Santa Clara county line",
+"aadt": 220000,
+"label": "I-880 at Santa Clara county line"
+},
+{
+"route": "I-880",
+"location": "Fremont Blvd (north Fremont)",
+"aadt": 195000,
+"label": "I-880 at Fremont Blvd (north Fremont)"
+},
+{
+"route": "I-880",
+"location": "Mowry Ave",
+"aadt": 186000,
+"label": "I-880 at Mowry Ave"
+},
+{
+"route": "I-880",
+"location": "Stevenson Blvd",
+"aadt": 186000,
+"label": "I-880 at Stevenson Blvd"
+},
+{
+"route": "I-680",
+"location": "Vargas Rd",
+"aadt": 157000,
+"label": "I-680 at Vargas Rd"
+},
+{
+"route": "I-680",
+"location": "Washington Blvd (Mission San Jose)",
+"aadt": 154000,
+"label": "I-680 at Washington Blvd (Mission San Jose)"
+},
+{
+"route": "I-680",
+"location": "Santa Clara county line",
+"aadt": 125000,
+"label": "I-680 at Santa Clara county line"
+},
+{
+"route": "SR-262",
+"location": "Mission Blvd at I-680",
+"aadt": 81000,
+"label": "SR-262 at Mission Blvd at I-680"
+},
+{
+"route": "SR-84",
+"location": "Dumbarton Bridge toll plaza",
+"aadt": 67000,
+"label": "SR-84 at Dumbarton Bridge toll plaza"
+},
+{
+"route": "SR-238",
+"location": "Mission Blvd at SR-84",
+"aadt": 32500,
+"label": "SR-238 at Mission Blvd at SR-84"
+}
+]

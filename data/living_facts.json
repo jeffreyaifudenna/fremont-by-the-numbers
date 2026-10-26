@@ -1,0 +1,155 @@
+[
+ {
+  "id": "bart_fremont",
+  "group": "Transit",
+  "label": "Fremont BART, average weekday riders",
+  "value": 2696,
+  "format": "int",
+  "period": "Sep 2026 (preliminary)",
+  "source": "BART Monthly Ridership Snapshot"
+ },
+ {
+  "id": "bart_warm",
+  "group": "Transit",
+  "label": "Warm Springs/South Fremont BART, average weekday riders",
+  "value": 1634,
+  "format": "int",
+  "period": "Sep 2026 (preliminary)",
+  "source": "BART Monthly Ridership Snapshot"
+ },
+ {
+  "id": "cc_trains",
+  "group": "Transit",
+  "label": "Capitol Corridor weekday trains each way at Fremont-Centerville",
+  "value": 15,
+  "format": "int",
+  "period": "Schedule from Dec 8, 2025",
+  "source": "Capitol Corridor timetable (ACE also stops here)"
+ },
+ {
+  "id": "amtrak_riders",
+  "group": "Transit",
+  "label": "Fremont-Centerville station, annual Amtrak riders",
+  "value": 33060,
+  "format": "int",
+  "period": "FY 2025",
+  "source": "Great American Stations (Amtrak)"
+ },
+ {
+  "id": "sales_tax",
+  "group": "Costs",
+  "label": "Sales tax rate",
+  "value": 10.25,
+  "format": "pct2",
+  "period": "From Oct 1, 2026",
+  "source": "CDTFA tax rates"
+ },
+ {
+  "id": "prop_tax",
+  "group": "Costs",
+  "label": "Property tax base rate (plus voter-approved bonds)",
+  "value": 1.0,
+  "format": "pct",
+  "period": "FY 2025\u201326",
+  "source": "Alameda County Auditor"
+ },
+ {
+  "id": "water_bill",
+  "group": "Costs",
+  "label": "Typical home water bill, every two months",
+  "value": 155.03,
+  "format": "usd2",
+  "period": "From Mar 1, 2026",
+  "source": "Alameda County Water District"
+ },
+ {
+  "id": "sewer",
+  "group": "Costs",
+  "label": "Sewer charge per home, per year",
+  "value": 661.15,
+  "format": "usd2",
+  "period": "FY 2026\u201327",
+  "source": "Union Sanitary District Ordinance 31.41"
+ },
+ {
+  "id": "garbage",
+  "group": "Costs",
+  "label": "Garbage, 32-gallon cart, per month",
+  "value": 48.84,
+  "format": "usd2",
+  "period": "2026\u201327",
+  "source": "Republic Services, Fremont rates"
+ },
+ {
+  "id": "hosp_washington",
+  "group": "Health care",
+  "label": "Washington Hospital, licensed beds",
+  "value": 415,
+  "format": "int",
+  "period": "Jul 2023 \u2013 Jun 2024",
+  "source": "HCAI facility profile"
+ },
+ {
+  "id": "hosp_kaiser",
+  "group": "Health care",
+  "label": "Kaiser Foundation Hospital Fremont, licensed beds",
+  "value": 100,
+  "format": "int",
+  "period": "2023",
+  "source": "HCAI facility profile"
+ },
+ {
+  "id": "hosp_fremont",
+  "group": "Health care",
+  "label": "Fremont Hospital (psychiatric), licensed beds",
+  "value": 148,
+  "format": "int",
+  "period": "Latest",
+  "source": "HCAI facility profile"
+ },
+ {
+  "id": "ava_accounts",
+  "group": "Energy",
+  "label": "Ava Community Energy accounts",
+  "value": 87229,
+  "format": "int",
+  "period": "Jan 22, 2026",
+  "source": "Ava Community Energy, Fremont page (default plan: Renewable 100)"
+ },
+ {
+  "id": "solar_accounts",
+  "group": "Energy",
+  "label": "Solar customer accounts",
+  "value": 12148,
+  "format": "int",
+  "period": "Jan 22, 2026",
+  "source": "Ava Community Energy, Fremont page"
+ },
+ {
+  "id": "quake",
+  "group": "Hazards",
+  "label": "Chance of a magnitude 6.7+ quake on the Hayward/Rodgers Creek faults",
+  "value": 33,
+  "format": "pct0",
+  "period": "2014\u20132043",
+  "source": "USGS Fact Sheet 2016-3020"
+ },
+ {
+  "id": "ozone_days",
+  "group": "Hazards",
+  "label": "Bay Area days over the national ozone standard",
+  "value": 0,
+  "format": "int",
+  "period": "2025",
+  "source": "BAAQMD Spare the Air"
+ },
+ {
+  "id": "pm_days",
+  "group": "Hazards",
+  "label": "Bay Area days over the national 24-hour PM2.5 standard",
+  "value": 0,
+  "format": "int",
+  "period": "2025",
+  "source": "BAAQMD Spare the Air"
+ }
+]

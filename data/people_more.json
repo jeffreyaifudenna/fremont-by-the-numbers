@@ -1,0 +1,112 @@
+[
+ {
+  "id": "median_age",
+  "group": "People",
+  "label": "Median age",
+  "value": 39.1,
+  "format": "dec1",
+  "period": "2020–2024"
+ },
+ {
+  "id": "hh_kids",
+  "group": "People",
+  "label": "Households with children under 18",
+  "value": 40.9,
+  "format": "pct",
+  "period": "2020–2024",
+  "note": "31,932 of 78,054"
+ },
+ {
+  "id": "inc_200k",
+  "group": "Income",
+  "label": "Households earning $200,000 or more",
+  "value": 44.8,
+  "format": "pct",
+  "period": "2020–2024",
+  "note": "34,942 of 78,054"
+ },
+ {
+  "id": "veterans",
+  "group": "People",
+  "label": "Veterans (share of adults)",
+  "value": 2.0,
+  "format": "pct",
+  "period": "2020–2024",
+  "note": "3,567 veterans"
+ },
+ {
+  "id": "disability",
+  "group": "People",
+  "label": "Residents with a disability",
+  "value": 6.9,
+  "format": "pct",
+  "period": "2020–2024"
+ },
+ {
+  "id": "housing_units",
+  "group": "Housing",
+  "label": "Housing units",
+  "value": 81579,
+  "format": "int",
+  "period": "2020–2024"
+ },
+ {
+  "id": "vacancy",
+  "group": "Housing",
+  "label": "Vacant housing units",
+  "value": 4.3,
+  "format": "pct",
+  "period": "2020–2024"
+ },
+ {
+  "id": "owner_vacancy",
+  "group": "Housing",
+  "label": "Homeowner vacancy rate",
+  "value": 1.0,
+  "format": "pct",
+  "period": "2020–2024"
+ },
+ {
+  "id": "rental_vacancy",
+  "group": "Housing",
+  "label": "Rental vacancy rate",
+  "value": 4.8,
+  "format": "pct",
+  "period": "2020–2024"
+ },
+ {
+  "id": "year_built",
+  "group": "Housing",
+  "label": "Median year homes were built",
+  "value": 1979,
+  "format": "text",
+  "period": "2020–2024"
+ },
+ {
+  "id": "rent_burden",
+  "group": "Housing",
+  "label": "Renters paying 30% or more of income on rent",
+  "value": 43.3,
+  "format": "pct",
+  "period": "2020–2024",
+  "note": "12,894 of 29,747 renter households with a computed ratio"
+ },
+ {
+  "id": "owner_burden",
+  "group": "Housing",
+  "label": "Owners with a mortgage paying 30% or more of income on housing",
+  "value": 26.6,
+  "format": "pct",
+  "period": "2020–2024",
+  "note": "8,938 of 33,589"
+ },
+ {
+  "id": "jobs_located",
+  "group": "Jobs",
+  "label": "Private-sector jobs located in Fremont ZIP codes",
+  "value": 125388,
+  "format": "int",
+  "period": "Mar 2023",
+  "note": "County Business Patterns, ZIPs 94536, 94538, 94539, 94555; excludes self-employed and most government jobs"
+ }
+]

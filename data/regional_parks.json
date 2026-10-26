@@ -1,0 +1,32 @@
+[
+ {
+  "park": "Mission Peak Regional Preserve",
+  "agency": "East Bay Regional Park District",
+  "acres": 3023,
+  "note": ""
+ },
+ {
+  "park": "Coyote Hills Regional Park (before 2026 addition)",
+  "agency": "East Bay Regional Park District",
+  "acres": 1266,
+  "note": "296 acres added in March 2026; park page not yet updated"
+ },
+ {
+  "park": "Vargas Plateau Regional Park",
+  "agency": "East Bay Regional Park District",
+  "acres": 1249,
+  "note": ""
+ },
+ {
+  "park": "Quarry Lakes Regional Recreation Area",
+  "agency": "East Bay Regional Park District",
+  "acres": 471,
+  "note": "About 350 acres are lakes"
+ },
+ {
+  "park": "Dumbarton Quarry Campground",
+  "agency": "East Bay Regional Park District",
+  "acres": 45,
+  "note": "Phase I"
+ }
+]

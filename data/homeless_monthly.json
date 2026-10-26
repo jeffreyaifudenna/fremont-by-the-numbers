@@ -1,0 +1,17 @@
+[
+  {"month": "2025-07", "label": "Jul 2025", "cleanups": 92, "encampments_cleared": 6, "outreach_visits": 94, "app_reports": 74},
+  {"month": "2025-08", "label": "Aug 2025", "cleanups": 72, "encampments_cleared": 19, "outreach_visits": 39, "app_reports": 80},
+  {"month": "2025-09", "label": "Sep 2025", "cleanups": 96, "encampments_cleared": 10, "outreach_visits": 45, "app_reports": 73},
+  {"month": "2025-10", "label": "Oct 2025", "cleanups": 87, "encampments_cleared": 2, "outreach_visits": 15, "app_reports": 48},
+  {"month": "2025-11", "label": "Nov 2025", "cleanups": 41, "encampments_cleared": 12, "outreach_visits": 7, "app_reports": 56},
+  {"month": "2025-12", "label": "Dec 2025", "cleanups": 88, "encampments_cleared": 10, "outreach_visits": 17, "app_reports": 44},
+  {"month": "2026-01", "label": "Jan 2026", "cleanups": 74, "encampments_cleared": 5, "outreach_visits": 31, "app_reports": 31},
+  {"month": "2026-02", "label": "Feb 2026", "cleanups": 52, "encampments_cleared": 16, "outreach_visits": 33, "app_reports": 48},
+  {"month": "2026-03", "label": "Mar 2026", "cleanups": 72, "encampments_cleared": 11, "outreach_visits": 50, "app_reports": 50},
+  {"month": "2026-04", "label": "Apr 2026", "cleanups": 90, "encampments_cleared": 19, "outreach_visits": 63, "app_reports": 27},
+  {"month": "2026-05", "label": "May 2026", "cleanups": 70, "encampments_cleared": 12, "outreach_visits": 45, "app_reports": 33},
+  {"month": "2026-06", "label": "Jun 2026", "cleanups": 64, "encampments_cleared": 18, "outreach_visits": 73, "app_reports": 37},
+  {"month": "2026-07", "label": "Jul 2026", "cleanups": 66, "encampments_cleared": 29, "outreach_visits": 60, "app_reports": 24},
+  {"month": "2026-08", "label": "Aug 2026", "cleanups": 64, "encampments_cleared": 34, "outreach_visits": 55, "app_reports": 38},
+  {"month": "2026-09", "label": "Sep 2026", "cleanups": 56, "encampments_cleared": 31, "outreach_visits": 33, "app_reports": 24}
+]

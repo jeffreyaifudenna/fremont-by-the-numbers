@@ -1,0 +1,28 @@
+[
+ {
+  "year": 2021,
+  "incidents": 15886,
+  "status": "Full year"
+ },
+ {
+  "year": 2022,
+  "incidents": 17655,
+  "status": "Full year"
+ },
+ {
+  "year": 2023,
+  "incidents": 18333,
+  "status": "Full year"
+ },
+ {
+  "year": 2024,
+  "incidents": 19366,
+  "status": "Full year"
+ },
+ {
+  "year": 2025,
+  "incidents": 18999,
+  "status": "Full year",
+  "note": "The city's incident-summaries page lists 19,003 for 2025."
+ }
+]

@@ -1,0 +1,106 @@
+[
+{
+"category": "Total fatal and injury",
+"measure": "Victims killed or injured",
+"count": 518,
+"rank": 61,
+"of": 62,
+"order": 0
+},
+{
+"category": "Alcohol involved",
+"measure": "Victims",
+"count": 35,
+"rank": 61,
+"of": 62,
+"order": 1
+},
+{
+"category": "Pedestrians",
+"measure": "Victims",
+"count": 36,
+"rank": 54,
+"of": 62,
+"order": 2
+},
+{
+"category": "Pedestrians 65 and older",
+"measure": "Victims",
+"count": 6,
+"rank": 45,
+"of": 62,
+"order": 3
+},
+{
+"category": "Pedestrians under 15",
+"measure": "Victims",
+"count": 4,
+"rank": 52,
+"of": 62,
+"order": 4
+},
+{
+"category": "Bicyclists",
+"measure": "Victims",
+"count": 55,
+"rank": 20,
+"of": 62,
+"order": 5
+},
+{
+"category": "Bicyclists under 15",
+"measure": "Victims",
+"count": 7,
+"rank": 20,
+"of": 62,
+"order": 6
+},
+{
+"category": "Motorcycles",
+"measure": "Victims",
+"count": 38,
+"rank": 18,
+"of": 62,
+"order": 7
+},
+{
+"category": "Speed related",
+"measure": "Crashes",
+"count": 76,
+"rank": 57,
+"of": 62,
+"order": 8
+},
+{
+"category": "Nighttime (9pm\u20133am)",
+"measure": "Crashes",
+"count": 44,
+"rank": 61,
+"of": 62,
+"order": 9
+},
+{
+"category": "Hit and run",
+"measure": "Crashes",
+"count": 37,
+"rank": 56,
+"of": 62,
+"order": 10
+},
+{
+"category": "DUI arrests",
+"measure": "Arrests",
+"count": 114,
+"rank": 4,
+"of": 62,
+"order": 11
+},
+{
+"category": "Composite",
+"measure": "Combined score",
+"count": 207,
+"rank": 62,
+"of": 62,
+"order": 12
+}
+]

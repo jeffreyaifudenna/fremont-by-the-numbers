@@ -1,0 +1,8 @@
+[
+  {"mode": "Drove alone", "share_pct": 53.8, "workers": 61515},
+  {"mode": "Worked from home", "share_pct": 32.1, "workers": 36657},
+  {"mode": "Carpooled", "share_pct": 7.3, "workers": 8326},
+  {"mode": "Public transit", "share_pct": 3.8, "workers": 4340},
+  {"mode": "Other means", "share_pct": 1.8, "workers": 2081},
+  {"mode": "Walked", "share_pct": 1.2, "workers": 1330}
+]

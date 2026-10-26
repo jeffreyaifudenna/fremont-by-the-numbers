@@ -1,0 +1,83 @@
+[
+ {
+  "id": "laus_sep",
+  "date": "2026-10-28",
+  "date_label": "Oct 28, 2026",
+  "release": "County unemployment on FRED",
+  "covers": "September 2026, Alameda County",
+  "affects": "Unemployment",
+  "source": "FRED series page, next release date"
+ },
+ {
+  "id": "acs1_2025",
+  "date": "2026-10-29",
+  "date_label": "Oct 29, 2026",
+  "release": "ACS 2025 1-year estimates",
+  "covers": "Income, rent, home value and more for places of 65,000+",
+  "affects": "People and households",
+  "source": "Census Bureau release schedule"
+ },
+ {
+  "id": "zillow_oct",
+  "date": "2026-11-16",
+  "date_label": "Around Nov 16, 2026",
+  "release": "Zillow Research monthly data",
+  "covers": "October 2026 home values and rents",
+  "affects": "Home value, rent",
+  "source": "Zillow Research data page (updated monthly)"
+ },
+ {
+  "id": "edd_oct",
+  "date": "2026-11-20",
+  "date_label": "Nov 20, 2026",
+  "release": "EDD monthly labor data",
+  "covers": "October 2026",
+  "affects": "Unemployment",
+  "source": "EDD news release"
+ },
+ {
+  "id": "caaspp_dash",
+  "date": "2026-12-01",
+  "date_label": "Dec 2026 (expected)",
+  "release": "California School Dashboard and DataQuest updates",
+  "covers": "2025\u201326 graduation, chronic absence and suspension",
+  "affects": "Schools: district trends and school finder",
+  "source": "CDE annual cycle (2024\u201325 figures are the latest shown)"
+ },
+ {
+  "id": "apr_2026",
+  "date": "2027-04-01",
+  "date_label": "Apr 1, 2027",
+  "release": "City files 2026 Annual Progress Report",
+  "covers": "Permits issued in 2026",
+  "affects": "Housing production",
+  "source": "HCD annual progress report rules"
+ },
+ {
+  "id": "dof_2027",
+  "date": "2027-05-01",
+  "date_label": "May 2027",
+  "release": "DOF E-1 population estimates",
+  "covers": "Jan 1, 2027 city population",
+  "affects": "Population",
+  "source": "CA Dept. of Finance (annual, each May)"
+ },
+ {
+  "id": "oj_2026",
+  "date": "2027-07-01",
+  "date_label": "Jul 2027 (expected)",
+  "release": "California DOJ OpenJustice annual crime files",
+  "covers": "2026 crimes, clearances, police staffing, hate crimes; may complete 2025",
+  "affects": "Crime and policing",
+  "source": "This year's files were posted July 2026"
+ },
+ {
+  "id": "usn_hs",
+  "date": "2027-08-15",
+  "date_label": "Aug 2027 (expected)",
+  "release": "U.S. News Best High Schools",
+  "covers": "2027\u201328 rankings",
+  "affects": "High school rankings",
+  "source": "The 2026\u201327 edition was published Aug 2026"
+ }
+]

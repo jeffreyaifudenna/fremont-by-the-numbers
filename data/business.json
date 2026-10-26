@@ -1,0 +1,14 @@
+[
+  {"id": "restaurants", "label": "Restaurants, bars and food service businesses", "value": 451, "format": "int", "period": "2022", "source": "2022 Economic Census, NAICS 722, Fremont city", "kind": "Census count"},
+  {"id": "eating_places", "label": "Of which restaurants and other eating places", "value": 417, "format": "int", "period": "2022", "source": "2022 Economic Census, NAICS 7225", "kind": "Census count"},
+  {"id": "food_sales", "label": "Food service sales", "value": 632159000, "format": "usdc", "period": "2022", "source": "2022 Economic Census, NAICS 722", "kind": "Census count"},
+  {"id": "food_jobs", "label": "Food service jobs", "value": 6638, "format": "int", "period": "2022", "source": "2022 Economic Census, NAICS 722", "kind": "Census count"},
+  {"id": "retail_stores", "label": "Retail stores", "value": 437, "format": "int", "period": "2022", "source": "2022 Economic Census, NAICS 44-45, Fremont city", "kind": "Census count"},
+  {"id": "retail_sales", "label": "Retail sales", "value": 4756813000, "format": "usdc", "period": "2022", "source": "2022 Economic Census, NAICS 44-45", "kind": "Census count"},
+  {"id": "retail_jobs", "label": "Retail jobs", "value": 8069, "format": "int", "period": "2022", "source": "2022 Economic Census, NAICS 44-45", "kind": "Census count"},
+  {"id": "sales_tax_rev", "label": "City sales tax revenue", "value": 67855954, "format": "usdc", "period": "FY 2024–25", "source": "City of Fremont ACFR, FY ended Jun 30, 2025", "kind": "Audited"},
+  {"id": "establishments", "label": "Business establishments (Fremont ZIP codes)", "value": 5562, "format": "int", "period": "2023", "source": "Census ZIP Code Business Patterns, ZIPs 94536, 94538, 94539, 94555", "kind": "Census count (ZIPs, not city limits)"},
+  {"id": "private_jobs", "label": "Private-sector jobs (Fremont ZIP codes)", "value": 125388, "format": "int", "period": "Mar 2023", "source": "Census ZIP Code Business Patterns", "kind": "Census count (ZIPs, not city limits)"},
+  {"id": "hub_sqft", "label": "Fremont Hub shopping center (sq ft)", "value": 504666, "format": "int", "period": "Current", "source": "Kimco Realty property page", "kind": "Owner figure"},
+  {"id": "pacific_sqft", "label": "Pacific Commons shopping center (sq ft)", "value": 887130, "format": "int", "period": "Jun 2026", "source": "JLL sale listing", "kind": "Broker figure"}
+]

@@ -1,0 +1,119 @@
+[
+ {
+  "id": "signals",
+  "group": "Streets",
+  "label": "Traffic signals (195 city, 38 Caltrans)",
+  "value": 233,
+  "format": "int",
+  "period": "Current",
+  "source": "City of Fremont, Traffic Signals page"
+ },
+ {
+  "id": "redlight",
+  "group": "Streets",
+  "label": "Intersections with red-light cameras",
+  "value": 10,
+  "format": "int",
+  "period": "Current",
+  "source": "Fremont PD Red Light Camera Program"
+ },
+ {
+  "id": "bikeways",
+  "group": "Streets",
+  "label": "Miles of separated bikeways added in the past five years",
+  "value": 40,
+  "format": "int",
+  "period": "As stated by the city (no date given)",
+  "source": "City of Fremont, Active Transportation Plan page"
+ },
+ {
+  "id": "lane_miles",
+  "group": "Streets",
+  "label": "Lane miles of city streets",
+  "value": 1095.2,
+  "format": "dec1",
+  "period": "2024",
+  "source": "MTC Pavement Condition Index table (Jan 2026)"
+ },
+ {
+  "id": "safe_driving",
+  "group": "Resident survey",
+  "label": "Feel safe driving in Fremont",
+  "value": 58,
+  "format": "pct",
+  "period": "Dec 2025",
+  "source": "City of Fremont 2025 Community Survey"
+ },
+ {
+  "id": "safe_walk_major",
+  "group": "Resident survey",
+  "label": "Feel safe walking along or crossing major streets",
+  "value": 56,
+  "format": "pct",
+  "period": "Dec 2025",
+  "source": "City of Fremont 2025 Community Survey"
+ },
+ {
+  "id": "safe_walk_nbhd",
+  "group": "Resident survey",
+  "label": "Feel safe walking in their neighborhood",
+  "value": 61,
+  "format": "pct",
+  "period": "Dec 2025",
+  "source": "City of Fremont 2025 Community Survey"
+ },
+ {
+  "id": "safe_bike",
+  "group": "Resident survey",
+  "label": "Feel safe riding a bicycle (28% unsafe, rest unsure)",
+  "value": 29,
+  "format": "pct",
+  "period": "Dec 2025",
+  "source": "City of Fremont 2025 Community Survey"
+ },
+ {
+  "id": "congestion_fwy",
+  "group": "Resident survey",
+  "label": "Call freeway congestion an extremely or very serious problem",
+  "value": 62,
+  "format": "pct",
+  "period": "Dec 2025",
+  "source": "City of Fremont 2025 Community Survey"
+ },
+ {
+  "id": "congestion_local",
+  "group": "Resident survey",
+  "label": "Call local-street congestion an extremely or very serious problem",
+  "value": 53,
+  "format": "pct",
+  "period": "Dec 2025",
+  "source": "City of Fremont 2025 Community Survey"
+ },
+ {
+  "id": "safety_first",
+  "group": "Resident survey",
+  "label": "Prefer safety for all modes over faster car trips",
+  "value": 50,
+  "format": "pct",
+  "period": "Dec 2025",
+  "source": "City of Fremont 2025 Community Survey"
+ },
+ {
+  "id": "ped_share",
+  "group": "Crashes",
+  "label": "Pedestrians among fatal-crash victims (39 people)",
+  "value": 45,
+  "format": "pct",
+  "period": "2014\u20132025",
+  "source": "City of Fremont, Safety Data and Trends"
+ },
+ {
+  "id": "bike_share",
+  "group": "Crashes",
+  "label": "Bicyclists among fatal-crash victims (8 people)",
+  "value": 9,
+  "format": "pct",
+  "period": "2014\u20132025",
+  "source": "City of Fremont, Safety Data and Trends"
+ }
+]

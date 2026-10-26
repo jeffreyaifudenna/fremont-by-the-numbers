@@ -1,0 +1,155 @@
+[
+ {
+  "year": 2015,
+  "city": "Fremont",
+  "violent": 337,
+  "violent_cleared": 156,
+  "property": 4371,
+  "property_cleared": 333,
+  "status": "Full year"
+ },
+ {
+  "year": 2016,
+  "city": "Fremont",
+  "violent": 420,
+  "violent_cleared": 192,
+  "property": 4715,
+  "property_cleared": 332,
+  "status": "Full year"
+ },
+ {
+  "year": 2017,
+  "city": "Fremont",
+  "violent": 431,
+  "violent_cleared": 226,
+  "property": 5083,
+  "property_cleared": 329,
+  "status": "Full year"
+ },
+ {
+  "year": 2018,
+  "city": "Fremont",
+  "violent": 502,
+  "violent_cleared": 275,
+  "property": 4687,
+  "property_cleared": 351,
+  "status": "Full year"
+ },
+ {
+  "year": 2019,
+  "city": "Fremont",
+  "violent": 400,
+  "violent_cleared": 253,
+  "property": 4523,
+  "property_cleared": 266,
+  "status": "Full year"
+ },
+ {
+  "year": 2020,
+  "city": "Fremont",
+  "violent": 407,
+  "violent_cleared": 218,
+  "property": 5722,
+  "property_cleared": 220,
+  "status": "Full year"
+ },
+ {
+  "year": 2021,
+  "city": "Fremont",
+  "violent": 469,
+  "violent_cleared": 287,
+  "property": 5674,
+  "property_cleared": 151,
+  "status": "Full year"
+ },
+ {
+  "year": 2022,
+  "city": "Fremont",
+  "violent": 465,
+  "violent_cleared": 155,
+  "property": 6400,
+  "property_cleared": 180,
+  "status": "Full year"
+ },
+ {
+  "year": 2023,
+  "city": "Fremont",
+  "violent": 475,
+  "violent_cleared": 155,
+  "property": 6316,
+  "property_cleared": 274,
+  "status": "Full year"
+ },
+ {
+  "year": 2024,
+  "city": "Fremont",
+  "violent": 436,
+  "violent_cleared": 146,
+  "property": 5233,
+  "property_cleared": 235,
+  "status": "Full year"
+ },
+ {
+  "year": 2025,
+  "city": "Fremont",
+  "violent": 217,
+  "violent_cleared": 83,
+  "property": 3878,
+  "property_cleared": 141,
+  "status": "Incomplete"
+ },
+ {
+  "year": 2020,
+  "city": "California",
+  "violent": 173864,
+  "violent_cleared": 78653,
+  "property": 841171,
+  "property_cleared": 78143,
+  "status": "Full year"
+ },
+ {
+  "year": 2021,
+  "city": "California",
+  "violent": 183546,
+  "violent_cleared": 73496,
+  "property": 857599,
+  "property_cleared": 62766,
+  "status": "Full year"
+ },
+ {
+  "year": 2022,
+  "city": "California",
+  "violent": 193019,
+  "violent_cleared": 79122,
+  "property": 902977,
+  "property_cleared": 65011,
+  "status": "Full year"
+ },
+ {
+  "year": 2023,
+  "city": "California",
+  "violent": 194537,
+  "violent_cleared": 79847,
+  "property": 884862,
+  "property_cleared": 69674,
+  "status": "Full year"
+ },
+ {
+  "year": 2024,
+  "city": "California",
+  "violent": 188146,
+  "violent_cleared": 82123,
+  "property": 815854,
+  "property_cleared": 79776,
+  "status": "Full year"
+ },
+ {
+  "year": 2025,
+  "city": "California",
+  "violent": 170397,
+  "violent_cleared": 78212,
+  "property": 705925,
+  "property_cleared": 78824,
+  "status": "Incomplete"
+ }
+]

@@ -1,0 +1,322 @@
+{
+ "app_summary": {
+  "title": "FremontApp requests summary",
+  "description": "Service requests created, closed and open and average days to close for Jul 1–Sep 30, 2026 (the dashboard's default range), from the city's FremontApp dashboard.",
+  "updated": "2026-10-24T08:10:00Z"
+ },
+ "app_top": {
+  "title": "Top FremontApp requests",
+  "description": "Ten most common FremontApp request types, Jul 1–Sep 30, 2026, from the city's FremontApp dashboard.",
+  "updated": "2026-10-24T08:10:00Z"
+ },
+ "asian_groups": {
+  "title": "Asian communities",
+  "description": "Share of Fremont residents by Asian group (alone), ACS 2020–2024 table DP05. Read Oct 24, 2026.",
+  "updated": "2026-10-24T19:00:00Z"
+ },
+ "bart_history": {
+  "title": "BART weekday exits",
+  "description": "Average weekday exits at Fremont and Warm Springs stations, FY 2019, 2024 and 2025, averaged from BART daily station exits (DataSF). Read Oct 24, 2026.",
+  "updated": "2026-10-24T19:00:00Z"
+ },
+ "business": {
+  "title": "Shopping and dining",
+  "description": "Restaurant and retail counts, jobs, taxable sales and major centers, from Census County Business Patterns, CDTFA and the City of Fremont. Read Oct 24, 2026.",
+  "updated": "2026-10-24T12:00:00Z"
+ },
+ "census_population": {
+  "title": "Census counts and estimate",
+  "description": "Decennial Census counts for Fremont 1960–2020 (1960–2000 as compiled by MTC in 2021) and the Census Bureau's Vintage 2025 estimate for Jul 1, 2025 from QuickFacts. Read Oct 24, 2026.",
+  "updated": "2026-10-24T08:00:00Z"
+ },
+ "census_profile": {
+  "title": "Census QuickFacts profile",
+  "description": "Fremont city profile from Census QuickFacts: mostly ACS 2020–2024 5-year survey estimates, with age and race from Census population estimates. Read Oct 24, 2026.",
+  "updated": "2026-10-24T17:45:00Z"
+ },
+ "city_facts": {
+  "title": "City services and budget",
+  "description": "FY 2026–27 budget (proposed general fund $289.1M plus about $138M other funds, about $427M in all; adopted Jun 9, 2026), police calls for service, and Fremont Unified enrollment. From news reports and agency pages, read Oct 24, 2026.",
+  "updated": "2026-10-24T17:45:00Z"
+ },
+ "city_parks": {
+  "title": "City parks list",
+  "description": "City of Fremont parks by name, type, status and acreage, from the city's park inventory. Read Oct 24, 2026.",
+  "updated": "2026-10-24T12:00:00Z"
+ },
+ "city_rankings": {
+  "title": "City rankings",
+  "description": "Fremont's rank in 2025–26 national city rankings, read from each WalletHub ranking table (and Trust for Public Land ParkScore) on Oct 24, 2026, with category ranks and publication dates.",
+  "updated": "2026-10-24T17:10:00Z"
+ },
+ "civic_facts": {
+  "title": "Voters and city facts",
+  "description": "Nov 2024 turnout (Alameda County ROV), May 2026 registration by party (CA Secretary of State), affordable units, city FTEs and credit rating (City of Fremont). Read Oct 24, 2026.",
+  "updated": "2026-10-24T19:00:00Z"
+ },
+ "climate_kpis": {
+  "title": "Climate indicators",
+  "description": "EVs registered, trees planted and pounds of food recovered in 2025, from the city's Climate Action dashboard.",
+  "updated": "2026-10-24T08:10:00Z"
+ },
+ "climate_normals": {
+  "title": "Weather by month",
+  "description": "NOAA 1991–2020 climate normals for the Fremont station: average high, low and rainfall by month. Read Oct 24, 2026.",
+  "updated": "2026-10-24T12:00:00Z"
+ },
+ "commute_modes": {
+  "title": "How Fremont gets to work",
+  "description": "Census ACS 2020–2024 table DP03: workers 16+ by way of getting to work. Read Oct 24, 2026.",
+  "updated": "2026-10-24T12:00:00Z"
+ },
+ "crime_clearance": {
+  "title": "Crime clearances",
+  "description": "Violent and property crimes reported and cleared: Fremont 2015–2025 and California 2020–2025. California DOJ Crimes and Clearances (July 2026 release). Read Oct 24, 2026.",
+  "updated": "2026-10-24T16:30:00Z"
+ },
+ "crime_oj": {
+  "title": "Reported crime by city",
+  "description": "Violent and property crimes by type and year, 2015–2025, for Fremont. California DOJ OpenJustice, Crimes and Clearances file (published July 2026). 2025 is incomplete for Fremont.",
+  "updated": "2026-10-24T15:00:00Z"
+ },
+ "dof_population": {
+  "title": "DOF population estimates",
+  "description": "California Department of Finance E-1 estimates for Fremont, Jan 1 2025 (revised) and Jan 1 2026 (provisional). Checked Oct 24, 2026 against DOF's own E-1 2026 press release (May 1, 2026).",
+  "updated": "2026-10-24T08:00:00Z"
+ },
+ "ev_permits": {
+  "title": "EV charger permits",
+  "description": "Electric vehicle charger permits issued in Fremont per year, 2021–2026 (2026 year to date), from the city's Climate Action dashboard.",
+  "updated": "2026-10-24T08:10:00Z"
+ },
+ "ev_zip": {
+  "title": "Vehicles by fuel and ZIP",
+  "description": "Light-duty registrations by fuel type for Fremont ZIPs 94536, 94538, 94539, 94555, as of Jan 1, 2020 and Dec 31, 2025. California DMV via data.ca.gov. Read Oct 24, 2026.",
+  "updated": "2026-10-24T19:00:00Z"
+ },
+ "family_costs": {
+  "title": "Child care and utilities",
+  "description": "Alameda County child care costs (2022) and licensed spaces (2023) from kidsdata.org; electricity rate and bill (Ava/PG&E, Mar 2026); ACWD water use per person (FY 2023–24). Read Oct 24, 2026.",
+  "updated": "2026-10-24T19:00:00Z"
+ },
+ "fire_incidents": {
+  "title": "Fire incidents by year",
+  "description": "Fremont Fire Department incidents per year, 2021–2025, read from the city's Power BI dashboard (refreshed Oct 23, 2026). The 2026 figure is left out because its date range could not be confirmed.",
+  "updated": "2026-10-24T08:10:00Z"
+ },
+ "fire_summary": {
+  "title": "Fire department summary",
+  "description": "Full-year 2025 incident total from the city's incident-summaries page, plus stations and area covered from the city's Fremont Fire dashboard (refreshed Oct 23, 2026).",
+  "updated": "2026-10-24T08:10:00Z"
+ },
+ "fire_types": {
+  "title": "Fire incidents by type, 2025",
+  "description": "Fremont Fire Department incidents in 2025 by type (19,003 in all), from the incident-summaries page on fremont.gov. Replaces an earlier top-five table from the Power BI dashboard whose date range could not be confirmed. Read Oct 25, 2026.",
+  "updated": "2026-10-25T09:40:00Z"
+ },
+ "ghg_sector": {
+  "title": "Emissions by sector",
+  "description": "Community greenhouse gas emissions (metric tons CO2e) by sector for inventory years 2005, 2010, 2015 and 2018, and the city's 2030 goal, read from the chart data on the city's Climate Action dashboard.",
+  "updated": "2026-10-24T08:10:00Z"
+ },
+ "hate_crimes": {
+  "title": "Hate crimes, Fremont",
+  "description": "Hate crime incidents by year closed, Fremont PD, 2015–2025. California DOJ Hate Crimes file. Read Oct 24, 2026.",
+  "updated": "2026-10-24T16:30:00Z"
+ },
+ "health_places": {
+  "title": "Adult health (CDC PLACES)",
+  "description": "Modeled adult health prevalence for Fremont with 95% ranges, CDC PLACES 2025 release (mostly 2023 data). Read Oct 24, 2026.",
+  "updated": "2026-10-24T19:00:00Z"
+ },
+ "high_schools": {
+  "title": "High school rankings",
+  "description": "Fremont Unified's five comprehensive high schools: U.S. News Best High Schools 2026–27 ranks and stats (prior-year ranks from FUSD's Aug 2025 release), plus CAASPP 2025–26 grade 11 results with district and state benchmarks. Read Oct 24, 2026.",
+  "updated": "2026-10-24T15:30:00Z"
+ },
+ "highway_aadt": {
+  "title": "Highway traffic volumes",
+  "description": "Caltrans 2024 annual average daily traffic at selected count points on highways through Fremont. Read Oct 24, 2026.",
+  "updated": "2026-10-24T16:30:00Z"
+ },
+ "homeless_monthly": {
+  "title": "Homeless response by month",
+  "description": "Monthly cleanups, encampments fully cleared, outreach visits and FremontApp homeless-related reports, Jul 2025–Sep 2026, from the city's Homeless Response dashboard. The dashboard's headline app-report count (715) exceeds the sum of these rows (687).",
+  "updated": "2026-10-24T08:10:00Z"
+ },
+ "homeless_pit": {
+  "title": "Point-in-time counts",
+  "description": "Unhoused residents in Fremont from point-in-time counts, 2017–2026, as shown on the city's Homeless Response dashboard.",
+  "updated": "2026-10-24T08:10:00Z"
+ },
+ "housing_production": {
+  "title": "Housing permits and target",
+  "description": "Units permitted in 2025 and progress toward Fremont's 2023–2031 RHNA target, from the city's 2025 Annual Progress Report staff report (Planning Commission, Feb 26, 2026). Self-reported by the city; HCD does not verify it.",
+  "updated": "2026-10-24T08:00:00Z"
+ },
+ "languages": {
+  "title": "Languages at home",
+  "description": "Language spoken at home, residents 5 and older, ACS 2020–2024 table C16001. Read Oct 24, 2026.",
+  "updated": "2026-10-24T19:00:00Z"
+ },
+ "living_facts": {
+  "title": "Costs, transit and services",
+  "description": "Utility bills, tax rates, transit ridership, hospitals, voters, energy and hazards, each from the agency named in its row. Read Oct 24, 2026.",
+  "updated": "2026-10-24T19:00:00Z"
+ },
+ "ots_rankings": {
+  "title": "OTS crash rankings",
+  "description": "California Office of Traffic Safety 2023 crash rankings for Fremont among 62 cities of 100,001–250,000 people (1 = worst). Read Oct 24, 2026.",
+  "updated": "2026-10-24T16:30:00Z"
+ },
+ "parks_summary": {
+  "title": "Parks and facilities",
+  "description": "City park counts and acreage, Trust for Public Land ParkScore, libraries and community centers. Read Oct 24, 2026.",
+  "updated": "2026-10-24T12:00:00Z"
+ },
+ "pavement": {
+  "title": "Pavement condition",
+  "description": "MTC Pavement Condition Index (three-year moving average) 2022–2024 for Fremont and the Bay Area, Jan 2026 update. Read Oct 24, 2026.",
+  "updated": "2026-10-24T16:30:00Z"
+ },
+ "people_more": {
+  "title": "More resident facts",
+  "description": "ACS 2020–2024 measures (age, households, income, housing stock, cost burden, veterans, disability) and County Business Patterns 2023 jobs. Read Oct 24, 2026.",
+  "updated": "2026-10-24T19:00:00Z"
+ },
+ "police_facts": {
+  "title": "Police and survey facts",
+  "description": "Fremont PD calls for service, staffing and 911 answer times, plus the City's 2025 Community Survey safety results. Each row names its source. Read Oct 24, 2026.",
+  "updated": "2026-10-24T16:30:00Z"
+ },
+ "police_staffing": {
+  "title": "Police staffing",
+  "description": "Funded sworn and civilian positions for Fremont, 2015–2025. California DOJ Law Enforcement Personnel file. Read Oct 24, 2026.",
+  "updated": "2026-10-24T16:30:00Z"
+ },
+ "redfin_market": {
+  "title": "Redfin market snapshot",
+  "description": "Redfin housing market pages for Fremont city (Sep 2026) and ZIP codes 94536, 94538, 94539 and 94555 (Aug 2026), read Oct 24, 2026. Redfin's terms for republishing these figures are not yet confirmed.",
+  "updated": "2026-10-24T08:00:00Z"
+ },
+ "regional_parks": {
+  "title": "Regional parks in Fremont",
+  "description": "East Bay Regional Park District parks in Fremont with acreage, from EBRPD park pages and news releases. Read Oct 24, 2026.",
+  "updated": "2026-10-24T17:45:00Z"
+ },
+ "rent_by_bedroom": {
+  "title": "Rent by bedroom",
+  "description": "Census ACS median gross rent by bedrooms (2015–2019 and 2020–2024; capped at $3,500) and HUD Fair Market Rents FY2025–26 for the Oakland-Fremont area. Read Oct 24, 2026.",
+  "updated": "2026-10-24T12:00:00Z"
+ },
+ "resident_industries": {
+  "title": "Residents' industries",
+  "description": "Employed residents 16+ by industry, top seven, ACS 2020–2024 table C24050. Read Oct 24, 2026.",
+  "updated": "2026-10-24T19:00:00Z"
+ },
+ "retail_mix": {
+  "title": "Stores by type",
+  "description": "Retail establishments in Fremont by category (437 stores in all), 2022 Economic Census, retail trade, Fremont city. The total matches the 2022 Economic Census retail store count. Read Oct 24, 2026.",
+  "updated": "2026-10-24T12:00:00Z"
+ },
+ "rhna_by_income": {
+  "title": "Housing target by income",
+  "description": "RHNA target, units permitted 2023–2025, units remaining, and 2025 permits by income level, from the city's 2025 Annual Progress Report staff report. ADUs are assigned to income levels using ABAG affordability assumptions.",
+  "updated": "2026-10-24T08:00:00Z"
+ },
+ "school_list": {
+  "title": "School finder data",
+  "description": "Every Fremont Unified elementary, middle and high school: CAASPP 2025–26 and 2024–25 results, DataQuest 2025–26 enrollment, Ed-Data 2024–25 chronic absence and suspension, 2025–26 low-income share, and U.S. News ranks. Read Oct 24, 2026.",
+  "updated": "2026-10-24T16:30:00Z"
+ },
+ "school_trends": {
+  "title": "District trends",
+  "description": "Fremont Unified by school year with state comparisons: enrollment, graduation, UC/CSU readiness, dropout, chronic absence, suspension, spending, teacher salary, staffing. CDE data via Ed-Data. Read Oct 24, 2026.",
+  "updated": "2026-10-24T16:30:00Z"
+ },
+ "schools": {
+  "title": "Fremont Unified schools",
+  "description": "Fremont Unified counts, enrollment, CAASPP 2025–26 results, four-year graduation rate (class of 2025) and staffing, from CDE (via Ed-Data), CAASPP and FUSD. Read Oct 24, 2026.",
+  "updated": "2026-10-24T16:30:00Z"
+ },
+ "source_list": {
+  "title": "Source pages",
+  "description": "Every page used for a figure on this dashboard, with publisher and what it supports. Read Oct 24, 2026.",
+  "updated": "2026-10-24T19:00:00Z"
+ },
+ "traffic_facts": {
+  "title": "Streets and traffic facts",
+  "description": "Street network facts from the City of Fremont, Fremont PD and MTC, fatal-crash victim shares, and the 2025 Community Survey traffic results. Each row names its source. Read Oct 24, 2026.",
+  "updated": "2026-10-24T16:30:00Z"
+ },
+ "traffic_fatal": {
+  "title": "Fatal crashes by year",
+  "description": "Fatal crashes on Fremont city streets, 2014–2025, plus crashes the city lists separately as others. City of Fremont Safety Data and Trends. Read Oct 24, 2026.",
+  "updated": "2026-10-24T16:30:00Z"
+ },
+ "vacancy": {
+  "title": "Commercial vacancy",
+  "description": "Office, R&D and industrial vacancy for the Fremont submarkets, Kidder Mathews 3Q 2026 reports. Read Oct 24, 2026.",
+  "updated": "2026-10-24T19:00:00Z"
+ },
+ "zillow_history": {
+  "title": "Zillow history",
+  "description": "Monthly Zillow Home Value Index and Observed Rent Index for Fremont city, Jan 2015 to Sep 2026, from Zillow Research city-level files. Read Oct 24, 2026.",
+  "updated": "2026-10-24T19:00:00Z"
+ },
+ "zillow_market": {
+  "title": "Zillow home value and rent",
+  "description": "Zillow Research figures for Fremont from Zillow's city home values page (data through Sep 30, 2026; sales measures through Aug 31), read Oct 24, 2026. Zillow requires clear attribution.",
+  "updated": "2026-10-24T08:00:00Z"
+ },
+ "utilities": {
+  "title": "Gas and internet",
+  "description": "PG&E residential gas rate and average bill, Ava vs PG&E rate difference, internet providers, coverage and advertised prices for Fremont. Read Oct 24, 2026.",
+  "updated": "2026-10-25T05:52:33Z"
+ },
+ "events": {
+  "title": "Events and recreation",
+  "description": "Signature annual events, Mission Peak, the 2022 Parks & Recreation Master Plan inventory, pickleball, dog parks, Aqua Adventure, recreation registrants and facilities. Read Oct 24, 2026.",
+  "updated": "2026-10-25T05:52:33Z"
+ },
+ "startups": {
+  "title": "Startup ecosystem",
+  "description": "Company counts from Crunchbase and VCBacked.co (crowdsourced directories), unicorns and IPOs, the City of Fremont's own claims on tech and manufacturing firms, patent holders, Warm Springs Innovation District and rankings. Read Oct 24, 2026.",
+  "updated": "2026-10-25T05:58:25Z"
+ },
+ "startup_rounds": {
+  "title": "Largest funding rounds",
+  "description": "Largest recent funding rounds and IPOs by Fremont-linked companies, 2022–2026 (some have contested or dual headquarters, noted in each row), each row citing its own source; not an exhaustive total. Read Oct 24, 2026.",
+  "updated": "2026-10-25T06:00:00Z"
+ },
+ "food_prices": {
+  "title": "Food costs",
+  "description": "Grocery and restaurant price inflation (Bay Area CPI), MIT living-wage food costs for Alameda County, Fremont grocery and restaurant counts (2022 Economic Census), farmers' markets, CalFresh. Read Oct 24, 2026.",
+  "updated": "2026-10-25T06:01:11Z"
+ },
+ "food_cpi": {
+  "title": "Food price inflation",
+  "description": "Bay Area (SF–Oakland–Hayward) CPI for groceries, restaurants, all food and all items, each August 2018–2026, from BLS news releases. Read Oct 24, 2026.",
+  "updated": "2026-10-25T06:10:00Z"
+ },
+ "health_access": {
+  "title": "Hospitals, coverage and providers",
+  "description": "CMS Care Compare stars, Leapfrog safety grades, ER times and volumes for Washington Hospital and Kaiser Fremont; clinics; insurance coverage by type (ACS 2024) and Medi-Cal. Read Oct 24, 2026.",
+  "updated": "2026-10-25T06:11:39Z"
+ },
+ "leapfrog_grades": {
+  "title": "Leapfrog safety grades",
+  "description": "Leapfrog Hospital Safety Grades for Washington Hospital and Kaiser Fremont, Spring 2023 to Spring 2026. Read Oct 24, 2026.",
+  "updated": "2026-10-25T06:30:00Z"
+ },
+ "jobs_more": {
+  "title": "Unemployment, wages and jobs",
+  "description": "Fremont city unemployment rate (BLS/EDD LAUS via YCharts), jobs located in Fremont vs employed residents (Housing Element/LEHD), city minimum wage, median earnings (ACS 2024), WARN layoffs, commute shares. Read Oct 24, 2026.",
+  "updated": "2026-10-25T15:52:14Z"
+ },
+ "employers": {
+  "title": "Largest employers",
+  "description": "Fremont's ten largest employers from the City's FY2024 Annual Comprehensive Financial Report principal-employers table, as transcribed on Wikipedia; the FY2025 ACFR (Dec 2025) should be used to refresh. Read Oct 24, 2026.",
+  "updated": "2026-10-25T15:55:00Z"
+ }
+}

@@ -1,0 +1,26 @@
+[
+ {
+  "id": "total_2025",
+  "label": "Incidents in 2025 (full year)",
+  "value": 19003,
+  "format": "int",
+  "period": "2025, full year",
+  "source": "City of Fremont Fire Department, incident summaries (2025)",
+  "source_url": "https://www.fremont.gov/government/departments/fire/about-us-mission-responsibilities-goals/fire-divisions/operations/incident-summaries",
+  "note": "About 52 a day. 12,485 were rescue and EMS calls and 633 were fires."
+ },
+ {
+  "id": "stations",
+  "label": "Fire stations",
+  "value": 11,
+  "format": "int",
+  "period": "Current"
+ },
+ {
+  "id": "area",
+  "label": "Area covered (square miles)",
+  "value": 88,
+  "format": "int",
+  "period": "Current"
+ }
+]

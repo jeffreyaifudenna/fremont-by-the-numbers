@@ -1,0 +1,46 @@
+[
+{
+"year": 2023,
+"county": "Alameda",
+"days": 365,
+"good": 197,
+"moderate": 155,
+"usg": 13,
+"unhealthy": 0,
+"median_aqi": 48,
+"max_aqi": 130
+},
+{
+"year": 2024,
+"county": "Alameda",
+"days": 366,
+"good": 194,
+"moderate": 171,
+"usg": 1,
+"unhealthy": 0,
+"median_aqi": 49,
+"max_aqi": 105
+},
+{
+"year": 2023,
+"county": "Santa Clara",
+"days": 365,
+"good": 240,
+"moderate": 121,
+"usg": 4,
+"unhealthy": 0,
+"median_aqi": 43,
+"max_aqi": 134
+},
+{
+"year": 2024,
+"county": "Santa Clara",
+"days": 363,
+"good": 201,
+"moderate": 161,
+"usg": 1,
+"unhealthy": 0,
+"median_aqi": 47,
+"max_aqi": 111
+}
+]

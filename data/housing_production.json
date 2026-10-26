@@ -1,0 +1,7 @@
+[
+  {"id": "permits_2025", "label": "Housing units permitted", "value": 549, "period": "Calendar 2025", "source": "City of Fremont 2025 Annual Progress Report staff report (Planning Commission, Feb 26, 2026)", "kind": "Reported by the city"},
+  {"id": "adus_2025", "label": "Of which ADUs", "value": 177, "period": "Calendar 2025", "source": "City of Fremont 2025 Annual Progress Report staff report (Planning Commission, Feb 26, 2026)", "kind": "Reported by the city"},
+  {"id": "rhna_total", "label": "State housing target (RHNA)", "value": 12897, "period": "2023–2031", "source": "City of Fremont Housing Element page and 2025 APR staff report", "kind": "Target"},
+  {"id": "rhna_remaining", "label": "Units still to permit", "value": 11407, "period": "After 2025", "source": "City of Fremont 2025 Annual Progress Report staff report (Planning Commission, Feb 26, 2026)", "kind": "Reported by the city"},
+  {"id": "affordable_pipeline", "label": "Affordable homes in projects starting construction", "value": 918, "period": "Fall 2026", "source": "Hoodline, citing East Bay Times (Oct 2026)", "kind": "News report"}
+]

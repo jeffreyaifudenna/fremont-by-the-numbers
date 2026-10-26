@@ -1,0 +1,42 @@
+[
+{
+"language": "English only",
+"share_pct": 35.8,
+"people": null
+},
+{
+"language": "Other Indo-European languages (incl. Hindi, Gujarati, Punjabi)",
+"share_pct": 19.5,
+"people": 42080
+},
+{
+"language": "Chinese (incl. Mandarin, Cantonese)",
+"share_pct": 17.1,
+"people": 36970
+},
+{
+"language": "Other Asian and Pacific Island languages (incl. Telugu, Tamil)",
+"share_pct": 10.5,
+"people": 22596
+},
+{
+"language": "Spanish",
+"share_pct": 8.5,
+"people": 18272
+},
+{
+"language": "Tagalog (incl. Filipino)",
+"share_pct": 3.5,
+"people": 7653
+},
+{
+"language": "Vietnamese",
+"share_pct": 1.8,
+"people": 3865
+},
+{
+"language": "Korean",
+"share_pct": 1.2,
+"people": 2506
+}
+]

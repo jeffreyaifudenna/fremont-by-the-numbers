@@ -1,0 +1,92 @@
+[
+ {
+  "id": "calls_2025",
+  "group": "Police workload",
+  "label": "Police calls for service",
+  "value": 102395,
+  "format": "int",
+  "period": "2025",
+  "source": "Fremont PD Yearly Summaries (as of May 2026)"
+ },
+ {
+  "id": "calls_2023",
+  "group": "Police workload",
+  "label": "Police calls for service",
+  "value": 110628,
+  "format": "int",
+  "period": "2023",
+  "source": "Fremont PD 2023 Annual Report"
+ },
+ {
+  "id": "calls_2020",
+  "group": "Police workload",
+  "label": "Police calls for service",
+  "value": 96897,
+  "format": "int",
+  "period": "2020",
+  "source": "Fremont PD 2020 Yearly Summary"
+ },
+ {
+  "id": "sworn_auth",
+  "group": "Police staffing",
+  "label": "Authorized sworn officers",
+  "value": 205,
+  "format": "int",
+  "period": "FY 2025\u201326",
+  "source": "Fremont PD organization chart"
+ },
+ {
+  "id": "officer_vacancies",
+  "group": "Police staffing",
+  "label": "Police officer vacancies",
+  "value": 16,
+  "format": "int",
+  "period": "Oct 31, 2025",
+  "source": "Fremont PD Strategic Plan, Year One Update (Nov 2025)"
+ },
+ {
+  "id": "answer_911",
+  "group": "Police workload",
+  "label": "911 calls answered within 15 seconds",
+  "value": 97,
+  "format": "pct",
+  "period": "Reported Nov 2025",
+  "source": "Fremont PD Strategic Plan, Year One Update (Nov 2025)"
+ },
+ {
+  "id": "feel_safe",
+  "group": "Resident survey",
+  "label": "Residents who feel safe in Fremont in general",
+  "value": 70,
+  "format": "pct",
+  "period": "Dec 2025 (n=636, \u00b14.0%)",
+  "source": "City of Fremont 2025 Community Survey (FM3 Research)"
+ },
+ {
+  "id": "feel_unsafe",
+  "group": "Resident survey",
+  "label": "Residents who feel unsafe",
+  "value": 18,
+  "format": "pct",
+  "period": "Dec 2025",
+  "source": "City of Fremont 2025 Community Survey (FM3 Research)"
+ },
+ {
+  "id": "crime_up",
+  "group": "Resident survey",
+  "label": "Residents who think crime has increased",
+  "value": 54,
+  "format": "pct",
+  "period": "Dec 2025",
+  "source": "City of Fremont 2025 Community Survey (FM3 Research)"
+ },
+ {
+  "id": "police_sat",
+  "group": "Resident survey",
+  "label": "Satisfied with police protection",
+  "value": 52,
+  "format": "pct",
+  "period": "Dec 2025",
+  "source": "City of Fremont 2025 Community Survey (FM3 Research)"
+ }
+]

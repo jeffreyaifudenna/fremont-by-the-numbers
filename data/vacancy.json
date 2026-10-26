@@ -1,0 +1,23 @@
+[
+{
+"market": "Office (Fremont)",
+"total_vacancy": 20.5,
+"direct_vacancy": 6.9,
+"inventory_sf": 5271095,
+"report": "Kidder Mathews, Silicon Valley Office 3Q 2026"
+},
+{
+"market": "Research and development (Fremont)",
+"total_vacancy": 11.5,
+"direct_vacancy": 9.2,
+"inventory_sf": 17745059,
+"report": "Kidder Mathews, Silicon Valley R&D 3Q 2026"
+},
+{
+"market": "Industrial (Fremont/Newark)",
+"total_vacancy": 6.8,
+"direct_vacancy": 5.4,
+"inventory_sf": 58575070,
+"report": "Kidder Mathews, East Bay Industrial 3Q 2026"
+}
+]

@@ -1,0 +1,90 @@
+[
+{
+"zip": "94536",
+"year": 2020,
+"as_of": "Jan 1, 2020",
+"bev": 1623,
+"phev": 877,
+"fcev": 30,
+"hybrid": 2813,
+"gasoline": 45117,
+"light_total": 52101
+},
+{
+"zip": "94538",
+"year": 2020,
+"as_of": "Jan 1, 2020",
+"bev": 2026,
+"phev": 662,
+"fcev": 22,
+"hybrid": 2512,
+"gasoline": 43893,
+"light_total": 51288
+},
+{
+"zip": "94539",
+"year": 2020,
+"as_of": "Jan 1, 2020",
+"bev": 2902,
+"phev": 1198,
+"fcev": 40,
+"hybrid": 3038,
+"gasoline": 34493,
+"light_total": 42738
+},
+{
+"zip": "94555",
+"year": 2020,
+"as_of": "Jan 1, 2020",
+"bev": 1487,
+"phev": 604,
+"fcev": 21,
+"hybrid": 1595,
+"gasoline": 22620,
+"light_total": 26851
+},
+{
+"zip": "94536",
+"year": 2025,
+"as_of": "Dec 31, 2025",
+"bev": 5999,
+"phev": 1056,
+"fcev": 42,
+"hybrid": 4961,
+"gasoline": 35917,
+"light_total": 49244
+},
+{
+"zip": "94538",
+"year": 2025,
+"as_of": "Dec 31, 2025",
+"bev": 12209,
+"phev": 963,
+"fcev": 34,
+"hybrid": 5814,
+"gasoline": 36682,
+"light_total": 57739
+},
+{
+"zip": "94539",
+"year": 2025,
+"as_of": "Dec 31, 2025",
+"bev": 8419,
+"phev": 1428,
+"fcev": 33,
+"hybrid": 4396,
+"gasoline": 26974,
+"light_total": 42077
+},
+{
+"zip": "94555",
+"year": 2025,
+"as_of": "Dec 31, 2025",
+"bev": 3873,
+"phev": 630,
+"fcev": 14,
+"hybrid": 2579,
+"gasoline": 17589,
+"light_total": 25070
+}
+]

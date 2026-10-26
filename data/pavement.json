@@ -1,0 +1,16 @@
+[
+ {
+  "city": "Fremont",
+  "lane_miles": 1095.2,
+  "pci_2022": 72,
+  "pci_2023": 71,
+  "pci_2024": 71
+ },
+ {
+  "city": "Bay Area",
+  "lane_miles": 44108,
+  "pci_2022": 67,
+  "pci_2023": 67,
+  "pci_2024": 67
+ }
+]

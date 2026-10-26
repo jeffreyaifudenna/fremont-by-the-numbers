@@ -1,0 +1,8 @@
+[
+  {"year": 2021, "permits": 34, "status": "Full year"},
+  {"year": 2022, "permits": 550, "status": "Full year"},
+  {"year": 2023, "permits": 1084, "status": "Full year"},
+  {"year": 2024, "permits": 278, "status": "Full year"},
+  {"year": 2025, "permits": 257, "status": "Full year"},
+  {"year": 2026, "permits": 148, "status": "Year to date"}
+]

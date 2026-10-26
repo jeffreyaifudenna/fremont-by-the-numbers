@@ -1,0 +1,30 @@
+[
+ {
+  "id": "created",
+  "label": "Requests created",
+  "value": 1780,
+  "format": "int",
+  "period": "Jul 1 – Sep 30, 2026"
+ },
+ {
+  "id": "closed",
+  "label": "Requests closed",
+  "value": 1574,
+  "format": "int",
+  "period": "Jul 1 – Sep 30, 2026"
+ },
+ {
+  "id": "open",
+  "label": "Still open",
+  "value": 48,
+  "format": "int",
+  "period": "Jul 1 – Sep 30, 2026"
+ },
+ {
+  "id": "days_to_close",
+  "label": "Average days to close",
+  "value": 7,
+  "format": "int",
+  "period": "Jul 1 – Sep 30, 2026"
+ }
+]

@@ -1,0 +1,263 @@
+[
+ {
+  "id": "age_u18",
+  "group": "People",
+  "measure": "Under 18",
+  "value": 22.3,
+  "format": "pct",
+  "period": "Jul 1, 2025 (Census estimates)",
+  "kind": "Estimate"
+ },
+ {
+  "id": "age_65",
+  "group": "People",
+  "measure": "65 and over",
+  "value": 14.0,
+  "format": "pct",
+  "period": "Jul 1, 2025 (Census estimates)",
+  "kind": "Estimate"
+ },
+ {
+  "id": "foreign_born",
+  "group": "People",
+  "measure": "Foreign-born",
+  "value": 51.1,
+  "format": "pct",
+  "period": "2020\u20132024",
+  "kind": "Survey estimate"
+ },
+ {
+  "id": "other_lang",
+  "group": "People",
+  "measure": "Speak a language other than English at home (5+)",
+  "value": 64.2,
+  "format": "pct",
+  "period": "2020\u20132024",
+  "kind": "Survey estimate"
+ },
+ {
+  "id": "same_house",
+  "group": "People",
+  "measure": "Living in the same home as a year earlier",
+  "value": 88.2,
+  "format": "pct",
+  "period": "2020\u20132024",
+  "kind": "Survey estimate"
+ },
+ {
+  "id": "households",
+  "group": "Households and housing",
+  "measure": "Households",
+  "value": 78054,
+  "format": "int",
+  "period": "2020\u20132024",
+  "kind": "Survey estimate"
+ },
+ {
+  "id": "pph",
+  "group": "Households and housing",
+  "measure": "Persons per household",
+  "value": 2.9,
+  "format": "dec2",
+  "period": "2020\u20132024",
+  "kind": "Survey estimate"
+ },
+ {
+  "id": "owner_rate",
+  "group": "Households and housing",
+  "measure": "Owner-occupied homes",
+  "value": 60.8,
+  "format": "pct",
+  "period": "2020\u20132024",
+  "kind": "Survey estimate"
+ },
+ {
+  "id": "med_value",
+  "group": "Households and housing",
+  "measure": "Median value, owner-occupied homes",
+  "value": 1403800,
+  "format": "usd",
+  "period": "2020\u20132024",
+  "kind": "Survey estimate"
+ },
+ {
+  "id": "med_rent",
+  "group": "Households and housing",
+  "measure": "Median gross rent",
+  "value": 2933,
+  "format": "usd",
+  "period": "2020\u20132024",
+  "kind": "Survey estimate"
+ },
+ {
+  "id": "owner_cost",
+  "group": "Households and housing",
+  "measure": "Median monthly owner costs, with a mortgage",
+  "value": 4000,
+  "format": "usd_plus",
+  "period": "2020\u20132024",
+  "kind": "Survey estimate (top-coded)"
+ },
+ {
+  "id": "broadband",
+  "group": "Households and housing",
+  "measure": "Households with broadband",
+  "value": 96.8,
+  "format": "pct",
+  "period": "2020\u20132024",
+  "kind": "Survey estimate"
+ },
+ {
+  "id": "mhi",
+  "group": "Income, education and work",
+  "measure": "Median household income (2024 dollars)",
+  "value": 181506,
+  "format": "usd",
+  "period": "2020\u20132024",
+  "kind": "Survey estimate"
+ },
+ {
+  "id": "pci",
+  "group": "Income, education and work",
+  "measure": "Per capita income (2024 dollars)",
+  "value": 77049,
+  "format": "usd",
+  "period": "2020\u20132024",
+  "kind": "Survey estimate"
+ },
+ {
+  "id": "poverty",
+  "group": "Income, education and work",
+  "measure": "Persons in poverty",
+  "value": 5.2,
+  "format": "pct",
+  "period": "2020\u20132024",
+  "kind": "Survey estimate"
+ },
+ {
+  "id": "ba_plus",
+  "group": "Income, education and work",
+  "measure": "Bachelor's degree or higher (25+)",
+  "value": 63.9,
+  "format": "pct",
+  "period": "2020\u20132024",
+  "kind": "Survey estimate"
+ },
+ {
+  "id": "hs_plus",
+  "group": "Income, education and work",
+  "measure": "High school graduate or higher (25+)",
+  "value": 93.0,
+  "format": "pct",
+  "period": "2020\u20132024",
+  "kind": "Survey estimate"
+ },
+ {
+  "id": "lfpr",
+  "group": "Income, education and work",
+  "measure": "In civilian labor force (16+)",
+  "value": 67.9,
+  "format": "pct",
+  "period": "2020\u20132024",
+  "kind": "Survey estimate"
+ },
+ {
+  "id": "commute",
+  "group": "Income, education and work",
+  "measure": "Mean travel time to work",
+  "value": 30.3,
+  "format": "min",
+  "period": "2020\u20132024",
+  "kind": "Survey estimate"
+ },
+ {
+  "id": "uninsured",
+  "group": "Income, education and work",
+  "measure": "Without health insurance (under 65)",
+  "value": 2.8,
+  "format": "pct",
+  "period": "2020\u20132024",
+  "kind": "Estimate"
+ },
+ {
+  "id": "land_area",
+  "group": "Place",
+  "measure": "Land area (square miles)",
+  "value": 78.31,
+  "format": "dec2",
+  "period": "2020",
+  "kind": "Census"
+ },
+ {
+  "id": "density",
+  "group": "Place",
+  "measure": "People per square mile",
+  "value": 2943.3,
+  "format": "dec1",
+  "period": "2020",
+  "kind": "Census"
+ },
+ {
+  "id": "r_asian",
+  "group": "Race and ethnicity",
+  "measure": "Asian alone",
+  "value": 63.8,
+  "format": "pct",
+  "period": "Jul 1, 2025 (Census estimates)",
+  "kind": "Estimate"
+ },
+ {
+  "id": "r_white",
+  "group": "Race and ethnicity",
+  "measure": "White alone",
+  "value": 17.2,
+  "format": "pct",
+  "period": "Jul 1, 2025 (Census estimates)",
+  "kind": "Estimate"
+ },
+ {
+  "id": "r_hisp",
+  "group": "Race and ethnicity",
+  "measure": "Hispanic or Latino (any race)",
+  "value": 13.1,
+  "format": "pct",
+  "period": "Jul 1, 2025 (Census estimates)",
+  "kind": "Estimate"
+ },
+ {
+  "id": "r_two",
+  "group": "Race and ethnicity",
+  "measure": "Two or more races",
+  "value": 7.4,
+  "format": "pct",
+  "period": "Jul 1, 2025 (Census estimates)",
+  "kind": "Estimate"
+ },
+ {
+  "id": "r_black",
+  "group": "Race and ethnicity",
+  "measure": "Black alone",
+  "value": 2.8,
+  "format": "pct",
+  "period": "Jul 1, 2025 (Census estimates)",
+  "kind": "Estimate"
+ },
+ {
+  "id": "r_nhpi",
+  "group": "Race and ethnicity",
+  "measure": "Native Hawaiian or Pacific Islander alone",
+  "value": 0.5,
+  "format": "pct",
+  "period": "Jul 1, 2025 (Census estimates)",
+  "kind": "Estimate"
+ },
+ {
+  "id": "r_aian",
+  "group": "Race and ethnicity",
+  "measure": "American Indian or Alaska Native alone",
+  "value": 0.3,
+  "format": "pct",
+  "period": "Jul 1, 2025 (Census estimates)",
+  "kind": "Estimate"
+ }
+]

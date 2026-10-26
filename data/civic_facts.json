@@ -1,0 +1,110 @@
+[
+ {
+  "id": "turnout_2024",
+  "group": "Elections",
+  "label": "Turnout, Nov 5, 2024 general election",
+  "value": 69.87,
+  "format": "pct",
+  "period": "Nov 2024",
+  "source": "Alameda County Registrar of Voters, statement of vote (84,758 ballots of 121,315 registered)"
+ },
+ {
+  "id": "ballots_2024",
+  "group": "Elections",
+  "label": "Ballots cast, Nov 2024",
+  "value": 84758,
+  "format": "int",
+  "period": "Nov 2024",
+  "source": "Alameda County Registrar of Voters"
+ },
+ {
+  "id": "vbm_2024",
+  "group": "Elections",
+  "label": "Ballots cast by mail, Nov 2024",
+  "value": 73768,
+  "format": "int",
+  "period": "Nov 2024",
+  "source": "Alameda County Registrar of Voters"
+ },
+ {
+  "id": "registered",
+  "group": "Registration",
+  "label": "Registered voters",
+  "value": 122891,
+  "format": "int",
+  "period": "May 18, 2026",
+  "source": "CA Secretary of State, Report of Registration"
+ },
+ {
+  "id": "reg_dem",
+  "group": "Registration",
+  "label": "Democratic",
+  "value": 58482,
+  "format": "int",
+  "period": "May 18, 2026",
+  "source": "CA Secretary of State, Report of Registration"
+ },
+ {
+  "id": "reg_npp",
+  "group": "Registration",
+  "label": "No party preference",
+  "value": 40647,
+  "format": "int",
+  "period": "May 18, 2026",
+  "source": "CA Secretary of State, Report of Registration"
+ },
+ {
+  "id": "reg_rep",
+  "group": "Registration",
+  "label": "Republican",
+  "value": 18407,
+  "format": "int",
+  "period": "May 18, 2026",
+  "source": "CA Secretary of State, Report of Registration"
+ },
+ {
+  "id": "reg_aip",
+  "group": "Registration",
+  "label": "American Independent",
+  "value": 3037,
+  "format": "int",
+  "period": "May 18, 2026",
+  "source": "CA Secretary of State, Report of Registration"
+ },
+ {
+  "id": "reg_other",
+  "group": "Registration",
+  "label": "Other parties (Libertarian, Green, Peace and Freedom, other, unknown)",
+  "value": 2318,
+  "format": "int",
+  "period": "May 18, 2026",
+  "source": "CA Secretary of State, Report of Registration"
+ },
+ {
+  "id": "affordable_units",
+  "group": "Housing",
+  "label": "Regulated affordable rental homes",
+  "value": 3656,
+  "format": "int",
+  "period": "Updated Oct 17, 2025",
+  "source": "City of Fremont, Affordable Housing Development Projects list"
+ },
+ {
+  "id": "city_fte",
+  "group": "City finances",
+  "label": "City employees (full-time equivalent)",
+  "value": 1006.6,
+  "format": "dec1",
+  "period": "FY 2025\u201326 proposed budget",
+  "source": "City of Fremont FY 2025/26 Proposed Budget"
+ },
+ {
+  "id": "credit",
+  "group": "City finances",
+  "label": "S&P rating, general obligation bonds",
+  "value": "AA+ (stable)",
+  "format": "text",
+  "period": "As reported in the FY 2024-25 Annual Comprehensive Financial Report",
+  "source": "City of Fremont FY 2024-25 Annual Comprehensive Financial Report"
+ }
+]
