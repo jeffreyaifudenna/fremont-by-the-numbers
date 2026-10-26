@@ -2,5 +2,4 @@
 User-agent: *
 Allow: /
 
-# After you publish on your own domain, add a sitemap line here, for example:
-# Sitemap: https://YOUR-DOMAIN/sitemap.xml
+Sitemap: https://fremont-by-the-numbers.vercel.app/sitemap.xml

@@ -133,6 +133,9 @@ function shell(p, bodyHtml, jsonld) {
   txt += '\n## Optional\n\n- [About, methodology and sources](sources.html): how the data was gathered, known limitations, and every source page.\n';
   fs.writeFileSync(path.join(SITE, 'llms.txt'), txt);
 
-  fs.writeFileSync(path.join(SITE, 'robots.txt'), '# Everything on this site is public and meant to be read, by people and by AI tools.\nUser-agent: *\nAllow: /\n\n# After you publish on your own domain, add a sitemap line here, for example:\n# Sitemap: https://YOUR-DOMAIN/sitemap.xml\n');
+  const ORIGIN = 'https://fremont-by-the-numbers.vercel.app'; // change when a custom domain is added
+  fs.writeFileSync(path.join(SITE, 'robots.txt'), ['# Everything on this site is public and meant to be read, by people and by AI tools.', 'User-agent: *', 'Allow: /', '', 'Sitemap: ' + ORIGIN + '/sitemap.xml', ''].join(String.fromCharCode(10)));
+  fs.writeFileSync(path.join(SITE, 'sitemap.xml'), ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
+    .concat(PAGES.map(p => '  <url><loc>' + ORIGIN + '/' + (p.file === 'index' ? '' : p.file + '.html') + '</loc><lastmod>' + MODIFIED + '</lastmod></url>'), ['</urlset>', '']).join(String.fromCharCode(10)));
   console.log('built', PAGES.length, 'pages;', Object.entries(results).map(([k, v]) => k + ':' + Math.round(v.body.length / 1024) + 'KB/' + v.urls.length + ' links').join(' '));
 })();
