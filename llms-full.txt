@@ -16,7 +16,7 @@ Click any number to open its source in a new tab.
 - Median household income: **$181,506** — 2020–2024 · Census QuickFacts profile [source](https://www.census.gov/quickfacts/fact/table/fremontcitycalifornia/PST045225)
 - Happiest city in America (WalletHub): **#1** — of 182 cities · Mar 10, 2026 [source](https://wallethub.com/edu/happiest-places-to-live/32619)
 - Typical asking rent (Zillow index): **$3,388** — Sep 30, 2026 · Zillow Research [source](https://www.zillow.com/research/data/)
-- Fremont Unified schools in California’s top 100 for their level (U.S. News): **9 of 37** — 3 high, 3 middle and 3 elementary schools · 2026–27 · U.S. News · 37 schools have a numbered state rank [source](https://www.usnews.com/education/best-high-schools/california/districts/fremont-unified-school-district-111898)
+- Fremont Unified high schools in California’s top 50 (U.S. News): **3** — of 5 comprehensive high schools · 2026–27 · U.S. News Best High Schools [source](https://www.usnews.com/education/best-high-schools/california/districts/fremont-unified-school-district-111898)
 
 ## Explore by topic
 - [Rent & Housing](rent.html): $3,388 typical asking rent, Sep 2026 (Zillow)

@@ -6,7 +6,7 @@ FBN.page({
   kicker: 'Data aggregator · built using Claude',
   hint: 'Start with a topic below, or click any number under “Fremont at a glance” to open its source in a new tab.',
   lede: 'FremontCaByTheNumbers.com is a data aggregator built using Claude. It gathers public figures about Fremont, California (housing, schools, safety, jobs and more) from the agencies and companies that publish them, and shows each number with its source and date.',
-  uses: ['startup_rounds', 'dof_population', 'census_profile', 'zillow_market', 'schools', 'police_facts', 'city_rankings', 'business', 'parks_summary', 'city_facts', 'people_more', 'jobs_more', 'living_facts', 'health_places', 'high_schools', 'school_list', 'crime_oj'],
+  uses: ['startup_rounds', 'dof_population', 'census_profile', 'zillow_market', 'schools', 'police_facts', 'city_rankings', 'business', 'parks_summary', 'city_facts', 'people_more', 'jobs_more', 'living_facts', 'health_places', 'high_schools', 'crime_oj'],
   sections: function (data, row) {
     const v = (ds, id, key) => (row(ds, id, key) || {}).value;
     const f = FBN.fmt;
@@ -14,9 +14,8 @@ FBN.page({
     const unemp = row('jobs_more', 'fremont_unemployment_rate_latest') || {};
     const happiest = row('city_rankings', 'happiest') || {};
     const pop25 = (row('dof_population', '2025-01-01', 'date') || {}).population;
-    const ranked = data('school_list').filter(r => /^\d+$/.test(String(r.usn_state).replace('#', ''))).map(r => ({ level: r.level, n: Number(String(r.usn_state).replace('#', '')) }));
-    const top100 = ranked.filter(r => r.n <= 100);
-    const byLevel = lv => top100.filter(r => r.level === lv).length;
+    const hsAll = data('high_schools').filter(r => r.kind === 'School');
+    const hsTop50 = hsAll.filter(r => Number(r.usn_state) <= 50);
     const crime24 = data('crime_oj').find(r => r.city === 'Fremont' && r.year === 2024) || {};
     const topRound = data('startup_rounds').slice().sort((a, b) => b.amount_usd - a.amount_usd)[0] || {};
     const roundWhen = topRound.date ? new Date(topRound.date + '-15').toLocaleString('en-US', { month: 'short', year: 'numeric' }) : '';
@@ -47,7 +46,7 @@ FBN.page({
           { ds: 'census_profile', id: 'mhi', label: 'Median household income', icon: 'dollar', color: 3 },
           { ds: 'city_rankings', id: 'happiest', label: 'Happiest city in America (WalletHub)', value: happiest.rank, format: 'rank', icon: 'star', color: 4, meta: 'of ' + happiest.of + ' cities · ' + happiest.published },
           { ds: 'zillow_market', id: 'zori', label: 'Typical asking rent (Zillow index)', icon: 'key', color: 5 },
-          { ds: 'school_list', label: 'Fremont Unified schools in California’s top 100 for their level (U.S. News)', value: top100.length + ' of ' + ranked.length, icon: 'school', color: 1, url: 'https://www.usnews.com/education/best-high-schools/california/districts/fremont-unified-school-district-111898', urlName: 'U.S. News: Fremont Unified School District', meta: byLevel('High') + ' high, ' + byLevel('Middle') + ' middle and ' + byLevel('Elementary') + ' elementary schools · 2026–27 · U.S. News · ' + ranked.length + ' schools have a numbered state rank' }
+          { ds: 'high_schools', label: 'Fremont Unified high schools in California’s top 50 (U.S. News)', value: hsTop50.length, format: 'int', icon: 'school', color: 1, meta: 'of ' + hsAll.length + ' comprehensive high schools · 2026–27 · U.S. News Best High Schools' }
         ]
       },
       { title: 'Explore by topic', html: catHtml },
