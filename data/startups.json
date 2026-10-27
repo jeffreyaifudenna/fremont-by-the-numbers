@@ -130,19 +130,6 @@
   "geo": "Fremont"
  },
  {
-  "id": "fremont_manufacturing_jobs_city",
-  "group": "City's own claims",
-  "label": "Manufacturing jobs in Fremont (City economic development site)",
-  "value": 45000,
-  "format": "int",
-  "period": "Read Oct 24, 2026",
-  "source": "Think Silicon Valley (City of Fremont economic development site), Advanced Manufacturing",
-  "source_url": "https://www.thinksiliconvalley.com/advanced-manufacturing/",
-  "kind": "Official count",
-  "note": "Exact wording: 'nearly 45,000 manufacturing jobs, with one in three Fremont jobs in the sector' and 'nearly all of its 900 manufacturers are engaged in technology'. Undated; Propmodo (Aug 2025) cites 65,000 manufacturing jobs, so figures differ by source.",
-  "geo": "Fremont"
- },
- {
   "id": "fremont_small_businesses_city",
   "group": "City's own claims",
   "label": "Small businesses in Fremont (City of Fremont)",
@@ -187,9 +174,9 @@
   "label": "Size of the Warm Springs Innovation District (City of Fremont)",
   "value": 850,
   "format": "int",
-  "period": "Read Oct 24, 2026",
-  "source": "Think Silicon Valley (City of Fremont economic development site), Innovation",
-  "source_url": "https://www.thinksiliconvalley.com/innovation-2/",
+  "period": "Read Oct 26, 2026",
+  "source": "City of Fremont Economic Development, Warm Springs employment hub",
+  "source_url": "https://www.fremont.gov/government/departments/economic-development/local-economy-overview/employment-hubs/warm-springs",
   "kind": "Official count",
   "note": "Acres. Plan calls for 'more than 20,000 new jobs' and '4,000 new housing units'. Planning targets, not current counts.",
   "geo": "Fremont"
@@ -200,9 +187,9 @@
   "label": "New jobs planned for the Warm Springs Innovation District (City of Fremont)",
   "value": 20000,
   "format": "int",
-  "period": "Plan target, read Oct 24, 2026",
-  "source": "Think Silicon Valley (City of Fremont economic development site), Innovation",
-  "source_url": "https://www.thinksiliconvalley.com/innovation-2/",
+  "period": "Plan target, read Oct 26, 2026",
+  "source": "City of Fremont Economic Development, Warm Springs employment hub",
+  "source_url": "https://www.fremont.gov/government/departments/economic-development/local-economy-overview/employment-hubs/warm-springs",
   "kind": "Official count",
   "note": "Planning target ('more than 20,000 new jobs'), not jobs already created.",
   "geo": "Fremont"

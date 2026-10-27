@@ -48,7 +48,6 @@ FBN.page({
       {
         title: 'The manufacturing base',
         cards: [
-          { ds: 'startups', id: 'fremont_manufacturing_jobs_city', label: 'Manufacturing jobs in Fremont (City economic development)', icon: 'factory', color: 1 },
           { ds: 'resident_industries', id: 'Manufacturing', key: 'industry', label: 'Residents who work in manufacturing', value: mfg.share_pct, format: 'pct', icon: 'users', color: 2, meta: '2020–2024 · Census ACS' },
           { ds: 'jobs_more', id: 'tesla_fremont_largest_employer', label: 'Employees at Tesla’s Fremont factory', icon: 'factory', color: 3, link: true },
           { ds: 'startups', id: 'fremont_industrial_sqft', label: 'Square feet of industrial space (City of Fremont)', icon: 'building', color: 5 },

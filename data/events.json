@@ -2,7 +2,7 @@
  {
   "id": "festival_of_arts_attendance",
   "group": "Signature events",
-  "label": "Fremont Festival of the Arts attendees each year",
+  "label": "Fremont Festival of the Arts attendees each year (news estimate)",
   "value": 150000,
   "format": "int",
   "period": "Aug 1–2, 2026 (42nd year)",
@@ -35,7 +35,7 @@
   "source": "Patch Fremont, Beloved Antique Fair & Flea Market Returns",
   "source_url": "https://patch.com/california/fremont/beloved-antique-fair-flea-market-returns",
   "kind": "News report",
-  "note": "'Over 200 vendors' per photo caption. Read Oct 24, 2026.",
+  "note": "'Over 200 vendors' per photo caption; the organizer's site (niles.org) says 'hundreds'. Read Oct 24, 2026.",
   "geo": "Fremont"
  },
  {

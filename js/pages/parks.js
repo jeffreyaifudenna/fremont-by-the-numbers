@@ -53,7 +53,7 @@ FBN.page({
         sub: 'Signature events with figures from their organizers or the City.',
         cards: [
           { ds: 'events', id: 'festival_of_arts_attendance', label: 'Fremont Festival of the Arts, attendees each year (media figure)', icon: 'star', color: 4, note: 'Held the first weekend of August since 1983; the organizer says only “thousands.”' },
-          { ds: 'events', id: 'niles_antique_faire_vendors', label: 'Vendors at the Niles Antique Faire & Flea Market', icon: 'cart', color: 2, note: 'Last Sunday of August; 61st edition in 2025.' },
+          { ds: 'events', id: 'niles_antique_faire_vendors', label: 'Vendors at the Niles Antique Faire & Flea Market (news report)', icon: 'cart', color: 2, note: 'Last Sunday of August; 61st edition in 2025.' },
         ],
         facts: [{ ds: 'events', title: 'Signature events, in detail', group: 'Signature events', navy: true }],
         notes: ['!Attendance figures for Fremont events come from news coverage, not organizer counts, and several are years old. No attendance is published for the Ardenwood Harvest Festival, Ohlone Days, Lunar New Year or Niles Essanay film events.']

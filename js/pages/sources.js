@@ -48,7 +48,7 @@ FBN.page({
           '<li>Rankings such as WalletHub’s and U.S. News’s use their publishers’ own methods and weightings.</li>' +
           '</ul>' +
           '<h2>Privacy</h2>' +
-          '<p>This site has no accounts, forms, ads or tracking cookies, and it does not collect personal information. The only thing it stores on your device is your light or dark mode choice. The site is hosted on Vercel, which keeps standard server logs and may count visits.</p>' +
+          '<p>This site has no accounts, forms, ads or tracking cookies, and it does not collect personal information. The only thing it stores on your device is your light or dark mode choice. The site is hosted on Vercel, which keeps standard server logs. Visits are counted with Vercel Web Analytics, which is anonymous and uses no cookies: it records the page, the referring site, and the browser, device type and country, and does not identify you.</p>' +
           '<h2>Updates</h2>' +
           '<p>On Oct 25, 2026 the site was trimmed: figures that were out of date, duplicated on another page, or not about Fremont itself (county, Bay Area, national or worldwide) were removed, so each fact now appears once. Each figure is refreshed when its source publishes a new release. Each topic page shows the date its figures were last checked, and each figure shows the date of its own source. Corrections are welcome.</p>' +
           '</div>'

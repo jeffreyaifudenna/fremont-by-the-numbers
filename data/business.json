@@ -10,5 +10,5 @@
   {"id": "establishments", "label": "Business establishments (Fremont ZIP codes)", "value": 5562, "format": "int", "period": "2023", "source": "Census ZIP Code Business Patterns, ZIPs 94536, 94538, 94539, 94555", "kind": "Census count (ZIPs, not city limits)"},
   {"id": "private_jobs", "label": "Private-sector jobs (Fremont ZIP codes)", "value": 125388, "format": "int", "period": "Mar 2023", "source": "Census ZIP Code Business Patterns", "kind": "Census count (ZIPs, not city limits)"},
   {"id": "hub_sqft", "label": "Fremont Hub shopping center (sq ft)", "value": 504666, "format": "int", "period": "Current", "source": "Kimco Realty property page", "kind": "Owner figure"},
-  {"id": "pacific_sqft", "label": "Pacific Commons shopping center (sq ft)", "value": 887130, "format": "int", "period": "Jun 2026", "source": "JLL sale listing", "kind": "Broker figure"}
+  {"id": "pacific_sqft", "label": "Pacific Commons shopping center, portion offered for sale (sq ft)", "value": 887130, "format": "int", "period": "Jun 2026", "source": "JLL sale listing", "kind": "Broker figure", "note": "The listing covers the owned portion offered for sale; the whole center is larger."}
 ]

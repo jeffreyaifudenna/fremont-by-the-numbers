@@ -252,7 +252,7 @@
     const header = document.createElement('header');
     header.className = 'site-header';
     header.innerHTML = '<div class="wrap">' +
-      '<a class="brand" href="' + base + 'index.html"><span class="eyebrow">Fremont, California<span class="eb-agg"> · Data aggregator built by JeffreyAiFudenna with Claude</span></span><span class="name">' + SITE.name + '</span></a>' +
+      '<a class="brand" href="' + base + 'index.html"><span class="eyebrow">Fremont, California<span class="eb-agg"><span class="eb-sep"> · </span>Data aggregator built by JeffreyAiFudenna with Claude</span></span><span class="name">' + SITE.name + '</span></a>' +
       '<div class="header-right"><span class="updated">Data as of ' + SITE.updated + '</span>' +
       '<button class="theme-toggle" type="button" aria-label="Switch between light and dark mode"></button></div></div>';
     const nav = document.createElement('nav');
@@ -563,7 +563,11 @@
       redrawCharts();  // charts were first drawn before their panels were on the page, so at a guessed size
     }).catch(e => {
       console.error(e);
-      if (prerendered) { main.replaceChildren(...kept); return; }   // the pre-rendered copy stays up
+      if (prerendered) {   // the pre-rendered copy stays up, saved charts included even on phones
+        main.replaceChildren(...kept);
+        main.querySelectorAll('.chart-box svg.pre').forEach(s => s.classList.remove('pre'));
+        return;
+      }
       wrap.querySelector('.loading').textContent = 'The figures could not be loaded. If you opened this page as a file, it needs to be served from a web server (or published) for the data files to load.';
     });
   }

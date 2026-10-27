@@ -8,6 +8,7 @@ const { chromium } = require('playwright');
 const SITE = path.resolve(process.argv[2] || '.');
 const MODIFIED = process.argv[3] || new Date().toISOString().slice(0, 10);
 const NAME = 'FremontCaByTheNumbers.com';
+const ORIGIN = 'https://fremontcabythenumbers.com';  // canonical address: sitemap, robots and canonical tags
 const PAGES = [
   { file: 'index', label: 'Overview', title: NAME, type: 'WebSite', desc: 'FremontCaByTheNumbers.com is a data aggregator built using Claude. It gathers public figures about Fremont, California (housing, schools, safety, jobs and more) and links every number to its source.' },
   { file: 'rent', label: 'Rent & Housing', desc: 'Typical rent, home prices, housing stock, new homes, utility bills, internet and child care costs in Fremont, California, each with its source and date.' },
@@ -34,11 +35,13 @@ const VER = (() => {
 const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 const pageTitle = p => p.title || p.label;
 const fullTitle = p => p.file === 'index' ? NAME : pageTitle(p) + ' · ' + NAME;
+const pageUrl = p => ORIGIN + '/' + (p.file === 'index' ? '' : p.file + '.html');
 
 function head(p, extra) {
   return '<meta charset="utf-8">\n<meta name="viewport" content="width=device-width, initial-scale=1">\n' +
     '<title>' + esc(fullTitle(p)) + '</title>\n<meta name="description" content="' + esc(p.desc) + '">\n' +
     '<meta name="theme-color" content="#0d366b">\n' +
+    '<link rel="canonical" href="' + pageUrl(p) + '">\n<meta property="og:url" content="' + pageUrl(p) + '">\n' +
     '<meta property="og:type" content="website">\n<meta property="og:site_name" content="' + NAME + '">\n<meta property="og:title" content="' + esc(fullTitle(p)) + '">\n<meta property="og:description" content="' + esc(p.desc) + '">\n' +
     '<meta property="og:image" content="https://fremontcabythenumbers.com/og.png">\n<meta property="og:image:width" content="1200">\n<meta property="og:image:height" content="630">\n<meta property="og:image:alt" content="FremontCaByTheNumbers.com: public data about Fremont, California, with a source on every figure">\n' +
     '<meta name="twitter:card" content="summary_large_image">\n<meta name="twitter:image" content="https://fremontcabythenumbers.com/og.png">\n' +
@@ -46,6 +49,8 @@ function head(p, extra) {
     // Theme before first paint (saved choice, else the device setting), matching currentTheme() in fbn.js.
     '<script>(function(){var t;try{t=localStorage.getItem(\'fbn-theme\');}catch(e){}if(!t&&window.matchMedia&&matchMedia(\'(prefers-color-scheme: dark)\').matches)t=\'dark\';if(t)document.documentElement.setAttribute(\'data-theme\',t);})();</script>\n' +
     '<link rel="stylesheet" href="css/tokens.css?v=' + VER + '">\n<link rel="stylesheet" href="css/site.css?v=' + VER + '">\n<link rel="icon" href="favicon.svg" type="image/svg+xml">\n' +
+    // Vercel Web Analytics (anonymous, no cookies); the script is served once Analytics is enabled for the project.
+    '<script>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };</script>\n<script defer src="/_vercel/insights/script.js"></script>\n' +
     // Deferred: they download while the page parses and run after it, so the pre-rendered page paints without waiting on them.
     '<script defer src="js/charts.js?v=' + VER + '"></script>\n<script defer src="js/fbn.js?v=' + VER + '" data-v="' + VER + '"></script>\n<script defer src="js/pages/' + p.file + '.js?v=' + VER + '"></script>\n' + (extra || '');
 }
@@ -74,7 +79,7 @@ function shell(p, bodyHtml, jsonld) {
       const r = await pg.evaluate(() => {
         document.querySelectorAll('.chart-tip').forEach(e => e.remove());
         document.querySelectorAll('script').forEach(e => e.remove());
-        const t = e => { if (!e) return ''; const c = e.cloneNode(true); c.querySelectorAll('.sr-only, .row-open, .card-open').forEach(x => x.remove()); return c.textContent.replace(/\s*↗\s*/g, ' ').replace(/\s+/g, ' ').trim(); };
+        const t = e => { if (!e) return ''; const c = e.cloneNode(true); c.querySelectorAll('.sr-only, .row-open, .card-open').forEach(x => x.remove()); c.querySelectorAll('br').forEach(x => x.replaceWith(' ')); return c.textContent.replace(/\s*↗\s*/g, ' ').replace(/\s+/g, ' ').trim(); };
         const abs = u => { try { return new URL(u, location.href).href.replace(location.origin + '/', ''); } catch (e) { return u; } };
         const md = [];
         const mdTable = tb => {
@@ -112,6 +117,8 @@ function shell(p, bodyHtml, jsonld) {
           sec.querySelectorAll('ul.source-list li').forEach(li => { const a = li.querySelector('a'); md.push('- ' + t(li) + (a ? ' <' + a.href + '>' : '')); });
         });
         const urls = [...new Set([...document.querySelectorAll('a[target=_blank]')].map(a => a.href).filter(u => /^https?:/.test(u)))];
+        // saved charts are drawn for this 1280px window; css/site.css hides them on phones until fbn.js redraws them at phone size
+        document.querySelectorAll('.chart-box svg').forEach(svg => svg.classList.add('pre'));
         return { body: document.body.innerHTML, md: md.join('\n'), urls, h1: t(document.querySelector('h1')), sections: [...document.querySelectorAll('main .section-head h2')].map(t), errs: [] };
       });
       r.errs = errs; results[p.file] = r; await pg.close();
@@ -146,9 +153,8 @@ function shell(p, bodyHtml, jsonld) {
   txt += '\n## Optional\n\n- [About, methodology and sources](sources.html): how the data was gathered, known limitations, and every source page.\n';
   fs.writeFileSync(path.join(SITE, 'llms.txt'), txt);
 
-  const ORIGIN = 'https://fremontcabythenumbers.com'; // change when a custom domain is added
   fs.writeFileSync(path.join(SITE, 'robots.txt'), ['# Everything on this site is public and meant to be read, by people and by AI tools.', 'User-agent: *', 'Allow: /', '', 'Sitemap: ' + ORIGIN + '/sitemap.xml', ''].join(String.fromCharCode(10)));
   fs.writeFileSync(path.join(SITE, 'sitemap.xml'), ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
-    .concat(PAGES.map(p => '  <url><loc>' + ORIGIN + '/' + (p.file === 'index' ? '' : p.file + '.html') + '</loc><lastmod>' + MODIFIED + '</lastmod></url>'), ['</urlset>', '']).join(String.fromCharCode(10)));
+    .concat(PAGES.map(p => '  <url><loc>' + pageUrl(p) + '</loc><lastmod>' + MODIFIED + '</lastmod></url>'), ['</urlset>', '']).join(String.fromCharCode(10)));
   console.log('built', PAGES.length, 'pages;', Object.entries(results).map(([k, v]) => k + ':' + Math.round(v.body.length / 1024) + 'KB/' + v.urls.length + ' links').join(' '));
 })();

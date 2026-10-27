@@ -31,7 +31,6 @@ So **to update a figure, edit the data file**, not the page. To add a card, add 
 
 - Edit the JSON in `data/` (GitHub's web editor is fine). Keep `period` and `source` current.
 - Update the `updated` date in `data/_catalog.json` for that dataset, and `SITE.updated` at the top of `js/fbn.js` for the header.
-- The home page's release calendar (`data/release_calendar.json`) lists when each source publishes next.
 - A future pipeline (Fremont Pulse) only needs to overwrite these files; nothing in the pages changes.
 
 ## Running it locally

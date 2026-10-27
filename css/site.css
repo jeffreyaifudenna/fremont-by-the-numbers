@@ -186,6 +186,8 @@ td .dim { color: var(--muted); }
   .panel { padding: 16px; }
   .chart-box { height: 240px; }
   .chart-box.tall { height: 320px; }
+  /* charts saved by the build are drawn for a 1280px window (tiny text here); hide them until the phone-size redraw */
+  .chart-box svg.pre { visibility: hidden; }
   /* bigger tap targets for the dataset list and its toggle */
   .dataset a.u { font-size: 14px; padding: 6px 0; align-self: flex-start; }
   details.datasets summary { min-height: 44px; }
@@ -212,6 +214,10 @@ details.datasets .sub { font-size: 14px; color: var(--ink-2); margin: 8px 0 12px
 /* ---------- click-through to sources ---------- */
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
 .brand .eyebrow .eb-agg { text-transform: none; letter-spacing: 0.02em; }
+@media (max-width: 359px) {  /* very narrow phones: the tagline starts its own line, without the leading dot */
+  .brand .eyebrow .eb-agg { display: block; }
+  .brand .eyebrow .eb-sep { display: none; }
+}
 .kicker {
   align-self: flex-start; display: inline-flex; align-items: center; gap: 8px; margin: 0;
   font-size: 13px; font-weight: 600; letter-spacing: 0.02em; color: var(--link);
