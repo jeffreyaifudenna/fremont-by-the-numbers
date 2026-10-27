@@ -6,6 +6,6 @@
   {"id": "parkland_share", "label": "City area that is parkland (all agencies)", "value": 42.8, "format": "pct", "period": "2026", "source": "Trust for Public Land ParkServe (national median 15%)", "kind": "Estimate"},
   {"id": "all_parkland", "label": "Parkland acres, all agencies", "value": 17739, "format": "int", "period": "2026", "source": "Trust for Public Land ParkServe", "kind": "Estimate"},
   {"id": "libraries", "label": "Alameda County Library branches in Fremont", "value": 3, "format": "int", "period": "Since Jul 2024", "source": "Alameda County Library (Irvington branch closed Jul 31, 2024)", "kind": "Count"},
-  {"id": "community_centers", "label": "City community centers", "value": 4, "format": "int", "period": "Current", "source": "City of Fremont Parks & Recreation", "kind": "Count"},
+  {"id": "community_centers", "label": "City community centers", "value": 4, "format": "int", "period": "Oct 2026", "source": "City of Fremont Parks & Recreation, Community Centers", "source_url": "https://www.fremont.gov/government/departments/parks-recreation/facilities-rentals/community-centers", "kind": "Count", "note": "Centerville, Los Cerritos, Wally Pond Irvington and Warm Springs, as listed on the City page."},
   {"id": "age_well", "label": "City senior (Age Well) centers", "value": 2, "format": "int", "period": "Current", "source": "City of Fremont Human Services", "kind": "Count"}
 ]

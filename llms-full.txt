@@ -828,7 +828,7 @@ Parks, trails, annual events, community facilities and weather in Fremont, Calif
 - Miles of trails in Fremont’s network (City figure): **61** — 2026 · City of Fremont. The city’s 30-year goal is 140 miles. [source](https://www.fremont.gov/government/departments/parks-planning-design/park-planning)
 - Miles of city-owned multi-use trails: **23** — Feb 2022 · City of Fremont [source](https://fremont.gov/home/showpublisheddocument/9619/638611250926530000)
 - Dedicated pickleball courts at Central Park Knoll: **8** — Opened Jun 2024 · City of Fremont [source](https://www.fremont.gov/government/departments/parks-planning-design/design-projects/central-park-knoll-pickleball-court-lighting)
-- Off-leash dog parks: **2** — 2026 · Macaroni KID Fremont [source](https://fremont.macaronikid.com/guides/606e76bdc5999c19f4cb4671/dog-parks-in-fremont-newark-and-union-city)
+- City off-leash dog parks: **2** — Oct 2026 · City of Fremont [source](https://www.fremont.gov/government/departments/parks-planning-design/design-projects/vallejo-mill-pickleball-and-dog-park)
 - Recreation program registrants in a year: **20,000** — FY 2019/20 · City of Fremont. Last published figure, pre-pandemic (FY 2019–20). [source](https://fremont.gov/home/showpublisheddocument/1089/637806234781330000)
 - Aqua Adventure water park, non-resident admission: **$27** — 2026 season · 510 Families [source](https://www.510families.com/aqua-adventure-waterpark)
 
@@ -898,7 +898,7 @@ Note: Attendance figures for Fremont events come from news coverage, not organiz
 
 ## Community facilities
 - County library branches in Fremont: **3** — Since Jul 2024 · Alameda County Library. Fremont Main, Centerville and Niles; Irvington closed in 2024. [source](https://www.aclibrary.org/irvington)
-- City community centers: **4** — Current · City of Fremont Parks & Recreation [source](https://www.fremont.gov/government/departments/parks-recreation/facilities-rentals/community-centers)
+- City community centers: **4** — Oct 2026 · City of Fremont Parks & Recreation [source](https://www.fremont.gov/government/departments/parks-recreation/facilities-rentals/community-centers)
 - Age Well (senior) centers: **2** — Current · City of Fremont Human Services [source](https://www.fremont.gov/government/departments/human-services/age-well-centers)
 
 ## Weather for the outdoors
@@ -2031,6 +2031,7 @@ Each dataset is one file; its description says what it holds and when it was rea
 - Traffic Signals and Active Transportation Plan pagesNumber of traffic signals; separated bikeways added <https://fremont.gov/government/departments/transportation-engineering/traffic-signals>
 - City of Fremont, Parks Planning & Design – Master PlansMiles in Fremont's overall trail network (all agencies) <https://www.fremont.gov/government/departments/parks-planning-design/park-planning>
 - City of Fremont, Central Park Knoll Pickleball Court Lighting projectDedicated pickleball courts at Central Park Knoll <https://www.fremont.gov/government/departments/parks-planning-design/design-projects/central-park-knoll-pickleball-court-lighting>
+- City of Fremont, Vallejo Mill Historical Park Pickleball & Dog Park project pageCity off-leash dog parks in Fremont <https://www.fremont.gov/government/departments/parks-planning-design/design-projects/vallejo-mill-pickleball-and-dog-park>
 - City of Fremont, Fremont Park Golf ClubHoles at Fremont Park Golf Club (par 32) <https://www.fremont.gov/government/departments/parks-recreation/facilities-rentals/fremont-park-golf-club>
 - City of Fremont, FY 2021/22 Adopted Operating Budget – Community Services performance measuresRecreation program registrants in a year <https://fremont.gov/home/showpublisheddocument/1089/637806234781330000>
 - City of Fremont, New Community Center at Central ParkSize of new Central Park Community Center, Phase 1 (sq ft) <https://www.my.fremont.gov/newcommunitycenter>
@@ -2076,7 +2077,6 @@ Each dataset is one file; its description says what it holds and when it was rea
 - East Bay industrial market reportIndustrial vacancy, Fremont/Newark <https://kidder.com/market-reports/east-bay-industrial-market-report/>
 - Fremont Hub property pageFremont Hub size <https://www.kimcorealty.com/109510>
 - MIT Living Wage Calculator, Alameda County, CaliforniaAnnual food cost for one adult in a living-wage budget, Alameda County <https://livingwage.mit.edu/counties/06001>
-- Macaroni KID Fremont, Dog Parks in Fremont, Newark, and Union CityOff-leash dog parks in Fremont <https://fremont.macaronikid.com/guides/606e76bdc5999c19f4cb4671/dog-parks-in-fremont-newark-and-union-city>
 - City of Fremont Census data, 1960–2020Census counts, 1960–2000 <https://files.mtc.ca.gov/library/pub/48117_Place_FremontCity.pdf>
 - Pavement Condition Index table, 2024 data (Jan 2026)Pavement condition for Fremont and the Bay Area <https://mtc.ca.gov/sites/default/files/documents/2026-01/PCI_table2024DataJanuary2026Update.pdf>
 - NBC Bay Area, The 42nd Fremont Festival of the ArtsFremont Festival of the Arts attendees each year (news estimate) <https://www.nbcbayarea.com/community/the-42nd-fremont-festival-of-the-arts/4097266/?amp=1>

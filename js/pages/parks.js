@@ -25,7 +25,7 @@ FBN.page({
           { ds: 'events', id: 'trail_network_miles_all', label: 'Miles of trails in Fremont’s network (City figure)', icon: 'map', color: 3, note: 'The city’s 30-year goal is 140 miles.' },
           { ds: 'events', id: 'city_trail_miles_2022', label: 'Miles of city-owned multi-use trails', icon: 'map', color: 3 },
           { ds: 'events', id: 'pickleball_courts_central_park_knoll', label: 'Dedicated pickleball courts at Central Park Knoll', icon: 'star', color: 2 },
-          { ds: 'events', id: 'dog_parks_count', label: 'Off-leash dog parks', icon: 'tree', color: 4 },
+          { ds: 'events', id: 'dog_parks_count', label: 'City off-leash dog parks', icon: 'tree', color: 4 },
           { ds: 'events', id: 'rec_registrants_fy1920', label: 'Recreation program registrants in a year', icon: 'users', color: 1, note: 'Last published figure, pre-pandemic (FY 2019–20).' },
           { ds: 'events', id: 'aqua_adventure_admission', label: 'Aqua Adventure water park, non-resident admission', icon: 'water', color: 1 }
         ],

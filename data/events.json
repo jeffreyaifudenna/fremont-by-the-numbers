@@ -165,20 +165,20 @@
   "source": "City of Fremont, Central Park Knoll Pickleball Court Lighting project",
   "source_url": "https://www.fremont.gov/government/departments/parks-planning-design/design-projects/central-park-knoll-pickleball-court-lighting",
   "kind": "Official count",
-  "note": "First dedicated city pickleball courts; a Feb 2023 public comment said the city had zero regulation courts before. Lighting project in design. Read Oct 24, 2026.",
+  "note": "Vallejo Mill Historical Park added four more courts, opened June 17, 2026 (City project page). First dedicated city pickleball courts; a Feb 2023 public comment said the city had zero regulation courts before. Lighting project in design. Read Oct 24, 2026.",
   "geo": "Fremont"
  },
  {
   "id": "dog_parks_count",
   "group": "Recreation inventory",
-  "label": "Off-leash dog parks in Fremont",
+  "label": "City off-leash dog parks in Fremont",
   "value": 2,
   "format": "int",
-  "period": "2026",
-  "source": "Macaroni KID Fremont, Dog Parks in Fremont, Newark, and Union City",
-  "source_url": "https://fremont.macaronikid.com/guides/606e76bdc5999c19f4cb4671/dog-parks-in-fremont-newark-and-union-city",
-  "kind": "Crowdsourced",
-  "note": "Central Park Dog Park and Shinn Pond Dog Park (Niles). Master Plan (2022) also refers to 'a dog park' and a need for 2 more large-dog parks. Read Oct 24, 2026.",
+  "period": "Oct 2026",
+  "source": "City of Fremont, Vallejo Mill Historical Park Pickleball & Dog Park project page",
+  "source_url": "https://www.fremont.gov/government/departments/parks-planning-design/design-projects/vallejo-mill-pickleball-and-dog-park",
+  "kind": "Official count",
+  "note": "Central Park Dog Park (1740 Stevenson Blvd, per the City's Dog Park page) and the Vallejo Mill Historical Park dog park, which opened June 17, 2026. A local guide (Macaroni KID) also lists an off-leash area at Shinn Pond in Niles; it is not on the City's pages. Master Plan (2022) called for 2 more large-dog parks. Read Oct 26, 2026.",
   "geo": "Fremont"
  },
  {
