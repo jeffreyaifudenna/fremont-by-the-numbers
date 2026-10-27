@@ -152,7 +152,7 @@ FBN.page({
           source: 'Caltrans Traffic Census (AADT), 2024.'
         }],
         tables: [{
-          ds: 'pavement', title: 'Street condition', phone: [0, 1, 4], sub: 'Pavement Condition Index, 0–100 (higher is better), three-year average', filter: r => r.city === 'Fremont' || r.city === 'Bay Area',
+          ds: 'pavement', title: 'Street condition', phone: [0, 1, 2, 3, 4], sub: 'Pavement Condition Index, 0–100 (higher is better), three-year average', filter: r => r.city === 'Fremont' || r.city === 'Bay Area',
           columns: [{ key: 'city', label: 'Area' }, { key: 'lane_miles', label: 'Lane miles', format: 'dec1' }, { key: 'pci_2022', label: '2022', format: 'int' }, { key: 'pci_2023', label: '2023', format: 'int' }, { key: 'pci_2024', label: '2024', format: 'int' }],
           highlight: r => r.city === 'Fremont',
           source: 'Metropolitan Transportation Commission pavement condition table, Jan 2026 update.'
@@ -161,8 +161,8 @@ FBN.page({
       {
         title: 'How Fremont ranks',
         tables: [{
-          ds: 'city_rankings', title: 'National city rankings, 2025–26', phone: [0, 2, 3], sub: 'Lower is better', navy: true, sort: (a, b) => a.order - b.order,
-          columns: [{ key: 'ranking', label: 'Ranking' }, { key: 'publisher', label: 'Publisher' }, { key: r => '#' + r.rank + ' of ' + r.of, label: 'Fremont', num: false }, { key: 'published', label: 'Published' }, { key: 'highlights', label: 'Highlights' }],
+          ds: 'city_rankings', title: 'National city rankings, 2025–26', phoneCards: true, sub: 'Lower is better', navy: true, sort: (a, b) => a.order - b.order,
+          columns: [{ key: 'ranking', label: 'Ranking' }, { key: 'publisher', label: 'Publisher' }, { key: r => '#' + r.rank + ' of ' + r.of, label: 'Fremont', num: false }, { key: 'published', label: 'Published' }, { key: 'highlights', label: 'Highlights', cardWide: true }],
           source: 'WalletHub ranking pages and Trust for Public Land ParkScore. Rankings compare the largest U.S. cities and use the publishers’ own weightings.'
         }]
       }

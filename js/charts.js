@@ -31,9 +31,9 @@
     if (cur) lines.push(cur);
     return lines;
   }
-  function wrap(text, max) {
+  function wrap(text, max, maxLines = 2) {
     const lines = wrapAll(text, max);
-    if (lines.length > 2) { lines.length = 2; lines[1] = lines[1].replace(/.{3}$/, '') + '…'; }
+    if (lines.length > maxLines) { lines.length = maxLines; lines[maxLines - 1] = lines[maxLines - 1].replace(/.{3}$/, '') + '…'; }
     return lines;
   }
   const TEXT = { fill: 'var(--muted)', 'font-size': 12, 'font-family': 'inherit' };
@@ -67,7 +67,8 @@
     // On phones an hbar puts each label on its own line above its bar, so labels get the full width.
     const stackLabels = horizontal && W < 480;
     let nt, tickLabels, left, bottom = 26, top = 8, right = 10, pw;
-    let catLines = [];
+    let catLines = [], valText = [];
+    const textW = (s, size) => { const t = el('text', Object.assign({}, TEXT, { 'font-size': size }), svg); t.textContent = s; const w = t.getComputedTextLength(); svg.removeChild(t); return w; };
     // the value axis of an hbar runs across the width: use fewer ticks until their labels fit side by side
     for (let count = horizontal ? 4 : 5; ; count--) {
       nt = niceTicks(vmin, vmax, count);
@@ -76,10 +77,14 @@
       const maxt = Math.max(...tickLabels.map(t => t.s.length));
       if (horizontal) {
         if (stackLabels) {
-          catLines = labels.map(l => wrap(l, Math.floor((W - 8) / charW)));
+          // the value sits at the right end of the label's first line, so labels wrap short of it (and are never cut)
+          valText = labels.map((_, i) => ds.map(d => d.data[i]).filter(v => v != null && !isNaN(v)).map(v => String(fmt(v))).join(' · '));
+          const valW = Math.max(0, ...valText.map(s => s.length)) * charW + 12;
+          catLines = labels.map(l => wrapAll(l, Math.max(10, Math.floor((W - 8 - valW) / charW))));
           left = Math.max(4, tickLabels[0].s.length * charW / 2 + 2);
         } else {
-          catLines = labels.map(l => wrap(l, Math.max(14, Math.floor((W * 0.42) / charW))));
+          const fitLines = Math.max(2, Math.min(4, Math.floor((H - top - 24) / Math.max(1, labels.length) / 13)));  // more lines when the row is tall enough
+          catLines = labels.map(l => wrap(l, Math.max(14, Math.floor((W * 0.42) / charW)), fitLines));
           const maxc = Math.max(...catLines.map(ls => Math.max(...ls.map(s => s.length))), 4);
           left = Math.min(W * 0.45, maxc * charW + 10);
         }
@@ -103,18 +108,29 @@
       box.style.height = H + 'px';
     }
 
-    // column chart: wrap category labels onto two lines when that lets every label show
-    let colLines = null, colEvery = 1, colFont = 12;
+    // x labels on column and line charts: every label straight when they fit (column labels may wrap to three lines),
+    // else every label tilted when there is room for that, else as many as fit
+    let colLines = null, colEvery = 1, colFont = 12, xTilt = false, lineAll = false;
+    const tiltFor = () => {  // tilted labels need height below the plot; skip them when that would squash the chart
+      const need = 18 + Math.ceil(Math.max(...labels.map(l => textW(String(l), 12))) * 0.71);
+      if (need <= H * 0.35) { xTilt = true; bottom = need; }
+      return xTilt;
+    };
+    if (!isBar && labels.length) {
+      const step = labels.length > 1 ? pw / (labels.length - 1) : pw;
+      const maxW = Math.max(...labels.map(l => textW(String(l), 12)));
+      if (maxW + 10 <= step) lineAll = true;
+      else if (step >= 15) tiltFor();
+    }
     if (isBar && !horizontal) {
       const band = pw / Math.max(1, labels.length);
-      const textW = (s, size) => { const t = el('text', Object.assign({}, TEXT, { 'font-size': size }), svg); t.textContent = s; const w = t.getComputedTextLength(); svg.removeChild(t); return w; };
       for (const size of [12, 11]) {
         const all = labels.map(l => wrapAll(l, Math.max(1, Math.floor((band - 4) / (size * 0.5)))));
-        if (all.every(ls => ls.length <= 2 && ls.every(s => textW(s, size) <= band - (size === 12 ? 4 : 2)))) { colLines = all; colFont = size; break; }
+        if (all.every(ls => ls.length <= 3 && ls.every(s => textW(s, size) <= band - (size === 12 ? 4 : 2)))) { colLines = all; colFont = size; break; }
       }
       if (colLines) {
-        if (colLines.some(ls => ls.length > 1)) bottom = 40;
-      } else {
+        bottom = 26 + 14 * (Math.max(...colLines.map(ls => ls.length)) - 1);
+      } else if (!(band >= 15 && tiltFor())) {
         const lw = Math.min(14, Math.max(...labels.map(l => String(l).length))) * 7.2 + 8;
         colEvery = Math.max(1, Math.ceil(lw / band));
       }
@@ -140,6 +156,14 @@
 
     const n = labels.length;
     const hollow = (d, i) => d.hollow && d.hollow[i];
+    // a non-zero value always gets a visible bar (2px), so small values don't look missing; the exact value is in the tooltip
+    const span = (a, b, v) => {
+      const lo = Math.min(a, b), hi = Math.max(a, b);
+      if (!v || hi - lo >= 2) return [lo, hi - lo];
+      const zeroAtHi = horizontal ? v < 0 : v > 0;  // which end of the bar sits on the zero line
+      return [zeroAtHi ? hi - 2 : lo, 2];
+    };
+    const tiltLabel = (x, l) => el('text', Object.assign({}, TEXT, { x, y: ph + 14, 'text-anchor': 'end', transform: 'rotate(-45 ' + x + ' ' + (ph + 14) + ')' }), g).textContent = l;
     const tipRows = [];  // per index: {x, y, items}
 
     if (horizontal && stackLabels) {
@@ -149,13 +173,14 @@
         ds.forEach((d, j) => {
           const v = d.data[i]; if (v == null || isNaN(v)) return;
           const start = stacked ? acc : 0, end = stacked ? acc + v : v;
-          const x1 = vScale(Math.min(start, end)), x2 = vScale(Math.max(start, end));
-          el('rect', { x: x1, y: stacked ? y0 : y0 + j * rowBar, width: Math.max(0, x2 - x1), height: rowBar - 2, rx: 3, fill: hollow(d, i) ? 'var(--surface)' : d.color, stroke: d.color, 'stroke-width': hollow(d, i) ? 2 : 0 }, g);
+          const [x, w] = span(vScale(start), vScale(end), v);
+          el('rect', { x, y: stacked ? y0 : y0 + j * rowBar, width: w, height: rowBar - 2, rx: 3, fill: hollow(d, i) ? 'var(--surface)' : d.color, stroke: d.color, 'stroke-width': hollow(d, i) ? 2 : 0 }, g);
           if (stacked) acc += v;
         });
         catLines[i].forEach((line, k) => {
           el('text', Object.assign({}, TEXT, { x: 0, y: rowTop[i] + (k + 1) * lineH - 3, 'text-anchor': 'start', fill: 'var(--ink-2)' }), g).textContent = line;
         });
+        if (valText[i]) el('text', Object.assign({}, TEXT, { x: pw, y: rowTop[i] + lineH - 3, 'text-anchor': 'end', fill: 'var(--ink)', 'font-weight': 600 }), g).textContent = valText[i];
         const h = (i + 1 < n ? rowTop[i + 1] : ph) - rowTop[i];
         tipRows.push({ x: 0, y: rowTop[i], w: pw, h, label: l, items: ds.map(d => ({ label: d.label, color: d.color, value: d.data[i] })) });
       });
@@ -170,8 +195,8 @@
         ds.forEach((d, j) => {
           const v = d.data[i]; if (v == null || isNaN(v)) return;
           const start = stacked ? acc : 0, end = stacked ? acc + v : v;
-          const x1 = vScale(Math.min(start, end)), x2 = vScale(Math.max(start, end));
-          el('rect', { x: x1, y: stacked ? y0 : y0 + j * bh, width: Math.max(0, x2 - x1), height: bh - 2, rx: 3, fill: hollow(d, i) ? 'var(--surface)' : d.color, stroke: d.color, 'stroke-width': hollow(d, i) ? 2 : 0 }, g);
+          const [x, w] = span(vScale(start), vScale(end), v);
+          el('rect', { x, y: stacked ? y0 : y0 + j * bh, width: w, height: bh - 2, rx: 3, fill: hollow(d, i) ? 'var(--surface)' : d.color, stroke: d.color, 'stroke-width': hollow(d, i) ? 2 : 0 }, g);
           if (stacked) acc += v;
         });
         catLines[i].forEach((line, k) => {
@@ -190,18 +215,19 @@
         ds.forEach((d, j) => {
           const v = d.data[i]; if (v == null || isNaN(v)) return;
           const start = stacked ? acc : 0, end = stacked ? acc + v : v;
-          const y1 = vScale(Math.max(start, end)), y2 = vScale(Math.min(start, end));
-          el('rect', { x: stacked ? x0 : x0 + j * bw, y: y1, width: bw - 2, height: Math.max(0, y2 - y1), rx: 3, fill: hollow(d, i) ? 'var(--surface)' : d.color, stroke: d.color, 'stroke-width': hollow(d, i) ? 2 : 0 }, g);
+          const [y, h] = span(vScale(start), vScale(end), v);
+          el('rect', { x: stacked ? x0 : x0 + j * bw, y, width: bw - 2, height: h, rx: 3, fill: hollow(d, i) ? 'var(--surface)' : d.color, stroke: d.color, 'stroke-width': hollow(d, i) ? 2 : 0 }, g);
           if (stacked) acc += v;
         });
         tipRows.push({ x: i * band, y: 0, w: band, h: ph, label: l, items: ds.map(d => ({ label: d.label, color: d.color, value: d.data[i] })) });
       });
-      // x labels: every label (wrapped to two lines) when they fit, else as many as fit
+      // x labels: every label (wrapped to up to three lines, or tilted) when there is room, else as many as fit
       labels.forEach((l, i) => {
         if (colLines) {
           colLines[i].forEach((line, k) => { el('text', Object.assign({ x: i * band + band / 2, y: ph + 18 + k * 14, 'text-anchor': 'middle' }, TEXT, { 'font-size': colFont }), g).textContent = line; });
           return;
         }
+        if (xTilt) { tiltLabel(i * band + band / 2, l); return; }
         if ((n - 1 - i) % colEvery !== 0) return;
         el('text', Object.assign({ x: i * band + band / 2, y: ph + 18, 'text-anchor': 'middle' }, TEXT), g).textContent = String(l).length > 14 ? String(l).slice(0, 13) + '…' : l;
       });
@@ -225,8 +251,9 @@
       const every = Math.max(1, Math.ceil((n - 1) / (maxLabels - 1)));
       // labels count back from the latest point; the first point also gets one, replacing a neighbour that would crowd it
       const r = (n - 1) % every, stepPx = n > 1 ? pw / (n - 1) : pw;
-      const shown = i => i === 0 || ((n - 1 - i) % every === 0 && !(i === r && r * stepPx < 80));
+      const shown = i => lineAll || i === 0 || ((n - 1 - i) % every === 0 && !(i === r && r * stepPx < 80));
       labels.forEach((l, i) => {
+        if (xTilt) { tiltLabel(xs(i), l); return; }
         if (!shown(i)) return;
         el('text', Object.assign({ x: xs(i), y: ph + 18, 'text-anchor': i === 0 ? 'start' : i === n - 1 ? 'end' : 'middle' }, TEXT), g).textContent = l;
       });

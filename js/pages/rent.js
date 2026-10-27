@@ -50,7 +50,7 @@ FBN.page({
       {
         title: 'Buying: the current market',
         tables: [{
-          ds: 'redfin_market', title: 'Sale prices by ZIP code', sub: 'Redfin, latest month available',
+          ds: 'redfin_market', title: 'Sale prices by ZIP code', phoneCards: true, sub: 'Redfin, latest month available',
           columns: [
             { key: 'geo', label: 'Area' }, { key: 'period', label: 'Month' },
             { key: 'median_sale_price', label: 'Median sale price', format: 'usd' },

@@ -252,7 +252,7 @@
     const header = document.createElement('header');
     header.className = 'site-header';
     header.innerHTML = '<div class="wrap">' +
-      '<a class="brand" href="' + base + 'index.html"><span class="eyebrow">Fremont, California<span class="eb-agg"> · Data aggregator built with Claude</span></span><span class="name">' + SITE.name + '</span></a>' +
+      '<a class="brand" href="' + base + 'index.html"><span class="eyebrow">Fremont, California<span class="eb-agg"> · Data aggregator built by JeffreyAiFudenna with Claude</span></span><span class="name">' + SITE.name + '</span></a>' +
       '<div class="header-right"><span class="updated">Data as of ' + SITE.updated + '</span>' +
       '<button class="theme-toggle" type="button" aria-label="Switch between light and dark mode"></button></div></div>';
     const nav = document.createElement('nav');
@@ -446,7 +446,7 @@
       return gh + '<tr' + (lk ? ' class="linked' + (spec.highlight && spec.highlight(r) ? ' hl' : '') + '" data-href="' + esc(absUrl(lk.url)) + '"' : (spec.highlight && spec.highlight(r) ? ' class="hl"' : '')) + '>' + spec.columns.map((c, ci) => {
         const v = typeof c.key === 'function' ? c.key(r) : r[c.key];
         const num = c.num !== false && c.format && c.format !== 'text';
-        return '<td' + clsAttr(num ? 'num' : '', showCols.has(ci) ? '' : 'ph-x') + (spec.phoneCards ? ' data-label="' + esc(c.label) + '"' : '') + '>' + (c.html ? v : esc(fmt(v, c.format || 'text'))) + (ci === last && spec.rowArrow !== false ? rowArrow(lk, firstTxt) : '') + '</td>';
+        return '<td' + clsAttr(num ? 'num' : '', showCols.has(ci) ? '' : 'ph-x', spec.phoneCards && c.cardWide ? 'cw' : '') + (spec.phoneCards ? ' data-label="' + esc(c.label) + '"' : '') + '>' + (spec.phoneCards ? '<span class="cv">' : '') + (c.html ? v : esc(fmt(v, c.format || 'text'))) + (spec.phoneCards ? '</span>' : '') + (ci === last && spec.rowArrow !== false ? rowArrow(lk, firstTxt) : '') + '</td>';
       }).join('') + '</tr>';
     }).join('') + '</tbody>';
     panel.innerHTML = '<div class="panel-head"><h3>' + esc(spec.title || '') + '</h3>' + (spec.sub ? '<span class="sub">' + esc(spec.sub) + '</span>' : '') + '</div>' +

@@ -39,8 +39,8 @@ FBN.page({
           { ds: 'startups', id: 'tandem_pv_factory_mw', label: 'Tandem PV solar factory, megawatts per year (opened 2026)', icon: 'sun', color: 4 }
         ],
         tables: [{
-          ds: 'startup_rounds', title: 'Largest recent funding rounds and IPOs by Fremont-linked companies', phone: [0, 2, 4], sub: '2022–2026; not exhaustive; see the “Fremont link” column', navy: true, sort: 'amount_usd', rowArrow: false,
-          columns: [{ key: 'company', label: 'Company' }, { key: 'what', label: 'What it does' }, { key: 'amount_usd', label: 'Amount', format: 'usdc' }, { key: 'round', label: 'Round' }, { key: 'date', label: 'Date' }, { key: 'hq', label: 'Fremont link' }, { key: r => '<a href="' + FBN.esc(r.source_url) + '" target="_blank" rel="noopener noreferrer">' + FBN.esc(r.source) + '</a>', label: 'Source', html: true, num: false }],
+          ds: 'startup_rounds', title: 'Largest recent funding rounds and IPOs by Fremont-linked companies', phoneCards: true, sub: '2022–2026; not exhaustive; see the “Fremont link” column', navy: true, sort: 'amount_usd', rowArrow: false,
+          columns: [{ key: 'company', label: 'Company' }, { key: 'what', label: 'What it does' }, { key: 'amount_usd', label: 'Amount', format: 'usdc' }, { key: 'round', label: 'Round' }, { key: 'date', label: 'Date' }, { key: 'hq', label: 'Fremont link', cardWide: true }, { key: r => '<a href="' + FBN.esc(r.source_url) + '" target="_blank" rel="noopener noreferrer">' + FBN.esc(r.source) + '</a>', label: 'Source', html: true, num: false, cardWide: true }],
           source: 'Compiled from company press releases, SEC filings and news reports; each row cites its own. Neuralink and Pony.ai have contested or dual headquarters, Nitricity has an office in Fremont, and Tandem PV’s press release is datelined San Jose (its factory is in Fremont).'
         }],
         facts: [{ ds: 'startups', title: 'Unicorns and IPOs', group: 'Unicorns and IPOs' }]

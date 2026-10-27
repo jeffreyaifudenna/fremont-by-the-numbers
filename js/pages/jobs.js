@@ -40,7 +40,7 @@ FBN.page({
           source: 'City of Fremont Annual Comprehensive Financial Report, FY ended June 30, 2025, Schedule 15: Principal Employers (p. 202; the City’s source is its Economic Development Department). Figures are rounded.'
         }],
         tables: [{
-          ds: 'employers', title: 'Employers, with sources', sort: (a, b) => a.rank - b.rank,
+          ds: 'employers', title: 'Employers, with sources', phone: [0, 1, 2, 3], sort: (a, b) => a.rank - b.rank,
           columns: [{ key: 'rank', label: '#', format: 'int' }, { key: 'employer', label: 'Employer' }, { key: 'employees', label: 'Employees', format: 'int' }, { key: 'year', label: 'As of' }, { key: 'source', label: 'Source' }]
         }],
         notes: ['The table lists 12 employers because of ties at 8th and 10th place. Compared with FY2024, Tesla is down from 25,000 to 23,000, Lam Research is up from 4,000 to 4,400, and Quanta Computer and Thermo Fisher Scientific are new to the list.']
@@ -78,7 +78,7 @@ FBN.page({
           { ds: 'business', id: 'food_jobs', label: 'Food-service jobs', icon: 'fork', color: 4 }
         ],
         tables: [{
-          ds: 'vacancy', title: 'Commercial space: how much sits empty', sub: 'Kidder Mathews, third quarter 2026',
+          ds: 'vacancy', title: 'Commercial space: how much sits empty', phoneCards: true, sub: 'Kidder Mathews, third quarter 2026',
           columns: [{ key: 'market', label: 'Market' }, { key: 'inventory_sf', label: 'Square feet', format: 'int' }, { key: 'total_vacancy', label: 'Total vacancy', format: 'pct1' }, { key: 'direct_vacancy', label: 'Direct vacancy', format: 'pct1' }],
           source: 'Kidder Mathews quarterly market reports (Silicon Valley office and R&amp;D; East Bay industrial, Fremont/Newark submarket). Office vacancy is high; industrial space stays tight.'
         }]

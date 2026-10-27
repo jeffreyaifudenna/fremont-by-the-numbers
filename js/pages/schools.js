@@ -28,7 +28,7 @@ FBN.page({
         title: 'High school rankings',
         sub: 'U.S. News Best High Schools, 2026–27 edition, for Fremont Unified’s five comprehensive high schools.',
         tables: [{
-          ds: 'high_schools', title: 'Where each high school ranks', sub: 'Lower is better; prior-year state rank in parentheses', navy: true,
+          ds: 'high_schools', title: 'Where each high school ranks', sub: 'Lower is better; prior-year state rank in parentheses', navy: true, phoneCards: true,
           filter: hs,
           columns: [
             { key: 'school', label: 'School' },
