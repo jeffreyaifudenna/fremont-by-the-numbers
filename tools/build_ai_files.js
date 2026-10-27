@@ -37,6 +37,9 @@ const pageTitle = p => p.title || p.label;
 const fullTitle = p => p.file === 'index' ? NAME : pageTitle(p) + ' · ' + NAME;
 const pageUrl = p => ORIGIN + '/' + (p.file === 'index' ? '' : p.file + '.html');
 
+// Vercel Web Analytics for plain HTML sites (no npm package needed). Only reports on Vercel with Web Analytics enabled.
+const ANALYTICS = '<script>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };</script>\n<script defer src="/_vercel/insights/script.js"></script>\n';
+
 function head(p, extra) {
   return '<meta charset="utf-8">\n<meta name="viewport" content="width=device-width, initial-scale=1">\n' +
     '<title>' + esc(fullTitle(p)) + '</title>\n<meta name="description" content="' + esc(p.desc) + '">\n' +
@@ -49,10 +52,8 @@ function head(p, extra) {
     // Theme before first paint (saved choice, else the device setting), matching currentTheme() in fbn.js.
     '<script>(function(){var t;try{t=localStorage.getItem(\'fbn-theme\');}catch(e){}if(!t&&window.matchMedia&&matchMedia(\'(prefers-color-scheme: dark)\').matches)t=\'dark\';if(t)document.documentElement.setAttribute(\'data-theme\',t);})();</script>\n' +
     '<link rel="stylesheet" href="css/tokens.css?v=' + VER + '">\n<link rel="stylesheet" href="css/site.css?v=' + VER + '">\n<link rel="icon" href="favicon.svg" type="image/svg+xml">\n' +
-    // Vercel Web Analytics (anonymous, no cookies); the script is served once Analytics is enabled for the project.
-    '<script>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };</script>\n<script defer src="/_vercel/insights/script.js"></script>\n' +
     // Deferred: they download while the page parses and run after it, so the pre-rendered page paints without waiting on them.
-    '<script defer src="js/charts.js?v=' + VER + '"></script>\n<script defer src="js/fbn.js?v=' + VER + '" data-v="' + VER + '"></script>\n<script defer src="js/pages/' + p.file + '.js?v=' + VER + '"></script>\n' + (extra || '');
+    '<script defer src="js/charts.js?v=' + VER + '"></script>\n<script defer src="js/fbn.js?v=' + VER + '" data-v="' + VER + '"></script>\n<script defer src="js/pages/' + p.file + '.js?v=' + VER + '"></script>\n' + (extra || '') + ANALYTICS;
 }
 function shell(p, bodyHtml, jsonld) {
   const ld = jsonld ? '<script type="application/ld+json">' + JSON.stringify(jsonld).replace(/</g, '\\u003c') + '</script>\n' : '';
