@@ -271,7 +271,7 @@
     setTimeout(() => { const cur = tabs.querySelector('[aria-current="page"]'); if (cur) tabs.scrollLeft = Math.max(0, cur.offsetLeft - (tabs.clientWidth - cur.offsetWidth) / 2); cue(); }, 0);
     const footer = document.createElement('footer');
     footer.className = 'site-footer';
-    footer.innerHTML = '<div class="wrap"><span>' + SITE.name + ' is a data aggregator built by JeffreyAiFudenna using Claude. It republishes figures from public sources; every figure shows its source and date, and clicking a figure opens the source in a new tab.</span>' +
+    footer.innerHTML = '<div class="wrap">' +
       '<span><a href="' + base + 'sources.html">About, methodology &amp; sources</a> · <a href="https://github.com/jeffreyaifudenna/fremont-by-the-numbers/issues" target="_blank" rel="noopener">Report an error</a> · <a href="https://jeffrey-ai-portfolio.vercel.app" target="_blank" rel="noopener">JeffreyAiPortfolio</a></span></div>';
     document.body.prepend(nav);
     document.body.prepend(header);
