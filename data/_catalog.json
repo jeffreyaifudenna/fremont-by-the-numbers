@@ -157,7 +157,7 @@
  "languages": {
   "title": "Languages at home",
   "description": "Language spoken at home, residents 5 and older, ACS 2020–2024 table C16001. Read Oct 24, 2026.",
-  "updated": "2026-10-24T19:00:00Z"
+  "updated": "2026-10-29T12:00:00Z"
  },
  "living_facts": {
   "title": "Costs, transit and services",
@@ -212,7 +212,7 @@
  "resident_industries": {
   "title": "Residents' industries",
   "description": "Employed residents 16+ by industry, top seven, ACS 2020–2024 table C24050. Read Oct 24, 2026.",
-  "updated": "2026-10-24T19:00:00Z"
+  "updated": "2026-10-29T12:00:00Z"
  },
  "retail_mix": {
   "title": "Stores by type",
