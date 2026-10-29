@@ -3,13 +3,15 @@ FBN.page({
   key: 'health',
   title: 'Health Care',
   lede: 'Fremont’s two hospitals and how they rate, who is covered and how, how many doctors there are, and how healthy residents report being.',
-  uses: ['living_facts', 'census_profile', 'health_places', 'health_access', 'leapfrog_grades', 'city_rankings'],
+  uses: ['living_facts', 'census_profile', 'health_places', 'health_access', 'leapfrog_grades', 'air_quality', 'city_rankings'],
   sections: function (data, row) {
     const healthiest = row('city_rankings', 'healthiest') || {};
     const grades = data('leapfrog_grades');
     const cycles = []; grades.forEach(g => { if (!cycles.includes(g.cycle)) cycles.push(g.cycle); });
     const hospitals = []; grades.forEach(g => { if (!hospitals.includes(g.hospital)) hospitals.push(g.hospital); });
     const gradeRows = cycles.map(c => { const r = { cycle: c }; hospitals.forEach(h => { const g = grades.find(x => x.cycle === c && x.hospital === h); r[h] = g ? g.grade : '—'; }); return r; });
+    const aq = data('air_quality').filter(r => r.county === 'Alameda').sort((a, b) => a.year - b.year);
+    const aqLast = aq[aq.length - 1] || {}, aqPrev = aq[aq.length - 2] || {};
     const cov = ['employer_coverage_share', 'medicaid_share_fremont', 'medicare_share', 'direct_purchase_share'].map(id => row('health_access', id)).filter(Boolean);
     return [
       {
@@ -74,6 +76,19 @@ FBN.page({
       },
       {
         title: 'Environment',
+        sub: 'Air quality as measured by the EPA’s monitors. Fremont is in Alameda County; Santa Clara County, just south, is shown for comparison.',
+        cards: aqLast.year ? [
+          { ds: 'air_quality', label: 'Days with good air, Alameda County, ' + aqLast.year, value: aqLast.good, format: 'int', icon: 'leaf', color: 3, meta: aqLast.year + ' · EPA AirData', note: 'Out of ' + FBN.fmt(aqLast.days, 'int') + ' days measured; ' + FBN.fmt(aqLast.moderate, 'int') + ' were moderate.' },
+          { ds: 'air_quality', label: 'Days unhealthy for sensitive groups, Alameda County, ' + aqLast.year, value: aqLast.usg, format: 'int', icon: 'warn', color: 2, meta: aqLast.year + ' · EPA AirData', note: (aqPrev.year ? FBN.fmt(aqPrev.usg, 'int') + ' in ' + aqPrev.year + '. ' : '') + (aqLast.unhealthy ? FBN.fmt(aqLast.unhealthy, 'int') + ' days were unhealthy for everyone.' : 'No days were unhealthy for everyone.') },
+          { ds: 'air_quality', label: 'Typical (median) daily air-quality index, Alameda County, ' + aqLast.year, value: aqLast.median_aqi, format: 'int', icon: 'chart', color: 1, meta: aqLast.year + ' · EPA AirData', note: '0–50 is good and 51–100 moderate. The worst day reached ' + FBN.fmt(aqLast.max_aqi, 'int') + '.' }
+        ] : [],
+        charts: [{
+          ds: 'air_quality', type: 'bar', x: r => r.county + ' ' + r.year, format: 'int', stacked: true,
+          sort: (a, b) => (a.county === b.county ? a.year - b.year : (a.county === 'Alameda' ? -1 : 1)),
+          title: 'Days by air quality', sub: 'Alameda and Santa Clara counties, by year',
+          series: [{ key: 'good', label: 'Good', color: 3 }, { key: 'moderate', label: 'Moderate', color: 4 }, { key: 'usg', label: 'Unhealthy for sensitive groups', color: 2 }],
+          source: 'U.S. EPA AirData, annual AQI by county (pre-generated files). The 2025 file does not yet include Alameda, Santa Clara or other Bay Area counties, so 2024 is the latest year shown.'
+        }],
         facts: [{ ds: 'living_facts', title: 'Hazards', group: 'Hazards' }]
       }
     ];

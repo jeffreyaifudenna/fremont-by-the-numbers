@@ -2,7 +2,7 @@
 
 > FremontCaByTheNumbers.com is a data aggregator built using Claude, Anthropic's AI model. It gathers public figures about Fremont, California (housing, schools, safety, jobs and more) from the agencies and companies that publish them, and shows every figure with its source and date. The site is Fremont-only and runs no surveys of its own. Built by JeffreyAiFudenna.
 
-How to read it: every page is plain HTML with the figures also written out as text and tables. Each figure links to its original source. Treat the source link as the authority; Claude can misread a source. Data was last checked 2026-10-28.
+How to read it: every page is plain HTML with the figures also written out as text and tables. Each figure links to its original source. Treat the source link as the authority; Claude can misread a source. Data was last checked 2026-10-29.
 
 ## Pages
 
@@ -27,6 +27,7 @@ How to read it: every page is plain HTML with the figures also written out as te
 Each dataset is one JSON file in /data. Rows carry an id, label, value, period (what the figure covers), source and source_url. data/_catalog.json describes every dataset; data/source_links.json maps datasets to source pages.
 
 - [Mortgage estimate assumptions](data/affordability_assumptions.json): The assumptions behind the site's monthly-payment estimate on the Rent & Housing page: 20% down, 30-year fixed loan at the latest weekly national rate, 1% base property tax. Set by the site, not taken from a source.
+- [Air quality by county](data/air_quality.json): Days by Air Quality Index category, median and maximum AQI for Alameda and Santa Clara counties, 2023 and 2024, from the U.S. EPA AirData pre-generated files (annual AQI by county). Checked against the EPA files Oct 29, 2026; the 2025 file does not yet include Bay Area counties.
 - [FremontApp requests summary](data/app_summary.json): Service requests created, closed and open and average days to close for Jul 1–Sep 30, 2026 (the dashboard's default range), from the city's FremontApp dashboard.
 - [Top FremontApp requests](data/app_top.json): Ten most common FremontApp request types, Jul 1–Sep 30, 2026, from the city's FremontApp dashboard.
 - [Asian communities](data/asian_groups.json): Share of Fremont residents by Asian group (alone), ACS 2020–2024 table DP05. Read Oct 24, 2026.

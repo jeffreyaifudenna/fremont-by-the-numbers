@@ -1,6 +1,6 @@
 # FremontCaByTheNumbers.com — full text
 
-> FremontCaByTheNumbers.com is a data aggregator built using Claude. It republishes figures that public sources have already published about Fremont, California, and shows each figure with its source and date. Data as of 2026-10-28. Links in this file marked "source" go to the page a figure was read from.
+> FremontCaByTheNumbers.com is a data aggregator built using Claude. It republishes figures that public sources have already published about Fremont, California, and shows each figure with its source and date. Data as of 2026-10-29. Links in this file marked "source" go to the page a figure was read from.
 
 
 ---
@@ -1758,6 +1758,20 @@ CDC PLACES estimates for the city, mostly from the 2023 Behavioral Risk Factor S
 Source note: CDC PLACES 2025 release (place-level model estimates; 95% ranges are in the dataset). These are modeled estimates, not counts, and no California or U.S. comparison figures are included.View source: CDC PLACES: Local Data for Better Health
 
 ## Environment
+Air quality as measured by the EPA’s monitors. Fremont is in Alameda County; Santa Clara County, just south, is shown for comparison.
+- Days with good air, Alameda County, 2024: **194** — 2024 · EPA AirData. Out of 366 days measured; 171 were moderate. [source](https://aqs.epa.gov/aqsweb/airdata/download_files.html)
+- Days unhealthy for sensitive groups, Alameda County, 2024: **1** — 2024 · EPA AirData. 13 in 2023. No days were unhealthy for everyone. [source](https://aqs.epa.gov/aqsweb/airdata/download_files.html)
+- Typical (median) daily air-quality index, Alameda County, 2024: **49** — 2024 · EPA AirData. 0–50 is good and 51–100 moderate. The worst day reached 105. [source](https://aqs.epa.gov/aqsweb/airdata/download_files.html)
+
+### Days by air quality
+Alameda and Santa Clara counties, by year
+| Item | Good | Moderate | Unhealthy for sensitive groups |
+| --- | --- | --- | --- |
+| Alameda 2023 | 197 | 155 | 13 |
+| Alameda 2024 | 194 | 171 | 1 |
+| Santa Clara 2023 | 240 | 121 | 4 |
+| Santa Clara 2024 | 201 | 161 | 1 |
+Source note: U.S. EPA AirData, annual AQI by county (pre-generated files). The 2025 file does not yet include Alameda, Santa Clara or other Bay Area counties, so 2024 is the latest year shown.View source: U.S. EPA AirData: pre-generated data files (annual AQI by county)
 
 ### Hazards
 | Measure | Value | Covers | Source |
@@ -1771,6 +1785,7 @@ Source note: CDC PLACES 2025 release (place-level model estimates; 95% ranges ar
 - Leapfrog safety grades: Leapfrog Hospital Safety Grades for Washington Hospital and Kaiser Fremont, Spring 2023 to Spring 2026. Read Oct 24, 2026.
 - Adult health (CDC PLACES): Modeled adult health prevalence for Fremont with 95% ranges, CDC PLACES 2025 release (mostly 2023 data). Read Oct 24, 2026.
 - City rankings: Fremont's rank in 2025–26 national city rankings, read from each WalletHub ranking table (and Trust for Public Land ParkScore) on Oct 24, 2026, with category ranks and publication dates.
+- Air quality by county: Days by Air Quality Index category, median and maximum AQI for Alameda and Santa Clara counties, 2023 and 2024, from the U.S. EPA AirData pre-generated files (annual AQI by county). Checked against the EPA files Oct 29, 2026; the 2025 file does not yet include Bay Area counties.
 
 
 ---
@@ -2172,6 +2187,7 @@ On Oct 25, 2026 the site was trimmed: figures that were out of date, duplicated 
 Each dataset is one file; its description says what it holds and when it was read.
 - 30-year mortgage rate: Weekly U.S. average 30-year fixed mortgage rate over the past two years, from Freddie Mac's Primary Mortgage Market Survey as published on FRED (series MORTGAGE30US). A national figure, not a Fremont one. Fetched by tools/refresh_apis.py.
 - Adult health (CDC PLACES): Modeled adult health prevalence for Fremont with 95% ranges, CDC PLACES 2025 release (mostly 2023 data). Read Oct 24, 2026.
+- Air quality by county: Days by Air Quality Index category, median and maximum AQI for Alameda and Santa Clara counties, 2023 and 2024, from the U.S. EPA AirData pre-generated files (annual AQI by county). Checked against the EPA files Oct 29, 2026; the 2025 file does not yet include Bay Area counties.
 - Asian communities: Share of Fremont residents by Asian group (alone), ACS 2020–2024 table DP05. Read Oct 24, 2026.
 - BART weekday exits: Average weekday exits at Fremont and Warm Springs stations, FY 2019, 2024 and 2025, averaged from BART daily station exits (DataSF). Read Oct 24, 2026.
 - Census counts and estimate: Decennial Census counts for Fremont 1960–2020 (1960–2000 as compiled by MTC in 2021) and the Census Bureau's Vintage 2025 estimate for Jul 1, 2025 from QuickFacts. Read Oct 24, 2026.
@@ -2242,7 +2258,7 @@ Each dataset is one file; its description says what it holds and when it was rea
 - Zillow home value and rent: Zillow Research figures for Fremont from Zillow's city home values page (data through Sep 30, 2026; sales measures through Aug 31), read Oct 24, 2026. Zillow requires clear attribution.
 
 ## Every source page
-227 pages, grouped by publisher. Each link is the page a figure was read from.
+228 pages, grouped by publisher. Each link is the page a figure was read from.
 -  <https://earthquake.usgs.gov/fdsnws/event/1/count?format=geojson&latitude=37.5483&longitude=-121.9886&maxradiuskm=50&eventtype=earthquake&starttime=2016-01-01&endtime=2017-01-01&minmagnitude=2.5>
 -  <https://earthquake.usgs.gov/fdsnws/event/1/count?format=geojson&latitude=37.5483&longitude=-121.9886&maxradiuskm=50&eventtype=earthquake&starttime=2017-01-01&endtime=2018-01-01&minmagnitude=2.5>
 -  <https://earthquake.usgs.gov/fdsnws/event/1/count?format=geojson&latitude=37.5483&longitude=-121.9886&maxradiuskm=50&eventtype=earthquake&starttime=2018-01-01&endtime=2019-01-01&minmagnitude=2.5>
@@ -2449,6 +2465,7 @@ Each dataset is one file; its description says what it holds and when it was rea
 - U.S. Census Bureau, ACS 2024 1-year, table C27006, Fremont cityFremont residents with Medicare coverage <https://data.census.gov/api/access/data/table?id=ACSDT1Y2024.C27006&g=160XX00US0626000>
 - U.S. Census Bureau, ACS 2024 1-year, table C27007, Fremont cityFremont residents with Medi-Cal or other means-tested public coverage <https://data.census.gov/api/access/data/table?id=ACSDT1Y2024.C27007&g=160XX00US0626000>
 - FY 2026 Fair Market Rents, Oakland-Fremont HUD Metro FMR AreaFair market rent by bedroom, FY 2025 and FY 2026 <https://www.huduser.gov/portal/datasets/fmr/fmrs/FY2026_code/2026summary.odn?fmrtype=Final&selection_type=hmfa&cbsasub=METRO41860MM5775>
+- AirData pre-generated data files: annual AQI by countyAir-quality days, median and maximum AQI for Alameda and Santa Clara counties <https://aqs.epa.gov/aqsweb/airdata/download_files.html>
 - Earthquake catalog searchEarthquakes within 50 km of Fremont <https://earthquake.usgs.gov/earthquakes/search/>
 - Fact Sheet 2016-3020: earthquake outlook for the Bay AreaEarthquake probability <https://pubs.usgs.gov/fs/2016/3020/fs20163020.pdf>
 - 2027 Best Elementary and Middle Schools, Fremont UnifiedElementary and middle school ranks <https://www.usnews.com/education/k12/elementary-schools/california/fremont-unified-school-district-111898>

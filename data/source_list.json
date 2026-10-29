@@ -852,5 +852,12 @@
   "title": "Earthquake catalog search",
   "url": "https://earthquake.usgs.gov/earthquakes/search/",
   "supports": "Earthquakes within 50 km of Fremont"
+ },
+ {
+  "n": 130,
+  "publisher": "U.S. Environmental Protection Agency",
+  "title": "AirData pre-generated data files: annual AQI by county",
+  "url": "https://aqs.epa.gov/aqsweb/airdata/download_files.html",
+  "supports": "Air-quality days, median and maximum AQI for Alameda and Santa Clara counties"
  }
 ]

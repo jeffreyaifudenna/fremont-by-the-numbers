@@ -6,7 +6,7 @@
 
   const SITE = {
     name: 'FremontCaByTheNumbers.com',
-    updated: 'Oct 28, 2026',
+    updated: 'Oct 29, 2026',
     nav: [
       { key: 'index', href: 'index.html', label: 'Overview' },
       { key: 'rent', href: 'rent.html', label: 'Rent & Housing' },

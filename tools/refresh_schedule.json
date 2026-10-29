@@ -70,6 +70,7 @@
     "climate_kpis":       {"cadence": "annual",     "typical_release": "city Climate Action dashboard", "method": "dashboard", "next_check": "Jan 2027"},
     "ghg_sector":         {"cadence": "static",     "typical_release": "new city emissions inventory (last inventory year 2018)", "method": "dashboard", "next_check": "when the city posts a new inventory"},
     "climate_normals":    {"cadence": "static",     "typical_release": "NOAA 1991-2020 normals; next set after 2030", "method": "download", "next_check": "2031"},
+    "air_quality":        {"cadence": "annual",     "typical_release": "EPA AirData annual AQI by county; updated each June (prior full year) and December", "method": "download", "next_check": "Dec 2026 (check whether the 2025 file adds Bay Area counties)", "note": "Add the new year's Alameda and Santa Clara rows from annual_aqi_by_county_YYYY.zip."},
     "health_places":      {"cadence": "annual",     "typical_release": "CDC PLACES annual release", "method": "download", "next_check": "Dec 2026 (verify release month)"},
     "parks_summary":      {"cadence": "annual",     "typical_release": "city park pages, TPL ParkScore in spring", "method": "page", "next_check": "May 2027"},
     "city_parks":         {"cadence": "static",     "typical_release": "city Open Data Hub parks layer (changes rarely)", "method": "download", "next_check": "2027"},

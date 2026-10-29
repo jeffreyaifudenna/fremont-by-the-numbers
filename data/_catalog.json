@@ -348,5 +348,10 @@
   "title": "Mortgage estimate assumptions",
   "description": "The assumptions behind the site's monthly-payment estimate on the Rent & Housing page: 20% down, 30-year fixed loan at the latest weekly national rate, 1% base property tax. Set by the site, not taken from a source.",
   "updated": "2026-10-28T12:00:00Z"
+ },
+ "air_quality": {
+  "title": "Air quality by county",
+  "description": "Days by Air Quality Index category, median and maximum AQI for Alameda and Santa Clara counties, 2023 and 2024, from the U.S. EPA AirData pre-generated files (annual AQI by county). Checked against the EPA files Oct 29, 2026; the 2025 file does not yet include Bay Area counties.",
+  "updated": "2026-10-29T12:00:00Z"
  }
 }

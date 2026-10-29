@@ -1,6 +1,10 @@
 {
  "_comment": "Where each number on the site can be checked. fbn.js resolves a link in this order: the row's own source_url/url, then 'rows' (dataset:id), then 'sources' (matched against the row's source text), then the dataset default. Every URL here is also listed on the Sources page.",
  "datasets": {
+  "air_quality": {
+   "url": "https://aqs.epa.gov/aqsweb/airdata/download_files.html",
+   "name": "U.S. EPA AirData: pre-generated data files (annual AQI by county)"
+  },
   "app_summary": {
    "url": "https://www.fremont.gov/government/citywide-initiatives/data-dashboards/fremont-app",
    "name": "City of Fremont: FremontApp dashboard"
