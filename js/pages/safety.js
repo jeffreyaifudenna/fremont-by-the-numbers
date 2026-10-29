@@ -36,8 +36,9 @@ FBN.page({
     const cLast = cFull[cFull.length - 1] || {};
     const cityFatal = data('traffic_fatal');
     const fatalYears = cityFatal.map(r => r.year).filter(y => crashes.some(c => c.year === y && c.status === 'Full year'));
-    const fatalGap = fatalYears.map(y => Math.abs(((cityFatal.find(x => x.year === y) || {}).fatal_crashes || 0) - ((crashes.find(x => x.year === y) || {}).fpd_fatal || 0)));
-    const fatalMatch = fatalYears.length ? 'The two match exactly in ' + fatalGap.filter(g => g === 0).length + ' of ' + fatalYears.length + ' years and differ by one in ' + fatalGap.filter(g => g === 1).length + '.' : '';
+    // a year missing from either source is no data, not zero, so it is left out of the comparison
+    const fatalGap = fatalYears.map(y => { const a = (cityFatal.find(x => x.year === y) || {}).fatal_crashes, b = (crashes.find(x => x.year === y) || {}).fpd_fatal; return a == null || b == null ? null : Math.abs(a - b); }).filter(g => g !== null);
+    const fatalMatch = fatalGap.length ? 'The two match exactly in ' + fatalGap.filter(g => g === 0).length + ' of ' + fatalGap.length + ' years and differ by one in ' + fatalGap.filter(g => g === 1).length + '.' : '';
     // Earthquakes within 50 km
     const quakes = data('earthquake_years');
     const qFull = quakes.filter(r => r.status === 'Full year');

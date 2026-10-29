@@ -33,8 +33,8 @@ FBN.page({
       { href: 'startups.html', icon: 'rocket', color: 4, title: 'Startups', v: f(topRound.amount_usd, 'usdc'), l: 'largest recent funding round by a Fremont-linked company (' + [topRound.company, topRound.round, roundWhen].filter(Boolean).join(', ') + ')' }
     ];
     const catHtml = '<div class="cat-grid">' + cats.map(c =>
-      '<a class="cat-card" href="' + c.href + '"><div class="cat-top"><span class="chip" style="background:var(--s' + c.color + ')">' + FBN.icon(c.icon, c.color === 4 ? ' style="stroke:#0f2233"' : '') + '</span><h2>' + c.title + '</h2></div>' +
-      '<div class="cat-stat"><span class="v">' + c.v + '</span><span class="l">' + c.l + '</span></div><span class="cat-more">See the numbers →</span></a>').join('') + '</div>';
+      '<a class="cat-card" href="' + c.href + '"><div class="cat-top"><span class="chip" style="background:var(--s' + c.color + ')">' + FBN.icon(c.icon, c.color === 4 ? ' style="stroke:#0f2233"' : '') + '</span><h2>' + FBN.esc(c.title) + '</h2></div>' +
+      '<div class="cat-stat"><span class="v">' + FBN.esc(c.v) + '</span><span class="l">' + FBN.esc(c.l) + '</span></div><span class="cat-more">See the numbers →</span></a>').join('') + '</div>';
 
     return [
       {
