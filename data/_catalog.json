@@ -37,7 +37,7 @@
  "city_facts": {
   "title": "City services and budget",
   "description": "FY 2026–27 adopted budget (general fund $289.1M; all funds $427.1M total uses), police calls for service, and Fremont Unified enrollment. From the City's adopted budget and agency pages; budget read Oct 26, 2026.",
-  "updated": "2026-10-24T17:45:00Z"
+  "updated": "2026-10-26T18:00:00Z"
  },
  "city_parks": {
   "title": "City parks list",
@@ -156,13 +156,13 @@
  },
  "languages": {
   "title": "Languages at home",
-  "description": "Language spoken at home, residents 5 and older, ACS 2020–2024 table C16001. Read Oct 24, 2026.",
+  "description": "Language spoken at home, residents 5 and older, ACS 2020–2024 table C16001. Read Oct 24, 2026; checked against the Census API Oct 29, 2026.",
   "updated": "2026-10-29T12:00:00Z"
  },
  "living_facts": {
   "title": "Costs, transit and services",
   "description": "Utility bills, tax rates, transit ridership, hospitals, voters, energy and hazards, each from the agency named in its row. Read Oct 24, 2026.",
-  "updated": "2026-10-24T19:00:00Z"
+  "updated": "2026-10-29T12:00:00Z"
  },
  "ots_rankings": {
   "title": "OTS crash rankings",
@@ -206,12 +206,12 @@
  },
  "rent_by_bedroom": {
   "title": "Rent by bedroom",
-  "description": "Census ACS median gross rent by bedrooms (2015–2019 and 2020–2024; capped at $3,500) and HUD Fair Market Rents FY2025–26 for the Oakland-Fremont area. Read Oct 24, 2026.",
+  "description": "Census ACS median gross rent by bedrooms (2015–2019 and 2020–2024; capped at $3,501) and HUD Fair Market Rents FY2025–26 for the Oakland-Fremont area. Read Oct 24, 2026.",
   "updated": "2026-10-24T12:00:00Z"
  },
  "resident_industries": {
   "title": "Residents' industries",
-  "description": "Employed residents 16+ by industry, top seven, ACS 2020–2024 table C24050. Read Oct 24, 2026.",
+  "description": "Employed residents 16+ by industry, top seven, ACS 2020–2024 table C24050. Read Oct 24, 2026; checked against the Census API Oct 29, 2026.",
   "updated": "2026-10-29T12:00:00Z"
  },
  "retail_mix": {
@@ -352,6 +352,36 @@
  "air_quality": {
   "title": "Air quality by county",
   "description": "Days by Air Quality Index category, median and maximum AQI for Alameda and Santa Clara counties, 2023 and 2024, from the U.S. EPA AirData pre-generated files (annual AQI by county). Checked against the EPA files Oct 29, 2026; the 2025 file does not yet include Bay Area counties.",
+  "updated": "2026-10-29T12:00:00Z"
+ },
+ "building_permits": {
+  "title": "Building permits (Census survey)",
+  "description": "Housing units permitted in Fremont by building type (single-family, 2 to 4 units, 5 or more), buildings and construction value, each year since 2018 plus the current year to date, from the U.S. Census Bureau Building Permits Survey place-level files. Fetched by tools/refresh_apis.py bps; first read Oct 29, 2026.",
+  "updated": "2026-10-29T12:00:00Z"
+ },
+ "crime_fbi_monthly": {
+  "title": "Crime by month (FBI)",
+  "description": "Violent and property offenses, clearances and rates per 100,000 residents reported by Fremont Police Department to the FBI, by month since 2019, with California and U.S. rates, from the FBI Crime Data Explorer API (agency CA0010500). No 2021 data (NIBRS transition). Fetched by tools/refresh_apis.py fbi; first read Oct 29, 2026.",
+  "updated": "2026-10-29T12:00:00Z"
+ },
+ "water_monthly": {
+  "title": "Water supply and use (ACWD)",
+  "description": "Alameda County Water District (serves Fremont, Newark and Union City): potable water supplied, residential use and residential gallons per person per day, by month since July 2014, from the State Water Resources Control Board urban retail water supplier reports on data.ca.gov (ODC-BY). Fetched by tools/refresh_apis.py water; first read Oct 29, 2026.",
+  "updated": "2026-10-29T12:00:00Z"
+ },
+ "permits_by_income": {
+  "title": "Permits by income level (HCD)",
+  "description": "Housing units given building permits in Fremont each year since 2018, by income level (very low, low, moderate, above moderate), deed-restricted units and ADU units, summed from the California HCD Housing Element Annual Progress Report Table A2 on data.ca.gov. Fetched by tools/refresh_apis.py hcd; first read Oct 29, 2026.",
+  "updated": "2026-10-29T12:00:00Z"
+ },
+ "drought_years": {
+  "title": "Drought weeks (U.S. Drought Monitor)",
+  "description": "Weeks per year with any part of Alameda County abnormally dry (D0) or in moderate to exceptional drought (D1 to D4), the worst level reached, and the latest week, from U.S. Drought Monitor county statistics (National Drought Mitigation Center, USDA, NOAA, NASA). Fetched by tools/refresh_apis.py usdm; first read Oct 29, 2026.",
+  "updated": "2026-10-29T12:00:00Z"
+ },
+ "nursing_homes": {
+  "title": "Nursing homes (Care Compare)",
+  "description": "Every Medicare- or Medicaid-certified nursing home in Fremont with certified beds, average residents, overall, inspection, staffing and quality star ratings, ownership, fines and last inspection date, from the CMS Provider Information dataset (Medicare Care Compare). Fetched by tools/refresh_apis.py cms; first read Oct 29, 2026.",
   "updated": "2026-10-29T12:00:00Z"
  }
 }

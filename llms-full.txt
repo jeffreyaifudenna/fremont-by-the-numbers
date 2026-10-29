@@ -526,6 +526,7 @@ Fremont’s state housing target for 2023–2031 and how far along it is.
 - State target for 2023–2031 (RHNA): **12,897** — 2023–2031 · City of Fremont Housing Element page and 2025 APR staff report [source](https://fremont.gov/government/departments/community-development/planning-building-permit-services/plans-maps-guidelines/general-plan/housing-element)
 - Still to permit after 2025: **11,407** — After 2025 · City of Fremont 2025 Annual Progress Report staff report [source](https://fremontcityca.iqm2.com/Citizens/Detail_LegiFile.aspx?CssClass=&Frame=&ID=5659&MediaPosition=&MeetingID=2073&amp=&amp=&amp=&amp=)
 - Affordable homes about to start construction: **918** — Fall 2026 · Hoodline [source](https://hoodline.com/2026/10/fremont-project-set-to-break-ground-on-335-unit-downtown-development-first-of-918-affordable-homes/)
+- Units permitted in 2026 (Census survey): **742** — Year to date through Sep · Census Building Permits Survey. 687 of them in buildings of five or more units. [source](https://www2.census.gov/econ/bps/Place/West%20Region/we2609y.txt)
 
 ### Progress toward the 2023–2031 housing target, by income level
 Permitted so far vs still remaining
@@ -537,6 +538,36 @@ Permitted so far vs still remaining
 | Above moderate income | 962 | 4,203 |
 Source note: City of Fremont 2025 Housing Element Annual Progress Report (Planning Commission staff report, Feb 26, 2026).View source: City of Fremont: 2025 Annual Progress Report
 
+### Housing units permitted, by building type
+Census Building Permits Survey; the last bar is year to date
+| Item | Single-family | 2 to 4 units | 5 or more units |
+| --- | --- | --- | --- |
+| 2018 | 159 | 46 | 1,762 |
+| 2019 | 169 | 44 | 935 |
+| 2020 | 112 | 8 | 166 |
+| 2021 | 141 | 32 | 546 |
+| 2022 | 159 | 20 | 901 |
+| 2023 | 147 | 26 | 508 |
+| 2024 | 77 | 19 | 35 |
+| 2025 | 90 | 4 | 341 |
+| 2026 | 51 | 4 | 687 |
+Source note: U.S. Census Bureau, Building Permits Survey, place-level files (Fremont city). Click a bar to open that year’s file.View source: U.S. Census Bureau: Building Permits Survey, place-level files (West Region)
+
+### Permits by income level, each year
+Units given building permits, from the state’s annual progress report file
+| Item | Very low income | Low income | Moderate income | Above moderate |
+| --- | --- | --- | --- | --- |
+| 2018 | 34 | 68 | 19 | 1,742 |
+| 2019 | 78 | 52 | 2 | 955 |
+| 2020 | 51 | 8 | 1 | 251 |
+| 2021 | 140 | 21 | 0 | 700 |
+| 2022 | 111 | 119 | 68 | 835 |
+| 2023 | 252 | 202 | 25 | 179 |
+| 2024 | 40 | 40 | 40 | 74 |
+| 2025 | 59 | 61 | 55 | 385 |
+Source note: California HCD, Housing Element Annual Progress Report data (Table A2, Fremont rows), units with building permits summed by year.View source: California Open Data: HCD Housing Element Annual Progress Report data by jurisdiction and year
+Note: Three counts of new homes appear here, and they differ by design. For 2025: the City’s annual progress report counts 549 units permitted, including ADUs; the Census survey counts 435 (permits reported to its monthly survey); the state HCD file, built from the City’s report, gives 560 and assigns ADUs a third each to the very-low, low and moderate income groups. Use each series for its own trend rather than comparing them to one another.
+
 ## Utilities and taxes
 The regular bills on top of rent or a mortgage.
 - Average monthly electric bill, Ava Bright Choice (338 kWh): **$138.33** — Rates as of Mar 2026 · Ava Community Energy / PG&E 2026 joint rate comparison. Fremont’s default plan, Renewable 100, costs about 1.75 cents per kWh more. [source](https://avaenergy.org/wp-content/uploads/2026/06/Joint-Rate-Mailer-2025-Power-Mix-2025-Vintage-260616_Eng.pdf)
@@ -544,7 +575,7 @@ The regular bills on top of rent or a mortgage.
 - Typical home water bill, every two months: **$155.03** — From Mar 1, 2026 · Alameda County Water District [source](https://acwd.org/115/Water-Rates)
 - Sewer charge per home, per year: **$661.15** — FY 2026–27 · Union Sanitary District Ordinance 31.41 [source](https://unionsanitary.ca.gov/wp-content/uploads/2025/02/Ordinance-No.-31.41.pdf)
 - Garbage, 32-gallon cart, per month: **$48.84** — 2026–27 · Republic Services, Fremont rates [source](https://www.republicservices.com/sites/default/files/legacy_documents/Muni/California/Fremont/Fremont-City-Rates-2026-2027.pdf)
-- Sales tax rate: **10.25%** — From Oct 1, 2026 · CDTFA tax rates [source](https://cdtfa.ca.gov/taxes-and-fees/rates.aspx)
+- Sales tax rate: **10.25%** — Effective Apr 1, 2022 · CDTFA sales and use tax rates [source](https://data.ca.gov/dataset/cdtfa-salesandusetaxrates)
 - Property tax base rate (plus voter-approved bonds): **1%** — FY 2025–26 · Alameda County Auditor [source](https://www.acgov.org/board/bos_calendar/documents/DocsAgendaReg_09_09_25/GENERAL%20ADMINISTRATION/Regular%20Calendar/Auditor_391480.pdf)
 
 ### Electricity and water, in detail
@@ -607,12 +638,14 @@ County-wide figures; Fremont-specific prices are not published.
 - Census QuickFacts profile: Fremont city profile from Census QuickFacts: mostly ACS 2020–2024 5-year survey estimates, with age and race from Census population estimates. Read Oct 24, 2026.
 - Redfin market snapshot: Redfin housing market pages for Fremont city (Sep 2026) and ZIP codes 94536, 94538, 94539 and 94555 (Aug 2026), read Oct 24, 2026. Redfin's terms for republishing these figures are not yet confirmed.
 - More resident facts: ACS 2020–2024 measures (age, households, income, housing stock, cost burden, veterans, disability) and County Business Patterns 2023 jobs. Read Oct 24, 2026.
-- Rent by bedroom: Census ACS median gross rent by bedrooms (2015–2019 and 2020–2024; capped at $3,500) and HUD Fair Market Rents FY2025–26 for the Oakland-Fremont area. Read Oct 24, 2026.
+- Rent by bedroom: Census ACS median gross rent by bedrooms (2015–2019 and 2020–2024; capped at $3,501) and HUD Fair Market Rents FY2025–26 for the Oakland-Fremont area. Read Oct 24, 2026.
 - Zillow history: Monthly Zillow Home Value Index and Observed Rent Index for Fremont city, Jan 2015 to Sep 2026, from Zillow Research city-level files. Read Oct 24, 2026.
 - 30-year mortgage rate: Weekly U.S. average 30-year fixed mortgage rate over the past two years, from Freddie Mac's Primary Mortgage Market Survey as published on FRED (series MORTGAGE30US). A national figure, not a Fremont one. Fetched by tools/refresh_apis.py.
 - Voters and city facts: Nov 2024 turnout (Alameda County ROV), May 2026 registration by party (CA Secretary of State), affordable units, city FTEs and credit rating (City of Fremont). Read Oct 24, 2026.
 - Housing permits and target: Units permitted in 2025 and progress toward Fremont's 2023–2031 RHNA target, from the city's 2025 Annual Progress Report staff report (Planning Commission, Feb 26, 2026). Self-reported by the city; HCD does not verify it.
+- Building permits (Census survey): Housing units permitted in Fremont by building type (single-family, 2 to 4 units, 5 or more), buildings and construction value, each year since 2018 plus the current year to date, from the U.S. Census Bureau Building Permits Survey place-level files. Fetched by tools/refresh_apis.py bps; first read Oct 29, 2026.
 - Housing target by income: RHNA target, units permitted 2023–2025, units remaining, and 2025 permits by income level, from the city's 2025 Annual Progress Report staff report. ADUs are assigned to income levels using ABAG affordability assumptions.
+- Permits by income level (HCD): Housing units given building permits in Fremont each year since 2018, by income level (very low, low, moderate, above moderate), deed-restricted units and ADU units, summed from the California HCD Housing Element Annual Progress Report Table A2 on data.ca.gov. Fetched by tools/refresh_apis.py hcd; first read Oct 29, 2026.
 - Child care and utilities: Alameda County child care costs (2022) and licensed spaces (2023) from kidsdata.org; electricity rate and bill (Ava/PG&E, Mar 2026); ACWD water use per person (FY 2023–24). Read Oct 24, 2026.
 - Gas and internet: PG&E residential gas rate and average bill, Ava vs PG&E rate difference, internet providers, coverage and advertised prices for Fremont. Read Oct 24, 2026.
 - Costs, transit and services: Utility bills, tax rates, transit ridership, hospitals, voters, energy and hazards, each from the agency named in its row. Read Oct 24, 2026.
@@ -1020,7 +1053,23 @@ Note: Attendance figures for Fremont events come from news coverage, not organiz
 - Age Well (senior) centers: **2** — Current · City of Fremont Human Services [source](https://www.fremont.gov/government/departments/human-services/age-well-centers)
 
 ## Weather for the outdoors
-Thirty-year normals for Fremont: mild, dry summers and wet winters.
+Thirty-year normals for Fremont: mild, dry summers and wet winters. Plus whether the county is in drought.
+- Alameda County drought status this week: **No drought** — Week of Oct 27, 2026 · U.S. Drought Monitor. 100% of the county is free of drought and abnormal dryness. [source](https://droughtmonitor.unl.edu/DmData/TimeSeries.aspx?aoi=county&fips=06001)
+- Weeks in drought in 2025: **0** — 2025 · U.S. Drought Monitor. Worst level reached: D0 abnormally dry. 41 weeks were at least abnormally dry. [source](https://droughtmonitor.unl.edu/DmData/TimeSeries.aspx?aoi=county&fips=06001)
+
+### Weeks of drought in Alameda County, by year
+Weeks with any part of the county abnormally dry, and in moderate drought or worse; the last bar is year to date
+| Item | Abnormally dry or worse (D0+) | Moderate drought or worse (D1+) |
+| --- | --- | --- |
+| 2019 | 10 | 4 |
+| 2020 | 49 | 45 |
+| 2021 | 52 | 52 |
+| 2022 | 52 | 52 |
+| 2023 | 10 | 8 |
+| 2024 | 17 | 0 |
+| 2025 | 41 | 0 |
+| 2026 | 4 | 0 |
+Source note: U.S. Drought Monitor county statistics, produced by the National Drought Mitigation Center with USDA, NOAA and NASA. 2021 reached exceptional drought (D4); the latest week is Oct 27, 2026.View source: U.S. Drought Monitor: Alameda County time series
 
 ### Typical daily high and low temperature (°F)
 | Item | Daily high | Daily low |
@@ -1060,6 +1109,7 @@ Source note: NOAA 1991–2020 climate normals. Almost all rain falls November th
 - Events and recreation: Signature annual events, Mission Peak, the 2022 Parks & Recreation Master Plan inventory, pickleball, dog parks, Aqua Adventure, recreation registrants and facilities. Read Oct 24, 2026.
 - City parks list: City of Fremont parks by name, type, status and acreage, from the city's park inventory. Read Oct 24, 2026.
 - Regional parks in Fremont: East Bay Regional Park District parks in Fremont with acreage, from EBRPD park pages and news releases. Read Oct 24, 2026.
+- Drought weeks (U.S. Drought Monitor): Weeks per year with any part of Alameda County abnormally dry (D0) or in moderate to exceptional drought (D1 to D4), the worst level reached, and the latest week, from U.S. Drought Monitor county statistics (National Drought Mitigation Center, USDA, NOAA, NASA). Fetched by tools/refresh_apis.py usdm; first read Oct 29, 2026.
 - Weather by month: NOAA 1991–2020 climate normals for the Fremont station: average high, low and rainfall by month. Read Oct 24, 2026.
 - Costs, transit and services: Utility bills, tax rates, transit ridership, hospitals, voters, energy and hazards, each from the agency named in its row. Read Oct 24, 2026.
 
@@ -1243,6 +1293,7 @@ Source note: City of Fremont Homeless Response dashboard, read by hand.View sour
 - Pounds of food recovered in 2025: **641,741** — 2025 · Climate indicators [source](https://www.fremont.gov/government/citywide-initiatives/data-dashboards/climate-action)
 - Solar customer accounts: **12,148** — Jan 22, 2026 · Ava Community Energy, Fremont page [source](https://avaenergy.org/community/who-we-serve/fremont/)
 - Ava Community Energy accounts: **87,229** — Jan 22, 2026 · Ava Community Energy [source](https://avaenergy.org/community/who-we-serve/fremont/)
+- Residential water use per person per day (gallons), Aug 2026: **85.4** — Aug 2026 · State Water Board report by ACWD. Alameda County Water District serves Fremont, Newark and Union City. [source](https://data.ca.gov/dataset/urws-conservation-supply-demand)
 
 ### Greenhouse gas emissions by sector
 Metric tons CO₂e; last bar is the 2030 goal
@@ -1274,6 +1325,157 @@ Source note: California DMV, Vehicle Fuel Type Count by ZIP (data.ca.gov), ZIPs 
 | 2025 | 257 |
 | 2026 | 148 |
 Source note: City of Fremont Climate Action dashboard.View source: City of Fremont: Climate Action dashboard
+
+### Residential water use per person per day
+Gallons, Alameda County Water District, by month since 2014
+| Item | Gallons per person per day |
+| --- | --- |
+| Jul 2014 | 95.1 |
+| Aug 2014 | 89.4 |
+| Sep 2014 | 80.2 |
+| Oct 2014 | 74.9 |
+| Nov 2014 | 61.1 |
+| Dec 2014 | 55.3 |
+| Jan 2015 | 58.7 |
+| Feb 2015 | 61.0 |
+| Mar 2015 | 63.8 |
+| Apr 2015 | 68.5 |
+| May 2015 | 67.5 |
+| Jun 2015 | 73.5 |
+| Jul 2015 | 75.9 |
+| Aug 2015 | 74.6 |
+| Sep 2015 | 74.1 |
+| Oct 2015 | 68.4 |
+| Nov 2015 | 55.8 |
+| Dec 2015 | 52.1 |
+| Jan 2016 | 53.9 |
+| Feb 2016 | 56.6 |
+| Mar 2016 | 52.9 |
+| Apr 2016 | 61.0 |
+| May 2016 | 73.6 |
+| Jun 2016 | 81.7 |
+| Jul 2016 | 86.2 |
+| Aug 2016 | 84.8 |
+| Sep 2016 | 82.0 |
+| Oct 2016 | 69.5 |
+| Nov 2016 | 55.7 |
+| Dec 2016 | 53.2 |
+| Jan 2017 | 53.3 |
+| Feb 2017 | 53.8 |
+| Mar 2017 | 56.3 |
+| Apr 2017 | 60.8 |
+| May 2017 | 83.6 |
+| Jun 2017 | 91.8 |
+| Jul 2017 | 98.8 |
+| Aug 2017 | 96.6 |
+| Sep 2017 | 85.7 |
+| Oct 2017 | 80.1 |
+| Nov 2017 | 60.6 |
+| Dec 2017 | 57.0 |
+| Jan 2018 | 55.5 |
+| Feb 2018 | 59.8 |
+| Mar 2018 | 56.7 |
+| Apr 2018 | 61.0 |
+| May 2018 | 80.0 |
+| Jun 2018 | 89.5 |
+| Jul 2018 | 92.1 |
+| Aug 2018 | 89.5 |
+| Sep 2018 | 84.6 |
+| Oct 2018 | 78.3 |
+| Nov 2018 | 68.4 |
+| Dec 2018 | 53.7 |
+| Jan 2019 | 53.8 |
+| Feb 2019 | 53.6 |
+| Mar 2019 | 54.0 |
+| Apr 2019 | 65.4 |
+| May 2019 | 77.2 |
+| Jun 2019 | 88.1 |
+| Jul 2019 | 91.1 |
+| Aug 2019 | 92.6 |
+| Sep 2019 | 85.8 |
+| Oct 2019 | 79.8 |
+| Nov 2019 | 70.5 |
+| Dec 2019 | 52.1 |
+| Jan 2020 | 53.1 |
+| Feb 2020 | 62.5 |
+| Mar 2020 | 65.6 |
+| Apr 2020 | 67.6 |
+| May 2020 | 85.8 |
+| Jun 2020 | 99.1 |
+| Jul 2020 | 101.7 |
+| Aug 2020 | 100.6 |
+| Sep 2020 | 91.1 |
+| Oct 2020 | 85.9 |
+| Nov 2020 | 69.1 |
+| Dec 2020 | 62.6 |
+| Jan 2021 | 61.5 |
+| Feb 2021 | 61.1 |
+| Mar 2021 | 71.1 |
+| Apr 2021 | 83.6 |
+| May 2021 | 85.7 |
+| Jun 2021 | 90.2 |
+| Jul 2021 | 89.6 |
+| Aug 2021 | 87.2 |
+| Sep 2021 | 83.0 |
+| Oct 2021 | 70.7 |
+| Nov 2021 | 56.8 |
+| Dec 2021 | 54.4 |
+| Jan 2022 | 56.2 |
+| Mar 2022 | 70.1 |
+| Apr 2022 | 71.7 |
+| May 2022 | 81.0 |
+| Jun 2022 | 83.1 |
+| Jul 2022 | 80.7 |
+| Aug 2022 | 83.7 |
+| Sep 2022 | 77.7 |
+| Oct 2022 | 70.9 |
+| Nov 2022 | 58.2 |
+| Dec 2022 | 52.8 |
+| Jan 2023 | 46.3 |
+| Feb 2023 | 56.2 |
+| Mar 2023 | 43.3 |
+| Apr 2023 | 51.6 |
+| May 2023 | 46.8 |
+| Jun 2023 | 68.9 |
+| Jul 2023 | 70.1 |
+| Aug 2023 | 75.3 |
+| Sep 2023 | 76.0 |
+| Oct 2023 | 82.1 |
+| Nov 2023 | 66.8 |
+| Dec 2023 | 64.9 |
+| Jan 2024 | 49.8 |
+| Feb 2024 | 60.4 |
+| Mar 2024 | 40.8 |
+| Apr 2024 | 58.3 |
+| May 2024 | 52.7 |
+| Jun 2024 | 74.5 |
+| Jul 2024 | 76.0 |
+| Aug 2024 | 83.0 |
+| Sep 2024 | 82.8 |
+| Oct 2024 | 84.4 |
+| Nov 2024 | 69.4 |
+| Dec 2024 | 73.4 |
+| Jan 2025 | 49.4 |
+| Feb 2025 | 63.9 |
+| Mar 2025 | 46.4 |
+| Apr 2025 | 59.0 |
+| May 2025 | 55.0 |
+| Jun 2025 | 82.3 |
+| Jul 2025 | 77.0 |
+| Aug 2025 | 83.9 |
+| Sep 2025 | 79.3 |
+| Oct 2025 | 83.0 |
+| Nov 2025 | 64.7 |
+| Dec 2025 | 61.3 |
+| Jan 2026 | 48.6 |
+| Feb 2026 | 65.3 |
+| Mar 2026 | 50.4 |
+| Apr 2026 | 63.6 |
+| May 2026 | 60.2 |
+| Jun 2026 | 78.3 |
+| Jul 2026 | 76.5 |
+| Aug 2026 | 85.4 |
+Source note: State Water Resources Control Board, urban retail water supplier monthly reports (data.ca.gov), Alameda County Water District, which serves Fremont, Newark and Union City. Summer use runs well above winter use.View source: California Open Data: urban retail water supplier conservation, supply and demand (State Water Board)
 
 ## Getting around
 - Average commute, one way: **30.3 min** — 2020–2024 · Census QuickFacts profile [source](https://www.census.gov/quickfacts/fact/table/fremontcitycalifornia/PST045225)
@@ -1351,7 +1553,7 @@ Source note: WalletHub ranking pages and Trust for Public Land ParkScore. Rankin
 - Census QuickFacts profile: Fremont city profile from Census QuickFacts: mostly ACS 2020–2024 5-year survey estimates, with age and race from Census population estimates. Read Oct 24, 2026.
 - More resident facts: ACS 2020–2024 measures (age, households, income, housing stock, cost burden, veterans, disability) and County Business Patterns 2023 jobs. Read Oct 24, 2026.
 - Census counts and estimate: Decennial Census counts for Fremont 1960–2020 (1960–2000 as compiled by MTC in 2021) and the Census Bureau's Vintage 2025 estimate for Jul 1, 2025 from QuickFacts. Read Oct 24, 2026.
-- Languages at home: Language spoken at home, residents 5 and older, ACS 2020–2024 table C16001. Read Oct 24, 2026.
+- Languages at home: Language spoken at home, residents 5 and older, ACS 2020–2024 table C16001. Read Oct 24, 2026; checked against the Census API Oct 29, 2026.
 - Asian communities: Share of Fremont residents by Asian group (alone), ACS 2020–2024 table DP05. Read Oct 24, 2026.
 - City services and budget: FY 2026–27 adopted budget (general fund $289.1M; all funds $427.1M total uses), police calls for service, and Fremont Unified enrollment. From the City's adopted budget and agency pages; budget read Oct 26, 2026.
 - Voters and city facts: Nov 2024 turnout (Alameda County ROV), May 2026 registration by party (CA Secretary of State), affordable units, city FTEs and credit rating (City of Fremont). Read Oct 24, 2026.
@@ -1361,6 +1563,7 @@ Source note: WalletHub ranking pages and Trust for Public Land ParkScore. Rankin
 - Homeless response by month: Monthly cleanups, encampments fully cleared, outreach visits and FremontApp homeless-related reports, Jul 2025–Sep 2026, from the city's Homeless Response dashboard. The dashboard's headline app-report count (715) exceeds the sum of these rows (687).
 - Climate indicators: EVs registered, trees planted and pounds of food recovered in 2025, from the city's Climate Action dashboard.
 - Costs, transit and services: Utility bills, tax rates, transit ridership, hospitals, voters, energy and hazards, each from the agency named in its row. Read Oct 24, 2026.
+- Water supply and use (ACWD): Alameda County Water District (serves Fremont, Newark and Union City): potable water supplied, residential use and residential gallons per person per day, by month since July 2014, from the State Water Resources Control Board urban retail water supplier reports on data.ca.gov (ODC-BY). Fetched by tools/refresh_apis.py water; first read Oct 29, 2026.
 - Emissions by sector: Community greenhouse gas emissions (metric tons CO2e) by sector for inventory years 2005, 2010, 2015 and 2018, and the city's 2030 goal, read from the chart data on the city's Climate Action dashboard.
 - Vehicles by fuel and ZIP: Light-duty registrations by fuel type for Fremont ZIPs 94536, 94538, 94539, 94555, as of Jan 1, 2020 and Dec 31, 2025. California DMV via data.ca.gov. Read Oct 24, 2026.
 - EV charger permits: Electric vehicle charger permits issued in Fremont per year, 2021–2026 (2026 year to date), from the city's Climate Action dashboard.
@@ -1417,6 +1620,205 @@ Source note: California DOJ OpenJustice, Crimes and Clearances (July 2026 releas
 Source note: California DOJ OpenJustice. Larceny (theft) makes up most property crime.View source: California DOJ OpenJustice: Crimes and Clearances
 Note: Fremont PD switched to the FBI’s incident-based reporting system (NIBRS) in 2022, which can raise counts and change clearance rates compared with earlier years. Comparisons across that line should be made with care.
 Note: Totals for the same year can differ between sources: websites that republish FBI-derived data and the police department’s own annual reports count and classify offenses differently. This page uses the state Department of Justice file. Rates per 1,000 residents divide 2024 crimes by the Department of Finance population for Jan 1, 2025 (233,428).
+
+## Crime by month, from the FBI
+What Fremont police reported to the FBI each month: a second source next to the state’s annual file.
+- Violent crimes reported, Dec 2025: **13** — Dec 2025 · FBI Crime Data Explorer. 4 cleared in the same month. [source](https://cde.ucr.cjis.gov/LATEST/webapp/#/pages/explorer/crime/crime-trend)
+- Property crimes reported, Dec 2025: **328** — Dec 2025 · FBI Crime Data Explorer. 9 cleared in the same month. [source](https://cde.ucr.cjis.gov/LATEST/webapp/#/pages/explorer/crime/crime-trend)
+- Violent crimes per 100,000 residents, Dec 2025: **5.7** — Dec 2025 · FBI rate for the month. California 33.8, United States 26.6 the same month. [source](https://cde.ucr.cjis.gov/LATEST/webapp/#/pages/explorer/crime/crime-trend)
+
+### Violent crimes by month
+Reported to the FBI since 2019; the gap is 2021
+| Item | Violent crimes |
+| --- | --- |
+| Jan 2019 | 29 |
+| Feb 2019 | 21 |
+| Mar 2019 | 34 |
+| Apr 2019 | 38 |
+| May 2019 | 47 |
+| Jun 2019 | 29 |
+| Jul 2019 | 35 |
+| Aug 2019 | 38 |
+| Sep 2019 | 33 |
+| Oct 2019 | 37 |
+| Nov 2019 | 33 |
+| Dec 2019 | 26 |
+| Jan 2020 | 43 |
+| Feb 2020 | 44 |
+| Mar 2020 | 26 |
+| Apr 2020 | 18 |
+| May 2020 | 39 |
+| Jun 2020 | 22 |
+| Jul 2020 | 35 |
+| Aug 2020 | 34 |
+| Sep 2020 | 38 |
+| Oct 2020 | 35 |
+| Nov 2020 | 37 |
+| Dec 2020 | 36 |
+| Jan 2021 |  |
+| Feb 2021 |  |
+| Mar 2021 |  |
+| Apr 2021 |  |
+| May 2021 |  |
+| Jun 2021 |  |
+| Jul 2021 |  |
+| Aug 2021 |  |
+| Sep 2021 |  |
+| Oct 2021 |  |
+| Nov 2021 |  |
+| Dec 2021 |  |
+| Jan 2022 | 46 |
+| Feb 2022 | 29 |
+| Mar 2022 | 33 |
+| Apr 2022 | 30 |
+| May 2022 | 26 |
+| Jun 2022 | 48 |
+| Jul 2022 | 54 |
+| Aug 2022 | 46 |
+| Sep 2022 | 38 |
+| Oct 2022 | 35 |
+| Nov 2022 | 45 |
+| Dec 2022 | 40 |
+| Jan 2023 | 44 |
+| Feb 2023 | 30 |
+| Mar 2023 | 48 |
+| Apr 2023 | 33 |
+| May 2023 | 49 |
+| Jun 2023 | 43 |
+| Jul 2023 | 37 |
+| Aug 2023 | 50 |
+| Sep 2023 | 48 |
+| Oct 2023 | 41 |
+| Nov 2023 | 32 |
+| Dec 2023 | 31 |
+| Jan 2024 | 45 |
+| Feb 2024 | 46 |
+| Mar 2024 | 32 |
+| Apr 2024 | 33 |
+| May 2024 | 31 |
+| Jun 2024 | 40 |
+| Jul 2024 | 44 |
+| Aug 2024 | 36 |
+| Sep 2024 | 41 |
+| Oct 2024 | 37 |
+| Nov 2024 | 26 |
+| Dec 2024 | 36 |
+| Jan 2025 | 22 |
+| Feb 2025 | 8 |
+| Mar 2025 | 9 |
+| Apr 2025 | 26 |
+| May 2025 | 37 |
+| Jun 2025 | 30 |
+| Jul 2025 | 16 |
+| Aug 2025 | 18 |
+| Sep 2025 | 23 |
+| Oct 2025 | 20 |
+| Nov 2025 | 19 |
+| Dec 2025 | 13 |
+Source note: FBI Crime Data Explorer, Fremont Police Department (agency CA0010500), monthly offense counts.View source: FBI Crime Data Explorer: crime trends by agency (choose Fremont Police Department)
+
+### Property crimes by month
+Reported to the FBI since 2019; the gap is 2021
+| Item | Property crimes |
+| --- | --- |
+| Jan 2019 | 478 |
+| Feb 2019 | 405 |
+| Mar 2019 | 315 |
+| Apr 2019 | 355 |
+| May 2019 | 414 |
+| Jun 2019 | 348 |
+| Jul 2019 | 368 |
+| Aug 2019 | 335 |
+| Sep 2019 | 334 |
+| Oct 2019 | 429 |
+| Nov 2019 | 342 |
+| Dec 2019 | 417 |
+| Jan 2020 | 506 |
+| Feb 2020 | 423 |
+| Mar 2020 | 410 |
+| Apr 2020 | 409 |
+| May 2020 | 515 |
+| Jun 2020 | 470 |
+| Jul 2020 | 546 |
+| Aug 2020 | 458 |
+| Sep 2020 | 478 |
+| Oct 2020 | 541 |
+| Nov 2020 | 477 |
+| Dec 2020 | 522 |
+| Jan 2021 |  |
+| Feb 2021 |  |
+| Mar 2021 |  |
+| Apr 2021 |  |
+| May 2021 |  |
+| Jun 2021 |  |
+| Jul 2021 |  |
+| Aug 2021 |  |
+| Sep 2021 |  |
+| Oct 2021 |  |
+| Nov 2021 |  |
+| Dec 2021 |  |
+| Jan 2022 | 681 |
+| Feb 2022 | 490 |
+| Mar 2022 | 569 |
+| Apr 2022 | 563 |
+| May 2022 | 517 |
+| Jun 2022 | 528 |
+| Jul 2022 | 526 |
+| Aug 2022 | 599 |
+| Sep 2022 | 479 |
+| Oct 2022 | 585 |
+| Nov 2022 | 497 |
+| Dec 2022 | 455 |
+| Jan 2023 | 579 |
+| Feb 2023 | 507 |
+| Mar 2023 | 541 |
+| Apr 2023 | 595 |
+| May 2023 | 560 |
+| Jun 2023 | 532 |
+| Jul 2023 | 514 |
+| Aug 2023 | 516 |
+| Sep 2023 | 583 |
+| Oct 2023 | 424 |
+| Nov 2023 | 479 |
+| Dec 2023 | 599 |
+| Jan 2024 | 469 |
+| Feb 2024 | 428 |
+| Mar 2024 | 473 |
+| Apr 2024 | 403 |
+| May 2024 | 428 |
+| Jun 2024 | 491 |
+| Jul 2024 | 512 |
+| Aug 2024 | 497 |
+| Sep 2024 | 497 |
+| Oct 2024 | 365 |
+| Nov 2024 | 458 |
+| Dec 2024 | 429 |
+| Jan 2025 | 471 |
+| Feb 2025 | 331 |
+| Mar 2025 | 364 |
+| Apr 2025 | 330 |
+| May 2025 | 326 |
+| Jun 2025 | 280 |
+| Jul 2025 | 293 |
+| Aug 2025 | 281 |
+| Sep 2025 | 337 |
+| Oct 2025 | 376 |
+| Nov 2025 | 334 |
+| Dec 2025 | 328 |
+Source note: FBI Crime Data Explorer, Fremont Police Department (agency CA0010500), monthly offense counts.View source: FBI Crime Data Explorer: crime trends by agency (choose Fremont Police Department)
+
+### FBI totals by year
+Sum of the monthly figures; a clearance is counted in the month it happens, so the share is approximate
+| Year | Violent | Violent cleared | Property | Property cleared |
+| --- | --- | --- | --- | --- |
+| 2019 | 400 | 63.3% | 4,540 | 6.0% [source](https://cde.ucr.cjis.gov/LATEST/webapp/#/pages/explorer/crime/crime-trend) |
+| 2020 | 407 | 53.6% | 5,755 | 4.0% [source](https://cde.ucr.cjis.gov/LATEST/webapp/#/pages/explorer/crime/crime-trend) |
+| 2022 | 470 | 31.7% | 6,489 | 2.9% [source](https://cde.ucr.cjis.gov/LATEST/webapp/#/pages/explorer/crime/crime-trend) |
+| 2023 | 486 | 31.5% | 6,429 | 4.4% [source](https://cde.ucr.cjis.gov/LATEST/webapp/#/pages/explorer/crime/crime-trend) |
+| 2024 | 447 | 29.8% | 5,450 | 4.2% [source](https://cde.ucr.cjis.gov/LATEST/webapp/#/pages/explorer/crime/crime-trend) |
+| 2025 | 241 | 35.3% | 4,051 | 3.7% [source](https://cde.ucr.cjis.gov/LATEST/webapp/#/pages/explorer/crime/crime-trend) |
+Source note: FBI Crime Data Explorer, Fremont Police Department. Clearances are by arrest or exceptional means.View source: FBI Crime Data Explorer: crime trends by agency (choose Fremont Police Department)
+Note: The FBI and California DOJ figures can differ for the same year (2024 violent crimes: FBI 447, DOJ 436) because each applies its own counting rules. Fremont PD reported no 2021 data to the FBI while it switched to the NIBRS system. 2025 counts are well below earlier years, and the state file also marks Fremont’s 2025 reporting as incomplete, so treat 2025 as provisional until both sources settle.
 
 ## Solved cases and hate crimes
 
@@ -1636,6 +2038,7 @@ Source note: California Office of Traffic Safety, 2023 rankings. A high rank num
 - Reported crime by city: Violent and property crimes by type and year, 2015–2025, for Fremont. California DOJ OpenJustice, Crimes and Clearances file (published July 2026). 2025 is incomplete for Fremont.
 - City rankings: Fremont's rank in 2025–26 national city rankings, read from each WalletHub ranking table (and Trust for Public Land ParkScore) on Oct 24, 2026, with category ranks and publication dates.
 - Police and survey facts: Fremont PD calls for service, staffing and 911 answer times, plus the City's 2025 Community Survey safety results. Each row names its source. Read Oct 24, 2026.
+- Crime by month (FBI): Violent and property offenses, clearances and rates per 100,000 residents reported by Fremont Police Department to the FBI, by month since 2019, with California and U.S. rates, from the FBI Crime Data Explorer API (agency CA0010500). No 2021 data (NIBRS transition). Fetched by tools/refresh_apis.py fbi; first read Oct 29, 2026.
 - Crime clearances: Violent and property crimes reported and cleared: Fremont 2015–2025 and California 2020–2025. California DOJ Crimes and Clearances (July 2026 release). Read Oct 24, 2026.
 - Hate crimes, Fremont: Hate crime incidents by year closed, Fremont PD, 2015–2025. California DOJ Hate Crimes file. Read Oct 24, 2026.
 - Police staffing: Funded sworn and civilian positions for Fremont, 2015–2025. California DOJ Law Enforcement Personnel file. Read Oct 24, 2026.
@@ -1736,6 +2139,25 @@ Note: Kaiser Fremont reports no ER timeliness or visit counts to the public data
 | Walk-in urgent care: Washington Health One of two health systems with a verified walk-in urgent care in Fremont. Read Oct 24, 2026. | 2682 Mowry Ave | Opened Dec 17, 2025 | Washington Health news release Dec 31, 2025 [source](https://www.washingtonhealth.com/news/2025/december/washington-health-urgent-care-now-open/) |
 | Walk-in urgent care: Sutter Health Fremont Center Open M–F 8am–8pm, Sa–Su 8am–5pm. Kaiser Fremont has an emergency department and a members-only Minor Injury Clinic. Carbon Health and other retail urgent cares were not verified from operator sites. Stanford Health Care has specialty clinics at 2557 Mowry Ave. Read Oct 24, 2026. | 3200 Kearney St | Oct 2026 | Sutter Health location page [source](https://www.sutterhealth.org/find-location/facility/fremont-urgent-care-1043246913) |
 
+## Nursing homes
+Every Medicare- or Medicaid-certified nursing home in Fremont, with its Care Compare star ratings.
+- Certified nursing homes in Fremont: **7** — CMS data of Oct 2026 · Medicare Care Compare [source](https://data.cms.gov/provider-data/dataset/4pq5-n9py)
+- Certified beds: **712** — CMS data of Oct 2026 · Medicare Care Compare. 595 residents on an average day. [source](https://data.cms.gov/provider-data/dataset/4pq5-n9py)
+- Rated 4 or 5 stars overall: **7** — CMS data of Oct 2026 · Medicare Care Compare. Of 7. Ratings run from 1 to 5; 5 is best. [source](https://data.cms.gov/provider-data/dataset/4pq5-n9py)
+
+### Nursing homes and their ratings
+Stars out of 5; each row opens the facility’s Care Compare page
+| Facility | Beds | Overall | Inspections | Staffing | Quality | Fines |
+| --- | --- | --- | --- | --- | --- | --- |
+| Crestwood Manor - Fremont | 126 | 5 | 5 | 5 | 3 | $0 [source](https://www.medicare.gov/care-compare/details/nursing-home/05A427?state=CA) |
+| Crestwood Treatment Center | 88 | 5 | 4 | 5 | 5 | $0 [source](https://www.medicare.gov/care-compare/details/nursing-home/05A408?state=CA) |
+| Niles Canyon Post Acute | 73 | 5 | 5 | 4 | 4 | $0 [source](https://www.medicare.gov/care-compare/details/nursing-home/055562?state=CA) |
+| Country Drive Post Acute | 126 | 4 | 4 | 4 | 4 | $0 [source](https://www.medicare.gov/care-compare/details/nursing-home/055885?state=CA) |
+| Fremont Healthcare Center | 115 | 4 | 3 | 5 | 4 | $12,051 [source](https://www.medicare.gov/care-compare/details/nursing-home/056422?state=CA) |
+| Mission Valley Post Acute | 85 | 4 | 3 | 4 | 5 | $0 [source](https://www.medicare.gov/care-compare/details/nursing-home/055276?state=CA) |
+| We Care Skilled Nursing - Fremont | 99 | 4 | 3 | 4 | 5 | $0 [source](https://www.medicare.gov/care-compare/details/nursing-home/056298?state=CA) |
+Source note: Medicare Care Compare, Provider Information dataset (data.cms.gov). Fines are the total CMS lists for the facility. The two Crestwood facilities accept Medicaid only.View source: CMS Provider Data Catalog: nursing home provider information
+
 ## How healthy are Fremont adults?
 CDC PLACES estimates for the city, mostly from the 2023 Behavioral Risk Factor Surveillance System.
 - Adults with a routine checkup in the past year: **72.7%** — 2023 · Adult health (CDC PLACES) [source](https://www.cdc.gov/places/index.html)
@@ -1783,6 +2205,7 @@ Source note: U.S. EPA AirData, annual AQI by county (pre-generated files). The 2
 - Hospitals, coverage and providers: CMS Care Compare stars, Leapfrog safety grades, ER times and volumes for Washington Hospital and Kaiser Fremont; clinics; insurance coverage by type (ACS 2024) and Medi-Cal. Read Oct 24, 2026.
 - Costs, transit and services: Utility bills, tax rates, transit ridership, hospitals, voters, energy and hazards, each from the agency named in its row. Read Oct 24, 2026.
 - Leapfrog safety grades: Leapfrog Hospital Safety Grades for Washington Hospital and Kaiser Fremont, Spring 2023 to Spring 2026. Read Oct 24, 2026.
+- Nursing homes (Care Compare): Every Medicare- or Medicaid-certified nursing home in Fremont with certified beds, average residents, overall, inspection, staffing and quality star ratings, ownership, fines and last inspection date, from the CMS Provider Information dataset (Medicare Care Compare). Fetched by tools/refresh_apis.py cms; first read Oct 29, 2026.
 - Adult health (CDC PLACES): Modeled adult health prevalence for Fremont with 95% ranges, CDC PLACES 2025 release (mostly 2023 data). Read Oct 24, 2026.
 - City rankings: Fremont's rank in 2025–26 national city rankings, read from each WalletHub ranking table (and Trust for Public Land ParkScore) on Oct 24, 2026, with category ranks and publication dates.
 - Air quality by county: Days by Air Quality Index category, median and maximum AQI for Alameda and Santa Clara counties, 2023 and 2024, from the U.S. EPA AirData pre-generated files (annual AQI by county). Checked against the EPA files Oct 29, 2026; the 2025 file does not yet include Bay Area counties.
@@ -2029,7 +2452,7 @@ Source note: Kidder Mathews quarterly market reports (Silicon Valley office and 
 - More resident facts: ACS 2020–2024 measures (age, households, income, housing stock, cost burden, veterans, disability) and County Business Patterns 2023 jobs. Read Oct 24, 2026.
 - Unemployment by month: Monthly unemployment rate for Fremont city, Alameda County and California since Jan 2019 (not seasonally adjusted), plus Fremont's labor force and number unemployed, from the U.S. Bureau of Labor Statistics Local Area Unemployment Statistics data API. Fetched by tools/refresh_apis.py.
 - Largest employers: Fremont's largest employers (12 with ties) from the City's FY2025 Annual Comprehensive Financial Report, Schedule 15: Principal Employers, p. 202. Read Oct 26, 2026.
-- Residents' industries: Employed residents 16+ by industry, top seven, ACS 2020–2024 table C24050. Read Oct 24, 2026.
+- Residents' industries: Employed residents 16+ by industry, top seven, ACS 2020–2024 table C24050. Read Oct 24, 2026; checked against the Census API Oct 29, 2026.
 - How Fremont gets to work: Census ACS 2020–2024 table DP03: workers 16+ by way of getting to work. Read Oct 24, 2026.
 - Shopping and dining: Restaurant and retail counts, jobs, taxable sales and major centers, from Census County Business Patterns, CDTFA and the City of Fremont. Read Oct 24, 2026.
 - Commercial vacancy: Office, R&D and industrial vacancy for the Fremont submarkets, Kidder Mathews 3Q 2026 reports. Read Oct 24, 2026.
@@ -2084,7 +2507,7 @@ Source note: Crunchbase and VCBacked.co, read Oct 24, 2026. Both are crowdsource
 | EnerVenue | Metal-hydrogen batteries | $300M | Series B extension | 2026-03 | Press release dateline Fremont, Calif.; led by Full Vision Capital | EnerVenue press release [source](https://www.enervenue.com/press/henning-rath-ceo-300m-series-b) |
 | Pony.ai | Autonomous driving | $260M | IPO (Nasdaq: PONY) | 2024-11 | Principal office Guangzhou, China; U.S. offices in Fremont; 20M ADS at $13 | Pony.ai final prospectus (SEC Form 424B4) [source](https://www.sec.gov/Archives/edgar/data/1969302/000110465924123680/tm2310344-35_424b4.htm) |
 | Alamar Biosciences | Proteomics / diagnostics | $191M | IPO (Nasdaq: ALMR) | 2026-04 | Fremont HQ; 11.25M shares at $17 (about $220M after the underwriters’ extra shares); prior $128M Series C Feb 2024 and $50M convertible note Jan 2026 | Alamar Biosciences press release (Apr 2026) [source](https://investors.alamarbio.com/news-releases/news-release-details/alamar-biosciences-announces-pricing-upsized-initial-public) |
-| Alamar Biosciences | Proteomics / diagnostics | $128M | Series C | 2024-02 | Fremont-datelined release; $100M first close plus $28M expected later | Alamar Biosciences press release (Feb 26, 2024), via BioSpace [source](https://www.biospace.com/alamar-biosciences-raises-128-million-in-oversubscribed-series-c-financing-to-accelerate-commercialization-of-its-proteomics-platform) |
+| Alamar Biosciences | Proteomics / diagnostics | $128M | Series C | 2024-02 | Fremont-datelined release; $128M announced: $100M first close plus $28M | Alamar Biosciences press release (Feb 26, 2024), via BioSpace [source](https://www.biospace.com/alamar-biosciences-raises-128-million-in-oversubscribed-series-c-financing-to-accelerate-commercialization-of-its-proteomics-platform) |
 | Nitricity | Organic fertilizer / cleantech | $50M | Series B | 2025-09 | Pilot plant in Fremont, CA; co-led by World Fund and Khosla Ventures | World Fund (co-lead investor), Sep 2025 [source](https://worldfund.vc/articles/nitricity-raises-50m-to-go-global-with-unique-tech-transforming-almond-waste-into-organic-fertilizer) |
 | Tandem PV | Perovskite solar | $50M | Series A and debt | 2025-03 | Fremont address; release datelined San Jose; 40 MW factory opened in Fremont Apr 2026; $83M total raised incl. debt and grants | Tandem PV press release (Mar 4, 2025) [source](https://www.tandempv.com/news/tandem-pv-raises-%2450m-to-take-back-u.s.-leadership-with-new-perovskite-solar-manufacturing) |
 | Everestlabs.AI | Recycling robotics / AI | $16.1M | Series A | 2022-09 | Fremont address (48820 Kato Rd) per trade press; led by Translink Capital | TechCrunch (Sep 28, 2022) [source](https://techcrunch.com/2022/09/28/everestlabs-raises-16-1m-for-ai-that-sorts-recyclables/) |
@@ -2095,7 +2518,7 @@ Source note: Compiled from company press releases, SEC filings and news reports;
 | --- | --- | --- | --- |
 | Valuation of Weee!, Fremont-headquartered online grocer, at its Series E $425M Series E led by SoftBank Vision Fund 2. StartupBlink lists Weee! as Fremont's only unicorn. Valuation has not been publicly re-marked since. | $4,100,000,000 | Feb 2022 | Built In SF, 'These 5 Bay Area Tech Companies Raised $3.1B+ Total in February' [source](https://www.builtinsf.com/articles/sf-top-funding-rounds-february-2022) |
 | Raised by Fremont-based Alamar Biosciences in its April 2026 Nasdaq IPO (ALMR) 11.3M shares at $17, top of range. Company campus at 47071 Bayside Parkway, Fremont. | $191,000,000 | Apr 17, 2026 | Alamar Biosciences press release (Apr 2026) [source](https://investors.alamarbio.com/news-releases/news-release-details/alamar-biosciences-announces-pricing-upsized-initial-public) |
-| Gross proceeds of Fremont-based Cytek Biosciences' July 2021 Nasdaq IPO (CTKB) Approximately $200M expected gross proceeds at $17/share; HQ 47215 Lakeview Blvd, Fremont per 10-K. | $200,000,000 | Jul 22, 2021 | Cytek Biosciences, IPO pricing press release [source](https://investors.cytekbio.com/news-releases/news-release-details/cytek-biosciences-announces-pricing-its-initial-public-offering) |
+| Gross proceeds of Fremont-based Cytek Biosciences' July 2021 Nasdaq IPO (CTKB) IPO priced at $17/share for about $200M gross proceeds (pricing release); HQ 47215 Lakeview Blvd, Fremont per 10-K. | $200,000,000 | Jul 22, 2021 | Cytek Biosciences, IPO pricing press release [source](https://investors.cytekbio.com/news-releases/news-release-details/cytek-biosciences-announces-pricing-its-initial-public-offering) |
 | Raised by Pony.ai (U.S. offices in Fremont) in its Nov 2024 Nasdaq IPO (PONY) 20M ADS at $13, $260M gross. The prospectus gives Guangzhou, China as the principal executive office; Fremont is its U.S. office. Read Oct 26, 2026. | $260,000,000 | Nov 27, 2024 | Pony.ai final prospectus (SEC Form 424B4) [source](https://www.sec.gov/Archives/edgar/data/1969302/000110465924123680/tm2310344-35_424b4.htm) |
 
 ## The manufacturing base
@@ -2139,7 +2562,7 @@ Source note: Kidder Mathews quarterly reports. The industrial figure covers the 
 Note: USPTO patent counts for Fremont are not included yet.
 - Startup ecosystem: Company counts from Crunchbase and VCBacked.co (crowdsourced directories), unicorns and IPOs, the City of Fremont's own claims on tech and manufacturing firms, patent holders, Warm Springs Innovation District and rankings. Read Oct 24, 2026.
 - Largest funding rounds: Largest recent funding rounds and IPOs by Fremont-linked companies, 2022–2026 (several are Fremont sites or U.S. offices rather than headquarters, noted in each row), each row citing a company, investor, SEC or press source; not an exhaustive total. Sources re-checked Oct 26, 2026.
-- Residents' industries: Employed residents 16+ by industry, top seven, ACS 2020–2024 table C24050. Read Oct 24, 2026.
+- Residents' industries: Employed residents 16+ by industry, top seven, ACS 2020–2024 table C24050. Read Oct 24, 2026; checked against the Census API Oct 29, 2026.
 - Unemployment, wages and jobs: Fremont city unemployment rate (BLS LAUS), jobs located in Fremont vs employed residents (Housing Element/LEHD), city minimum wage, median earnings (ACS 2024), WARN layoffs (EDD), commute shares. Read Oct 24, 2026; unemployment, WARN, minimum wage and Tesla rows re-checked Oct 26, 2026.
 - Commercial vacancy: Office, R&D and industrial vacancy for the Fremont submarkets, Kidder Mathews 3Q 2026 reports. Read Oct 24, 2026.
 - Shopping and dining: Restaurant and retail counts, jobs, taxable sales and major centers, from Census County Business Patterns, CDTFA and the City of Fremont. Read Oct 24, 2026.
@@ -2190,6 +2613,7 @@ Each dataset is one file; its description says what it holds and when it was rea
 - Air quality by county: Days by Air Quality Index category, median and maximum AQI for Alameda and Santa Clara counties, 2023 and 2024, from the U.S. EPA AirData pre-generated files (annual AQI by county). Checked against the EPA files Oct 29, 2026; the 2025 file does not yet include Bay Area counties.
 - Asian communities: Share of Fremont residents by Asian group (alone), ACS 2020–2024 table DP05. Read Oct 24, 2026.
 - BART weekday exits: Average weekday exits at Fremont and Warm Springs stations, FY 2019, 2024 and 2025, averaged from BART daily station exits (DataSF). Read Oct 24, 2026.
+- Building permits (Census survey): Housing units permitted in Fremont by building type (single-family, 2 to 4 units, 5 or more), buildings and construction value, each year since 2018 plus the current year to date, from the U.S. Census Bureau Building Permits Survey place-level files. Fetched by tools/refresh_apis.py bps; first read Oct 29, 2026.
 - Census counts and estimate: Decennial Census counts for Fremont 1960–2020 (1960–2000 as compiled by MTC in 2021) and the Census Bureau's Vintage 2025 estimate for Jul 1, 2025 from QuickFacts. Read Oct 24, 2026.
 - Census QuickFacts profile: Fremont city profile from Census QuickFacts: mostly ACS 2020–2024 5-year survey estimates, with age and race from Census population estimates. Read Oct 24, 2026.
 - Child care and utilities: Alameda County child care costs (2022) and licensed spaces (2023) from kidsdata.org; electricity rate and bill (Ava/PG&E, Mar 2026); ACWD water use per person (FY 2023–24). Read Oct 24, 2026.
@@ -2200,9 +2624,11 @@ Each dataset is one file; its description says what it holds and when it was rea
 - Commercial vacancy: Office, R&D and industrial vacancy for the Fremont submarkets, Kidder Mathews 3Q 2026 reports. Read Oct 24, 2026.
 - Costs, transit and services: Utility bills, tax rates, transit ridership, hospitals, voters, energy and hazards, each from the agency named in its row. Read Oct 24, 2026.
 - Crash reports (state database): Crash reports for crashes inside Fremont city limits by year since 2016, from the California Highway Patrol's California Crash Reporting System (CCRS) on data.ca.gov: all reports, injury and fatal crashes, people killed and injured, and the share filed by Fremont PD (the rest are CHP freeway reports). Fetched by tools/refresh_apis.py.
+- Crime by month (FBI): Violent and property offenses, clearances and rates per 100,000 residents reported by Fremont Police Department to the FBI, by month since 2019, with California and U.S. rates, from the FBI Crime Data Explorer API (agency CA0010500). No 2021 data (NIBRS transition). Fetched by tools/refresh_apis.py fbi; first read Oct 29, 2026.
 - Crime clearances: Violent and property crimes reported and cleared: Fremont 2015–2025 and California 2020–2025. California DOJ Crimes and Clearances (July 2026 release). Read Oct 24, 2026.
 - District trends: Fremont Unified by school year with state comparisons: enrollment, graduation, UC/CSU readiness, dropout, chronic absence, suspension, spending, teacher salary, staffing. CDE data via Ed-Data. Read Oct 24, 2026.
 - DOF population estimates: California Department of Finance E-1 estimates for Fremont, Jan 1 2025 (revised) and Jan 1 2026 (provisional). Checked Oct 24, 2026 against DOF's own E-1 2026 press release (May 1, 2026).
+- Drought weeks (U.S. Drought Monitor): Weeks per year with any part of Alameda County abnormally dry (D0) or in moderate to exceptional drought (D1 to D4), the worst level reached, and the latest week, from U.S. Drought Monitor county statistics (National Drought Mitigation Center, USDA, NOAA, NASA). Fetched by tools/refresh_apis.py usdm; first read Oct 29, 2026.
 - Earthquakes near Fremont, by year: Earthquakes of magnitude 2.5 or more within 50 km of Fremont City Hall, counted by year since 2016, from the USGS earthquake catalog API. Fetched by tools/refresh_apis.py.
 - Emissions by sector: Community greenhouse gas emissions (metric tons CO2e) by sector for inventory years 2005, 2010, 2015 and 2018, and the city's 2030 goal, read from the chart data on the city's Climate Action dashboard.
 - EV charger permits: Electric vehicle charger permits issued in Fremont per year, 2021–2026 (2026 year to date), from the city's Climate Action dashboard.
@@ -2224,24 +2650,26 @@ Each dataset is one file; its description says what it holds and when it was rea
 - Housing permits and target: Units permitted in 2025 and progress toward Fremont's 2023–2031 RHNA target, from the city's 2025 Annual Progress Report staff report (Planning Commission, Feb 26, 2026). Self-reported by the city; HCD does not verify it.
 - Housing target by income: RHNA target, units permitted 2023–2025, units remaining, and 2025 permits by income level, from the city's 2025 Annual Progress Report staff report. ADUs are assigned to income levels using ABAG affordability assumptions.
 - How Fremont gets to work: Census ACS 2020–2024 table DP03: workers 16+ by way of getting to work. Read Oct 24, 2026.
-- Languages at home: Language spoken at home, residents 5 and older, ACS 2020–2024 table C16001. Read Oct 24, 2026.
+- Languages at home: Language spoken at home, residents 5 and older, ACS 2020–2024 table C16001. Read Oct 24, 2026; checked against the Census API Oct 29, 2026.
 - Largest earthquakes near Fremont: The ten largest earthquakes within 50 km of Fremont City Hall since 2000, from the USGS earthquake catalog API. Fetched by tools/refresh_apis.py.
 - Largest employers: Fremont's largest employers (12 with ties) from the City's FY2025 Annual Comprehensive Financial Report, Schedule 15: Principal Employers, p. 202. Read Oct 26, 2026.
 - Largest funding rounds: Largest recent funding rounds and IPOs by Fremont-linked companies, 2022–2026 (several are Fremont sites or U.S. offices rather than headquarters, noted in each row), each row citing a company, investor, SEC or press source; not an exhaustive total. Sources re-checked Oct 26, 2026.
 - Leapfrog safety grades: Leapfrog Hospital Safety Grades for Washington Hospital and Kaiser Fremont, Spring 2023 to Spring 2026. Read Oct 24, 2026.
 - More resident facts: ACS 2020–2024 measures (age, households, income, housing stock, cost burden, veterans, disability) and County Business Patterns 2023 jobs. Read Oct 24, 2026.
 - Mortgage estimate assumptions: The assumptions behind the site's monthly-payment estimate on the Rent & Housing page: 20% down, 30-year fixed loan at the latest weekly national rate, 1% base property tax. Set by the site, not taken from a source.
+- Nursing homes (Care Compare): Every Medicare- or Medicaid-certified nursing home in Fremont with certified beds, average residents, overall, inspection, staffing and quality star ratings, ownership, fines and last inspection date, from the CMS Provider Information dataset (Medicare Care Compare). Fetched by tools/refresh_apis.py cms; first read Oct 29, 2026.
 - OTS crash rankings: California Office of Traffic Safety 2023 crash rankings for Fremont among 62 cities of 100,001–250,000 people (1 = worst). Read Oct 24, 2026.
 - Parks and facilities: City park counts and acreage, Trust for Public Land ParkScore, libraries and community centers. Read Oct 24, 2026.
 - Pavement condition: MTC Pavement Condition Index (three-year moving average) 2022–2024 for Fremont and the Bay Area, Jan 2026 update. Read Oct 24, 2026.
+- Permits by income level (HCD): Housing units given building permits in Fremont each year since 2018, by income level (very low, low, moderate, above moderate), deed-restricted units and ADU units, summed from the California HCD Housing Element Annual Progress Report Table A2 on data.ca.gov. Fetched by tools/refresh_apis.py hcd; first read Oct 29, 2026.
 - Point-in-time counts: Unhoused residents in Fremont from point-in-time counts, 2017–2026, as shown on the city's Homeless Response dashboard.
 - Police and survey facts: Fremont PD calls for service, staffing and 911 answer times, plus the City's 2025 Community Survey safety results. Each row names its source. Read Oct 24, 2026.
 - Police staffing: Funded sworn and civilian positions for Fremont, 2015–2025. California DOJ Law Enforcement Personnel file. Read Oct 24, 2026.
 - Redfin market snapshot: Redfin housing market pages for Fremont city (Sep 2026) and ZIP codes 94536, 94538, 94539 and 94555 (Aug 2026), read Oct 24, 2026. Redfin's terms for republishing these figures are not yet confirmed.
 - Regional parks in Fremont: East Bay Regional Park District parks in Fremont with acreage, from EBRPD park pages and news releases. Read Oct 24, 2026.
-- Rent by bedroom: Census ACS median gross rent by bedrooms (2015–2019 and 2020–2024; capped at $3,500) and HUD Fair Market Rents FY2025–26 for the Oakland-Fremont area. Read Oct 24, 2026.
+- Rent by bedroom: Census ACS median gross rent by bedrooms (2015–2019 and 2020–2024; capped at $3,501) and HUD Fair Market Rents FY2025–26 for the Oakland-Fremont area. Read Oct 24, 2026.
 - Reported crime by city: Violent and property crimes by type and year, 2015–2025, for Fremont. California DOJ OpenJustice, Crimes and Clearances file (published July 2026). 2025 is incomplete for Fremont.
-- Residents' industries: Employed residents 16+ by industry, top seven, ACS 2020–2024 table C24050. Read Oct 24, 2026.
+- Residents' industries: Employed residents 16+ by industry, top seven, ACS 2020–2024 table C24050. Read Oct 24, 2026; checked against the Census API Oct 29, 2026.
 - School finder data: Every Fremont Unified elementary, middle and high school: CAASPP 2025–26 and 2024–25 results, DataQuest 2025–26 enrollment, Ed-Data 2024–25 chronic absence and suspension, 2025–26 low-income share, and U.S. News ranks. Read Oct 24, 2026.
 - Shopping and dining: Restaurant and retail counts, jobs, taxable sales and major centers, from Census County Business Patterns, CDTFA and the City of Fremont. Read Oct 24, 2026.
 - Source pages: Every page used for a figure on this dashboard, with publisher and what it supports. Read Oct 24, 2026.
@@ -2253,12 +2681,13 @@ Each dataset is one file; its description says what it holds and when it was rea
 - Unemployment, wages and jobs: Fremont city unemployment rate (BLS LAUS), jobs located in Fremont vs employed residents (Housing Element/LEHD), city minimum wage, median earnings (ACS 2024), WARN layoffs (EDD), commute shares. Read Oct 24, 2026; unemployment, WARN, minimum wage and Tesla rows re-checked Oct 26, 2026.
 - Vehicles by fuel and ZIP: Light-duty registrations by fuel type for Fremont ZIPs 94536, 94538, 94539, 94555, as of Jan 1, 2020 and Dec 31, 2025. California DMV via data.ca.gov. Read Oct 24, 2026.
 - Voters and city facts: Nov 2024 turnout (Alameda County ROV), May 2026 registration by party (CA Secretary of State), affordable units, city FTEs and credit rating (City of Fremont). Read Oct 24, 2026.
+- Water supply and use (ACWD): Alameda County Water District (serves Fremont, Newark and Union City): potable water supplied, residential use and residential gallons per person per day, by month since July 2014, from the State Water Resources Control Board urban retail water supplier reports on data.ca.gov (ODC-BY). Fetched by tools/refresh_apis.py water; first read Oct 29, 2026.
 - Weather by month: NOAA 1991–2020 climate normals for the Fremont station: average high, low and rainfall by month. Read Oct 24, 2026.
 - Zillow history: Monthly Zillow Home Value Index and Observed Rent Index for Fremont city, Jan 2015 to Sep 2026, from Zillow Research city-level files. Read Oct 24, 2026.
 - Zillow home value and rent: Zillow Research figures for Fremont from Zillow's city home values page (data through Sep 30, 2026; sales measures through Aug 31), read Oct 24, 2026. Zillow requires clear attribution.
 
 ## Every source page
-228 pages, grouped by publisher. Each link is the page a figure was read from.
+244 pages, grouped by publisher. Each link is the page a figure was read from.
 -  <https://earthquake.usgs.gov/fdsnws/event/1/count?format=geojson&latitude=37.5483&longitude=-121.9886&maxradiuskm=50&eventtype=earthquake&starttime=2016-01-01&endtime=2017-01-01&minmagnitude=2.5>
 -  <https://earthquake.usgs.gov/fdsnws/event/1/count?format=geojson&latitude=37.5483&longitude=-121.9886&maxradiuskm=50&eventtype=earthquake&starttime=2017-01-01&endtime=2018-01-01&minmagnitude=2.5>
 -  <https://earthquake.usgs.gov/fdsnws/event/1/count?format=geojson&latitude=37.5483&longitude=-121.9886&maxradiuskm=50&eventtype=earthquake&starttime=2018-01-01&endtime=2019-01-01&minmagnitude=2.5>
@@ -2324,17 +2753,15 @@ Each dataset is one file; its description says what it holds and when it was rea
 - CAASPP Smarter Balanced results, grade 11, 2025–26, by school11th-grade English and math results by high school <https://caaspp-elpac.ets.org/caaspp/>
 - E-1 2026 press releaseState population estimates, Jan 2025 and Jan 2026 <https://dof.ca.gov/media/docs/forecasting/demographics/estimates/e-1_2026_press_release.Pdf>
 - E-1 estimates and methodologyHow the state estimate is made <https://dof.ca.gov/forecasting/demographics/estimates-e1/>
-- Housing element annual progress reportsRelease calendar: April 1 filing deadline <https://hcd.ca.gov/planning-and-community-development/annual-progress-reports>
+- Housing Element Annual Progress Report data by jurisdiction and year (data.ca.gov)Units permitted by income level, each year <https://data.ca.gov/dataset/housing-element-annual-progress-report-apr-data-by-jurisdiction-and-year>
 - 2026 minimum wage announcementState minimum wage, 2026 <https://www.dir.ca.gov/DIRNews/2025/2025-118.html>
 - Labor force data for cities and census placesCity and county labor force data <https://labormarketinfo.edd.ca.gov/data/labor-force-and-unemployment-for-cities-and-census-areas.html>
-- Labor force data, February 2026 (revised)County unemployment, Feb 2026 <https://labormarketinfo.edd.ca.gov/file/lfmonth/2602rmsa.pdf>
-- Labor force data, January 2026 (revised)County unemployment, Jan 2026 <https://labormarketinfo.edd.ca.gov/file/lfmonth/2601rmsa.pdf>
-- Labor force data, March 2026 (revised)County unemployment, Mar 2026 <https://labormarketinfo.edd.ca.gov/file/lfmonth/2603rmsa.pdf>
-- September 2026 unemployment releaseCounty unemployment, Sep 2026 (preliminary) <https://edd.ca.gov/en/about_edd/news_releases_and_announcements/unemployment-september-2026/>
 - WARN reportsLayoff and closure notices <https://edd.ca.gov/en/jobs_and_training/layoff_services_warn>
 - Report of registration, 60-day primary 2026Registered voters <https://elections.cdn.sos.ca.gov/ror/60day-primary-2026/politicalsub.pdf>
+- Urban retail water supplier conservation, supply and demand (data.ca.gov)Alameda County Water District supply and residential use per person, by month <https://data.ca.gov/dataset/urws-conservation-supply-demand>
 - PLACES: Local Data for Better Health, Place Data, 2025 releaseModeled adult health measures for Fremont <https://data.cdc.gov/resource/eav7-hnsx.json?stateabbr=CA&locationname=Fremont&datavaluetypeid=CrdPrv>
 - California sales and use tax ratesSales tax rate <https://cdtfa.ca.gov/taxes-and-fees/rates.aspx>
+- Sales and use tax rates by jurisdiction (data.ca.gov)Sales tax rate and its effective date <https://data.ca.gov/dataset/cdtfa-salesandusetaxrates>
 - CMS Provider Data Catalog, Hospital General Information (xubh-q36u), facility 050195Washington Hospital — CMS Care Compare overall star rating (out of 5) <https://data.cms.gov/provider-data/api/1/datastore/query/xubh-q36u/0?conditions[0][property]=citytown&conditions[0][value]=FREMONT&conditions[1][property]=state&conditions[1][value]=CA&limit=20>
 - CMS Provider Data Catalog, HCAHPS (dgck-syfz), H_STAR_RATINGWashington Hospital — HCAHPS patient-survey summary star rating (out of 5) <https://data.cms.gov/provider-data/api/1/datastore/query/dgck-syfz/0?conditions[0][property]=facility_id&conditions[0][value]=050195&conditions[1][property]=hcahps_measure_id&conditions[1][value]=H_STAR_RATING&limit=10>
 - CMS Provider Data Catalog, HCAHPS (dgck-syfz), H_STAR_RATINGKaiser Fremont — HCAHPS patient-survey summary star rating (out of 5) <https://data.cms.gov/provider-data/api/1/datastore/query/dgck-syfz/0?conditions[0][property]=facility_id&conditions[0][value]=050512&conditions[1][property]=hcahps_measure_id&conditions[1][value]=H_STAR_RATING&limit=10>
@@ -2350,6 +2777,7 @@ Each dataset is one file; its description says what it holds and when it was rea
 - Report of Registration as of May 18, 2026Registered voters by party <https://elections.cdn.sos.ca.gov/ror/15day-primary-2026/politicalsub.pdf>
 - 2024 Traffic Volumes (AADT) GIS serviceDaily vehicles on I-880, I-680, SR-84, SR-238 and SR-262 <https://caltrans-gis.dot.ca.gov/arcgis/rest/services/CHHighway/Traffic_AADT/MapServer/0>
 - Train schedulesTrains stopping at Fremont-Centerville <https://www.capitolcorridor.org/trainschedule/Train_Schedules.pdf>
+- Nursing home provider information (Care Compare)Nursing homes, beds, star ratings and fines <https://data.cms.gov/provider-data/dataset/4pq5-n9py>
 - 2023 State of the City address (Jun 8, 2023)Tesla employment in Fremont <https://fremont.gov/home/showpublisheddocument/13359/638218280428600000>
 - 2025 Annual Progress Report on the General Plan and Housing Element2025 permits, ADUs, progress by income category <https://fremontcityca.iqm2.com/Citizens/Detail_LegiFile.aspx?CssClass=&Frame=&ID=5659&MediaPosition=&MeetingID=2073&amp=&amp=&amp=&amp=>
 - Affordable Housing Development Projects in Fremont (updated Oct 17, 2025)Regulated affordable rental homes <https://www.fremont.gov/home/showpublisheddocument/449/638977635550300000>
@@ -2364,7 +2792,7 @@ Each dataset is one file; its description says what it holds and when it was rea
 - Drone as First Responders (DFR)Drone flight log (no flights listed for Oct 1–24, 2026; not shown here) <https://www.fremont.gov/government/citywide-initiatives/public-safety-initiatives/drone-as-first-responders-dfr>
 - Fremont App service requests dashboardService requests, Jul–Sep 2026; app downloads <https://www.fremont.gov/government/citywide-initiatives/data-dashboards/fremont-app>
 - Fremont Fire incidents dashboardFire incidents by year and type, inspections, stations <https://www.fremont.gov/government/citywide-initiatives/data-dashboards/fremont-fire>
-- FY 2025/26 Proposed Budget; FY 2024/25 Adopted Operating BudgetCity employees (FTE) and credit rating <https://www.fremont.gov/home/showpublisheddocument/18117/638828954844570000>
+- FY 2025/26 Proposed BudgetCity employees (FTE) and credit rating <https://www.fremont.gov/home/showpublisheddocument/18117/638828954844570000>
 - FY 2026/27 Adopted Operating BudgetOperating budget, all funds and general fund <https://www.fremont.gov/home/showpublisheddocument/21162/639252581230269794>
 - Homeless Response dashboardMonthly cleanups, encampments cleared, outreach visits; point-in-time counts <https://www.fremont.gov/government/citywide-initiatives/data-dashboards/homeless-response>
 - Housing Element2023–2031 housing target <https://fremont.gov/government/departments/community-development/planning-building-permit-services/plans-maps-guidelines/general-plan/housing-element>
@@ -2399,6 +2827,7 @@ Each dataset is one file; its description says what it holds and when it was rea
 - Fremont Unified district profileSchool enrollment, 2025–26 <https://www.ed-data.org/district/alameda/fremont-unified>
 - Fremont Unified district and school profilesEnrollment trend, graduation, UC/CSU readiness, chronic absence, suspension, spending, teacher salary, low-income share; state comparisons <https://www.ed-data.org/district/Alameda/Fremont-Unified>
 - EnerVenue press release <https://www.enervenue.com/press/henning-rath-ceo-300m-series-b>
+- Crime Data Explorer, Fremont Police Department (API agency CA0010500)Violent and property crimes, clearances and rates by month <https://cde.ucr.cjis.gov/LATEST/webapp/#/pages/explorer/crime/crime-trend>
 - 30-Year Fixed Rate Mortgage Average (Freddie Mac PMMS)Weekly 30-year mortgage rate <https://fred.stlouisfed.org/series/MORTGAGE30US>
 - Fremont Chamber of Commerce, Fremont Festival of the Arts – AboutYear of the first Fremont Festival of the Arts <https://fremontfestival.net/about>
 - 5-year crime comparison, 2017–2021Cross-check of 2017–2021 crime counts (matches state data) <https://fremontpolice.gov/home/showpublisheddocument/646/637817280148230000>
@@ -2419,10 +2848,18 @@ Each dataset is one file; its description says what it holds and when it was rea
 - East Bay industrial market reportIndustrial vacancy, Fremont/Newark <https://kidder.com/market-reports/east-bay-industrial-market-report/>
 - Fremont Hub property pageFremont Hub size <https://www.kimcorealty.com/109510>
 - MIT Living Wage Calculator, Alameda County, CaliforniaAnnual food cost for one adult in a living-wage budget, Alameda County <https://livingwage.mit.edu/counties/06001>
+- Medicare Care Compare <https://www.medicare.gov/care-compare/details/nursing-home/05A427?state=CA>
+- Medicare Care Compare <https://www.medicare.gov/care-compare/details/nursing-home/05A408?state=CA>
+- Medicare Care Compare <https://www.medicare.gov/care-compare/details/nursing-home/055562?state=CA>
+- Medicare Care Compare <https://www.medicare.gov/care-compare/details/nursing-home/055885?state=CA>
+- Medicare Care Compare <https://www.medicare.gov/care-compare/details/nursing-home/056422?state=CA>
+- Medicare Care Compare <https://www.medicare.gov/care-compare/details/nursing-home/055276?state=CA>
+- Medicare Care Compare <https://www.medicare.gov/care-compare/details/nursing-home/056298?state=CA>
 - City of Fremont Census data, 1960–2020Census counts, 1960–2000 <https://files.mtc.ca.gov/library/pub/48117_Place_FremontCity.pdf>
 - Pavement Condition Index table, 2024 data (Jan 2026)Pavement condition for Fremont and the Bay Area <https://mtc.ca.gov/sites/default/files/documents/2026-01/PCI_table2024DataJanuary2026Update.pdf>
 - NBC Bay Area, The 42nd Fremont Festival of the ArtsFremont Festival of the Arts attendees each year (news estimate) <https://www.nbcbayarea.com/community/the-42nd-fremont-festival-of-the-arts/4097266/?amp=1>
 - 1991–2020 climate normals, Fremont station USC00043244Monthly temperature and rainfall <https://www.ncei.noaa.gov/access/services/data/v1?dataset=normals-monthly-1991-2020&stations=USC00043244&format=json&dataTypes=MLY-TMAX-NORMAL,MLY-TMIN-NORMAL,MLY-PRCP-NORMAL>
+- U.S. Drought Monitor, Alameda County time seriesWeeks in drought by year and the current week <https://droughtmonitor.unl.edu/DmData/TimeSeries.aspx?aoi=county&fips=06001>
 - Neuralink <https://neuralink.com/updates/neuralink-raises-650m-series-e/>
 - PG&E, Gas Rate Advisory (March 2026)PG&E bundled residential gas rate, non-CARE, per therm <https://www.pge.com/assets/pge/docs/account/rate-plans/gas-rate-advisory-0326.pdf>
 - Pacific Fusion founders’ letter (Oct 25, 2024) <https://www.pacificfusion.com/updates/founders-letter>
@@ -2448,14 +2885,22 @@ Each dataset is one file; its description says what it holds and when it was rea
 - 2022 Economic Census, accommodation and food services, FremontRestaurants and food service businesses <https://data.census.gov/table/ECNBASIC2022.EC2272BASIC?g=160XX00US0626000>
 - 2022 Economic Census, retail trade, FremontRetail stores by type and retail sales <https://data.census.gov/table/ECNBASIC2022.EC2244BASIC?g=160XX00US0626000>
 - 2023 ZIP Code Business Patterns, Fremont ZIPsBusiness establishments and private-sector jobs <https://data.census.gov/table/CBP2023.CB2300CBP?g=860XX00US94536,94538,94539,94555>
-- 2025 ACS data release scheduleRelease calendar: ACS 1-year <https://www.census.gov/programs-surveys/acs/news/data-releases/2025/release.html>
 - ACS 2020–2024 5-year: DP04, DP05, B11005, B19001, B25035, B25070, B25091, B21001, B18101, C16001, C24050 (via data.census.gov)Median age, households with children, income $200K+, housing units, vacancy, year built, cost burden, Asian groups, languages, veterans, disability, residents' industries <https://data.census.gov/>
 - ACS 2020–2024 DP03, Fremont cityHow people get to work <https://data.census.gov/table/ACSDP5Y2024.DP03?g=160XX00US0626000>
 - ACS B25031 median gross rent by bedrooms (2020–2024 and 2015–2019)Rent by bedroom count and its trend <https://data.census.gov/table/ACSDT5Y2024.B25031?g=160XX00US0626000>
+- Building Permits Survey, place-level files (West Region)Housing units permitted by building type, each year <https://www2.census.gov/econ/bps/Place/West%20Region/>
 - Census Data API terms of serviceNotice required when using the Census API <https://census.gov/data/developers/terms-of-service.html>
 - County Business Patterns 2023 by ZIP (CB2300CBP)Private-sector jobs located in Fremont ZIP codes <https://data.census.gov/>
 - QuickFacts: Fremont city, CaliforniaCensus estimate, 2010 and 2020 counts, community profile, race and ethnicity <https://www.census.gov/quickfacts/fact/table/fremontcitycalifornia/PST045225>
-- Survey of Construction release scheduleRelease calendar: revised building permits <https://www.census.gov/construction/soc/schedule.html>
+- U.S. Census Bureau, Building Permits Survey <https://www2.census.gov/econ/bps/Place/West%20Region/we2018a.txt>
+- U.S. Census Bureau, Building Permits Survey <https://www2.census.gov/econ/bps/Place/West%20Region/we2019a.txt>
+- U.S. Census Bureau, Building Permits Survey <https://www2.census.gov/econ/bps/Place/West%20Region/we2020a.txt>
+- U.S. Census Bureau, Building Permits Survey <https://www2.census.gov/econ/bps/Place/West%20Region/we2021a.txt>
+- U.S. Census Bureau, Building Permits Survey <https://www2.census.gov/econ/bps/Place/West%20Region/we2022a.txt>
+- U.S. Census Bureau, Building Permits Survey <https://www2.census.gov/econ/bps/Place/West%20Region/we2023a.txt>
+- U.S. Census Bureau, Building Permits Survey <https://www2.census.gov/econ/bps/Place/West%20Region/we2024a.txt>
+- U.S. Census Bureau, Building Permits Survey <https://www2.census.gov/econ/bps/Place/West%20Region/we2025a.txt>
+- U.S. Census Bureau, Building Permits Survey <https://www2.census.gov/econ/bps/Place/West%20Region/we2609y.txt>
 - U.S. Census Bureau, 2022 Economic Census, Retail Trade (EC2244BASIC), Fremont cityGrocery and convenience retailers in Fremont (NAICS 4451) <https://data.census.gov/api/access/data/table?id=ECNBASIC2022.EC2244BASIC&g=160XX00US0626000&n=4451>
 - U.S. Census Bureau, 2022 Economic Census, Accommodation and Food Services (EC2272BASIC), Fremont cityRestaurants and other eating places in Fremont (NAICS 7225) <https://data.census.gov/api/access/data/table?id=ECNBASIC2022.EC2272BASIC&g=160XX00US0626000>
 - U.S. Census Bureau, ACS 1-Year Estimates 2024, Table S2201, Fremont cityShare of Fremont households that received CalFresh/SNAP benefits in the past 12 months <https://data.census.gov/api/access/data/table?id=ACSST1Y2024.S2201&g=160XX00US0626000>

@@ -18,10 +18,11 @@ FBN.page({
     const hsTop50 = hsAll.filter(r => Number(r.usn_state) <= 50);
     const crime24 = data('crime_oj').find(r => r.city === 'Fremont' && r.year === 2024) || {};
     const topRound = data('startup_rounds').slice().sort((a, b) => b.amount_usd - a.amount_usd)[0] || {};
+    const zMonth = String((row('zillow_market', 'zori') || {}).as_of || '').replace(/ \d+,/, '');  // 'Sep 30, 2026' -> 'Sep 2026'
     const roundWhen = topRound.date ? new Date(topRound.date + '-15').toLocaleString('en-US', { month: 'short', year: 'numeric' }) : '';
 
     const cats = [
-      { href: 'rent.html', icon: 'home', color: 1, title: 'Rent & Housing', v: f(v('zillow_market', 'zori'), 'usd'), l: 'typical asking rent, Sep 2026 (Zillow)' },
+      { href: 'rent.html', icon: 'home', color: 1, title: 'Rent & Housing', v: f(v('zillow_market', 'zori'), 'usd'), l: 'typical asking rent, ' + zMonth + ' (Zillow)' },
       { href: 'schools.html', icon: 'school', color: 2, title: 'Schools', v: f(v('schools', 'grad_rate'), 'pct'), l: 'Fremont Unified four-year graduation rate, class of 2025' },
       { href: 'food.html', icon: 'fork', color: 3, title: 'Food', v: f(v('business', 'restaurants'), 'int'), l: 'restaurants, bars and food-service businesses (2022 Economic Census)' },
       { href: 'parks.html', icon: 'tree', color: 4, title: 'Parks & Events', v: f(v('parks_summary', 'parkland_share'), 'pct'), l: 'of the city is parkland, all agencies' },

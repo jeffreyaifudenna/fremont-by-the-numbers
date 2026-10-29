@@ -3,8 +3,12 @@ FBN.page({
   key: 'parks',
   title: 'Parks, Recreation & Events',
   lede: 'Fremont’s parks, open space, weather for being outdoors, and the events that fill the calendar.',
-  uses: ['parks_summary', 'city_parks', 'regional_parks', 'city_rankings', 'climate_normals', 'living_facts', 'events'],
+  uses: ['parks_summary', 'city_parks', 'regional_parks', 'city_rankings', 'climate_normals', 'living_facts', 'events', 'drought_years'],
   sections: function (data, row) {
+    const dr = data('drought_years');
+    const dNow = dr.find(r => r.latest_week) || {};
+    const dFull = dr.filter(r => r.status === 'Full year');
+    const dLast = dFull[dFull.length - 1] || {};
     const s = [];
     const parkscore = row('city_rankings', 'parkscore') || {};
     s.push({
@@ -69,8 +73,17 @@ FBN.page({
     });
     s.push({
       title: 'Weather for the outdoors',
-      sub: 'Thirty-year normals for Fremont: mild, dry summers and wet winters.',
+      sub: 'Thirty-year normals for Fremont: mild, dry summers and wet winters. Plus whether the county is in drought.',
+      cards: [
+        { ds: 'drought_years', id: dNow.year, key: 'year', label: 'Alameda County drought status this week', value: dNow.latest_worst === 'None' ? 'No drought' : dNow.latest_worst, format: 'text', icon: 'water', color: 1, meta: 'Week of ' + dNow.latest_week + ' · U.S. Drought Monitor', note: FBN.fmt(dNow.latest_none_pct, 'pct') + ' of the county is free of drought and abnormal dryness.' },
+        { ds: 'drought_years', id: dLast.year, key: 'year', label: 'Weeks in drought in ' + dLast.year, value: dLast.weeks_d1plus, format: 'int', icon: 'sun', color: 2, meta: dLast.year + ' · U.S. Drought Monitor', note: 'Worst level reached: ' + dLast.worst + '. ' + FBN.fmt(dLast.weeks_d0plus, 'int') + ' weeks were at least abnormally dry.' }
+      ],
       charts: [{
+        ds: 'drought_years', type: 'bar', x: 'year', format: 'int',
+        title: 'Weeks of drought in Alameda County, by year', sub: 'Weeks with any part of the county abnormally dry, and in moderate drought or worse; the last bar is year to date',
+        series: [{ key: 'weeks_d0plus', label: 'Abnormally dry or worse (D0+)', color: 4, status: 'status' }, { key: 'weeks_d1plus', label: 'Moderate drought or worse (D1+)', color: 2, status: 'status' }],
+        source: 'U.S. Drought Monitor county statistics, produced by the National Drought Mitigation Center with USDA, NOAA and NASA. 2021 reached exceptional drought (D4); the latest week is ' + dNow.latest_week + '.'
+      }, {
         ds: 'climate_normals', type: 'line', x: 'month', format: 'int', zero: false,
         title: 'Typical daily high and low temperature (°F)',
         series: [{ key: 'high_f', label: 'Daily high', color: 2 }, { key: 'low_f', label: 'Daily low', color: 1 }],

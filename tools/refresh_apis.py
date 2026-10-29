@@ -16,7 +16,22 @@ Sources, and what each one writes
         Writes data/earthquake_years.json (count by year since 2016) and
         data/earthquake_largest.json (the largest since 2000).
   cms   CMS Provider Data Catalog (Medicare Care Compare).
-        Updates the overall and patient-survey star-rating rows in data/health_access.json.
+        Updates the overall and patient-survey star-rating rows in data/health_access.json and writes
+        data/nursing_homes.json (every nursing home in Fremont with its star ratings, beds and fines).
+  bps   Census Building Permits Survey place files (plain text, public domain).
+        Writes data/building_permits.json (units permitted by building type, each year since 2018, plus the current
+        year to date).
+  fbi   FBI Crime Data Explorer API, Fremont Police Department (ORI CA0010500).
+        Writes data/crime_fbi_monthly.json (violent and property offenses, clearances and rates by month since 2019).
+        Uses api.data.gov's DEMO_KEY (10 requests per ~14 hours; this uses 2) unless a free key is in
+        DATA_GOV_API_KEY or tools/data_gov_key.txt (gitignored).
+  water State Water Resources Control Board, urban retail water supplier monthly reports on data.ca.gov.
+        Writes data/water_monthly.json (Alameda County Water District: supply, residential use per person, by month).
+  hcd   CA HCD Housing Element Annual Progress Report Table A2 on data.ca.gov.
+        Writes data/permits_by_income.json (units given building permits each year, by income level).
+  cdtfa CDTFA sales and use tax rate layer (ArcGIS). Updates the sales_tax row of data/living_facts.json.
+  usdm  U.S. Drought Monitor county statistics, Alameda County.
+        Writes data/drought_years.json (weeks in each drought category per year, and the latest week).
 
   census U.S. Census Bureau American Community Survey API (needs a free key: CENSUS_API_KEY or tools/census_key.txt).
         Refreshes the ACS rows of census_profile, people_more, commute_modes, languages, asian_groups,
@@ -254,7 +269,7 @@ def cms(site):
             r["period"] = "%s discharges" % period_mmddyyyy(s["start_date"], s["end_date"])
             r["note"] = "%s completed surveys, %s%% response rate. Fetched from the CMS data API %s." % (
                 "{:,}".format(int(s["number_of_completed_surveys"])), s["survey_response_rate_percent"], READ)
-    return [("health_access", rows)]
+    return [("health_access", rows), ("nursing_homes", nursing_homes())]
 
 
 def period_mmddyyyy(a, b):
@@ -539,7 +554,268 @@ def describe(old, new):
     return out
 
 
-SOURCES = {"bls": bls, "fred": fred, "ccrs": ccrs, "usgs": usgs, "cms": cms, "census": census}
+# ---------- BPS: building permits (Census Building Permits Survey, place files) ----------
+BPS_DIR = "https://www2.census.gov/econ/bps/Place/West%20Region/"
+
+
+def bps_rows(text):
+    """Parse one place file. Two header lines; the data columns start at the first 'Bldgs' sub-header and run
+    Bldgs,Units,Value for 1-unit, 2-unit, 3-4 unit and 5+ unit buildings (the 'rep' block after that is ignored)."""
+    lines = text.splitlines()
+    sub = next(csv.reader([lines[1]]))
+    start = sub.index("Bldgs")
+    out = []
+    for rec in csv.reader(lines[3:]):
+        if len(rec) < start + 12 or rec[1].strip() != "06" or rec[16].strip() != "Fremont":
+            continue
+        v = [int(x.strip() or 0) for x in rec[start:start + 12]]
+        out.append({"survey": rec[0].strip(), "months": rec[15].strip(), "place_fips": rec[5].strip(),
+                    "b1": v[0], "u1": v[1], "v1": v[2], "b2": v[3], "u2": v[4], "v2": v[5],
+                    "b34": v[6], "u34": v[7], "v34": v[8], "b5": v[9], "u5": v[10], "v5": v[11]})
+    return out
+
+
+def bps(site):
+    rows = []
+    for y in range(2018, TODAY.year):
+        url = BPS_DIR + "we%da.txt" % y
+        try:
+            text = fetch(url)
+        except urllib.error.HTTPError as e:
+            if e.code == 404:
+                continue
+            raise
+        for r in bps_rows(text):
+            rows.append({"year": y, "status": "Full year", "units_1": r["u1"], "units_2": r["u2"], "units_3_4": r["u34"], "units_5plus": r["u5"],
+                         "units_total": r["u1"] + r["u2"] + r["u34"] + r["u5"], "buildings": r["b1"] + r["b2"] + r["b34"] + r["b5"],
+                         "value_usd": r["v1"] + r["v2"] + r["v34"] + r["v5"], "source": "U.S. Census Bureau, Building Permits Survey", "source_url": url})
+    # newest year-to-date file for the current year (we<yy><mm>y.txt); try the latest few months
+    for back in range(0, 6):
+        m = TODAY.month - back
+        if m < 1:
+            break
+        name = "we%02d%02dy.txt" % (TODAY.year % 100, m)
+        try:
+            text = fetch(BPS_DIR + name)
+        except urllib.error.HTTPError as e:
+            if e.code == 404:
+                continue
+            raise
+        for r in bps_rows(text):
+            rows.append({"year": TODAY.year, "status": "Year to date through " + MON[m - 1], "units_1": r["u1"], "units_2": r["u2"], "units_3_4": r["u34"], "units_5plus": r["u5"],
+                         "units_total": r["u1"] + r["u2"] + r["u34"] + r["u5"], "buildings": r["b1"] + r["b2"] + r["b34"] + r["b5"],
+                         "value_usd": r["v1"] + r["v2"] + r["v34"] + r["v5"], "source": "U.S. Census Bureau, Building Permits Survey", "source_url": BPS_DIR + name})
+        break
+    if not rows:
+        raise RuntimeError("BPS: no Fremont rows found.")
+    return [("building_permits", rows)]
+
+
+# ---------- FBI: monthly crime (Crime Data Explorer) ----------
+FBI_ORI = "CA0010500"   # Fremont Police Department
+
+
+def data_gov_key(site):
+    k = os.environ.get("DATA_GOV_API_KEY", "").strip()
+    p = os.path.join(site, "tools", "data_gov_key.txt")
+    if not k and os.path.exists(p):
+        with open(p) as f:
+            k = f.read().strip()
+    return k or "DEMO_KEY"   # DEMO_KEY: 10 requests per ~14 hours; this run uses 2
+
+
+def fbi_series(code, key, to_year):
+    url = "https://api.usa.gov/crime/fbi/cde/summarized/agency/%s/%s?from=01-2019&to=12-%d&API_KEY=%s" % (FBI_ORI, code, to_year, key)
+    try:
+        return fetch_json(url)
+    except urllib.error.HTTPError as e:
+        if e.code == 429:
+            raise RuntimeError("FBI: rate limit hit (DEMO_KEY allows 10 calls per ~14 hours). Put a free api.data.gov key in tools/data_gov_key.txt.")
+        raise
+
+
+def fbi(site):
+    key = data_gov_key(site)
+    out = {}
+    for code, name in (("V", "violent"), ("P", "property")):
+        d = fbi_series(code, key, TODAY.year)
+        act = d["offenses"]["actuals"]
+        rates = d["offenses"]["rates"]
+        pop = d["populations"]["population"]
+        ag_off = next(v for k, v in act.items() if k.endswith("Offenses"))
+        ag_clr = next(v for k, v in act.items() if k.endswith("Clearances"))
+        ag_rate = next(v for k, v in rates.items() if k.endswith("Offenses") and not k.startswith(("California", "United States")))
+        ca_rate = rates.get("California Offenses", {})
+        us_rate = rates.get("United States Offenses", {})
+        ag_pop = next(v for k, v in pop.items() if k not in ("California", "United States"))
+        for mk, v in ag_off.items():
+            ym = mk[3:] + "-" + mk[:2]
+            r = out.setdefault(ym, {"month": ym, "label": month_label(ym)})
+            r[name] = v
+            r[name + "_cleared"] = ag_clr.get(mk)
+            r[name + "_rate"] = round(ag_rate[mk], 1) if ag_rate.get(mk) is not None else None
+            r[name + "_rate_ca"] = round(ca_rate[mk], 1) if ca_rate.get(mk) is not None else None
+            r[name + "_rate_us"] = round(us_rate[mk], 1) if us_rate.get(mk) is not None else None
+            r["population"] = ag_pop.get(mk)
+    rows = [out[k] for k in sorted(out)]
+    # drop trailing months the agency has not reported yet (all counts null); keep interior gaps (2021) so the chart shows them
+    while rows and rows[-1].get("violent") is None and rows[-1].get("property") is None:
+        rows.pop()
+    if not rows:
+        raise RuntimeError("FBI: no months returned.")
+    last = rows[-1]["month"]
+    for r in rows:
+        r["status"] = "Latest month" if r["month"] == last else ("No data" if r.get("violent") is None and r.get("property") is None else "Published")
+    return [("crime_fbi_monthly", rows)]
+
+
+# ---------- Water: ACWD monthly supply and residential use (State Water Board, data.ca.gov) ----------
+WATER_RES = "f4d50112-5fb5-4066-b45c-44696b10a49e"   # "Per-Supplier Water Supply and Demand" CSV, datastore-active
+WATER_SUPPLIER = "Alameda County Water District"
+
+
+def water(site):
+    q = {"resource_id": WATER_RES, "filters": json.dumps({"SUPPLIER_NAME": WATER_SUPPLIER}), "limit": 1000, "sort": "REPORT_PERIOD_START_DATE asc"}
+    res = fetch_json("https://data.ca.gov/api/3/action/datastore_search?" + urllib.parse.urlencode(q))["result"]
+    mgal = lambda v: round(float(v) / 1e6) if str(v or "").strip() not in ("", "0", "0.0") else None   # blank or zero = not reported
+    rows = []
+    for rec in res["records"]:
+        ym = (rec.get("REPORT_PERIOD_START_DATE") or "")[:7]
+        if not ym:
+            continue
+        gp = rec.get("R-GPCD")
+        lvl = str(rec.get("DWR_STANDARD_LEVEL") or "")
+        rows.append({"month": ym, "label": month_label(ym),
+                     "potable_supply_mgal": mgal(rec.get("POTABLE_SUPPLY_GAL")),
+                     "residential_mgal": mgal(rec.get("POTABLE_DEMAND_RES_GAL")),
+                     "residential_gpcd": round(float(gp), 1) if gp not in (None, "") else None,
+                     "population": int(float(rec.get("POP_REPORT_PERIOD") or 0)) or None,
+                     "shortage_level": int(lvl[:1]) if lvl[:1].isdigit() else None})
+    if not rows:
+        raise RuntimeError("Water: no %s rows." % WATER_SUPPLIER)
+    return [("water_monthly", rows)]
+
+
+# ---------- HCD: housing permits by income level (Annual Progress Report Table A2, data.ca.gov) ----------
+HCD_A2 = "fe505d9b-8c36-42ba-ba30-08bc4f34e022"
+HCD_URL = "https://data.ca.gov/dataset/housing-element-annual-progress-report-apr-data-by-jurisdiction-and-year"
+
+
+def hcd(site):
+    rows = []
+    for y in range(2018, TODAY.year + 1):
+        q = {"resource_id": HCD_A2, "filters": json.dumps({"JURIS_NAME": "FREMONT", "YEAR": y}), "limit": 5000}
+        res = fetch_json("https://data.ca.gov/api/3/action/datastore_search?" + urllib.parse.urlencode(q))["result"]
+        recs = res["records"]
+        if not recs:
+            continue
+        n = lambda r, k: int(float(r.get(k) or 0))
+        vl = low = mod = above = dr = adu = projects = 0
+        for r in recs:
+            a = n(r, "BP_ACUTELY_LOW_INCOME_DR") + n(r, "BP_ACUTELY_LOW_INCOME_NDR") + n(r, "BP_EXTREMELY_LOW_INCOME_DR") + n(r, "BP_EXTREMELY_LOW_INCOME_NDR") + n(r, "BP_VLOW_INCOME_DR") + n(r, "BP_VLOW_INCOME_NDR")
+            b = n(r, "BP_LOW_INCOME_DR") + n(r, "BP_LOW_INCOME_NDR")
+            c = n(r, "BP_MOD_INCOME_DR") + n(r, "BP_MOD_INCOME_NDR")
+            d = n(r, "BP_ABOVE_MOD_INCOME")
+            vl += a; low += b; mod += c; above += d
+            dr += n(r, "BP_ACUTELY_LOW_INCOME_DR") + n(r, "BP_EXTREMELY_LOW_INCOME_DR") + n(r, "BP_VLOW_INCOME_DR") + n(r, "BP_LOW_INCOME_DR") + n(r, "BP_MOD_INCOME_DR")
+            if a + b + c + d:
+                projects += 1
+                if (r.get("UNIT_CAT") or "").upper() == "ADU":
+                    adu += a + b + c + d
+        rows.append({"year": y, "very_low": vl, "low": low, "moderate": mod, "above_moderate": above, "total": vl + low + mod + above,
+                     "deed_restricted": dr, "adu_units": adu, "projects": projects, "rows_in_file": len(recs), "source": "CA HCD, Housing Element Annual Progress Report data (Table A2)", "source_url": HCD_URL})
+    if not rows:
+        raise RuntimeError("HCD: no Fremont rows.")
+    return [("permits_by_income", rows)]
+
+
+# ---------- CDTFA: sales tax rate (ArcGIS layer) ----------
+CDTFA_LAYER = "https://services6.arcgis.com/snwvZ3EmaoXJiugR/arcgis/rest/services/California_Sales_and_Use_Tax_Rates/FeatureServer/0/query"
+
+
+def cdtfa(site):
+    q = {"where": "City_name='FREMONT'", "outFields": "RATE,StateRate,CountyRate,CityRate,START_DATE,DateStamp,County_name", "returnGeometry": "false", "f": "json"}
+    feats = fetch_json(CDTFA_LAYER + "?" + urllib.parse.urlencode(q)).get("features") or []
+    if len(feats) != 1:
+        raise RuntimeError("CDTFA: expected one Fremont row, got %d." % len(feats))
+    a = feats[0]["attributes"]
+    day = lambda ms: datetime.datetime.fromtimestamp(ms / 1000, datetime.timezone.utc)   # ArcGIS stores these dates as midnight Pacific = 07:00/08:00 UTC, so the UTC date is right
+    eff = day(a["START_DATE"])
+    stamp = day(a["DateStamp"]) if a.get("DateStamp") else None
+    rows = load(site, "living_facts")
+    r = next((x for x in rows if x.get("id") == "sales_tax"), None)
+    if not r:
+        raise RuntimeError("CDTFA: living_facts has no sales_tax row.")
+    r["value"] = round(a["RATE"] * 100, 2)
+    r["period"] = "Effective " + MON[eff.month - 1] + " " + str(eff.day) + ", " + str(eff.year)
+    r["source"] = "CDTFA sales and use tax rates (data file of " + (MON[stamp.month - 1] + " " + str(stamp.day) + ", " + str(stamp.year) if stamp else READ) + ")"
+    r["note"] = "State %.2f%% + county %.2f%% + city %.2f%%. Fetched from the CDTFA data layer %s." % (a["StateRate"] * 100, a["CountyRate"] * 100, (a.get("CityRate") or 0) * 100, READ)
+    r["source_url"] = "https://data.ca.gov/dataset/cdtfa-salesandusetaxrates"
+    return [("living_facts", rows)]
+
+
+# ---------- USDM: drought weeks, Alameda County ----------
+USDM_FIPS = "06001"
+
+
+def usdm(site):
+    url = "https://usdmdataservices.unl.edu/api/CountyStatistics/GetDroughtSeverityStatisticsByAreaPercent?aoi=%s&startdate=1/1/2019&enddate=%d/%d/%d&statisticsType=1" % (
+        USDM_FIPS, TODAY.month, TODAY.day, TODAY.year)
+    weeks = fetch_json(url, headers={"Accept": "application/json"})
+    if not weeks:
+        raise RuntimeError("USDM: no weeks returned.")
+    cat = lambda w: "D4 exceptional" if w["d4"] > 0 else "D3 extreme" if w["d3"] > 0 else "D2 severe" if w["d2"] > 0 else "D1 moderate" if w["d1"] > 0 else "D0 abnormally dry" if w["d0"] > 0 else "None"
+    order = ["None", "D0 abnormally dry", "D1 moderate", "D2 severe", "D3 extreme", "D4 exceptional"]
+    years = {}
+    for w in weeks:
+        y = int(re.sub(r"\D", "", str(w["mapDate"]))[:4])
+        r = years.setdefault(y, {"year": y, "weeks": 0, "weeks_d0plus": 0, "weeks_d1plus": 0, "weeks_d2plus": 0, "weeks_d3plus": 0, "weeks_d4": 0, "worst": "None"})
+        r["weeks"] += 1
+        r["weeks_d0plus"] += w["d0"] > 0
+        r["weeks_d1plus"] += w["d1"] > 0
+        r["weeks_d2plus"] += w["d2"] > 0
+        r["weeks_d3plus"] += w["d3"] > 0
+        r["weeks_d4"] += w["d4"] > 0
+        if order.index(cat(w)) > order.index(r["worst"]):
+            r["worst"] = cat(w)
+    latest = max(weeks, key=lambda w: str(w["mapDate"]))
+    md = re.sub(r"\D", "", str(latest["mapDate"]))[:8]
+    rows = []
+    for y in sorted(years):
+        r = years[y]
+        r["status"] = ("Year to date through " + MON[int(md[4:6]) - 1] + " " + str(int(md[6:8]))) if y == TODAY.year else "Full year"
+        if y == TODAY.year:
+            r["latest_week"] = MON[int(md[4:6]) - 1] + " " + str(int(md[6:8])) + ", " + md[:4]
+            r["latest_none_pct"] = round(latest["none"], 1)
+            r["latest_d1plus_pct"] = round(latest["d1"], 1)
+            r["latest_worst"] = cat(latest)
+        r["source"] = "U.S. Drought Monitor, Alameda County"
+        r["source_url"] = "https://droughtmonitor.unl.edu/DmData/TimeSeries.aspx?aoi=county&fips=" + USDM_FIPS
+        rows.append(r)
+    return [("drought_years", rows)]
+
+
+# ---------- CMS: nursing homes (Provider Information, Care Compare) ----------
+def nursing_homes():
+    recs = cms_query("4pq5-n9py", citytown="FREMONT", state="CA")
+    nice = lambda s: " ".join(w if w in ("-", "&") else w.capitalize() for w in (s or "").split())
+    num = lambda v: int(float(v)) if str(v or "").strip() not in ("", ".") else None
+    rows = []
+    for h in recs:
+        ccn = h["cms_certification_number_ccn"]
+        rows.append({"id": ccn, "name": nice(h.get("provider_name")), "address": nice(h.get("provider_address")) + ", " + (h.get("zip_code") or "")[:5],
+                     "beds": num(h.get("number_of_certified_beds")), "residents_per_day": round(float(h.get("average_number_of_residents_per_day") or 0), 1) or None,
+                     "overall": num(h.get("overall_rating")), "inspection": num(h.get("health_inspection_rating")), "staffing": num(h.get("staffing_rating")), "quality": num(h.get("qm_rating")),
+                     "ownership": h.get("ownership_type") or "", "chain": nice(h.get("chain_name")) if h.get("chain_name") else "",
+                     "coverage": h.get("provider_type") or "", "fines_usd": round(float(h.get("total_amount_of_fines_in_dollars") or 0)), "fines_n": num(h.get("number_of_fines")) or 0,
+                     "last_inspection": h.get("rating_cycle_1_standard_survey_health_date") or "", "processing_date": h.get("processing_date") or "", "source": "Medicare Care Compare",
+                     "source_url": "https://www.medicare.gov/care-compare/details/nursing-home/%s?state=CA" % ccn})
+    rows.sort(key=lambda r: (-(r["overall"] or 0), r["name"]))
+    return rows
+
+
+SOURCES = {"bls": bls, "fred": fred, "ccrs": ccrs, "usgs": usgs, "cms": cms, "census": census,
+           "bps": bps, "fbi": fbi, "water": water, "hcd": hcd, "cdtfa": cdtfa, "usdm": usdm}
 
 
 def main():
@@ -553,7 +829,7 @@ def main():
     for name in a.only.split(","):
         name = name.strip()
         if name not in SOURCES:
-            sys.exit("Unknown source %r. Choose from %s." % (name, ", ".join(SOURCES)))
+            raise RuntimeError("Unknown source %r. Choose from %s." % (name, ", ".join(SOURCES)))
         print("Fetching %s ..." % name)
         try:
             results.extend(SOURCES[name](a.site))

@@ -3,9 +3,18 @@ FBN.page({
   key: 'rent',
   title: 'Rent & Housing',
   lede: 'What it costs to rent or buy in Fremont, how the market is moving, and what the monthly bills look like once you move in.',
-  uses: ['affordability_assumptions'],
+  uses: ['affordability_assumptions', 'building_permits', 'permits_by_income'],
   sections: function (data, row) {
+    const zLast = (data('zillow_history').slice(-1)[0] || {}).month || '';  // 'YYYY-MM'
+    const zThrough = zLast ? ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'][+zLast.slice(5, 7) - 1] + ' ' + zLast.slice(0, 4) : '';
     const redfin = row('redfin_market', 'Fremont', 'geo') || {};
+    // New homes: the City's own count for its latest report year, next to the Census survey and the state HCD file for the same year
+    const bp = data('building_permits');
+    const bpLast = bp[bp.length - 1] || {};
+    const cityPermits = row('housing_production', 'permits_2025') || {};
+    const cityYear = (cityPermits.period || '').replace('Calendar ', '');
+    const bpCity = bp.find(r => String(r.year) === cityYear) || {};
+    const hcdCity = data('permits_by_income').find(r => String(r.year) === cityYear) || {};
     // Mortgage: latest weekly rate, the same week a year earlier, and a payment estimate on Zillow's typical home value
     const mr = data('mortgage_rate');
     const mLast = mr[mr.length - 1] || {};
@@ -51,12 +60,12 @@ FBN.page({
           ds: 'zillow_history', type: 'line', x: r => { const m = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'][+r.month.slice(5, 7) - 1]; return m + ' ' + r.month.slice(0, 4); }, format: 'usd', zero: false,
           title: 'Typical home value since 2015', sub: 'Zillow Home Value Index, monthly',
           series: [{ key: 'zhvi', label: 'Typical home value' }],
-          source: 'Zillow Research, ZHVI (mid-tier, smoothed, seasonally adjusted), city of Fremont, through Sep 2026.'
+          source: 'Zillow Research, ZHVI (mid-tier, smoothed, seasonally adjusted), city of Fremont, through ' + zThrough + '.'
         }, {
           ds: 'zillow_history', type: 'line', x: r => { const m = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'][+r.month.slice(5, 7) - 1]; return m + ' ' + r.month.slice(0, 4); }, format: 'usd', zero: false,
           title: 'Typical asking rent since 2015', sub: 'Zillow Observed Rent Index, monthly',
           series: [{ key: 'zori', label: 'Typical asking rent', color: 2 }],
-          source: 'Zillow Research, ZORI (smoothed), city of Fremont, through Sep 2026.'
+          source: 'Zillow Research, ZORI (smoothed), city of Fremont, through ' + zThrough + '.'
         }]
       },
       {
@@ -113,14 +122,26 @@ FBN.page({
           { ds: 'housing_production', id: 'adus_2025', label: 'Of which backyard units (ADUs)', format: 'int', icon: 'home', color: 2 },
           { ds: 'housing_production', id: 'rhna_total', label: 'State target for 2023–2031 (RHNA)', format: 'int', icon: 'map', color: 3 },
           { ds: 'housing_production', id: 'rhna_remaining', label: 'Still to permit after 2025', format: 'int', icon: 'clock', color: 4 },
-          { ds: 'housing_production', id: 'affordable_pipeline', label: 'Affordable homes about to start construction', format: 'int', icon: 'users', color: 5 }
+          { ds: 'housing_production', id: 'affordable_pipeline', label: 'Affordable homes about to start construction', format: 'int', icon: 'users', color: 5 },
+          { ds: 'building_permits', id: bpLast.year, key: 'year', label: 'Units permitted in ' + bpLast.year + ' (Census survey)', value: bpLast.units_total, format: 'int', icon: 'building', color: 2, meta: bpLast.status + ' · Census Building Permits Survey', note: FBN.fmt(bpLast.units_5plus, 'int') + ' of them in buildings of five or more units.' }
         ],
         charts: [{
           ds: 'rhna_by_income', type: 'hbar', x: 'category', format: 'int', stacked: true,
           title: 'Progress toward the 2023–2031 housing target, by income level', sub: 'Permitted so far vs still remaining',
           series: [{ key: 'to_date', label: 'Permitted 2023–2025', color: 1 }, { key: 'remaining', label: 'Remaining', color: '--axis' }],
           source: 'City of Fremont 2025 Housing Element Annual Progress Report (Planning Commission staff report, Feb 26, 2026).'
-        }]
+        }, {
+          ds: 'building_permits', type: 'bar', x: 'year', format: 'int', stacked: true,
+          title: 'Housing units permitted, by building type', sub: 'Census Building Permits Survey; the last bar is year to date',
+          series: [{ key: 'units_1', label: 'Single-family', color: 1, status: 'status' }, { key: r => r.units_2 + r.units_3_4, label: '2 to 4 units', color: 4, status: 'status' }, { key: 'units_5plus', label: '5 or more units', color: 2, status: 'status' }],
+          source: 'U.S. Census Bureau, Building Permits Survey, place-level files (Fremont city). Click a bar to open that year’s file.'
+        }, {
+          ds: 'permits_by_income', type: 'bar', x: 'year', format: 'int', stacked: true,
+          title: 'Permits by income level, each year', sub: 'Units given building permits, from the state’s annual progress report file',
+          series: [{ key: 'very_low', label: 'Very low income', color: 1 }, { key: 'low', label: 'Low income', color: 3 }, { key: 'moderate', label: 'Moderate income', color: 4 }, { key: 'above_moderate', label: 'Above moderate', color: 2 }],
+          source: 'California HCD, Housing Element Annual Progress Report data (Table A2, Fremont rows), units with building permits summed by year.'
+        }],
+        notes: [cityYear ? 'Three counts of new homes appear here, and they differ by design. For ' + cityYear + ': the City’s annual progress report counts ' + FBN.fmt(cityPermits.value, 'int') + ' units permitted, including ADUs; the Census survey counts ' + FBN.fmt(bpCity.units_total, 'int') + ' (permits reported to its monthly survey); the state HCD file, built from the City’s report, gives ' + FBN.fmt(hcdCity.total, 'int') + ' and assigns ADUs a third each to the very-low, low and moderate income groups. Use each series for its own trend rather than comparing them to one another.' : '']
       },
       {
         title: 'Utilities and taxes',

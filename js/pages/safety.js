@@ -3,7 +3,7 @@ FBN.page({
   key: 'safety',
   title: 'Crime & Safety',
   lede: 'Reported crime, how Fremont is policed, the fire department’s workload, and traffic safety, with the caveats that come with each dataset.',
-  uses: ['crime_oj', 'crime_clearance', 'police_facts', 'police_staffing', 'hate_crimes', 'fire_summary', 'fire_incidents', 'fire_types', 'traffic_fatal', 'traffic_facts', 'ots_rankings', 'crashes_ccrs', 'earthquake_years', 'earthquake_largest', 'city_rankings', 'dof_population'],
+  uses: ['crime_oj', 'crime_clearance', 'police_facts', 'police_staffing', 'hate_crimes', 'fire_summary', 'fire_incidents', 'fire_types', 'traffic_fatal', 'traffic_facts', 'ots_rankings', 'crashes_ccrs', 'earthquake_years', 'earthquake_largest', 'city_rankings', 'dof_population', 'crime_fbi_monthly'],
   sections: function (data, row) {
     const fre = data('crime_oj').filter(r => r.city === 'Fremont');
     const c24 = fre.find(r => r.year === 2024) || {};
@@ -13,6 +13,23 @@ FBN.page({
     const safest = row('city_rankings', 'safest') || {};
     const clr = data('crime_clearance').filter(r => r.city === 'Fremont');
     const clearRows = clr.map(r => ({ year: r.year, v: Math.round(1000 * r.violent_cleared / r.violent) / 10, p: Math.round(1000 * r.property_cleared / r.property) / 10, status: r.status }));
+    // FBI monthly figures: latest reported month, and yearly sums with clearance shares
+    const fbi = data('crime_fbi_monthly');
+    const fbiLast = fbi.filter(r => r.violent != null).slice(-1)[0] || {};
+    const fbiYears = [];
+    fbi.forEach(r => {
+      if (r.violent == null && r.property == null) return;
+      const y = +r.month.slice(0, 4);
+      let t = fbiYears.find(x => x.year === y);
+      if (!t) { t = { year: y, violent: 0, violent_cleared: 0, property: 0, property_cleared: 0, months: 0 }; fbiYears.push(t); }
+      t.violent += r.violent || 0; t.violent_cleared += r.violent_cleared || 0; t.property += r.property || 0; t.property_cleared += r.property_cleared || 0; t.months++;
+    });
+    fbiYears.forEach(t => {
+      t.label = t.months < 12 ? t.year + ' (' + t.months + ' months)' : String(t.year);
+      t.violent_clr = t.violent ? Math.round(1000 * t.violent_cleared / t.violent) / 10 : null;
+      t.property_clr = t.property ? Math.round(1000 * t.property_cleared / t.property) / 10 : null;
+    });
+    const fbi24 = fbiYears.find(t => t.year === 2024) || {};
     // State crash database (CCRS): the last full year, and Fremont PD's own reports next to the City's fatal-crash count
     const crashes = data('crashes_ccrs');
     const cFull = crashes.filter(r => r.status === 'Full year');
@@ -54,6 +71,33 @@ FBN.page({
           source: 'California DOJ OpenJustice. Larceny (theft) makes up most property crime.'
         }],
         notes: ['!Fremont PD switched to the FBI’s incident-based reporting system (NIBRS) in 2022, which can raise counts and change clearance rates compared with earlier years. Comparisons across that line should be made with care.', 'Totals for the same year can differ between sources: websites that republish FBI-derived data and the police department’s own annual reports count and classify offenses differently. This page uses the state Department of Justice file. Rates per 1,000 residents divide 2024 crimes by the Department of Finance population for Jan 1, 2025 (233,428).']
+      },
+      {
+        title: 'Crime by month, from the FBI',
+        sub: 'What Fremont police reported to the FBI each month: a second source next to the state’s annual file.',
+        cards: [
+          { ds: 'crime_fbi_monthly', id: fbiLast.month, key: 'month', label: 'Violent crimes reported, ' + fbiLast.label, value: fbiLast.violent, format: 'int', icon: 'shield', color: 1, meta: fbiLast.label + ' · FBI Crime Data Explorer', note: fbiLast.violent_cleared != null ? FBN.fmt(fbiLast.violent_cleared, 'int') + ' cleared in the same month.' : '' },
+          { ds: 'crime_fbi_monthly', id: fbiLast.month, key: 'month', label: 'Property crimes reported, ' + fbiLast.label, value: fbiLast.property, format: 'int', icon: 'home', color: 2, meta: fbiLast.label + ' · FBI Crime Data Explorer', note: fbiLast.property_cleared != null ? FBN.fmt(fbiLast.property_cleared, 'int') + ' cleared in the same month.' : '' },
+          { ds: 'crime_fbi_monthly', id: fbiLast.month, key: 'month', label: 'Violent crimes per 100,000 residents, ' + fbiLast.label, value: fbiLast.violent_rate, format: 'dec1', icon: 'users', color: 4, meta: fbiLast.label + ' · FBI rate for the month', note: 'California ' + FBN.fmt(fbiLast.violent_rate_ca, 'dec1') + ', United States ' + FBN.fmt(fbiLast.violent_rate_us, 'dec1') + ' the same month.' }
+        ],
+        charts: [{
+          ds: 'crime_fbi_monthly', type: 'line', x: 'label', format: 'int',
+          title: 'Violent crimes by month', sub: 'Reported to the FBI since 2019; the gap is 2021',
+          series: [{ key: 'violent', label: 'Violent crimes' }],
+          source: 'FBI Crime Data Explorer, Fremont Police Department (agency CA0010500), monthly offense counts.'
+        }, {
+          ds: 'crime_fbi_monthly', type: 'line', x: 'label', format: 'int',
+          title: 'Property crimes by month', sub: 'Reported to the FBI since 2019; the gap is 2021',
+          series: [{ key: 'property', label: 'Property crimes', color: 2 }],
+          source: 'FBI Crime Data Explorer, Fremont Police Department (agency CA0010500), monthly offense counts.'
+        }],
+        tables: [{
+          title: 'FBI totals by year', sub: 'Sum of the monthly figures; a clearance is counted in the month it happens, so the share is approximate', uses: ['crime_fbi_monthly'], phone: [0, 1, 3],
+          rows: () => fbiYears,
+          columns: [{ key: 'label', label: 'Year' }, { key: 'violent', label: 'Violent', format: 'int' }, { key: 'violent_clr', label: 'Violent cleared', format: 'pct1' }, { key: 'property', label: 'Property', format: 'int' }, { key: 'property_clr', label: 'Property cleared', format: 'pct1' }],
+          source: 'FBI Crime Data Explorer, Fremont Police Department. Clearances are by arrest or exceptional means.'
+        }],
+        notes: ['The FBI and California DOJ figures can differ for the same year' + (fbi24.violent && c24.violent ? ' (2024 violent crimes: FBI ' + FBN.fmt(fbi24.violent, 'int') + ', DOJ ' + FBN.fmt(c24.violent, 'int') + ')' : '') + ' because each applies its own counting rules. Fremont PD reported no 2021 data to the FBI while it switched to the NIBRS system. 2025 counts are well below earlier years, and the state file also marks Fremont’s 2025 reporting as incomplete, so treat 2025 as provisional until both sources settle.']
       },
       {
         title: 'Solved cases and hate crimes',

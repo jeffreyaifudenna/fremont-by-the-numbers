@@ -42,8 +42,10 @@
   "label": "Sales tax rate",
   "value": 10.25,
   "format": "pct2",
-  "period": "From Oct 1, 2026",
-  "source": "CDTFA tax rates"
+  "period": "Effective Apr 1, 2022",
+  "source": "CDTFA sales and use tax rates (data file of Oct 1, 2026)",
+  "note": "State 7.25% + county 3.00% + city 0.00%. Fetched from the CDTFA data layer Oct 29, 2026.",
+  "source_url": "https://data.ca.gov/dataset/cdtfa-salesandusetaxrates"
  },
  {
   "id": "prop_tax",

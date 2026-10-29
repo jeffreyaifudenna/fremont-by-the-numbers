@@ -242,8 +242,9 @@
           open = true;
         });
         el('path', { d: path, fill: 'none', stroke: d.color, 'stroke-width': 2.5, 'stroke-linejoin': 'round', 'stroke-linecap': 'round', 'stroke-dasharray': d.dashed ? '6 4' : null }, g);
-        if (n <= 40) d.data.forEach((v, i) => {
-          if (v == null || isNaN(v)) return;
+        // Points on short series; on long ones only the hollow (preliminary/estimate) points, so the flag is still visible.
+        d.data.forEach((v, i) => {
+          if (v == null || isNaN(v) || (n > 40 && !hollow(d, i))) return;
           el('circle', { cx: xs(i), cy: vScale(v), r: hollow(d, i) ? 4.5 : 3.5, fill: hollow(d, i) ? 'var(--surface)' : d.color, stroke: d.color, 'stroke-width': 2 }, g);
         });
       });

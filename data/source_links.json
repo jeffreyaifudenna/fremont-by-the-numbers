@@ -229,37 +229,36 @@
    "url": "https://www.zillow.com/research/data/",
    "name": "Zillow Research: ZHVI and ZORI"
   },
+  "building_permits": {
+   "url": "https://www2.census.gov/econ/bps/Place/West%20Region/",
+   "name": "U.S. Census Bureau: Building Permits Survey, place-level files (West Region)"
+  },
+  "crime_fbi_monthly": {
+   "url": "https://cde.ucr.cjis.gov/LATEST/webapp/#/pages/explorer/crime/crime-trend",
+   "name": "FBI Crime Data Explorer: crime trends by agency (choose Fremont Police Department)"
+  },
+  "water_monthly": {
+   "url": "https://data.ca.gov/dataset/urws-conservation-supply-demand",
+   "name": "California Open Data: urban retail water supplier conservation, supply and demand (State Water Board)"
+  },
+  "permits_by_income": {
+   "url": "https://data.ca.gov/dataset/housing-element-annual-progress-report-apr-data-by-jurisdiction-and-year",
+   "name": "California Open Data: HCD Housing Element Annual Progress Report data by jurisdiction and year"
+  },
+  "drought_years": {
+   "url": "https://droughtmonitor.unl.edu/DmData/TimeSeries.aspx?aoi=county&fips=06001",
+   "name": "U.S. Drought Monitor: Alameda County time series"
+  },
+  "nursing_homes": {
+   "url": "https://data.cms.gov/provider-data/dataset/4pq5-n9py",
+   "name": "CMS Provider Data Catalog: nursing home provider information"
+  },
   "zillow_market": {
    "url": "https://www.zillow.com/fremont-ca/home-values/",
    "name": "Zillow: Fremont home values"
   }
  },
  "sources": [
-  {
-   "match": "EDD county labor force release (Apr 17, 2026)",
-   "url": "https://labormarketinfo.edd.ca.gov/file/lfmonth/2601rmsa.pdf",
-   "name": "CA EDD: labor force data, Jan 2026"
-  },
-  {
-   "match": "EDD county labor force release (May 1, 2026)",
-   "url": "https://labormarketinfo.edd.ca.gov/file/lfmonth/2602rmsa.pdf",
-   "name": "CA EDD: labor force data, Feb 2026"
-  },
-  {
-   "match": "EDD county labor force release (May 22, 2026)",
-   "url": "https://labormarketinfo.edd.ca.gov/file/lfmonth/2603rmsa.pdf",
-   "name": "CA EDD: labor force data, Mar 2026"
-  },
-  {
-   "match": "FRED series CAALAM1URN",
-   "url": "https://fred.stlouisfed.org/series/CAALAM1URN",
-   "name": "FRED: Alameda County unemployment rate"
-  },
-  {
-   "match": "EDD news release (Oct 16, 2026)",
-   "url": "https://edd.ca.gov/en/about_edd/news_releases_and_announcements/unemployment-september-2026/",
-   "name": "CA EDD: September 2026 unemployment release"
-  },
   {
    "match": "NAICS 7225",
    "url": "https://data.census.gov/table/ECNBASIC2022.EC2272BASIC?g=160XX00US0626000",
@@ -337,8 +336,8 @@
   },
   {
    "match": "Adopted Operating Budget",
-   "url": "https://www.fremont.gov/home/showpublisheddocument/18117/638828954844570000",
-   "name": "City of Fremont: FY 2024/25 Adopted Operating Budget"
+   "url": "https://www.fremont.gov/home/showpublisheddocument/21162/639252581230269794",
+   "name": "City of Fremont: FY 2026/27 Adopted Operating Budget"
   },
   {
    "match": "kidsdata.org",
@@ -624,10 +623,6 @@
   "living_facts:hosp_fremont": {
    "url": "https://hcai.ca.gov/facility/fremont-hospital/",
    "name": "HCAI: Fremont Hospital"
-  },
-  "people_more:tesla": {
-   "url": "https://fremont.gov/home/showpublisheddocument/13359/638218280428600000",
-   "name": "City of Fremont: 2023 State of the City address"
   },
   "people_more:jobs_located": {
    "url": "https://data.census.gov/table/CBP2023.CB2300CBP?g=860XX00US94536,94538,94539,94555",

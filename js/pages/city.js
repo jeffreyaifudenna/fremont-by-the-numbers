@@ -3,9 +3,11 @@ FBN.page({
   key: 'city',
   title: 'City of Fremont: Official Data',
   lede: 'Who lives here, how the city is run, and what its own dashboards and reports say.',
-  uses: ['dof_population', 'census_population', 'census_profile', 'people_more', 'languages', 'asian_groups', 'city_facts', 'civic_facts', 'app_summary', 'app_top', 'homeless_pit', 'homeless_monthly', 'climate_kpis', 'ghg_sector', 'ev_zip', 'ev_permits', 'city_rankings', 'pavement', 'traffic_facts', 'highway_aadt', 'living_facts', 'commute_modes', 'bart_history'],
+  uses: ['dof_population', 'census_population', 'census_profile', 'people_more', 'languages', 'asian_groups', 'city_facts', 'civic_facts', 'app_summary', 'app_top', 'homeless_pit', 'homeless_monthly', 'climate_kpis', 'ghg_sector', 'ev_zip', 'ev_permits', 'city_rankings', 'pavement', 'traffic_facts', 'highway_aadt', 'living_facts', 'commute_modes', 'bart_history', 'water_monthly'],
   sections: function (data, row) {
     const pop26 = row('dof_population', '2026-01-01', 'date') || {};
+    const wm = data('water_monthly');
+    const wLast = wm[wm.length - 1] || {};
     const ev = data('ev_zip');
     const evShare = yr => { const rows = ev.filter(r => r.year === yr); const z = rows.reduce((a, r) => a + r.bev + r.phev + r.fcev, 0); const t = rows.reduce((a, r) => a + r.light_total, 0); return t ? 100 * z / t : null; };
     const evRows = [{ year: 'Jan 2020', share: evShare(2020) }, { year: 'Dec 2025', share: evShare(2025) }];
@@ -107,7 +109,8 @@ FBN.page({
           { ds: 'climate_kpis', id: 'trees', label: 'Trees planted in 2025', icon: 'tree', color: 3 },
           { ds: 'climate_kpis', id: 'food', label: 'Pounds of food recovered in 2025', icon: 'leaf', color: 4 },
           { ds: 'living_facts', id: 'solar_accounts', label: 'Solar customer accounts', icon: 'sun', color: 4 },
-          { ds: 'living_facts', id: 'ava_accounts', label: 'Ava Community Energy accounts', icon: 'bolt', color: 1 }
+          { ds: 'living_facts', id: 'ava_accounts', label: 'Ava Community Energy accounts', icon: 'bolt', color: 1 },
+          { ds: 'water_monthly', id: wLast.month, key: 'month', label: 'Residential water use per person per day (gallons), ' + wLast.label, value: wLast.residential_gpcd, format: 'dec1', icon: 'water', color: 2, meta: wLast.label + ' · State Water Board report by ACWD', note: 'Alameda County Water District serves Fremont, Newark and Union City.' }
         ],
         charts: [{
           ds: 'ghg_sector', type: 'bar', x: 'year', format: 'int', stacked: true,
@@ -124,6 +127,11 @@ FBN.page({
           title: 'EV charger permits issued', sub: '2026 is year to date',
           series: [{ key: 'permits', label: 'Permits', status: 'status' }],
           source: 'City of Fremont Climate Action dashboard.'
+        }, {
+          ds: 'water_monthly', type: 'line', x: 'label', format: 'dec1', zero: false,
+          title: 'Residential water use per person per day', sub: 'Gallons, Alameda County Water District, by month since 2014',
+          series: [{ key: 'residential_gpcd', label: 'Gallons per person per day', color: 2 }],
+          source: 'State Water Resources Control Board, urban retail water supplier monthly reports (data.ca.gov), Alameda County Water District, which serves Fremont, Newark and Union City. Summer use runs well above winter use.'
         }]
       },
       {

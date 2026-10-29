@@ -80,6 +80,13 @@
     "homeless_pit":       {"cadence": "biennial",   "typical_release": "Alameda County point-in-time count, every two years (2026 shown)", "method": "dashboard", "next_check": "2028"},
     "startups":           {"cadence": "semiannual", "typical_release": "no schedule; Crunchbase and VCBacked counts drift", "method": "manual", "next_check": "Apr 2027"},
     "startup_rounds":     {"cadence": "semiannual", "typical_release": "no schedule; new funding rounds and IPOs", "method": "manual", "next_check": "Apr 2027"},
+    "building_permits":   {"cadence": "monthly",    "typical_release": "Census Building Permits Survey place files: monthly year-to-date file about the 25th; annual file each May", "method": "api", "next_check": "Nov 28, 2026 (monthly run)", "note": "refresh_apis.py bps. Fremont row of the West Region we<yy><mm>y.txt and we<yyyy>a.txt files."},
+    "crime_fbi_monthly":  {"cadence": "monthly",    "typical_release": "FBI Crime Data Explorer, refreshed about mid-month", "method": "api", "next_check": "Nov 28, 2026 (monthly run)", "note": "refresh_apis.py fbi. DEMO_KEY allows 10 calls per ~14 hours (the run uses 2); a free api.data.gov key in tools/data_gov_key.txt removes the limit."},
+    "water_monthly":      {"cadence": "monthly",    "typical_release": "State Water Board urban water supplier reports on data.ca.gov, about two months after the report month", "method": "api", "next_check": "Nov 28, 2026 (monthly run)", "note": "refresh_apis.py water. Supplier: Alameda County Water District."},
+    "permits_by_income":  {"cadence": "annual",     "typical_release": "HCD APR data on data.ca.gov; jurisdictions file by Apr 1, HCD reloads the tables through the year", "method": "api", "next_check": "Nov 28, 2026 (monthly run; cheap, so it runs every month)", "note": "refresh_apis.py hcd. Table A2, JURIS_NAME FREMONT (upper case, exact)."},
+    "drought_years":      {"cadence": "monthly",    "typical_release": "U.S. Drought Monitor, every Thursday for the Tuesday map", "method": "api", "next_check": "Nov 28, 2026 (monthly run)", "note": "refresh_apis.py usdm. Alameda County, FIPS 06001."},
+    "nursing_homes":      {"cadence": "monthly",    "typical_release": "CMS Provider Information, monthly", "method": "api", "next_check": "Nov 28, 2026 (monthly run)", "note": "refresh_apis.py cms (same module as the hospital stars)."},
+    "affordability_assumptions": {"cadence": "static", "typical_release": "set by the site", "method": "manual", "next_check": "when the mortgage estimate method changes"},
     "source_list":        {"cadence": "annual",     "typical_release": "regenerate whenever a source changes", "method": "manual", "next_check": "with each data refresh"}
   }
 }

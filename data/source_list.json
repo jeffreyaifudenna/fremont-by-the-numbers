@@ -84,34 +84,6 @@
   "supports": "ZIP 94555 sales"
  },
  {
-  "n": 14,
-  "publisher": "CA Employment Development Dept.",
-  "title": "Labor force data, January 2026 (revised)",
-  "url": "https://labormarketinfo.edd.ca.gov/file/lfmonth/2601rmsa.pdf",
-  "supports": "County unemployment, Jan 2026"
- },
- {
-  "n": 15,
-  "publisher": "CA Employment Development Dept.",
-  "title": "Labor force data, February 2026 (revised)",
-  "url": "https://labormarketinfo.edd.ca.gov/file/lfmonth/2602rmsa.pdf",
-  "supports": "County unemployment, Feb 2026"
- },
- {
-  "n": 16,
-  "publisher": "CA Employment Development Dept.",
-  "title": "Labor force data, March 2026 (revised)",
-  "url": "https://labormarketinfo.edd.ca.gov/file/lfmonth/2603rmsa.pdf",
-  "supports": "County unemployment, Mar 2026"
- },
- {
-  "n": 17,
-  "publisher": "CA Employment Development Dept.",
-  "title": "September 2026 unemployment release",
-  "url": "https://edd.ca.gov/en/about_edd/news_releases_and_announcements/unemployment-september-2026/",
-  "supports": "County unemployment, Sep 2026 (preliminary)"
- },
- {
   "n": 18,
   "publisher": "CA Employment Development Dept.",
   "title": "Labor force data for cities and census places",
@@ -152,27 +124,6 @@
   "title": "Fremont Unified district profile",
   "url": "https://www.ed-data.org/district/alameda/fremont-unified",
   "supports": "School enrollment, 2025–26"
- },
- {
-  "n": 27,
-  "publisher": "U.S. Census Bureau",
-  "title": "2025 ACS data release schedule",
-  "url": "https://www.census.gov/programs-surveys/acs/news/data-releases/2025/release.html",
-  "supports": "Release calendar: ACS 1-year"
- },
- {
-  "n": 28,
-  "publisher": "U.S. Census Bureau",
-  "title": "Survey of Construction release schedule",
-  "url": "https://www.census.gov/construction/soc/schedule.html",
-  "supports": "Release calendar: revised building permits"
- },
- {
-  "n": 29,
-  "publisher": "CA Dept. of Housing and Community Development",
-  "title": "Housing element annual progress reports",
-  "url": "https://hcd.ca.gov/planning-and-community-development/annual-progress-reports",
-  "supports": "Release calendar: April 1 filing deadline"
  },
  {
   "n": 30,
@@ -772,7 +723,7 @@
  {
   "n": 118,
   "publisher": "City of Fremont",
-  "title": "FY 2025/26 Proposed Budget; FY 2024/25 Adopted Operating Budget",
+  "title": "FY 2025/26 Proposed Budget",
   "url": "https://www.fremont.gov/home/showpublisheddocument/18117/638828954844570000",
   "supports": "City employees (FTE) and credit rating"
  },
@@ -859,5 +810,54 @@
   "title": "AirData pre-generated data files: annual AQI by county",
   "url": "https://aqs.epa.gov/aqsweb/airdata/download_files.html",
   "supports": "Air-quality days, median and maximum AQI for Alameda and Santa Clara counties"
+ },
+ {
+  "n": 131,
+  "publisher": "U.S. Census Bureau",
+  "title": "Building Permits Survey, place-level files (West Region)",
+  "url": "https://www2.census.gov/econ/bps/Place/West%20Region/",
+  "supports": "Housing units permitted by building type, each year"
+ },
+ {
+  "n": 132,
+  "publisher": "FBI",
+  "title": "Crime Data Explorer, Fremont Police Department (API agency CA0010500)",
+  "url": "https://cde.ucr.cjis.gov/LATEST/webapp/#/pages/explorer/crime/crime-trend",
+  "supports": "Violent and property crimes, clearances and rates by month"
+ },
+ {
+  "n": 133,
+  "publisher": "CA State Water Resources Control Board",
+  "title": "Urban retail water supplier conservation, supply and demand (data.ca.gov)",
+  "url": "https://data.ca.gov/dataset/urws-conservation-supply-demand",
+  "supports": "Alameda County Water District supply and residential use per person, by month"
+ },
+ {
+  "n": 134,
+  "publisher": "CA Dept. of Housing and Community Development",
+  "title": "Housing Element Annual Progress Report data by jurisdiction and year (data.ca.gov)",
+  "url": "https://data.ca.gov/dataset/housing-element-annual-progress-report-apr-data-by-jurisdiction-and-year",
+  "supports": "Units permitted by income level, each year"
+ },
+ {
+  "n": 135,
+  "publisher": "CDTFA",
+  "title": "Sales and use tax rates by jurisdiction (data.ca.gov)",
+  "url": "https://data.ca.gov/dataset/cdtfa-salesandusetaxrates",
+  "supports": "Sales tax rate and its effective date"
+ },
+ {
+  "n": 136,
+  "publisher": "National Drought Mitigation Center",
+  "title": "U.S. Drought Monitor, Alameda County time series",
+  "url": "https://droughtmonitor.unl.edu/DmData/TimeSeries.aspx?aoi=county&fips=06001",
+  "supports": "Weeks in drought by year and the current week"
+ },
+ {
+  "n": 137,
+  "publisher": "Centers for Medicare & Medicaid Services",
+  "title": "Nursing home provider information (Care Compare)",
+  "url": "https://data.cms.gov/provider-data/dataset/4pq5-n9py",
+  "supports": "Nursing homes, beds, star ratings and fines"
  }
 ]

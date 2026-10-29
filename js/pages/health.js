@@ -3,9 +3,14 @@ FBN.page({
   key: 'health',
   title: 'Health Care',
   lede: 'Fremont’s two hospitals and how they rate, who is covered and how, how many doctors there are, and how healthy residents report being.',
-  uses: ['living_facts', 'census_profile', 'health_places', 'health_access', 'leapfrog_grades', 'air_quality', 'city_rankings'],
+  uses: ['living_facts', 'census_profile', 'health_places', 'health_access', 'leapfrog_grades', 'air_quality', 'city_rankings', 'nursing_homes'],
   sections: function (data, row) {
     const healthiest = row('city_rankings', 'healthiest') || {};
+    const nh = data('nursing_homes');
+    const nhBeds = nh.reduce((a, r) => a + (r.beds || 0), 0);
+    const nhRes = Math.round(nh.reduce((a, r) => a + (r.residents_per_day || 0), 0));
+    const nhDate = nh[0] && nh[0].processing_date ? new Date(nh[0].processing_date + 'T12:00:00').toLocaleDateString('en-US', { month: 'short', year: 'numeric' }) : '';
+    const nhUrl = 'https://data.cms.gov/provider-data/dataset/4pq5-n9py', nhUrlName = 'CMS: nursing home provider information';
     const grades = data('leapfrog_grades');
     const cycles = []; grades.forEach(g => { if (!cycles.includes(g.cycle)) cycles.push(g.cycle); });
     const hospitals = []; grades.forEach(g => { if (!hospitals.includes(g.hospital)) hospitals.push(g.hospital); });
@@ -59,6 +64,20 @@ FBN.page({
           { ds: 'health_access', id: 'bach_fremont_sites', label: 'Bay Area Community Health clinic sites in Fremont', icon: 'plus', color: 4, note: 'The community health center formerly called Tri-City Health Center.' }
         ],
         facts: [{ ds: 'health_access', title: 'Clinics and urgent care', group: 'Clinics' }],
+      },
+      {
+        title: 'Nursing homes',
+        sub: 'Every Medicare- or Medicaid-certified nursing home in Fremont, with its Care Compare star ratings.',
+        cards: [
+          { ds: 'nursing_homes', url: nhUrl, urlName: nhUrlName, label: 'Certified nursing homes in Fremont', value: nh.length, format: 'int', icon: 'bed', color: 1, meta: 'CMS data of ' + nhDate + ' · Medicare Care Compare' },
+          { ds: 'nursing_homes', url: nhUrl, urlName: nhUrlName, label: 'Certified beds', value: nhBeds, format: 'int', icon: 'bed', color: 2, meta: 'CMS data of ' + nhDate + ' · Medicare Care Compare', note: FBN.fmt(nhRes, 'int') + ' residents on an average day.' },
+          { ds: 'nursing_homes', url: nhUrl, urlName: nhUrlName, label: 'Rated 4 or 5 stars overall', value: nh.filter(r => r.overall >= 4).length, format: 'int', icon: 'star', color: 4, meta: 'CMS data of ' + nhDate + ' · Medicare Care Compare', note: 'Of ' + nh.length + '. Ratings run from 1 to 5; 5 is best.' }
+        ],
+        tables: [{
+          ds: 'nursing_homes', title: 'Nursing homes and their ratings', sub: 'Stars out of 5; each row opens the facility’s Care Compare page', phone: [0, 2, 6],
+          columns: [{ key: 'name', label: 'Facility' }, { key: 'beds', label: 'Beds', format: 'int' }, { key: 'overall', label: 'Overall', format: 'int' }, { key: 'inspection', label: 'Inspections', format: 'int' }, { key: 'staffing', label: 'Staffing', format: 'int' }, { key: 'quality', label: 'Quality', format: 'int' }, { key: 'fines_usd', label: 'Fines', format: 'usd' }],
+          source: 'Medicare Care Compare, Provider Information dataset (data.cms.gov). Fines are the total CMS lists for the facility. The two Crestwood facilities accept Medicaid only.'
+        }]
       },
       {
         title: 'How healthy are Fremont adults?',
