@@ -1,3 +1,5 @@
 tools/
 CLAUDE.md
 .vercelignore
+package.json
+package-lock.json
