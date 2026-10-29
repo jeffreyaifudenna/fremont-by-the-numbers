@@ -2,7 +2,7 @@
 
 > FremontCaByTheNumbers.com is a data aggregator built using Claude, Anthropic's AI model. It gathers public figures about Fremont, California (housing, schools, safety, jobs and more) from the agencies and companies that publish them, and shows every figure with its source and date. The site is Fremont-only and runs no surveys of its own. Built by JeffreyAiFudenna.
 
-How to read it: every page is plain HTML with the figures also written out as text and tables. Each figure links to its original source. Treat the source link as the authority; Claude can misread a source. Data was last checked 2026-10-26.
+How to read it: every page is plain HTML with the figures also written out as text and tables. Each figure links to its original source. Treat the source link as the authority; Claude can misread a source. Data was last checked 2026-10-28.
 
 ## Pages
 
@@ -26,6 +26,7 @@ How to read it: every page is plain HTML with the figures also written out as te
 
 Each dataset is one JSON file in /data. Rows carry an id, label, value, period (what the figure covers), source and source_url. data/_catalog.json describes every dataset; data/source_links.json maps datasets to source pages.
 
+- [Mortgage estimate assumptions](data/affordability_assumptions.json): The assumptions behind the site's monthly-payment estimate on the Rent & Housing page: 20% down, 30-year fixed loan at the latest weekly national rate, 1% base property tax. Set by the site, not taken from a source.
 - [FremontApp requests summary](data/app_summary.json): Service requests created, closed and open and average days to close for Jul 1–Sep 30, 2026 (the dashboard's default range), from the city's FremontApp dashboard.
 - [Top FremontApp requests](data/app_top.json): Ten most common FremontApp request types, Jul 1–Sep 30, 2026, from the city's FremontApp dashboard.
 - [Asian communities](data/asian_groups.json): Share of Fremont residents by Asian group (alone), ACS 2020–2024 table DP05. Read Oct 24, 2026.
@@ -40,9 +41,12 @@ Each dataset is one JSON file in /data. Rows carry an id, label, value, period (
 - [Climate indicators](data/climate_kpis.json): EVs registered, trees planted and pounds of food recovered in 2025, from the city's Climate Action dashboard.
 - [Weather by month](data/climate_normals.json): NOAA 1991–2020 climate normals for the Fremont station: average high, low and rainfall by month. Read Oct 24, 2026.
 - [How Fremont gets to work](data/commute_modes.json): Census ACS 2020–2024 table DP03: workers 16+ by way of getting to work. Read Oct 24, 2026.
+- [Crash reports (state database)](data/crashes_ccrs.json): Crash reports for crashes inside Fremont city limits by year since 2016, from the California Highway Patrol's California Crash Reporting System (CCRS) on data.ca.gov: all reports, injury and fatal crashes, people killed and injured, and the share filed by Fremont PD (the rest are CHP freeway reports). Fetched by tools/refresh_apis.py.
 - [Crime clearances](data/crime_clearance.json): Violent and property crimes reported and cleared: Fremont 2015–2025 and California 2020–2025. California DOJ Crimes and Clearances (July 2026 release). Read Oct 24, 2026.
 - [Reported crime by city](data/crime_oj.json): Violent and property crimes by type and year, 2015–2025, for Fremont. California DOJ OpenJustice, Crimes and Clearances file (published July 2026). 2025 is incomplete for Fremont.
 - [DOF population estimates](data/dof_population.json): California Department of Finance E-1 estimates for Fremont, Jan 1 2025 (revised) and Jan 1 2026 (provisional). Checked Oct 24, 2026 against DOF's own E-1 2026 press release (May 1, 2026).
+- [Largest earthquakes near Fremont](data/earthquake_largest.json): The ten largest earthquakes within 50 km of Fremont City Hall since 2000, from the USGS earthquake catalog API. Fetched by tools/refresh_apis.py.
+- [Earthquakes near Fremont, by year](data/earthquake_years.json): Earthquakes of magnitude 2.5 or more within 50 km of Fremont City Hall, counted by year since 2016, from the USGS earthquake catalog API. Fetched by tools/refresh_apis.py.
 - [Largest employers](data/employers.json): Fremont's largest employers (12 with ties) from the City's FY2025 Annual Comprehensive Financial Report, Schedule 15: Principal Employers, p. 202. Read Oct 26, 2026.
 - [EV charger permits](data/ev_permits.json): Electric vehicle charger permits issued in Fremont per year, 2021–2026 (2026 year to date), from the city's Climate Action dashboard.
 - [Vehicles by fuel and ZIP](data/ev_zip.json): Light-duty registrations by fuel type for Fremont ZIPs 94536, 94538, 94539, 94555, as of Jan 1, 2020 and Dec 31, 2025. California DMV via data.ca.gov. Read Oct 24, 2026.
@@ -66,6 +70,7 @@ Each dataset is one JSON file in /data. Rows carry an id, label, value, period (
 - [Languages at home](data/languages.json): Language spoken at home, residents 5 and older, ACS 2020–2024 table C16001. Read Oct 24, 2026.
 - [Leapfrog safety grades](data/leapfrog_grades.json): Leapfrog Hospital Safety Grades for Washington Hospital and Kaiser Fremont, Spring 2023 to Spring 2026. Read Oct 24, 2026.
 - [Costs, transit and services](data/living_facts.json): Utility bills, tax rates, transit ridership, hospitals, voters, energy and hazards, each from the agency named in its row. Read Oct 24, 2026.
+- [30-year mortgage rate](data/mortgage_rate.json): Weekly U.S. average 30-year fixed mortgage rate over the past two years, from Freddie Mac's Primary Mortgage Market Survey as published on FRED (series MORTGAGE30US). A national figure, not a Fremont one. Fetched by tools/refresh_apis.py.
 - [OTS crash rankings](data/ots_rankings.json): California Office of Traffic Safety 2023 crash rankings for Fremont among 62 cities of 100,001–250,000 people (1 = worst). Read Oct 24, 2026.
 - [Parks and facilities](data/parks_summary.json): City park counts and acreage, Trust for Public Land ParkScore, libraries and community centers. Read Oct 24, 2026.
 - [Pavement condition](data/pavement.json): MTC Pavement Condition Index (three-year moving average) 2022–2024 for Fremont and the Bay Area, Jan 2026 update. Read Oct 24, 2026.
@@ -86,6 +91,7 @@ Each dataset is one JSON file in /data. Rows carry an id, label, value, period (
 - [Startup ecosystem](data/startups.json): Company counts from Crunchbase and VCBacked.co (crowdsourced directories), unicorns and IPOs, the City of Fremont's own claims on tech and manufacturing firms, patent holders, Warm Springs Innovation District and rankings. Read Oct 24, 2026.
 - [Streets and traffic facts](data/traffic_facts.json): Street network facts from the City of Fremont, Fremont PD and MTC, fatal-crash victim shares, and the 2025 Community Survey traffic results. Each row names its source. Read Oct 24, 2026.
 - [Fatal crashes by year](data/traffic_fatal.json): Fatal crashes on Fremont city streets, 2014–2025, plus crashes the city lists separately as others. City of Fremont Safety Data and Trends. Read Oct 24, 2026.
+- [Unemployment by month](data/unemployment_monthly.json): Monthly unemployment rate for Fremont city, Alameda County and California since Jan 2019 (not seasonally adjusted), plus Fremont's labor force and number unemployed, from the U.S. Bureau of Labor Statistics Local Area Unemployment Statistics data API. Fetched by tools/refresh_apis.py.
 - [Gas and internet](data/utilities.json): PG&E residential gas rate and average bill, Ava vs PG&E rate difference, internet providers, coverage and advertised prices for Fremont. Read Oct 24, 2026.
 - [Commercial vacancy](data/vacancy.json): Office, R&D and industrial vacancy for the Fremont submarkets, Kidder Mathews 3Q 2026 reports. Read Oct 24, 2026.
 - [Zillow history](data/zillow_history.json): Monthly Zillow Home Value Index and Observed Rent Index for Fremont city, Jan 2015 to Sep 2026, from Zillow Research city-level files. Read Oct 24, 2026.

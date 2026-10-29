@@ -3,8 +3,15 @@ FBN.page({
   key: 'jobs',
   title: 'Jobs',
   lede: 'What Fremont residents earn, who employs people here, which industries dominate, and how the job market is moving.',
-  uses: ['census_profile', 'people_more', 'resident_industries', 'commute_modes', 'vacancy', 'business', 'jobs_more', 'employers'],
+  uses: ['census_profile', 'people_more', 'resident_industries', 'commute_modes', 'vacancy', 'business', 'jobs_more', 'unemployment_monthly', 'employers'],
   sections: function (data, row) {
+    // Written from the data, so it stays true after each BLS refresh
+    const um = data('unemployment_monthly').filter(r => r.fremont !== null && r.fremont !== undefined);
+    const peak = um.reduce((a, r) => (!a || r.fremont > a.fremont ? r : a), null);
+    const vsCounty = um.every(r => r.fremont <= r.alameda) ? 'at or below Alameda County’s' : null;
+    const vsState = um.every(r => r.fremont < r.california) ? 'below California’s' : null;
+    const cmp = [vsCounty, vsState].filter(Boolean);
+    const unempNote = um.length ? (cmp.length ? 'In every month shown, Fremont’s rate was ' + cmp.join(' and ') + '. ' : '') + 'Its highest was ' + FBN.fmt(peak.fremont, 'pct1') + ' in ' + peak.label + ' (Alameda County ' + FBN.fmt(peak.alameda, 'pct1') + ', California ' + FBN.fmt(peak.california, 'pct1') + ').' : '';
     return [
       {
         title: 'Headline numbers',
@@ -16,6 +23,17 @@ FBN.page({
           { ds: 'census_profile', id: 'lfpr', label: 'Adults in the labor force', icon: 'users', color: 4 },
           { ds: 'people_more', id: 'inc_200k', label: 'Households earning $200,000 or more', icon: 'trend', color: 5 }
         ]
+      },
+      {
+        title: 'Unemployment by month',
+        charts: [{
+          ds: 'unemployment_monthly', type: 'line', x: 'label', format: 'pct1',
+          title: 'Unemployment rate since 2019', sub: 'Fremont, Alameda County and California, not seasonally adjusted. Hollow point: preliminary',
+          series: [{ key: 'fremont', label: 'Fremont', status: 'status' }, { key: 'alameda', label: 'Alameda County', color: 3, status: 'status' }, { key: 'california', label: 'California', color: 4, dashed: true, status: 'status' }],
+          links: [FBN.linkFor('unemployment_monthly', null), { url: 'https://data.bls.gov/timeseries/LAUCN060010000000003', name: 'BLS: Alameda County' }, { url: 'https://data.bls.gov/timeseries/LAUST060000000000003', name: 'BLS: California' }],
+          source: 'U.S. Bureau of Labor Statistics, Local Area Unemployment Statistics (data API). The gap is October 2025, which BLS never published because of the federal government shutdown. The latest month is preliminary and is revised a month later.'
+        }],
+        notes: unempNote ? [unempNote] : []
       },
       {
         title: 'Jobs in Fremont vs jobs held by residents',

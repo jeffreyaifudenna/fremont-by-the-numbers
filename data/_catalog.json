@@ -312,11 +312,41 @@
  "jobs_more": {
   "title": "Unemployment, wages and jobs",
   "description": "Fremont city unemployment rate (BLS LAUS), jobs located in Fremont vs employed residents (Housing Element/LEHD), city minimum wage, median earnings (ACS 2024), WARN layoffs (EDD), commute shares. Read Oct 24, 2026; unemployment, WARN, minimum wage and Tesla rows re-checked Oct 26, 2026.",
-  "updated": "2026-10-26T18:00:00Z"
+  "updated": "2026-10-28T12:00:00Z"
  },
  "employers": {
   "title": "Largest employers",
   "description": "Fremont's largest employers (12 with ties) from the City's FY2025 Annual Comprehensive Financial Report, Schedule 15: Principal Employers, p. 202. Read Oct 26, 2026.",
   "updated": "2026-10-26T18:00:00Z"
+ },
+ "unemployment_monthly": {
+  "title": "Unemployment by month",
+  "description": "Monthly unemployment rate for Fremont city, Alameda County and California since Jan 2019 (not seasonally adjusted), plus Fremont's labor force and number unemployed, from the U.S. Bureau of Labor Statistics Local Area Unemployment Statistics data API. Fetched by tools/refresh_apis.py.",
+  "updated": "2026-10-28T12:00:00Z"
+ },
+ "mortgage_rate": {
+  "title": "30-year mortgage rate",
+  "description": "Weekly U.S. average 30-year fixed mortgage rate over the past two years, from Freddie Mac's Primary Mortgage Market Survey as published on FRED (series MORTGAGE30US). A national figure, not a Fremont one. Fetched by tools/refresh_apis.py.",
+  "updated": "2026-10-28T12:00:00Z"
+ },
+ "crashes_ccrs": {
+  "title": "Crash reports (state database)",
+  "description": "Crash reports for crashes inside Fremont city limits by year since 2016, from the California Highway Patrol's California Crash Reporting System (CCRS) on data.ca.gov: all reports, injury and fatal crashes, people killed and injured, and the share filed by Fremont PD (the rest are CHP freeway reports). Fetched by tools/refresh_apis.py.",
+  "updated": "2026-10-28T12:00:00Z"
+ },
+ "earthquake_years": {
+  "title": "Earthquakes near Fremont, by year",
+  "description": "Earthquakes of magnitude 2.5 or more within 50 km of Fremont City Hall, counted by year since 2016, from the USGS earthquake catalog API. Fetched by tools/refresh_apis.py.",
+  "updated": "2026-10-28T12:00:00Z"
+ },
+ "earthquake_largest": {
+  "title": "Largest earthquakes near Fremont",
+  "description": "The ten largest earthquakes within 50 km of Fremont City Hall since 2000, from the USGS earthquake catalog API. Fetched by tools/refresh_apis.py.",
+  "updated": "2026-10-28T12:00:00Z"
+ },
+ "affordability_assumptions": {
+  "title": "Mortgage estimate assumptions",
+  "description": "The assumptions behind the site's monthly-payment estimate on the Rent & Housing page: 20% down, 30-year fixed loan at the latest weekly national rate, 1% base property tax. Set by the site, not taken from a source.",
+  "updated": "2026-10-28T12:00:00Z"
  }
 }

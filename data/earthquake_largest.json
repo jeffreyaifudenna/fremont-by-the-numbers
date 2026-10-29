@@ -1,0 +1,12 @@
+[
+  {"date": "2007-10-30", "label": "Oct 30, 2007", "mag": 5.5, "place": "6 km NNE of East Foothills, California", "km": 23, "source_url": "https://earthquake.usgs.gov/earthquakes/eventpage/nc40204628"},
+  {"date": "2022-10-25", "label": "Oct 25, 2022", "mag": 5.1, "place": "15km ESE of Alum Rock, CA", "km": 38, "source_url": "https://earthquake.usgs.gov/earthquakes/eventpage/nc73799091"},
+  {"date": "2026-04-02", "label": "Apr 2, 2026", "mag": 4.6, "place": "1 km SE of Boulder Creek, CA", "km": 49, "source_url": "https://earthquake.usgs.gov/earthquakes/eventpage/nc75337442"},
+  {"date": "2019-10-14", "label": "Oct 14, 2019", "mag": 4.5, "place": "1km SSE of Pleasant Hill, CA", "km": 44, "source_url": "https://earthquake.usgs.gov/earthquakes/eventpage/nc73291880"},
+  {"date": "2001-02-25", "label": "Feb 25, 2001", "mag": 4.4, "place": "11 km ESE of East Foothills, California", "km": 35, "source_url": "https://earthquake.usgs.gov/earthquakes/eventpage/nc21149422"},
+  {"date": "2018-01-04", "label": "Jan 4, 2018", "mag": 4.4, "place": "2km SE of Berkeley, CA", "km": 41, "source_url": "https://earthquake.usgs.gov/earthquakes/eventpage/nc72948801"},
+  {"date": "2019-07-16", "label": "Jul 16, 2019", "mag": 4.3, "place": "12km WSW of Byron, CA", "km": 36, "source_url": "https://earthquake.usgs.gov/earthquakes/eventpage/nc73225421"},
+  {"date": "2009-03-30", "label": "Mar 30, 2009", "mag": 4.3, "place": "17 km NNE of Morgan Hill, California", "km": 44, "source_url": "https://earthquake.usgs.gov/earthquakes/eventpage/nc40234037"},
+  {"date": "2025-09-22", "label": "Sep 22, 2025", "mag": 4.3, "place": "2 km ESE of Berkeley, CA", "km": 42, "source_url": "https://earthquake.usgs.gov/earthquakes/eventpage/nc75240492"},
+  {"date": "2007-03-01", "label": "Mar 1, 2007", "mag": 4.2, "place": "1 km NNE of Lafayette, California", "km": 40, "source_url": "https://earthquake.usgs.gov/earthquakes/eventpage/nc40194055"}
+]

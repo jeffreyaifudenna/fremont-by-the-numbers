@@ -817,5 +817,40 @@
   "title": "2026 minimum wage announcement",
   "url": "https://www.dir.ca.gov/DIRNews/2025/2025-118.html",
   "supports": "State minimum wage, 2026"
+ },
+ {
+  "n": 125,
+  "publisher": "U.S. Bureau of Labor Statistics",
+  "title": "Local Area Unemployment Statistics: Alameda County",
+  "url": "https://data.bls.gov/timeseries/LAUCN060010000000003",
+  "supports": "Alameda County unemployment rate by month"
+ },
+ {
+  "n": 126,
+  "publisher": "U.S. Bureau of Labor Statistics",
+  "title": "Local Area Unemployment Statistics: California",
+  "url": "https://data.bls.gov/timeseries/LAUST060000000000003",
+  "supports": "California unemployment rate by month (not seasonally adjusted)"
+ },
+ {
+  "n": 127,
+  "publisher": "Federal Reserve Bank of St. Louis (FRED)",
+  "title": "30-Year Fixed Rate Mortgage Average (Freddie Mac PMMS)",
+  "url": "https://fred.stlouisfed.org/series/MORTGAGE30US",
+  "supports": "Weekly 30-year mortgage rate"
+ },
+ {
+  "n": 128,
+  "publisher": "California Highway Patrol (California Open Data)",
+  "title": "California Crash Reporting System (CCRS)",
+  "url": "https://data.ca.gov/dataset/ccrs",
+  "supports": "Crash reports, injuries and deaths inside Fremont by year"
+ },
+ {
+  "n": 129,
+  "publisher": "U.S. Geological Survey",
+  "title": "Earthquake catalog search",
+  "url": "https://earthquake.usgs.gov/earthquakes/search/",
+  "supports": "Earthquakes within 50 km of Fremont"
  }
 ]

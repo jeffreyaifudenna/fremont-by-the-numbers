@@ -1,0 +1,13 @@
+[
+  {"year": 2016, "reports": 2109, "injury_crashes": 816, "fatal_crashes": 7, "killed": 7, "injured": 1124, "fpd_reports": 588, "fpd_fatal": 4, "status": "Full year"},
+  {"year": 2017, "reports": 2436, "injury_crashes": 1121, "fatal_crashes": 17, "killed": 17, "injured": 1464, "fpd_reports": 929, "fpd_fatal": 12, "status": "Full year"},
+  {"year": 2018, "reports": 2414, "injury_crashes": 1052, "fatal_crashes": 9, "killed": 11, "injured": 1450, "fpd_reports": 803, "fpd_fatal": 4, "status": "Full year"},
+  {"year": 2019, "reports": 2317, "injury_crashes": 1001, "fatal_crashes": 9, "killed": 9, "injured": 1381, "fpd_reports": 764, "fpd_fatal": 7, "status": "Full year"},
+  {"year": 2020, "reports": 1405, "injury_crashes": 635, "fatal_crashes": 7, "killed": 7, "injured": 875, "fpd_reports": 515, "fpd_fatal": 3, "status": "Full year"},
+  {"year": 2021, "reports": 1734, "injury_crashes": 768, "fatal_crashes": 18, "killed": 18, "injured": 1084, "fpd_reports": 606, "fpd_fatal": 10, "status": "Full year"},
+  {"year": 2022, "reports": 1901, "injury_crashes": 821, "fatal_crashes": 11, "killed": 11, "injured": 1128, "fpd_reports": 718, "fpd_fatal": 8, "status": "Full year"},
+  {"year": 2023, "reports": 1876, "injury_crashes": 806, "fatal_crashes": 11, "killed": 11, "injured": 1101, "fpd_reports": 572, "fpd_fatal": 6, "status": "Full year"},
+  {"year": 2024, "reports": 2003, "injury_crashes": 884, "fatal_crashes": 17, "killed": 20, "injured": 1204, "fpd_reports": 583, "fpd_fatal": 9, "status": "Full year"},
+  {"year": 2025, "reports": 1867, "injury_crashes": 800, "fatal_crashes": 13, "killed": 14, "injured": 1070, "fpd_reports": 405, "fpd_fatal": 6, "status": "Full year"},
+  {"year": 2026, "reports": 1389, "injury_crashes": 645, "fatal_crashes": 4, "killed": 4, "injured": 902, "fpd_reports": 307, "fpd_fatal": 2, "status": "Year to date through Oct 23"}
+]

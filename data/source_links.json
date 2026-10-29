@@ -53,6 +53,10 @@
    "url": "https://data.census.gov/table/ACSDP5Y2024.DP03?g=160XX00US0626000",
    "name": "Census ACS 2020–2024, table DP03"
   },
+  "crashes_ccrs": {
+   "url": "https://data.ca.gov/dataset/ccrs",
+   "name": "California Open Data: California Crash Reporting System (CHP)"
+  },
   "crime_clearance": {
    "url": "https://openjustice.doj.ca.gov/data",
    "name": "California DOJ OpenJustice: Crimes and Clearances"
@@ -64,6 +68,14 @@
   "dof_population": {
    "url": "https://dof.ca.gov/forecasting/demographics/estimates-e1/",
    "name": "CA Dept. of Finance: E-1 population estimates"
+  },
+  "earthquake_largest": {
+   "url": "https://earthquake.usgs.gov/earthquakes/search/",
+   "name": "USGS: Earthquake catalog search"
+  },
+  "earthquake_years": {
+   "url": "https://earthquake.usgs.gov/earthquakes/search/",
+   "name": "USGS: Earthquake catalog search"
   },
   "ev_permits": {
    "url": "https://www.fremont.gov/government/citywide-initiatives/data-dashboards/climate-action",
@@ -133,6 +145,10 @@
    "url": "https://www.census.gov/quickfacts/fact/table/fremontcitycalifornia/PST045225",
    "name": "U.S. Census Bureau: QuickFacts, Fremont"
   },
+  "mortgage_rate": {
+   "url": "https://fred.stlouisfed.org/series/MORTGAGE30US",
+   "name": "FRED: 30-Year Fixed Rate Mortgage Average (Freddie Mac)"
+  },
   "ots_rankings": {
    "url": "https://www.ots.ca.gov/rankings/fremont-2023",
    "name": "California Office of Traffic Safety: 2023 rankings"
@@ -200,6 +216,10 @@
   "traffic_fatal": {
    "url": "https://www.fremont.gov/government/departments/transportation-engineering/traffic-safety/safety-data-and-trends",
    "name": "City of Fremont: Traffic Safety, Safety Data and Trends"
+  },
+  "unemployment_monthly": {
+   "url": "https://data.bls.gov/timeseries/LAUCT062600000000003",
+   "name": "BLS: Local Area Unemployment Statistics, Fremont city"
   },
   "zillow_history": {
    "url": "https://www.zillow.com/research/data/",

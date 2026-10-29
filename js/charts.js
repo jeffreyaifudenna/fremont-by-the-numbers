@@ -247,11 +247,14 @@
           el('circle', { cx: xs(i), cy: vScale(v), r: hollow(d, i) ? 4.5 : 3.5, fill: hollow(d, i) ? 'var(--surface)' : d.color, stroke: d.color, 'stroke-width': 2 }, g);
         });
       });
-      const maxLabels = Math.max(2, Math.floor(pw / 72));
+      // Wide labels (full dates) need more room: the end labels are edge-aligned, so allow 1.5 label widths
+      const wl = Math.max(...labels.map(l => textW(String(l), 12)));
+      const slot = wl > 60 ? Math.ceil(wl * 1.5 + 10) : 72;
+      const maxLabels = Math.max(2, Math.floor(pw / slot));
       const every = Math.max(1, Math.ceil((n - 1) / (maxLabels - 1)));
       // labels count back from the latest point; the first point also gets one, replacing a neighbour that would crowd it
       const r = (n - 1) % every, stepPx = n > 1 ? pw / (n - 1) : pw;
-      const shown = i => lineAll || i === 0 || ((n - 1 - i) % every === 0 && !(i === r && r * stepPx < 80));
+      const shown = i => lineAll || i === 0 || ((n - 1 - i) % every === 0 && !(i === r && r * stepPx < slot + 8));
       labels.forEach((l, i) => {
         if (xTilt) { tiltLabel(xs(i), l); return; }
         if (!shown(i)) return;

@@ -3,8 +3,20 @@ FBN.page({
   key: 'rent',
   title: 'Rent & Housing',
   lede: 'What it costs to rent or buy in Fremont, how the market is moving, and what the monthly bills look like once you move in.',
+  uses: ['affordability_assumptions'],
   sections: function (data, row) {
     const redfin = row('redfin_market', 'Fremont', 'geo') || {};
+    // Mortgage: latest weekly rate, the same week a year earlier, and a payment estimate on Zillow's typical home value
+    const mr = data('mortgage_rate');
+    const mLast = mr[mr.length - 1] || {};
+    const mAgo = mr.length > 52 ? mr[mr.length - 53] : null;
+    const wk = w => { const d = new Date(w + 'T12:00:00'); return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }); };
+    const zhvi = row('zillow_market', 'zhvi') || {};
+    const aff = row('affordability_assumptions', 'base') || {};
+    const loan = zhvi.value && aff.down_payment_share !== undefined ? zhvi.value * (1 - aff.down_payment_share) : null;
+    const mi = mLast.rate / 1200, nPay = (aff.term_years || 0) * 12;
+    const payment = loan && mi && nPay ? Math.round(loan * mi / (1 - Math.pow(1 + mi, -nPay))) : null;
+    const taxMonth = zhvi.value && aff.property_tax_rate ? Math.round(zhvi.value * aff.property_tax_rate / 12) : null;
     return [
       {
         title: 'Headline numbers',
@@ -45,6 +57,20 @@ FBN.page({
           title: 'Typical asking rent since 2015', sub: 'Zillow Observed Rent Index, monthly',
           series: [{ key: 'zori', label: 'Typical asking rent', color: 2 }],
           source: 'Zillow Research, ZORI (smoothed), city of Fremont, through Sep 2026.'
+        }]
+      },
+      {
+        title: 'Mortgage rates',
+        sub: 'The national average for a 30-year fixed loan, and what it means for a typical Fremont home.',
+        cards: [
+          { ds: 'mortgage_rate', label: '30-year fixed mortgage rate (U.S. average)', value: mLast.rate, format: 'pct2', icon: 'percent', color: 2, meta: 'Week of ' + (mLast.week ? wk(mLast.week) : '') + ' · Freddie Mac via FRED', note: mAgo ? 'A year earlier: ' + FBN.fmt(mAgo.rate, 'pct2') + '.' : '' },
+          { ds: 'mortgage_rate', label: 'Estimated monthly payment on a typical Fremont home (principal and interest)', value: payment, format: 'usd', icon: 'home', color: 1, meta: 'Estimate · Zillow home value (' + (zhvi.as_of || '') + ') and the latest weekly rate', note: 'With ' + Math.round((aff.down_payment_share || 0) * 100) + '% down on ' + FBN.fmt(zhvi.value, 'usd') + ' over ' + (aff.term_years || '') + ' years. Base property tax adds about ' + FBN.fmt(taxMonth, 'usd') + ' a month; insurance and any HOA are extra.' }
+        ],
+        charts: [{
+          ds: 'mortgage_rate', type: 'line', x: r => wk(r.week), format: 'pct2', zero: false,
+          title: '30-year mortgage rate, past two years', sub: 'Weekly U.S. average',
+          series: [{ key: 'rate', label: '30-year fixed rate', color: 2 }],
+          source: 'Freddie Mac Primary Mortgage Market Survey, via FRED (series MORTGAGE30US). A national average for borrowers with good credit; quotes in Fremont vary by lender and borrower.'
         }]
       },
       {
