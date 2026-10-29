@@ -10,6 +10,8 @@ What it does
   - Prints what changed. It never touches the other rows (listings and sales measures), which come from
     Zillow's city page and still need a manual look.
 
+Normally run once a month by tools/refresh_monthly.py, together with refresh_apis.py.
+
 Usage
   python3 refresh_zillow.py SITE_FOLDER                      # download the CSVs, then update
   python3 refresh_zillow.py SITE_FOLDER --dry-run            # show changes, write nothing

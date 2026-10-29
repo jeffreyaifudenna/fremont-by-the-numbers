@@ -1,0 +1,4 @@
+{
+ "last_run": "2026-10-28",
+ "note": "Written by tools/refresh_monthly.py after each real monthly run. The Oct 28, 2026 entry is the first run (refresh_apis.py by hand; Zillow was last refreshed Oct 26)."
+}

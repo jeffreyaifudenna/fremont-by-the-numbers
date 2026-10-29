@@ -18,6 +18,8 @@ Sources, and what each one writes
   cms   CMS Provider Data Catalog (Medicare Care Compare).
         Updates the overall and patient-survey star-rating rows in data/health_access.json.
 
+Normally run once a month by tools/refresh_monthly.py, together with refresh_zillow.py.
+
 Usage
   python3 refresh_apis.py SITE_FOLDER                  # fetch everything, then write
   python3 refresh_apis.py SITE_FOLDER --dry-run        # show changes, write nothing
