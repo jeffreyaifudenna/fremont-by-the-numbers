@@ -60,12 +60,12 @@ FBN.page({
           ds: 'zillow_history', type: 'line', x: r => { const m = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'][+r.month.slice(5, 7) - 1]; return m + ' ' + r.month.slice(0, 4); }, format: 'usd', zero: false,
           title: 'Typical home value since 2015', sub: 'Zillow Home Value Index, monthly',
           series: [{ key: 'zhvi', label: 'Typical home value' }],
-          source: 'Zillow Research, ZHVI (mid-tier, smoothed, seasonally adjusted), city of Fremont, through ' + zThrough + '.'
+          source: 'Zillow Research, ZHVI (mid-tier, smoothed, seasonally adjusted), city of Fremont, through ' + FBN.esc(zThrough) + '.'
         }, {
           ds: 'zillow_history', type: 'line', x: r => { const m = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'][+r.month.slice(5, 7) - 1]; return m + ' ' + r.month.slice(0, 4); }, format: 'usd', zero: false,
           title: 'Typical asking rent since 2015', sub: 'Zillow Observed Rent Index, monthly',
           series: [{ key: 'zori', label: 'Typical asking rent', color: 2 }],
-          source: 'Zillow Research, ZORI (smoothed), city of Fremont, through ' + zThrough + '.'
+          source: 'Zillow Research, ZORI (smoothed), city of Fremont, through ' + FBN.esc(zThrough) + '.'
         }]
       },
       {

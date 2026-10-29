@@ -10,8 +10,8 @@ How to read it: every page is plain HTML with the figures also written out as te
 - [Rent & Housing](rent.html): Typical rent, home prices, housing stock, new homes, utility bills, internet and child care costs in Fremont, California, each with its source and date.
 - [Schools](schools.html): Fremont Unified graduation rates, test results, high school rankings and a finder for every elementary, middle and high school, each with its source and date.
 - [Food](food.html): Grocery budgets, food price inflation, restaurants and grocery stores in Fremont, California, each with its source and date.
-- [Parks & Events](parks.html): Parks, trails, annual events, community facilities and weather in Fremont, California, each with its source and date.
-- [City Data](city.html): Population, households, city budget, elections, city services, climate, transportation and national rankings for Fremont, California, each with its source and date.
+- [Parks, Recreation & Events](parks.html): Parks, trails, annual events, community facilities and weather in Fremont, California, each with its source and date.
+- [City of Fremont: Official Data](city.html): Population, households, city budget, elections, city services, climate, transportation and national rankings for Fremont, California, each with its source and date.
 - [Crime & Safety](safety.html): Crime, police, fire department and traffic safety figures for Fremont, California, each with its source and date.
 - [Health Care](health.html): Hospitals, health coverage, clinics and community health figures for Fremont, California, each with its source and date.
 - [Jobs](jobs.html): Unemployment, income, largest employers, wages, industries and commuting in Fremont, California, each with its source and date.

@@ -7,8 +7,8 @@ FBN.page({
     const hs = r => r.kind === 'School';
     /* the California rank opens that school's own U.S. News page, where the rank is shown */
     const usnLink = (r, text) => r.usn_url
-      ? '<a class="src-link" href="' + r.usn_url + '" target="_blank" rel="noopener noreferrer" aria-label="' + text + ' in California: ' + (r.full_name || r.school) + ' on U.S. News (opens in a new tab)" title="Open this school’s U.S. News page in a new tab">' + text + '</a>'
-      : text;
+      ? '<a class="src-link" href="' + FBN.esc(r.usn_url) + '" target="_blank" rel="noopener noreferrer" aria-label="' + FBN.esc(text + ' in California: ' + (r.full_name || r.school)) + ' on U.S. News (opens in a new tab)" title="Open this school’s U.S. News page in a new tab">' + FBN.esc(text) + '</a>'
+      : FBN.esc(text);
     /* state ranks are stored as text ("1026", "4440-5920"): add thousands commas and an en dash for ranges */
     const rk = s => '#' + String(s).replace(/\d{4,}/g, d => Number(d).toLocaleString('en-US')).replace('-', '–');
     return [
@@ -33,7 +33,7 @@ FBN.page({
           columns: [
             { key: 'school', label: 'School' },
             { key: r => r.usn_national, label: 'U.S. rank', format: 'rank' },
-            { key: r => usnLink(r, rk(r.usn_state)) + ' <span class="dim">(' + rk(r.usn_state_prior) + ')</span>', label: 'California rank', html: true, num: false },
+            { key: r => usnLink(r, rk(r.usn_state)) + ' <span class="dim">(' + FBN.esc(rk(r.usn_state_prior)) + ')</span>', label: 'California rank', html: true, num: false },
             { key: r => r.usn_metro, label: 'SF Bay Area rank', format: 'rank' },
             { key: 'enrollment', label: 'Students', format: 'int' },
             { key: 'grad_rate', label: 'Graduation', format: 'pct' },
@@ -93,7 +93,7 @@ FBN.page({
         title: 'Every Fremont Unified school',
         sub: 'Elementary, middle and high schools with test results, attendance and U.S. News state rank; click a rank to open that school’s U.S. News page.',
         tables: [{
-          ds: 'school_list', title: 'School finder', phoneCards: true,sub: 'Grouped by school level, then sorted by English results',
+          ds: 'school_list', title: 'School finder', phoneCards: true, sub: 'Grouped by school level, then sorted by English results',
           links: [
             { url: 'https://www.usnews.com/education/k12/elementary-schools/california/fremont-unified-school-district-111898', name: 'U.S. News, Fremont Unified elementary schools' },
             { url: 'https://www.usnews.com/education/k12/middle-schools/california/fremont-unified-school-district-111898', name: 'U.S. News, Fremont Unified middle schools' },

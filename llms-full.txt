@@ -963,7 +963,7 @@ Note: Store and restaurant counts are from the 2022 Economic Census (city of Fre
 
 ---
 
-# Parks & Events  (parks.html)
+# Parks, Recreation & Events  (parks.html)
 
 Parks, trails, annual events, community facilities and weather in Fremont, California, each with its source and date.
 
@@ -1116,7 +1116,7 @@ Source note: NOAA 1991–2020 climate normals. Almost all rain falls November th
 
 ---
 
-# City Data  (city.html)
+# City of Fremont: Official Data  (city.html)
 
 Population, households, city budget, elections, city services, climate, transportation and national rankings for Fremont, California, each with its source and date.
 
@@ -1206,7 +1206,7 @@ Source note: Census ACS table DP05 (alone).View source: Census ACS 2020–2024, 
 | In civilian labor force (16+) | 67.9% | 2020–2024 | Census QuickFacts profile [source](https://www.census.gov/quickfacts/fact/table/fremontcitycalifornia/PST045225) |
 | Mean travel time to work | 30.3 min | 2020–2024 | Census QuickFacts profile [source](https://www.census.gov/quickfacts/fact/table/fremontcitycalifornia/PST045225) |
 | Without health insurance (under 65) | 2.8% | 2020–2024 | Census QuickFacts profile [source](https://www.census.gov/quickfacts/fact/table/fremontcitycalifornia/PST045225) |
-Note: Census American Community Survey five-year estimates for 2020–2024 unless noted. The 2025 one-year estimates are due Oct 29, 2026.
+Note: Census American Community Survey five-year estimates for 2020–2024 unless noted. Newer Census releases are added when the site’s data is next refreshed.
 
 ## City government and budget
 - Operating budget, all funds: **$427M** — FY 2026–27, adopted · City of Fremont FY 2026/27 Adopted Operating Budget [source](https://www.fremont.gov/home/showpublisheddocument/21162/639252581230269794)
