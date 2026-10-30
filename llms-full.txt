@@ -7,7 +7,7 @@
 
 # FremontCaByTheNumbers.com  (index.html)
 
-FremontCaByTheNumbers.com is a data aggregator built using Claude. It gathers public figures about Fremont, California (housing, schools, safety, jobs and more) and links every number to its source.
+Fremont, California in numbers: rent, home prices, schools, crime, jobs and health. A data aggregator built using Claude. Every figure links to its source.
 
 ## Fremont at a glance
 Click any number to open its source in a new tab.
@@ -40,7 +40,7 @@ Read the full methodology and source list
 
 # Rent & Housing  (rent.html)
 
-Typical rent, home prices, housing stock, new homes, utility bills, internet and child care costs in Fremont, California, each with its source and date.
+Fremont, CA rent, home values, housing stock, new homes, utility bills, internet and child care costs. Every figure links to its source.
 
 ## Headline numbers
 - Typical asking rent (Zillow ZORI): **$3,388** (+6.0% vs a year ago) — Sep 30, 2026 · Zillow Research [source](https://www.zillow.com/research/data/)
@@ -656,7 +656,7 @@ County-wide figures; Fremont-specific prices are not published.
 
 # Schools  (schools.html)
 
-Fremont Unified graduation rates, test results, high school rankings and a finder for every elementary, middle and high school, each with its source and date.
+Fremont Unified graduation rates, test scores, high school rankings and a finder for every school. Every figure links to its source.
 
 ## Fremont Unified at a glance
 - Students enrolled: **32,883** — 2025–26 · CDE District Profile and Ed-Data [source](https://www.cde.ca.gov/sdprofile/details.aspx?cds=01611760000000)
@@ -854,7 +854,7 @@ Note: Ohlone College is Fremont’s community college, with its main campus in t
 
 # Food  (food.html)
 
-Grocery budgets, food price inflation, restaurants and grocery stores in Fremont, California, each with its source and date.
+Fremont, CA grocery budgets, food price inflation, restaurants and grocery stores. Every figure links to its source.
 
 ## What food costs
 - Living-wage food budget, two adults and two kids, per month: **$1,240** — 2026 · MIT Living Wage Calculator, Alameda County (annual figure ÷ 12) [source](https://livingwage.mit.edu/counties/06001)
@@ -965,7 +965,7 @@ Note: Store and restaurant counts are from the 2022 Economic Census (city of Fre
 
 # Parks & Events  (parks.html)
 
-Parks, trails, annual events, community facilities and weather in Fremont, California, each with its source and date.
+Fremont, CA parks, trails, annual events, community facilities and weather. Every figure links to its source.
 
 ## Parks at a glance
 - City parks: **64** — Feb 2022 · City of Fremont Parks & Recreation Master Plan [source](https://fremont.gov/home/showpublisheddocument/9619/638611250926530000)
@@ -1118,7 +1118,7 @@ Source note: NOAA 1991–2020 climate normals. Almost all rain falls November th
 
 # City Data  (city.html)
 
-Population, households, city budget, elections, city services, climate, transportation and national rankings for Fremont, California, each with its source and date.
+Fremont, CA population, households, city budget, elections, city services, transit and national rankings. Every figure links to its source.
 
 ## People
 - Residents: **233,974** — Jan 1, 2026 (provisional) · CA Dept. of Finance [source](https://dof.ca.gov/forecasting/demographics/estimates-e1/)
@@ -1579,7 +1579,7 @@ Source note: WalletHub ranking pages and Trust for Public Land ParkScore. Rankin
 
 # Crime & Safety  (safety.html)
 
-Crime, police, fire department and traffic safety figures for Fremont, California, each with its source and date.
+Fremont, CA crime, police, fire department and traffic crash figures, with each dataset’s caveats. Every figure links to its source.
 
 ## Crime in 2024, the last complete year
 - Violent crimes reported: **436** — 2024 · CA DOJ OpenJustice. -8.2% vs 2023 [source](https://openjustice.doj.ca.gov/data)
@@ -2058,7 +2058,7 @@ Source note: California Office of Traffic Safety, 2023 rankings. A high rank num
 
 # Health Care  (health.html)
 
-Hospitals, health coverage, clinics and community health figures for Fremont, California, each with its source and date.
+Fremont, CA hospitals and their ratings, health coverage, clinics and community health. Every figure links to its source.
 
 ## Coverage
 - Residents under 65 without health insurance: **2.8%** — 2020–2024 · Census QuickFacts profile [source](https://www.census.gov/quickfacts/fact/table/fremontcitycalifornia/PST045225)
@@ -2215,7 +2215,7 @@ Source note: U.S. EPA AirData, annual AQI by county (pre-generated files). The 2
 
 # Jobs  (jobs.html)
 
-Unemployment, income, largest employers, wages, industries and commuting in Fremont, California, each with its source and date.
+Fremont, CA unemployment, income, largest employers, wages, industries and commuting. Every figure links to its source.
 
 ## Headline numbers
 - Fremont unemployment rate: **4.5%** — Sep 2026 · U.S. Bureau of Labor Statistics. A year earlier: 4.7%. Not seasonally adjusted. [source](https://data.bls.gov/timeseries/LAUCT062600000000003)
@@ -2462,7 +2462,7 @@ Source note: Kidder Mathews quarterly market reports (Silicon Valley office and 
 
 # Startup Ecosystem  (startups.html)
 
-Companies, funding rounds, the manufacturing base and rankings in the Fremont, California startup ecosystem, each with its source and date.
+Fremont, CA startups: companies, funding rounds, the manufacturing base and rankings. Every figure links to its source.
 
 ## Headline numbers
 - Companies headquartered in Fremont (Crunchbase): **2,463** — Read Oct 24, 2026 · Crunchbase [source](https://www.crunchbase.com/hub/fremont-companies)
@@ -2572,7 +2572,7 @@ Note: USPTO patent counts for Fremont are not included yet.
 
 # About, Sources & Methodology  (sources.html)
 
-How FremontCaByTheNumbers.com works: a data aggregator built using Claude, its methodology, limitations, datasets and every source page.
+How FremontCaByTheNumbers.com works: a data aggregator built using Claude, its methods, limits, datasets and every source page.
 
 ## A data aggregator built using Claude
 FremontCaByTheNumbers.com is a data aggregator. It does not run its own surveys, counts or measurements. It gathers figures that public sources have already published, such as the City of Fremont’s reports and dashboards, the U.S. Census Bureau, California state agencies, Zillow, Redfin and news coverage, and shows them in one place for people who live in, or are thinking about moving to, Fremont, California. Every number carries its source and the date it was read.

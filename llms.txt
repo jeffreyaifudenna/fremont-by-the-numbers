@@ -6,17 +6,17 @@ How to read it: every page is plain HTML with the figures also written out as te
 
 ## Pages
 
-- [FremontCaByTheNumbers.com](index.html): FremontCaByTheNumbers.com is a data aggregator built using Claude. It gathers public figures about Fremont, California (housing, schools, safety, jobs and more) and links every number to its source.
-- [Rent & Housing](rent.html): Typical rent, home prices, housing stock, new homes, utility bills, internet and child care costs in Fremont, California, each with its source and date.
-- [Schools](schools.html): Fremont Unified graduation rates, test results, high school rankings and a finder for every elementary, middle and high school, each with its source and date.
-- [Food](food.html): Grocery budgets, food price inflation, restaurants and grocery stores in Fremont, California, each with its source and date.
-- [Parks & Events](parks.html): Parks, trails, annual events, community facilities and weather in Fremont, California, each with its source and date.
-- [City Data](city.html): Population, households, city budget, elections, city services, climate, transportation and national rankings for Fremont, California, each with its source and date.
-- [Crime & Safety](safety.html): Crime, police, fire department and traffic safety figures for Fremont, California, each with its source and date.
-- [Health Care](health.html): Hospitals, health coverage, clinics and community health figures for Fremont, California, each with its source and date.
-- [Jobs](jobs.html): Unemployment, income, largest employers, wages, industries and commuting in Fremont, California, each with its source and date.
-- [Startup Ecosystem](startups.html): Companies, funding rounds, the manufacturing base and rankings in the Fremont, California startup ecosystem, each with its source and date.
-- [About, Sources & Methodology](sources.html): How FremontCaByTheNumbers.com works: a data aggregator built using Claude, its methodology, limitations, datasets and every source page.
+- [FremontCaByTheNumbers.com](index.html): Fremont, California in numbers: rent, home prices, schools, crime, jobs and health. A data aggregator built using Claude. Every figure links to its source.
+- [Rent & Housing](rent.html): Fremont, CA rent, home values, housing stock, new homes, utility bills, internet and child care costs. Every figure links to its source.
+- [Schools](schools.html): Fremont Unified graduation rates, test scores, high school rankings and a finder for every school. Every figure links to its source.
+- [Food](food.html): Fremont, CA grocery budgets, food price inflation, restaurants and grocery stores. Every figure links to its source.
+- [Parks & Events](parks.html): Fremont, CA parks, trails, annual events, community facilities and weather. Every figure links to its source.
+- [City Data](city.html): Fremont, CA population, households, city budget, elections, city services, transit and national rankings. Every figure links to its source.
+- [Crime & Safety](safety.html): Fremont, CA crime, police, fire department and traffic crash figures, with each dataset’s caveats. Every figure links to its source.
+- [Health Care](health.html): Fremont, CA hospitals and their ratings, health coverage, clinics and community health. Every figure links to its source.
+- [Jobs](jobs.html): Fremont, CA unemployment, income, largest employers, wages, industries and commuting. Every figure links to its source.
+- [Startup Ecosystem](startups.html): Fremont, CA startups: companies, funding rounds, the manufacturing base and rankings. Every figure links to its source.
+- [About, Sources & Methodology](sources.html): How FremontCaByTheNumbers.com works: a data aggregator built using Claude, its methods, limits, datasets and every source page.
 
 ## Full text
 

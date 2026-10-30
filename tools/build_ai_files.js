@@ -9,18 +9,20 @@ const SITE = path.resolve(process.argv[2] || '.');
 const MODIFIED = process.argv[3] || new Date().toISOString().slice(0, 10);
 const NAME = 'FremontCaByTheNumbers.com';
 const ORIGIN = 'https://fremontcabythenumbers.com';  // canonical address: sitemap, robots and canonical tags
+// seo: the <title> (keyword first; " · NAME" is added on inner pages). desc: meta description, under ~155 characters.
+const SRC = ' Every figure links to its source.';
 const PAGES = [
-  { file: 'index', label: 'Overview', title: NAME, type: 'WebSite', desc: 'FremontCaByTheNumbers.com is a data aggregator built using Claude. It gathers public figures about Fremont, California (housing, schools, safety, jobs and more) and links every number to its source.' },
-  { file: 'rent', label: 'Rent & Housing', desc: 'Typical rent, home prices, housing stock, new homes, utility bills, internet and child care costs in Fremont, California, each with its source and date.' },
-  { file: 'schools', label: 'Schools', desc: 'Fremont Unified graduation rates, test results, high school rankings and a finder for every elementary, middle and high school, each with its source and date.' },
-  { file: 'food', label: 'Food', desc: 'Grocery budgets, food price inflation, restaurants and grocery stores in Fremont, California, each with its source and date.' },
-  { file: 'parks', label: 'Parks & Events', desc: 'Parks, trails, annual events, community facilities and weather in Fremont, California, each with its source and date.' },
-  { file: 'city', label: 'City Data', desc: 'Population, households, city budget, elections, city services, climate, transportation and national rankings for Fremont, California, each with its source and date.' },
-  { file: 'safety', label: 'Crime & Safety', desc: 'Crime, police, fire department and traffic safety figures for Fremont, California, each with its source and date.' },
-  { file: 'health', label: 'Health Care', desc: 'Hospitals, health coverage, clinics and community health figures for Fremont, California, each with its source and date.' },
-  { file: 'jobs', label: 'Jobs', desc: 'Unemployment, income, largest employers, wages, industries and commuting in Fremont, California, each with its source and date.' },
-  { file: 'startups', label: 'Startups', title: 'Startup Ecosystem', desc: 'Companies, funding rounds, the manufacturing base and rankings in the Fremont, California startup ecosystem, each with its source and date.' },
-  { file: 'sources', label: 'About & Sources', title: 'About, Sources & Methodology', type: 'AboutPage', desc: 'How FremontCaByTheNumbers.com works: a data aggregator built using Claude, its methodology, limitations, datasets and every source page.' }
+  { file: 'index', label: 'Overview', title: NAME, type: 'WebSite', seo: 'Fremont, CA by the Numbers: Rent, Schools, Crime & Jobs', desc: 'Fremont, California in numbers: rent, home prices, schools, crime, jobs and health. A data aggregator built using Claude.' + SRC },
+  { file: 'rent', label: 'Rent & Housing', seo: 'Fremont, CA Rent & Home Prices', desc: 'Fremont, CA rent, home values, housing stock, new homes, utility bills, internet and child care costs.' + SRC },
+  { file: 'schools', label: 'Schools', seo: 'Fremont Schools: Rankings & Test Scores', desc: 'Fremont Unified graduation rates, test scores, high school rankings and a finder for every school.' + SRC },
+  { file: 'food', label: 'Food', seo: 'Fremont, CA Grocery & Food Prices', desc: 'Fremont, CA grocery budgets, food price inflation, restaurants and grocery stores.' + SRC },
+  { file: 'parks', label: 'Parks & Events', seo: 'Fremont Parks, Trails & Events', desc: 'Fremont, CA parks, trails, annual events, community facilities and weather.' + SRC },
+  { file: 'city', label: 'City Data', seo: 'Fremont, CA Population, Budget & City Data', desc: 'Fremont, CA population, households, city budget, elections, city services, transit and national rankings.' + SRC },
+  { file: 'safety', label: 'Crime & Safety', seo: 'Fremont, CA Crime & Safety Data', desc: 'Fremont, CA crime, police, fire department and traffic crash figures, with each dataset’s caveats.' + SRC },
+  { file: 'health', label: 'Health Care', seo: 'Fremont, CA Hospitals & Health Data', desc: 'Fremont, CA hospitals and their ratings, health coverage, clinics and community health.' + SRC },
+  { file: 'jobs', label: 'Jobs', seo: 'Fremont, CA Jobs, Wages & Unemployment', desc: 'Fremont, CA unemployment, income, largest employers, wages, industries and commuting.' + SRC },
+  { file: 'startups', label: 'Startups', title: 'Startup Ecosystem', seo: 'Fremont, CA Startups & Manufacturing', desc: 'Fremont, CA startups: companies, funding rounds, the manufacturing base and rankings.' + SRC },
+  { file: 'sources', label: 'About & Sources', title: 'About, Sources & Methodology', type: 'AboutPage', seo: 'About, Sources & Methodology', desc: 'How FremontCaByTheNumbers.com works: a data aggregator built using Claude, its methods, limits, datasets and every source page.' }
 ];
 // One hash of css/, js/ and data/: asset URLs carry ?v=<hash>, so browsers can cache them for good (vercel.json)
 // and a rebuild after any change hands out new URLs.
@@ -34,7 +36,7 @@ const VER = (() => {
 })();
 const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 const pageTitle = p => p.title || p.label;
-const fullTitle = p => p.file === 'index' ? NAME : pageTitle(p) + ' · ' + NAME;
+const fullTitle = p => p.file === 'index' ? p.seo : p.seo + ' · ' + NAME;
 const pageUrl = p => ORIGIN + '/' + (p.file === 'index' ? '' : p.file + '.html');
 
 // Vercel Web Analytics for plain HTML sites (no npm package needed). Only reports on Vercel with Web Analytics enabled.
@@ -45,7 +47,7 @@ function head(p, extra) {
     '<title>' + esc(fullTitle(p)) + '</title>\n<meta name="description" content="' + esc(p.desc) + '">\n' +
     '<meta name="theme-color" content="#0d366b">\n' +
     '<link rel="canonical" href="' + pageUrl(p) + '">\n<meta property="og:url" content="' + pageUrl(p) + '">\n' +
-    '<meta property="og:type" content="website">\n<meta property="og:site_name" content="' + NAME + '">\n<meta property="og:title" content="' + esc(fullTitle(p)) + '">\n<meta property="og:description" content="' + esc(p.desc) + '">\n' +
+    '<meta name="robots" content="max-image-preview:large">\n<meta property="og:type" content="website">\n<meta property="og:locale" content="en_US">\n<meta property="og:site_name" content="' + NAME + '">\n<meta property="og:title" content="' + esc(fullTitle(p)) + '">\n<meta property="og:description" content="' + esc(p.desc) + '">\n' +
     '<meta property="og:image" content="https://fremontcabythenumbers.com/og.png">\n<meta property="og:image:width" content="1200">\n<meta property="og:image:height" content="630">\n<meta property="og:image:alt" content="FremontCaByTheNumbers.com: public data about Fremont, California, with a source on every figure">\n' +
     '<meta name="twitter:card" content="summary_large_image">\n<meta name="twitter:image" content="https://fremontcabythenumbers.com/og.png">\n' +
     '<link rel="alternate" type="text/plain" href="llms-full.txt" title="Full text of every page">\n' +
@@ -130,10 +132,16 @@ function shell(p, bodyHtml, jsonld) {
   // 2. final shells
   PAGES.forEach(p => {
     const r = results[p.file];
-    const ld = { '@context': 'https://schema.org', '@type': p.type || 'Dataset', name: fullTitle(p), description: p.desc, inLanguage: 'en', dateModified: MODIFIED, isAccessibleForFree: true,
-      spatialCoverage: 'Fremont, California, USA', creator: { '@type': 'Person', name: 'JeffreyAiFudenna' }, creditText: 'Compiled by Claude (Anthropic) from public sources. Each figure is credited to its source on the page.', isBasedOn: r.urls.slice(0, 200) };
-    if (p.type === 'WebSite') { delete ld.isBasedOn; ld.about = 'Fremont, California'; }
-    if (p.type === 'AboutPage') delete ld.isBasedOn;
+    const site = { '@type': 'WebSite', '@id': ORIGIN + '/#website', name: NAME, alternateName: 'Fremont by the Numbers', url: ORIGIN + '/', inLanguage: 'en' };
+    const main = { '@type': p.type || 'Dataset', '@id': pageUrl(p) + '#page', name: fullTitle(p), description: p.desc, url: pageUrl(p), inLanguage: 'en', dateModified: MODIFIED, isAccessibleForFree: true,
+      spatialCoverage: { '@type': 'Place', name: 'Fremont, California, United States' }, creator: { '@type': 'Person', name: 'JeffreyAiFudenna', url: 'https://github.com/jeffreyaifudenna' },
+      creditText: 'Compiled by Claude (Anthropic) from public sources. Each figure is credited to its source on the page.', isBasedOn: r.urls.slice(0, 200) };
+    if (p.type) delete main.isBasedOn;
+    if (p.type === 'WebSite') { Object.assign(main, site, { description: p.desc, about: { '@type': 'Place', name: 'Fremont, California' } }); delete main.spatialCoverage; }
+    else main.isPartOf = { '@id': ORIGIN + '/#website' };
+    const graph = p.type === 'WebSite' ? [main] : [site, main, { '@type': 'BreadcrumbList', itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Overview', item: ORIGIN + '/' }, { '@type': 'ListItem', position: 2, name: p.label, item: pageUrl(p) }] }];
+    const ld = { '@context': 'https://schema.org', '@graph': graph };
     let body = r.body.replace(/<main([^>]*)>/, '<main$1 id="main">');
     if (p.file === 'index') { body = body; }
     // for the index fragment, the artifact wrapper supplies <body>; keep only what is inside <main> plus site chrome

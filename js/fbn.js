@@ -535,7 +535,6 @@
 
   /* ---------- page ---------- */
   function page(spec) {
-    document.title = (spec.key === 'index' ? SITE.name : spec.title + ' · ' + SITE.name);
     chrome(spec.key);
     const main = document.querySelector('main') || document.body.appendChild(document.createElement('main'));
     const head = spec.bare ? '<div class="wrap"><h1 class="sr-only">' + esc(spec.title) + '</h1><p class="loading">Loading figures…</p></div>'
