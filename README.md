@@ -2,7 +2,9 @@
 
 A static website that shows public data about Fremont, California, with the source and date on every figure.
 
-No build step, no framework, no server code. Plain HTML, CSS and JavaScript plus JSON data files. Works on any device.
+No framework and no server code. Plain HTML, CSS and JavaScript plus JSON data files; the site itself loads no third-party libraries. Works on any device.
+
+There is one local build step: the `.html` files are pre-rendered snapshots (for speed, crawlers and AI tools), made by `tools/build_ai_files.js` in a headless browser. That build needs Node and Playwright (`npm i` once, from `package.json`; a build-only tool that Vercel does not install, see `.vercelignore`).
 
 ## Folder layout
 
@@ -45,7 +47,13 @@ then open http://localhost:8000.
 
 ## Publishing
 
-Push the folder to a GitHub repository and connect it to Vercel (or Netlify, GitHub Pages, Cloudflare Pages). No build command, output directory is the repo root. Every push republishes the site in about a minute.
+Push the folder to a GitHub repository and connect it to Vercel (or Netlify, GitHub Pages, Cloudflare Pages). Vercel needs no build command; the output directory is the repo root and every push republishes the site in about a minute. **Before pushing any change to `css/`, `js/` or `data/`, rerun the pre-render locally:**
+
+```
+STANDALONE=1 node tools/build_ai_files.js . YYYY-MM-DD
+```
+
+It rewrites every page, `llms.txt`, `llms-full.txt`, `sitemap.xml` and `robots.txt`, and stamps asset URLs with `?v=<hash of css/, js/, data/>`. Those URLs are cached for a year (`vercel.json`), so skipping the rebuild leaves returning visitors on old files.
 
 ## Conventions
 

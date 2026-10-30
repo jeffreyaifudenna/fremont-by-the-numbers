@@ -47,7 +47,7 @@ FBN.page({
         title: 'Households and income',
         facts: [{ ds: 'census_profile', title: 'Households and housing', group: 'Households and housing' },
                 { ds: 'census_profile', title: 'Income, education and work', group: 'Income, education and work' }],
-        notes: ['Census American Community Survey five-year estimates for 2020–2024 unless noted. The 2025 one-year estimates are due Oct 29, 2026.']
+        notes: ['Census American Community Survey five-year estimates for 2020–2024 unless noted. Newer Census releases are added when the site’s data is next refreshed.']
       },
       {
         title: 'City government and budget',

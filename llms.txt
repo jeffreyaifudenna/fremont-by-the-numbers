@@ -10,8 +10,8 @@ How to read it: every page is plain HTML with the figures also written out as te
 - [Rent & Housing](rent.html): Fremont, CA rent, home values, housing stock, new homes, utility bills, internet and child care costs. Every figure links to its source.
 - [Schools](schools.html): Fremont Unified graduation rates, test scores, high school rankings and a finder for every school. Every figure links to its source.
 - [Food](food.html): Fremont, CA grocery budgets, food price inflation, restaurants and grocery stores. Every figure links to its source.
-- [Parks & Events](parks.html): Fremont, CA parks, trails, annual events, community facilities and weather. Every figure links to its source.
-- [City Data](city.html): Fremont, CA population, households, city budget, elections, city services, transit and national rankings. Every figure links to its source.
+- [Parks, Recreation & Events](parks.html): Fremont, CA parks, trails, annual events, community facilities and weather. Every figure links to its source.
+- [City of Fremont: Official Data](city.html): Fremont, CA population, households, city budget, elections, city services, transit and national rankings. Every figure links to its source.
 - [Crime & Safety](safety.html): Fremont, CA crime, police, fire department and traffic crash figures, with each dataset’s caveats. Every figure links to its source.
 - [Health Care](health.html): Fremont, CA hospitals and their ratings, health coverage, clinics and community health. Every figure links to its source.
 - [Jobs](jobs.html): Fremont, CA unemployment, income, largest employers, wages, industries and commuting. Every figure links to its source.

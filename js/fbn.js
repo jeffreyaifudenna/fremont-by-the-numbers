@@ -124,6 +124,7 @@
 
   /* ---------- data ---------- */
   const cache = {};
+  const failed = new Set();   // datasets whose file could not be loaded
   let catalog = null;
   let links = null;   // data/source_links.json: where each number can be checked
   const base = (document.currentScript && document.currentScript.getAttribute('data-base')) || '';
@@ -135,7 +136,7 @@
   }
   function load(ids) {
     const want = Array.from(new Set(ids));
-    const p = want.map(id => cache[id] ? Promise.resolve() : loadJSON(dataUrl(id + '.json')).then(d => { cache[id] = d; }).catch(e => { cache[id] = null; console.warn(e); }));
+    const p = want.map(id => cache[id] ? Promise.resolve() : loadJSON(dataUrl(id + '.json')).then(d => { cache[id] = d; failed.delete(id); }).catch(e => { cache[id] = null; failed.add(id); console.warn(e); }));
     if (!catalog) p.push(loadJSON(dataUrl('_catalog.json')).then(c => { catalog = c; }).catch(() => { catalog = {}; }));
     if (!links) p.push(loadJSON(dataUrl('source_links.json')).then(l => { links = l; }).catch(() => { links = { datasets: {}, sources: [], rows: {} }; }));
     return Promise.all(p);
@@ -551,7 +552,12 @@
     // Discover datasets: probe a function-built spec with empty data so every ds reference is collected.
     let probe = spec.sections;
     if (typeof spec.sections === 'function') { try { probe = spec.sections(() => [], () => null); } catch (e) { probe = []; } }
-    load(collectDatasets(probe).concat(collectDatasets(spec)).concat(uses)).then(() => spec.uses === 'all' ? load(Object.keys(catalog || {})) : null).then(() => {
+    const needed = collectDatasets(probe).concat(collectDatasets(spec)).concat(uses);
+    load(needed).then(() => spec.uses === 'all' ? load(Object.keys(catalog || {})) : null).then(() => {
+      // load() never rejects (each file's error is caught), so check here: if a needed file failed,
+      // the pre-rendered copy is more complete than a live render would be, so keep it.
+      const missing = (spec.uses === 'all' ? Object.keys(catalog || {}) : needed).filter(id => failed.has(id));
+      if (missing.length && prerendered) throw new Error('Data files could not be loaded: ' + Array.from(new Set(missing)).join(', '));
       if (prerendered) fresh();
       wrap.querySelector('.loading').remove();
       const secs = typeof spec.sections === 'function' ? spec.sections(data, row) : spec.sections;

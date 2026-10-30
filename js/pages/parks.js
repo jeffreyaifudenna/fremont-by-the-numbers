@@ -82,7 +82,7 @@ FBN.page({
         ds: 'drought_years', type: 'bar', x: 'year', format: 'int',
         title: 'Weeks of drought in Alameda County, by year', sub: 'Weeks with any part of the county abnormally dry, and in moderate drought or worse; the last bar is year to date',
         series: [{ key: 'weeks_d0plus', label: 'Abnormally dry or worse (D0+)', color: 4, status: 'status' }, { key: 'weeks_d1plus', label: 'Moderate drought or worse (D1+)', color: 2, status: 'status' }],
-        source: 'U.S. Drought Monitor county statistics, produced by the National Drought Mitigation Center with USDA, NOAA and NASA. 2021 reached exceptional drought (D4); the latest week is ' + dNow.latest_week + '.'
+        source: 'U.S. Drought Monitor county statistics, produced by the National Drought Mitigation Center with USDA, NOAA and NASA. 2021 reached exceptional drought (D4); the latest week is ' + FBN.esc(dNow.latest_week) + '.'
       }, {
         ds: 'climate_normals', type: 'line', x: 'month', format: 'int', zero: false,
         title: 'Typical daily high and low temperature (°F)',
