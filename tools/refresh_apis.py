@@ -798,7 +798,7 @@ def usdm(site):
     for y in sorted(years):
         r = years[y]
         r["status"] = ("Year to date through " + MON[int(md[4:6]) - 1] + " " + str(int(md[6:8]))) if y == TODAY.year else "Full year"
-        if y == TODAY.year:
+        if y == int(md[:4]):   # the latest week's year (last year in early January, before this year's first map)
             r["latest_week"] = MON[int(md[4:6]) - 1] + " " + str(int(md[6:8])) + ", " + md[:4]
             r["latest_none_pct"] = round(latest["none"], 1)
             r["latest_d1plus_pct"] = round(latest["d1"], 1)
@@ -847,7 +847,7 @@ def main():
         print("Fetching %s ..." % name)
         try:
             results.extend(SOURCES[name](a.site))
-        except Exception as e:   # one source failing should not stop the others
+        except (Exception, SystemExit) as e:   # one source failing should not stop the others (some sources stop with sys.exit)
             print("  %s failed: %s" % (name, e))
 
     changed = []
