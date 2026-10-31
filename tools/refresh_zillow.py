@@ -81,8 +81,10 @@ def build_history(zhvi, zori, start="2015-01"):
 
 def write_like(p, text):
     """Write text with the line endings the file already has (git checks files out with CRLF on Windows)."""
-    with open(p, encoding="utf-8", newline="") as f:
-        crlf = "\r\n" in f.read()
+    crlf = False
+    if os.path.exists(p):   # first run: no file yet, so use plain newlines
+        with open(p, encoding="utf-8", newline="") as f:
+            crlf = "\r\n" in f.read()
     with open(p, "w", encoding="utf-8", newline="\r\n" if crlf else "\n") as f:
         f.write(text)
 
@@ -102,7 +104,7 @@ def main():
     data_dir = os.path.join(a.site, "data")
     hist_path = os.path.join(data_dir, "zillow_history.json")
     mkt_path = os.path.join(data_dir, "zillow_market.json")
-    old_hist = json.load(open(hist_path))
+    old_hist = json.load(open(hist_path)) if os.path.exists(hist_path) else []   # the history file is rebuilt in full
     market = json.load(open(mkt_path))
 
     new_hist = build_history(zhvi, zori)
