@@ -582,9 +582,17 @@ def bps(site):
         try:
             text = fetch(url)
         except urllib.error.HTTPError as e:
-            if e.code == 404:
-                continue
-            raise
+            if e.code != 404:
+                raise
+            # Early in the year the annual file for last year is not out yet; its December year-to-date file
+            # covers the same 12 months, so use that rather than dropping the year from the site.
+            url = BPS_DIR + "we%02d12y.txt" % (y % 100)
+            try:
+                text = fetch(url)
+            except urllib.error.HTTPError as e2:
+                if e2.code == 404:
+                    continue
+                raise
         for r in bps_rows(text):
             rows.append({"year": y, "status": "Full year", "units_1": r["u1"], "units_2": r["u2"], "units_3_4": r["u34"], "units_5plus": r["u5"],
                          "units_total": r["u1"] + r["u2"] + r["u34"] + r["u5"], "buildings": r["b1"] + r["b2"] + r["b34"] + r["b5"],
