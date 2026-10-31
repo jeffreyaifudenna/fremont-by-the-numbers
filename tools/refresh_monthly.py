@@ -6,7 +6,7 @@ Uses only the Python standard library (no installs). The build step needs Node (
 What it does, in order
   1. Checks the run day ("run_day" in tools/refresh_schedule.json) and that no monthly run has
      happened yet this calendar month (tools/refresh_last_run.json). Stops if either check fails.
-  2. Runs refresh_zillow.py, then refresh_apis.py (all five API sources).
+  2. Runs refresh_zillow.py, then refresh_apis.py (every API source it lists).
   3. Records today in tools/refresh_last_run.json.
   4. If any file in data/ changed: sets SITE.updated in js/fbn.js and rebuilds the pre-rendered pages
      (STANDALONE=1 node tools/build_ai_files.js SITE YYYY-MM-DD).
