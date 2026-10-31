@@ -79,6 +79,14 @@ def build_history(zhvi, zori, start="2015-01"):
     return [{"month": m, "zhvi": zhvi[m], "zori": zori[m]} for m in months]
 
 
+def write_like(p, text):
+    """Write text with the line endings the file already has (git checks files out with CRLF on Windows)."""
+    with open(p, encoding="utf-8", newline="") as f:
+        crlf = "\r\n" in f.read()
+    with open(p, "w", encoding="utf-8", newline="\r\n" if crlf else "\n") as f:
+        f.write(text)
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("site", help="site folder that contains data/")
@@ -132,8 +140,9 @@ def main():
     if a.dry_run:
         print("Dry run: nothing written.")
         return
-    json.dump(new_hist, open(hist_path, "w"), separators=(", ", ": "))
-    json.dump(market, open(mkt_path, "w"), indent=2)
+    # Keep each file's layout (history on one line; market one row per line, final newline) and its line endings.
+    write_like(hist_path, json.dumps(new_hist, separators=(", ", ": ")))
+    write_like(mkt_path, "[\n" + ",\n".join("  " + json.dumps(r) for r in market) + "\n]\n")
     print("Wrote zillow_history.json and zillow_market.json.")
     print("Still manual: listings and sales rows in zillow_market (inventory, new_listings, days_pending, sale_to_list, over_list),")
     print("SITE.updated in js/fbn.js, and rebuilding the pre-rendered pages.")
