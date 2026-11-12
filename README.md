@@ -1,5 +1,9 @@
 # FremontCaByTheNumbers.com
 
+**Live site:** https://fremontcabythenumbers.com
+
+Built by Jeffrey Fudenna with Claude Code.
+
 A static website that shows public data about Fremont, California, with the source and date on every figure.
 
 No framework and no server code. Plain HTML, CSS and JavaScript plus JSON data files; the site itself loads no third-party libraries. Works on any device.
@@ -63,3 +67,7 @@ It rewrites every page, `llms.txt`, `llms-full.txt`, `sitemap.xml` and `robots.t
 - Text never uses series colors; series colors are for chart marks and legend swatches only.
 
 The dataset was compiled using Claude from the public sources listed on the Sources page.
+
+## License
+
+MIT License. See [LICENSE](LICENSE). Free to use, change and share.

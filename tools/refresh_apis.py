@@ -578,15 +578,29 @@ def bps_rows(text):
 def bps(site):
     rows = []
     for y in range(2018, TODAY.year):
-        url = BPS_DIR + "we%da.txt" % y
+        url, status = BPS_DIR + "we%da.txt" % y, "Full year"
         try:
             text = fetch(url)
         except urllib.error.HTTPError as e:
-            if e.code == 404:
+            if e.code != 404:
+                raise
+            # Early in the year the annual file for last year is not out yet (it comes about May). Use its newest
+            # year-to-date file instead: December covers the full 12 months; in January only November may be out.
+            text = None
+            for m in (range(12, 6, -1) if y == TODAY.year - 1 else ()):
+                url = BPS_DIR + "we%02d%02dy.txt" % (y % 100, m)
+                try:
+                    text = fetch(url)
+                except urllib.error.HTTPError as e2:
+                    if e2.code == 404:
+                        continue
+                    raise
+                status = "Full year" if m == 12 else "Year to date through " + MON[m - 1]
+                break
+            if text is None:
                 continue
-            raise
         for r in bps_rows(text):
-            rows.append({"year": y, "status": "Full year", "units_1": r["u1"], "units_2": r["u2"], "units_3_4": r["u34"], "units_5plus": r["u5"],
+            rows.append({"year": y, "status": status, "units_1": r["u1"], "units_2": r["u2"], "units_3_4": r["u34"], "units_5plus": r["u5"],
                          "units_total": r["u1"] + r["u2"] + r["u34"] + r["u5"], "buildings": r["b1"] + r["b2"] + r["b34"] + r["b5"],
                          "value_usd": r["v1"] + r["v2"] + r["v34"] + r["v5"], "source": "U.S. Census Bureau, Building Permits Survey", "source_url": url})
     # newest year-to-date file for the current year (we<yy><mm>y.txt); try the latest few months
@@ -784,7 +798,7 @@ def usdm(site):
     for y in sorted(years):
         r = years[y]
         r["status"] = ("Year to date through " + MON[int(md[4:6]) - 1] + " " + str(int(md[6:8]))) if y == TODAY.year else "Full year"
-        if y == TODAY.year:
+        if y == int(md[:4]):   # the latest week's year (last year in early January, before this year's first map)
             r["latest_week"] = MON[int(md[4:6]) - 1] + " " + str(int(md[6:8])) + ", " + md[:4]
             r["latest_none_pct"] = round(latest["none"], 1)
             r["latest_d1plus_pct"] = round(latest["d1"], 1)
@@ -833,7 +847,7 @@ def main():
         print("Fetching %s ..." % name)
         try:
             results.extend(SOURCES[name](a.site))
-        except Exception as e:   # one source failing should not stop the others
+        except (Exception, SystemExit) as e:   # one source failing should not stop the others (some sources stop with sys.exit)
             print("  %s failed: %s" % (name, e))
 
     changed = []
