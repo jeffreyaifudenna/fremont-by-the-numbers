@@ -2,8 +2,8 @@
 FBN.page({
   key: 'sources',
   title: 'About, Sources & Methodology',
-  kicker: 'Data aggregator · built using Claude',
-  lede: 'FremontCaByTheNumbers.com is a data aggregator built using Claude. This page explains what that means, how each number is handled, and lists every page the figures came from.',
+  kicker: 'Free and open data for Fremont',
+  lede: 'Why this site exists, how each number is handled, and every page the figures came from.',
   uses: 'all',
   sections: function (data, row) {
     const cat = FBN.catalog() || {};
@@ -23,8 +23,10 @@ FBN.page({
       {
         id: 'how',
         html: '<div class="prose">' +
-          '<h2>A data aggregator built using Claude</h2>' +
-          '<p><strong>FremontCaByTheNumbers.com is a data aggregator.</strong> It does not run its own surveys, counts or measurements. It gathers figures that public sources have already published, such as the City of Fremont’s reports and dashboards, the U.S. Census Bureau, California state agencies, Zillow, Redfin and news coverage, and shows them in one place for people who live in, or are thinking about moving to, Fremont, California. Every number carries its source and the date it was read.</p>' +
+          '<h2>Why this site exists</h2>' +
+          '<p><strong>Fair, free access to public data.</strong> Public data should be easy for everyone to find, not just people with money or technical skill. Anyone with time and the right tools can gather these figures; this site does it once, in the open, so no one has to. A more equitable world starts with fair and free access. The code and data are open on <a href="https://github.com/jeffreyaifudenna/fremont-by-the-numbers" target="_blank" rel="noopener">GitHub</a>. Cheers to Fremont: it’s why I made this.</p>' +
+          '<h2>What it is</h2>' +
+          '<p>FremontCaByTheNumbers.com is a free data aggregator. It does not run its own surveys, counts or measurements. It gathers figures that public sources have already published, such as the City of Fremont’s reports and dashboards, the U.S. Census Bureau, California state agencies, Zillow, Redfin and news coverage, and shows them in one place for people who live in, or are thinking about moving to, Fremont, California. Every number carries its source and the date it was read.</p>' +
           '<h2>Built by JeffreyAiFudenna</h2>' +
           '<p>FremontCaByTheNumbers.com was built by <strong>JeffreyAiFudenna</strong>, using Claude to gather the data and write the code.</p>' +
           '<h2>The dataset was created using Claude</h2>' +

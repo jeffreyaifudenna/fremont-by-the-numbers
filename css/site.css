@@ -250,6 +250,15 @@ a.src-link:hover { text-decoration-style: solid; }
 .about-box p.about-sub { font-size: 16px; font-weight: 600; color: var(--ink); line-height: 1.4; margin-top: -4px; }
 .about-box p { font-size: 15px; color: var(--ink-2); line-height: 1.55; }
 .about-box p strong { color: var(--ink); }
+.about-row { display: grid; grid-template-columns: minmax(0, 1fr); gap: 16px; align-items: stretch; }
+.ad-slot { background: var(--surface); border: 1px dashed var(--line); border-radius: var(--radius); padding: 20px; display: flex; flex-direction: column; gap: 8px; justify-content: center; }
+.ad-slot .ad-label { font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); }
+.ad-slot .ad-title { font-size: 18px; font-weight: 700; color: var(--ink); }
+.ad-slot .ad-btn { display: inline-block; padding: 8px 14px; border: 1px solid var(--link); border-radius: 8px; font-weight: 600; text-decoration: none; color: var(--link); }
+.ad-slot .ad-btn:hover { background: var(--link); color: var(--surface); }
+.ad-slot .ad-own { margin-top: 6px; padding-top: 10px; border-top: 1px solid var(--line); font-size: 13px; }
+.ad-slot p { font-size: 14px; color: var(--ink-2); line-height: 1.5; }
+@media (min-width: 900px) { .about-row { grid-template-columns: minmax(0, 1fr) 300px; } .about-row .about-box { max-width: none; } }
 
 /* ---------- "on this page" jump list ---------- */
 .section { scroll-margin-top: 64px; }

@@ -1,11 +1,14 @@
 /* Home page: headline numbers and one door into each category. */
+/* Advertiser signup: paste the Google Form share link between the quotes. While empty, the link falls back to email. */
+const AD_FORM = '';
+const AD_SIGNUP = AD_FORM || 'mailto:Jeffreyaifudenna@gmail.com?subject=Advertising%20on%20Fremont%20by%20the%20Numbers';
 FBN.page({
   key: 'index',
   bare: true,
   title: 'FremontCaByTheNumbers.com',
-  kicker: 'Data aggregator · built using Claude',
+  kicker: 'Free and open data for Fremont',
   hint: 'Start with a topic below, or click any number under “Fremont at a glance” to open its source in a new tab.',
-  lede: 'FremontCaByTheNumbers.com is a data aggregator built using Claude. It gathers public figures about Fremont, California (housing, schools, safety, jobs and more) from the agencies and companies that publish them, and shows each number with its source and date.',
+  lede: 'Fair, free access to public data about Fremont, California: housing, schools, safety, jobs and more. Every number comes from the agency or company that published it, and links to its source and date.',
   uses: ['startup_rounds', 'dof_population', 'census_profile', 'zillow_market', 'schools', 'police_facts', 'city_rankings', 'business', 'parks_summary', 'city_facts', 'people_more', 'jobs_more', 'living_facts', 'health_places', 'high_schools', 'crime_oj'],
   sections: function (data, row) {
     const v = (ds, id, key) => (row(ds, id, key) || {}).value;
@@ -52,11 +55,19 @@ FBN.page({
       },
       { title: 'Explore by topic', html: catHtml },
       {
-        html: '<div class="about-box"><h2>About this site</h2>' +
-          '<p class="about-sub">A data aggregator built by JeffreyAiFudenna using Claude to gather data and write the code</p>' +
-          '<p><strong>FremontCaByTheNumbers.com does not run its own surveys or measurements.</strong> It collects figures that public sources have already published (the City of Fremont, the U.S. Census Bureau, California state agencies, Zillow, Redfin, news reports and others) and puts them in one place.</p>' +
-          '<p><strong>Claude did the gathering.</strong> Claude, Anthropic’s AI model, read each source, recorded the figure with the page it came from and the date it was read, and wrote the code for this site. AI can misread a source, so every number links back to where it came from: click it to open the source in a new tab and check.</p>' +
-          '<p><a href="sources.html">Read the full methodology and source list</a></p></div>'
+        html: '<div class="about-row"><div class="about-box"><h2>Why this site exists</h2>' +
+          '<p class="about-sub">Fair, free access to public data</p>' +
+          '<p><strong>Public data should be easy for everyone to find, not just people with money or technical skill.</strong> Anyone with time and the right tools can gather these figures. This site does it once, in the open, so no one has to. A more equitable world starts with fair and free access.</p>' +
+          '<p>It is free, with no account and no paywall. The code and data are open on <a href="https://github.com/jeffreyaifudenna/fremont-by-the-numbers" target="_blank" rel="noopener">GitHub</a>. The site runs no surveys of its own: it collects what the City of Fremont, the U.S. Census Bureau, California agencies, Zillow, Redfin and others have already published, and links every number back to them.</p>' +
+          '<p>Built by JeffreyAiFudenna, with Claude (Anthropic’s AI model) gathering the figures and writing the code. AI can misread a source, so click any number to open its source and check.</p>' +
+          '<p><strong>Cheers to Fremont. It’s why I made this.</strong> <a href="sources.html">Methodology and sources</a></p></div>' +
+          /* One sponsor slot, local Fremont businesses only. To fill it, replace the contents of .ad-slot
+             (keep the "Sponsored" label). Contact link below is the open-slot invitation. */
+          '<aside class="ad-slot" aria-label="Sponsor"><span class="ad-label">Sponsored by</span>' +
+          '<p class="ad-title">JeffreyAiFudenna</p>' +
+          '<p>Builder of this site</p>' +
+          '<p><a class="ad-btn" href="https://jeffrey-ai-portfolio.vercel.app" target="_blank" rel="noopener">Visit my portfolio ↗</a></p>' +
+          '<p class="ad-own"><strong>Own a Fremont business?</strong> This space is for rent, one business at a time, for a simple monthly fee. <a href="' + AD_SIGNUP + '"' + (AD_FORM ? ' target="_blank" rel="noopener"' : '') + '>Sign up to advertise' + (AD_FORM ? ' ↗' : '') + '</a>.</p></aside></div>'
       }
     ];
   }

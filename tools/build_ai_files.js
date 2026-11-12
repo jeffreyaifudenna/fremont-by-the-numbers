@@ -12,7 +12,7 @@ const ORIGIN = 'https://fremontcabythenumbers.com';  // canonical address: sitem
 // seo: the <title> (keyword first; " · NAME" is added on inner pages). desc: meta description, under ~155 characters.
 const SRC = ' Every figure links to its source.';
 const PAGES = [
-  { file: 'index', label: 'Overview', title: NAME, type: 'WebSite', seo: 'Fremont, CA by the Numbers: Rent, Schools, Crime & Jobs', desc: 'Fremont, California in numbers: rent, home prices, schools, crime, jobs and health. A data aggregator built using Claude.' + SRC },
+  { file: 'index', label: 'Overview', title: NAME, type: 'WebSite', seo: 'Fremont, CA by the Numbers: Rent, Schools, Crime & Jobs', desc: 'Fremont, California in numbers: rent, home prices, schools, crime, jobs and health. Free and open public data.' + SRC },
   { file: 'rent', label: 'Rent & Housing', seo: 'Fremont, CA Rent & Home Prices', desc: 'Fremont, CA rent, home values, housing stock, new homes, utility bills, internet and child care costs.' + SRC },
   { file: 'schools', label: 'Schools', seo: 'Fremont Schools: Rankings & Test Scores', desc: 'Fremont Unified graduation rates, test scores, high school rankings and a finder for every school.' + SRC },
   { file: 'food', label: 'Food', seo: 'Fremont, CA Grocery & Food Prices', desc: 'Fremont, CA grocery budgets, food price inflation, restaurants and grocery stores.' + SRC },
@@ -22,7 +22,7 @@ const PAGES = [
   { file: 'health', label: 'Health Care', seo: 'Fremont, CA Hospitals & Health Data', desc: 'Fremont, CA hospitals and their ratings, health coverage, clinics and community health.' + SRC },
   { file: 'jobs', label: 'Jobs', seo: 'Fremont, CA Jobs, Wages & Unemployment', desc: 'Fremont, CA unemployment, income, largest employers, wages, industries and commuting.' + SRC },
   { file: 'startups', label: 'Startups', title: 'Startup Ecosystem', seo: 'Fremont, CA Startups & Manufacturing', desc: 'Fremont, CA startups: companies, funding rounds, the manufacturing base and rankings.' + SRC },
-  { file: 'sources', label: 'About & Sources', title: 'About, Sources & Methodology', type: 'AboutPage', seo: 'About, Sources & Methodology', desc: 'How FremontCaByTheNumbers.com works: a data aggregator built using Claude, its methods, limits, datasets and every source page.' }
+  { file: 'sources', label: 'About & Sources', title: 'About, Sources & Methodology', type: 'AboutPage', seo: 'About, Sources & Methodology', desc: 'Why FremontCaByTheNumbers.com exists (fair, free access to public data), plus its methods, limits, datasets and every source page.' }
 ];
 // One hash of css/, js/ and data/: asset URLs carry ?v=<hash>, so browsers can cache them for good (vercel.json)
 // and a rebuild after any change hands out new URLs.
@@ -150,11 +150,11 @@ function shell(p, bodyHtml, jsonld) {
 
   // 3. llms-full.txt, llms.txt, robots.txt
   const cat = JSON.parse(fs.readFileSync(path.join(SITE, 'data/_catalog.json'), 'utf8'));
-  let full = '# ' + NAME + ' — full text\n\n> FremontCaByTheNumbers.com is a data aggregator built using Claude. It republishes figures that public sources have already published about Fremont, California, and shows each figure with its source and date. Data as of ' + MODIFIED + '. Links in this file marked "source" go to the page a figure was read from.\n';
+  let full = '# ' + NAME + ' — full text\n\n> FremontCaByTheNumbers.com offers free, open access to public data, built with Claude. It republishes figures that public sources have already published about Fremont, California, and shows each figure with its source and date. Data as of ' + MODIFIED + '. Links in this file marked "source" go to the page a figure was read from.\n';
   PAGES.forEach(p => { const r = results[p.file]; full += '\n\n---\n\n# ' + pageTitle(p) + '  (' + p.file + '.html)\n\n' + p.desc + '\n' + r.md + '\n'; });
   fs.writeFileSync(path.join(SITE, 'llms-full.txt'), full);
 
-  let txt = '# ' + NAME + '\n\n> FremontCaByTheNumbers.com is a data aggregator built using Claude, Anthropic\'s AI model. It gathers public figures about Fremont, California (housing, schools, safety, jobs and more) from the agencies and companies that publish them, and shows every figure with its source and date. The site is Fremont-only and runs no surveys of its own. Built by JeffreyAiFudenna.\n\n' +
+  let txt = '# ' + NAME + '\n\n> FremontCaByTheNumbers.com offers fair, free access to public data, built with Claude (Anthropic\'s AI model). It gathers public figures about Fremont, California (housing, schools, safety, jobs and more) from the agencies and companies that publish them, and shows every figure with its source and date. The site is Fremont-only and runs no surveys of its own. Built by JeffreyAiFudenna.\n\n' +
     'How to read it: every page is plain HTML with the figures also written out as text and tables. Each figure links to its original source. Treat the source link as the authority; Claude can misread a source. Data was last checked ' + MODIFIED + '.\n\n## Pages\n\n';
   PAGES.forEach(p => { txt += '- [' + pageTitle(p) + '](' + p.file + '.html): ' + p.desc + '\n'; });
   txt += '\n## Full text\n\n- [All pages as one text file](llms-full.txt): every figure, table, chart value and source link in one place.\n\n## Raw data\n\nEach dataset is one JSON file in /data. Rows carry an id, label, value, period (what the figure covers), source and source_url. data/_catalog.json describes every dataset; data/source_links.json maps datasets to source pages.\n\n';

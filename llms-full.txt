@@ -1,13 +1,13 @@
 # FremontCaByTheNumbers.com — full text
 
-> FremontCaByTheNumbers.com is a data aggregator built using Claude. It republishes figures that public sources have already published about Fremont, California, and shows each figure with its source and date. Data as of 2026-10-29. Links in this file marked "source" go to the page a figure was read from.
+> FremontCaByTheNumbers.com offers free, open access to public data, built with Claude. It republishes figures that public sources have already published about Fremont, California, and shows each figure with its source and date. Data as of 2026-11-11. Links in this file marked "source" go to the page a figure was read from.
 
 
 ---
 
 # FremontCaByTheNumbers.com  (index.html)
 
-Fremont, California in numbers: rent, home prices, schools, crime, jobs and health. A data aggregator built using Claude. Every figure links to its source.
+Fremont, California in numbers: rent, home prices, schools, crime, jobs and health. Free and open public data. Every figure links to its source.
 
 ## Fremont at a glance
 Click any number to open its source in a new tab.
@@ -29,11 +29,12 @@ Click any number to open its source in a new tab.
 - [Jobs](jobs.html): 4.5% unemployment rate, Sep 2026 (BLS/EDD); median household income $181,506
 - [Startups](startups.html): $900M largest recent funding round by a Fremont-linked company (Pacific Fusion, Series A, Oct 2024)
 
-## About this site
-A data aggregator built by JeffreyAiFudenna using Claude to gather data and write the code
-FremontCaByTheNumbers.com does not run its own surveys or measurements. It collects figures that public sources have already published (the City of Fremont, the U.S. Census Bureau, California state agencies, Zillow, Redfin, news reports and others) and puts them in one place.
-Claude did the gathering. Claude, Anthropic’s AI model, read each source, recorded the figure with the page it came from and the date it was read, and wrote the code for this site. AI can misread a source, so every number links back to where it came from: click it to open the source in a new tab and check.
-Read the full methodology and source list
+## Why this site exists
+Fair, free access to public data
+Public data should be easy for everyone to find, not just people with money or technical skill. Anyone with time and the right tools can gather these figures. This site does it once, in the open, so no one has to. A more equitable world starts with fair and free access.
+It is free, with no account and no paywall. The code and data are open on GitHub. The site runs no surveys of its own: it collects what the City of Fremont, the U.S. Census Bureau, California agencies, Zillow, Redfin and others have already published, and links every number back to them.
+Built by JeffreyAiFudenna, with Claude (Anthropic’s AI model) gathering the figures and writing the code. AI can misread a source, so click any number to open its source and check.
+Cheers to Fremont. It’s why I made this. Methodology and sources
 
 
 ---
@@ -2572,10 +2573,13 @@ Note: USPTO patent counts for Fremont are not included yet.
 
 # About, Sources & Methodology  (sources.html)
 
-How FremontCaByTheNumbers.com works: a data aggregator built using Claude, its methods, limits, datasets and every source page.
+Why FremontCaByTheNumbers.com exists (fair, free access to public data), plus its methods, limits, datasets and every source page.
 
-## A data aggregator built using Claude
-FremontCaByTheNumbers.com is a data aggregator. It does not run its own surveys, counts or measurements. It gathers figures that public sources have already published, such as the City of Fremont’s reports and dashboards, the U.S. Census Bureau, California state agencies, Zillow, Redfin and news coverage, and shows them in one place for people who live in, or are thinking about moving to, Fremont, California. Every number carries its source and the date it was read.
+## Why this site exists
+Fair, free access to public data. Public data should be easy for everyone to find, not just people with money or technical skill. Anyone with time and the right tools can gather these figures; this site does it once, in the open, so no one has to. A more equitable world starts with fair and free access. The code and data are open on GitHub. Cheers to Fremont: it’s why I made this.
+
+## What it is
+FremontCaByTheNumbers.com is a free data aggregator. It does not run its own surveys, counts or measurements. It gathers figures that public sources have already published, such as the City of Fremont’s reports and dashboards, the U.S. Census Bureau, California state agencies, Zillow, Redfin and news coverage, and shows them in one place for people who live in, or are thinking about moving to, Fremont, California. Every number carries its source and the date it was read.
 
 ## Built by JeffreyAiFudenna
 FremontCaByTheNumbers.com was built by JeffreyAiFudenna, using Claude to gather the data and write the code.
