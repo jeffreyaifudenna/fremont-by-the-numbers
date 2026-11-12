@@ -63,7 +63,7 @@ FBN.page({
           '<p><strong>Cheers to Fremont. It’s why I made this.</strong> <a href="sources.html">Methodology and sources</a></p></div>' +
           /* One sponsor slot, local Fremont businesses only. To fill it, replace the contents of .ad-slot
              (keep the "Sponsored" label). Contact link below is the open-slot invitation. */
-          '<aside class="ad-slot" aria-label="Sponsor"><span class="ad-label">Built by</span>' +
+          '<aside class="ad-slot" aria-label="Sponsor"><span class="ad-label">Builder of this site</span>' +
           '<p class="ad-title">JeffreyAiFudenna</p>' +
           '<p><a class="ad-btn" href="https://jeffrey-ai-portfolio.vercel.app" target="_blank" rel="noopener">Visit my portfolio ↗</a></p>' +
           '<p class="ad-own"><strong>Own a Fremont business?</strong> Sponsor this free public resource and help keep it free. One business at a time, simple monthly fee. <a href="' + AD_SIGNUP + '"' + (AD_FORM ? ' target="_blank" rel="noopener"' : '') + '>Sign up to advertise' + (AD_FORM ? ' ↗' : '') + '</a>.</p></aside></div>'
