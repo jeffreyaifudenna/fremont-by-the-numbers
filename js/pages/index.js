@@ -1,6 +1,6 @@
 /* Home page: headline numbers and one door into each category. */
 /* Advertiser signup: paste the Google Form share link between the quotes. While empty, the link falls back to email. */
-const AD_FORM = '';
+const AD_FORM = 'https://docs.google.com/forms/d/e/1FAIpQLSfLKXM5-mOgRRrkmQecmai8uK4hnng7TT1Hsj7tse_ygrfYFA/viewform';
 const AD_SIGNUP = AD_FORM || 'mailto:Jeffreyaifudenna@gmail.com?subject=Advertising%20on%20Fremont%20by%20the%20Numbers';
 FBN.page({
   key: 'index',
@@ -67,7 +67,7 @@ FBN.page({
           '<p class="ad-title">JeffreyAiFudenna</p>' +
           '<p>Builder of this site</p>' +
           '<p><a class="ad-btn" href="https://jeffrey-ai-portfolio.vercel.app" target="_blank" rel="noopener">Visit my portfolio ↗</a></p>' +
-          '<p class="ad-own"><strong>Own a Fremont business?</strong> This space is for rent, one business at a time, for a simple monthly fee. <a href="' + AD_SIGNUP + '"' + (AD_FORM ? ' target="_blank" rel="noopener"' : '') + '>Sign up to advertise' + (AD_FORM ? ' ↗' : '') + '</a>.</p></aside></div>'
+          '<p class="ad-own"><strong>Own a Fremont business?</strong> Sponsor this free public resource and help keep it free. One business at a time, simple monthly fee. <a href="' + AD_SIGNUP + '"' + (AD_FORM ? ' target="_blank" rel="noopener"' : '') + '>Sign up to advertise' + (AD_FORM ? ' ↗' : '') + '</a>.</p></aside></div>'
       }
     ];
   }
