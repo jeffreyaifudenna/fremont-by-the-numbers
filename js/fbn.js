@@ -6,7 +6,7 @@
 
   const SITE = {
     name: 'FremontCaByTheNumbers.com',
-    updated: 'Nov 11, 2026',
+    updated: 'Nov 13, 2026',
     nav: [
       { key: 'index', href: 'index.html', label: 'Overview' },
       { key: 'rent', href: 'rent.html', label: 'Rent & Housing' },
@@ -126,6 +126,7 @@
   const cache = {};
   const failed = new Set();   // datasets whose file could not be loaded
   let catalog = null;
+  let schedule = null;   // data/_schedule.json: refresh cadence per dataset, last monthly run (written by tools/sync_schedule.py)
   let links = null;   // data/source_links.json: where each number can be checked
   const base = (document.currentScript && document.currentScript.getAttribute('data-base')) || '';
   // data-v is a hash of css/, js/ and data/ written by the build; versioned files can be cached for good (see vercel.json).
@@ -138,6 +139,7 @@
     const want = Array.from(new Set(ids));
     const p = want.map(id => cache[id] ? Promise.resolve() : loadJSON(dataUrl(id + '.json')).then(d => { cache[id] = d; failed.delete(id); }).catch(e => { cache[id] = null; failed.add(id); console.warn(e); }));
     if (!catalog) p.push(loadJSON(dataUrl('_catalog.json')).then(c => { catalog = c; }).catch(() => { catalog = {}; }));
+    if (!schedule) p.push(loadJSON(dataUrl('_schedule.json')).then(s => { schedule = s; }).catch(() => { schedule = { datasets: {} }; }));
     if (!links) p.push(loadJSON(dataUrl('source_links.json')).then(l => { links = l; }).catch(() => { links = { datasets: {}, sources: [], rows: {} }; }));
     return Promise.all(p);
   }
@@ -253,7 +255,7 @@
     const header = document.createElement('header');
     header.className = 'site-header';
     header.innerHTML = '<div class="wrap">' +
-      '<a class="brand" href="' + base + 'index.html"><span class="eyebrow">Fremont, California<span class="eb-agg"><span class="eb-sep"> · </span>Free, open data · built by JeffreyAiFudenna with Claude</span></span><span class="name">' + SITE.name + '</span></a>' +
+      '<a class="brand" href="' + base + 'index.html"><span class="eyebrow">Fremont, California</span><span class="name">' + SITE.name + '</span></a>' +
       '<div class="header-right"><span class="updated">Data as of ' + SITE.updated + '</span>' +
       '<button class="theme-toggle" type="button" aria-label="Switch between light and dark mode"></button></div></div>';
     const nav = document.createElement('nav');
@@ -301,6 +303,100 @@
     if (src) parts.push(esc(full ? src : shortSource(src)));
     return parts.join(' · ');
   }
+  /* A small trend line for a stat card. Gaps (null) break the line instead of being drawn through. */
+  function sparkline(vals, labels, f) {
+    const pts = vals.filter(v => v !== null && v !== undefined);
+    if (pts.length < 3) return '';
+    const mn = Math.min.apply(null, pts), mx = Math.max.apply(null, pts), W = 120, H = 40, pad = 3;
+    const X = i => pad + i * (W - 2 * pad) / (vals.length - 1);
+    const Y = v => H - pad - (v - mn) / (mx - mn || 1) * (H - 2 * pad);
+    let d = '', pen = false;
+    vals.forEach((v, i) => { if (v === null || v === undefined) { pen = false; return; } d += (pen ? 'L' : 'M') + X(i).toFixed(1) + ' ' + Y(v).toFixed(1); pen = true; });
+    const lb = labels || ['', ''];
+    const first = pts[0], last = pts[pts.length - 1];
+    const aria = 'Trend from ' + lb[0] + ' (' + fmt(first, f) + ') to ' + lb[1] + ' (' + fmt(last, f) + ')';
+    return '<svg class="spark" viewBox="0 0 ' + W + ' ' + H + '" preserveAspectRatio="none" role="img" aria-label="' + esc(aria) + '"><path d="' + d + '"/></svg>' +
+      '<span class="spark-range"><span>' + esc(lb[0]) + ' · ' + esc(fmt(first, f)) + '</span><span>' + esc(lb[1]) + ' · ' + esc(fmt(last, f)) + '</span></span>';
+  }
+
+  /* "How Fremont compares": one row per figure, Fremont against the state or county, each number read from a stored row.
+     item = { title, fremont: {ds,id,key?,value?}, others: [{label, ds, id, key?, value?}], format, min, max, period?, note? }
+     A row is drawn only when every number is present in the data; otherwise it is left out. */
+  function compareHtml(items) {
+    return items.map(it => {
+      const get = o => { const r = o.ds ? row(o.ds, o.id, o.key) : null; const v = o.value !== undefined ? o.value : (r ? r.value : undefined); return { r, v: v === undefined || v === null || v === '' ? NaN : Number(v) }; };
+      const f = get(it.fremont);
+      const os = it.others.map(o => Object.assign({ label: o.label }, get(o)));
+      if (isNaN(f.v) || os.some(o => isNaN(o.v))) return '';
+      const pos = v => Math.max(0, Math.min(100, (v - it.min) / (it.max - it.min) * 100)).toFixed(1) + '%';
+      const last = os[os.length - 1];
+      const verdict = f.v === last.v ? 'Same as ' + last.label : (f.v > last.v ? 'Above ' : 'Below ') + last.label;
+      const lk = linkFor(it.fremont.ds, f.r || null) || null;
+      const period = it.period || (f.r && norm(f.r).period) || '';
+      return '<div class="cmp"><div class="cmp-h"><b>' + esc(it.title) + '</b><span class="cmp-verdict">' + esc(verdict) + '</span></div>' +
+        '<div class="cmp-track" role="img" aria-label="' + esc(it.title + ': Fremont ' + fmt(f.v, it.format) + '; ' + os.map(o => o.label + ' ' + fmt(o.v, it.format)).join('; ')) + '">' +
+        os.map(o => '<span class="cmp-mk" style="left:' + pos(o.v) + '"></span>').join('') + '<span class="cmp-mk f" style="left:' + pos(f.v) + '"></span></div>' +
+        '<div class="cmp-leg"><span><i class="f"></i><b>Fremont ' + esc(fmt(f.v, it.format)) + '</b></span>' + os.map(o => '<span><i></i>' + esc(o.label) + ' <b>' + esc(fmt(o.v, it.format)) + '</b></span>').join('') + '</div>' +
+        '<div class="cmp-src">' + esc([period, it.note].filter(Boolean).join(' · ')) + (lk ? ' · ' + linkHtml(lk, 'src-link', 'Source ↗<span class="sr-only"> (opens in a new tab)</span>') : '') + '</div></div>';
+    }).join('');
+  }
+
+  /* ---------- freshness: how current each dataset is ---------- */
+  const MON = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+  const MAX_AGE_DAYS = { monthly: 45, quarterly: 105, semiannual: 200, annual: 400, biennial: 800 };   // older than this since the last read = due for a check
+  function dayLabel(d) { return MON[d.getUTCMonth()] + ' ' + d.getUTCDate() + ', ' + d.getUTCFullYear(); }
+  function isoDay(s) { const m = /^(\d{4})-(\d{2})-(\d{2})/.exec(String(s || '')); return m ? new Date(Date.UTC(+m[1], +m[2] - 1, +m[3])) : null; }
+  function siteDay() { const d = new Date(SITE.updated + ' UTC'); return isNaN(d) ? new Date() : d; }
+  /* Status of every dataset, judged on the date the site was last updated (not the visitor's clock, so the pre-rendered page and the live page agree). */
+  function freshness() {
+    const cat = catalog || {}, sch = (schedule && schedule.datasets) || {}, now = siteDay();
+    const rows = Object.keys(cat).map(id => {
+      const c = cat[id], s = sch[id] || {}, read = isoDay(c.updated);
+      const age = read ? Math.round((now - read) / 864e5) : null;
+      const max = MAX_AGE_DAYS[s.cadence];
+      let status = 'ok', label = 'Current';
+      if (!s.cadence) { status = 'unknown'; label = 'No schedule'; }
+      else if (s.cadence === 'static') label = 'Static';
+      else if (age === null) { status = 'unknown'; label = 'Date missing'; }
+      else if (age > 2 * max) { status = 'old'; label = 'Old'; }
+      else if (age > max) { status = 'due'; label = 'Check due'; }
+      return { id, title: c.title, desc: c.description, read, age, status, label, cadence: s.cadence, release: s.typical_release, next: s.next_check };
+    });
+    const last = isoDay(schedule && schedule.last_run);
+    const next = (last && schedule.run_day) ? new Date(Date.UTC(last.getUTCFullYear(), last.getUTCMonth() + 1, schedule.run_day)) : null;
+    const n = s => rows.filter(r => r.status === s).length;
+    return { rows, last, next, counts: { ok: n('ok'), due: n('due'), old: n('old'), unknown: n('unknown') } };
+  }
+  /* One line for the bottom of the home page. */
+  function freshnessBar() {
+    const F = freshness(), c = F.counts, total = F.rows.length, behind = c.due + c.old;
+    const el = document.createElement('section');
+    el.className = 'section fresh-bar-wrap';
+    el.innerHTML = '<div class="fresh-bar"><span class="fresh-main"><span class="fresh-dot' + (behind ? ' due' : '') + '" aria-hidden="true"></span><b>' + (behind ? c.ok + ' of ' + total + ' datasets current, ' + behind + ' due for a check' : 'All ' + total + ' datasets current') + '</b></span>' +
+      (F.last ? '<span>Last monthly refresh <b>' + dayLabel(F.last) + '</b></span>' : '') +
+      (F.next ? '<span>Next refresh due <b>' + dayLabel(F.next) + '</b></span>' : '') +
+      '<a href="' + base + 'sources.html#freshness">See what is fresh and what is due →</a></div>';
+    return el;
+  }
+  /* The full panel for the top of the Sources page. */
+  function freshnessHtml() {
+    const F = freshness(), c = F.counts, total = F.rows.length;
+    const order = { old: 0, due: 1, unknown: 2, ok: 3 };
+    const rows = F.rows.slice().sort((a, b) => order[a.status] - order[b.status] || a.title.localeCompare(b.title));
+    const cardOf = r => '<div class="fc"><div class="fc-t"><span>' + esc(r.title) + '</span><span class="badge ' + r.status + '">' + esc(r.label) + '</span></div>' + (r.desc ? '<div class="fc-d">' + esc(r.desc) + '</div>' : '') + '<dl>' +
+      '<dt>We last read it</dt><dd>' + (r.read ? dayLabel(r.read) : '—') + '</dd>' +
+      (r.cadence ? '<dt>Checked</dt><dd>' + esc(r.cadence) + '</dd>' : '') +
+      (r.release ? '<dt>Publisher releases</dt><dd>' + esc(r.release) + '</dd>' : '') +
+      (r.next ? '<dt>Next check</dt><dd>' + esc(r.next) + '</dd>' : '') + '</dl></div>';
+    const attention = rows.filter(r => r.status !== 'ok');
+    return '<div class="fresh-sum"><span class="fresh-dot' + (attention.length ? ' due' : '') + '" aria-hidden="true"></span><b>' + c.ok + ' of ' + total + ' datasets current</b>' +
+      (c.due ? ' · <span class="t-due">' + c.due + ' check due</span>' : '') + (c.old ? ' · <span class="t-old">' + c.old + ' old</span>' : '') + (c.unknown ? ' · ' + c.unknown + ' without a schedule' : '') +
+      (F.last ? ' · last monthly refresh <b>' + dayLabel(F.last) + '</b>' : '') + (F.next ? ' · next due <b>' + dayLabel(F.next) + '</b>' : '') + '</div>' +
+      (attention.length ? '<div class="fresh-grid">' + attention.map(cardOf).join('') + '</div>' : '') +
+      '<details class="datasets"><summary>Show all ' + c.ok + ' current datasets</summary><div class="fresh-grid">' + rows.filter(r => r.status === 'ok').map(cardOf).join('') + '</div></details>' +
+      '<p class="note">“We last read it” is the date this site last copied the figures from the publisher. “Next check” is this site’s own plan (refreshes are run by hand, once a month), not a date the publisher announced. A dataset is flagged <b>Check due</b> when it is older than one cycle of its schedule (monthly 45 days, quarterly 105, twice a year 200, yearly 400, every two years 800) and <b>Old</b> at twice that. Judged as of ' + esc(SITE.updated) + '. A yearly dataset can show Check due only because the publisher has not released a newer edition yet.</p>';
+  }
+
   function card(spec) {
     const r = spec.ds ? row(spec.ds, spec.id, spec.key) : null;
     const n = r ? norm(r) : {};
@@ -324,10 +420,11 @@
       const fullTxt = (spec.meta === undefined && r) ? sourceText(spec.ds, r, true).replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/&#39;/g, "'") : '';
       el.title = OPEN_TXT + (lk.name ? ': ' + lk.name : '') + (fullTxt ? '\n' + fullTxt : '');
     }
+    const spark = spec.series ? sparkline(spec.series, spec.seriesLabels, spec.seriesFormat || format) : '';
     el.innerHTML =
       '<div class="card-top"><span class="card-label">' + esc(label) + '</span><span class="chip">' + icon(spec.icon || 'chart') + '</span></div>' +
       '<span class="card-value' + (text ? ' text' : '') + '">' + esc(fmt(value, format)) + '</span>' +
-      delta +
+      delta + spark +
       (meta ? '<span class="card-meta">' + meta + '</span>' : '') +
       (note ? '<span class="card-note">' + esc(note) + '</span>' : '') +
       (lk ? '<span class="card-open" aria-hidden="true">Source ↗</span><span class="sr-only">' + esc(OPEN_TXT + (lk.name ? ': ' + lk.name : '')) + '</span>' : '');
@@ -502,6 +599,7 @@
     if (spec.id) sec.id = spec.id;
     else if (spec.title) sec.id = uniqueId(spec.title);
     if (spec.title) sec.innerHTML = '<div class="section-head"><h2>' + esc(spec.title) + '</h2>' + (spec.sub ? '<p class="sub">' + esc(spec.sub) + '</p>' : '') + '</div>';
+    if (spec.lead) { const d = document.createElement('div'); d.innerHTML = spec.lead; while (d.firstChild) sec.appendChild(d.firstChild); }
     if (spec.cards) {
       const g = document.createElement('div'); g.className = 'cards' + (spec.tight ? ' tight' : '') + (spec.cols === 3 ? ' cols3' : '');
       spec.cards.forEach(c => g.appendChild(card(c)));
@@ -594,5 +692,5 @@
     return sec;
   }
 
-  window.FBN = { page, section, card, chartPanel, tablePanel, factsPanel, load, data, row, norm, fmt, icon, esc, SITE, chrome, linkFor, rowLink, absUrl, catalog: () => catalog };
+  window.FBN = { page, section, card, chartPanel, tablePanel, factsPanel, load, data, row, norm, fmt, icon, esc, SITE, chrome, linkFor, compareHtml, freshnessBar, freshnessHtml, sparkline, rowLink, absUrl, catalog: () => catalog };
 })();

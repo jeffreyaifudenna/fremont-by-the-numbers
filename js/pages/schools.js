@@ -25,6 +25,17 @@ FBN.page({
         notes: ['Fremont Unified serves nearly all of the city. Test figures are the share of students meeting the state standard on the 2025–26 Smarter Balanced tests in grades 3–8 and 11.']
       },
       {
+        id: 'compare',
+        title: 'How Fremont Unified compares',
+        sub: 'Fremont Unified against California, using the same measure for both.',
+        html: '<div class="cmp-panel">' + FBN.compareHtml([
+          { title: 'Four-year graduation rate', fremont: { ds: 'schools', id: 'grad_rate' }, others: [{ label: 'California', ds: 'schools', id: 'grad_rate_state' }], format: 'pct', min: 80, max: 100 },
+          { title: 'Students proficient in English', fremont: { ds: 'schools', id: 'ela' }, others: [{ label: 'California', ds: 'schools', id: 'ela_state' }], format: 'pct', min: 0, max: 100 },
+          { title: 'Students proficient in math', fremont: { ds: 'schools', id: 'math' }, others: [{ label: 'California', ds: 'schools', id: 'math_state' }], format: 'pct', min: 0, max: 100 },
+          { title: 'Students per teacher', fremont: { ds: 'schools', id: 'ratio' }, others: [{ label: 'California', ds: 'schools', id: 'ratio_state' }], format: 'dec1', min: 15, max: 25 }
+        ]) + '</div>'
+      },
+      {
         title: 'High school rankings',
         sub: 'U.S. News Best High Schools, 2026–27 edition, for Fremont Unified’s five comprehensive high schools.',
         tables: [{

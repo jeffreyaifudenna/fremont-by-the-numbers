@@ -7,6 +7,7 @@ FBN.page({
   sections: function (data, row) {
     // Written from the data, so it stays true after each BLS refresh
     const um = data('unemployment_monthly').filter(r => r.fremont !== null && r.fremont !== undefined);
+    const uLast = um[um.length - 1] || {};
     const peak = um.reduce((a, r) => (!a || r.fremont > a.fremont ? r : a), null);
     const vsCounty = um.every(r => r.fremont <= r.alameda) ? 'at or below Alameda County’s' : null;
     const vsState = um.every(r => r.fremont < r.california) ? 'below California’s' : null;
@@ -23,6 +24,15 @@ FBN.page({
           { ds: 'census_profile', id: 'lfpr', label: 'Adults in the labor force', icon: 'users', color: 4 },
           { ds: 'people_more', id: 'inc_200k', label: 'Households earning $200,000 or more', icon: 'trend', color: 5 }
         ]
+      },
+      {
+        id: 'compare',
+        title: 'How Fremont compares',
+        sub: 'Fremont against the county and the state, using the same measure for both.',
+        html: '<div class="cmp-panel">' + FBN.compareHtml([
+          { title: 'Unemployment rate', fremont: { ds: 'unemployment_monthly', id: uLast.month, key: 'month', value: uLast.fremont }, others: [{ label: 'Alameda County', value: uLast.alameda }, { label: 'California', value: uLast.california }], format: 'pct1', min: 0, max: 6, period: (uLast.label || '') + (uLast.status === 'Preliminary' ? ' (preliminary)' : ''), note: 'not seasonally adjusted' },
+          { title: 'Minimum wage per hour', fremont: { ds: 'jobs_more', id: 'fremont_minimum_wage_2026' }, others: [{ label: 'California', ds: 'jobs_more', id: 'california_minimum_wage_2026' }], format: 'usd2', min: 15, max: 20 }
+        ]) + '</div>'
       },
       {
         title: 'Unemployment by month',

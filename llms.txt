@@ -2,7 +2,7 @@
 
 > FremontCaByTheNumbers.com offers fair, free access to public data, built with Claude (Anthropic's AI model). It gathers public figures about Fremont, California (housing, schools, safety, jobs and more) from the agencies and companies that publish them, and shows every figure with its source and date. The site is Fremont-only and runs no surveys of its own. Built by JeffreyAiFudenna.
 
-How to read it: every page is plain HTML with the figures also written out as text and tables. Each figure links to its original source. Treat the source link as the authority; Claude can misread a source. Data was last checked 2026-11-11.
+How to read it: every page is plain HTML with the figures also written out as text and tables. Each figure links to its original source. Treat the source link as the authority; Claude can misread a source. Data was last checked 2026-11-13.
 
 ## Pages
 

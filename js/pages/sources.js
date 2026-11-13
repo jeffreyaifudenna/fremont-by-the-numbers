@@ -21,6 +21,12 @@ FBN.page({
 
     return [
       {
+        id: 'freshness',
+        title: 'Datasets behind the site',
+        sub: 'Each dataset is one file. For each: what it holds, when it was last read, and whether a check is due.',
+        html: FBN.freshnessHtml()
+      },
+      {
         id: 'how',
         html: '<div class="prose">' +
           '<h2>Why this site exists</h2>' +
@@ -54,11 +60,6 @@ FBN.page({
           '<h2>Updates</h2>' +
           '<p>On Oct 25, 2026 the site was trimmed: figures that were out of date, duplicated on another page, or not about Fremont itself (county, Bay Area, national or worldwide) were removed, so each fact now appears once. Each figure is refreshed when its source publishes a new release. Each topic page shows the date its figures were last checked, and each figure shows the date of its own source. Corrections are welcome.</p>' +
           '</div>'
-      },
-      {
-        title: 'Datasets behind the site',
-        sub: 'Each dataset is one file; its description says what it holds and when it was read.',
-        html: '<details class="datasets"><summary>Show all ' + ids.length + ' datasets</summary><div class="dataset-list">' + ids.map(id => '<div class="dataset"><span class="t">' + FBN.esc(cat[id].title) + '</span><span class="d">' + FBN.esc(cat[id].description) + '</span>' + (cat[id].updated ? '<span class="u">Read ' + FBN.esc(cat[id].updated.slice(0, 10)) + '</span>' : '') + '</div>').join('') + '</div></details>'
       },
       {
         title: 'Every source page',

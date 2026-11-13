@@ -336,3 +336,64 @@ tr.group-row .group-n { font-weight: 500; color: var(--muted); }
 .nav-prev { left: 0; justify-content: flex-start; padding-left: 10px; background: linear-gradient(to right, var(--surface) 55%, transparent); }
 .nav-next { right: 0; justify-content: flex-end; padding-right: 10px; background: linear-gradient(to left, var(--surface) 55%, transparent); }
 .nav-arrow:hover, .nav-arrow:focus-visible { color: var(--ink); }
+
+/* ---------- home: hero joined to "Fremont at a glance" ---------- */
+.home-hero { display: grid; grid-template-columns: minmax(0, 1fr); gap: 18px; padding: 24px 0 6px; align-items: center; }
+@media (min-width: 860px) { .home-hero { grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr); } }
+.home-hero .hh-kicker { font-size: 12px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--link); }
+.home-hero .hh-title { font-size: clamp(30px, 5vw, 44px); line-height: 1.08; font-weight: 800; margin: 6px 0 10px; }
+.home-hero p.hh-lede { font-size: 17px; color: var(--ink-2); max-width: 56ch; }
+.home-hero .hh-ticks { display: flex; flex-wrap: wrap; gap: 6px 16px; margin-top: 12px; font-size: 14px; color: var(--ink-2); list-style: none; padding: 0; }
+.home-hero .hh-ticks li::before { content: "✓ "; color: var(--ok); font-weight: 700; }
+.hh-hint { font-size: 14px; color: var(--muted); margin-top: 10px; }
+.hh-scene { position: relative; border-radius: var(--radius); overflow: hidden; border: 1px solid var(--line); background: linear-gradient(#cfe3ff, #fff4dc); }
+:root[data-theme="dark"] .hh-scene { background: linear-gradient(#14264a, #2a2a4a); }
+.hh-scene svg { width: 100%; height: auto; }
+.hh-scene .sun { fill: #ffd27a; opacity: 0.9; }
+.hh-scene .hill1 { fill: #9db8d9; } .hh-scene .hill2 { fill: #7c9cc4; } .hh-scene .bld { fill: #3b4a6b; }
+:root[data-theme="dark"] .hh-scene .hill1 { fill: #2a4672; } :root[data-theme="dark"] .hh-scene .hill2 { fill: #1f3558; } :root[data-theme="dark"] .hh-scene .bld { fill: #9fb4dc; }
+.hh-scene .train { fill: var(--s1); } .hh-scene .win { fill: #fff; opacity: 0.85; } .hh-scene .lake { fill: var(--s1); opacity: 0.35; }
+a.hh-chip { position: absolute; left: 12px; top: 12px; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 8px 12px; box-shadow: 0 6px 18px rgba(0,0,0,0.18); color: var(--ink); text-decoration: none; display: flex; flex-direction: column; }
+a.hh-chip:hover { border-color: var(--link); }
+.hh-chip small { color: var(--muted); font-size: 11px; letter-spacing: 0.05em; text-transform: uppercase; }
+.hh-chip b { font-family: var(--font-num); font-size: 22px; line-height: 1.15; }
+.hh-chip span { font-size: 12px; font-weight: 600; color: var(--ok); }
+.hh-chip span.down { color: var(--warn); }
+
+/* sparkline inside a stat card */
+.spark { width: 100%; height: 40px; margin-top: 4px; }
+.spark path { fill: none; stroke: var(--s1); stroke-width: 2; stroke-linejoin: round; stroke-linecap: round; vector-effect: non-scaling-stroke; }
+.c2 .spark path { stroke: var(--s2); } .c3 .spark path { stroke: var(--s3); } .c4 .spark path { stroke: var(--s4); } .c5 .spark path { stroke: var(--s5); }
+.spark-range { display: flex; justify-content: space-between; gap: 8px; font-size: 11px; color: var(--muted); }
+
+/* "How Fremont compares" */
+.cmp-panel { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 4px 18px; box-shadow: var(--shadow); }
+.cmp { padding: 14px 0; border-bottom: 1px solid var(--line); }
+.cmp:last-child { border-bottom: 0; }
+.cmp-h { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 4px 12px; font-size: 15px; }
+.cmp-verdict { font-size: 13px; color: var(--ink-2); }
+.cmp-track { position: relative; height: 8px; background: var(--line); border-radius: 999px; margin: 16px 8px 12px; }
+.cmp-mk { position: absolute; top: 50%; transform: translate(-50%, -50%); width: 14px; height: 14px; border-radius: 50%; border: 2px solid var(--surface); background: var(--muted); }
+.cmp-mk.f { width: 20px; height: 20px; background: var(--s1); z-index: 1; box-shadow: 0 0 0 3px color-mix(in srgb, var(--s1) 25%, transparent); }
+.cmp-leg { display: flex; flex-wrap: wrap; gap: 4px 16px; font-size: 14px; color: var(--ink-2); }
+.cmp-leg i { display: inline-block; width: 10px; height: 10px; border-radius: 50%; background: var(--muted); margin-right: 5px; }
+.cmp-leg i.f { background: var(--s1); } .cmp-leg b { color: var(--ink); }
+.cmp-src { font-size: 12px; color: var(--muted); margin-top: 4px; }
+
+/* freshness: bottom bar on the home page, full panel on the Sources page */
+.fresh-bar { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 12px 16px; display: flex; flex-wrap: wrap; gap: 6px 18px; align-items: center; font-size: 14px; color: var(--ink-2); }
+.fresh-bar b, .fresh-sum b { color: var(--ink); }
+.fresh-dot { width: 9px; height: 9px; border-radius: 50%; background: var(--ok); display: inline-block; margin-right: 6px; vertical-align: 0; }
+.fresh-dot.due { background: var(--warn); }
+.fresh-sum { font-size: 15px; color: var(--ink-2); }
+.t-due { color: var(--warn); font-weight: 600; } .t-old { color: #b3261e; font-weight: 600; }
+:root[data-theme="dark"] .t-old { color: #ff8b80; }
+.fresh-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); gap: 10px; margin-top: 12px; }
+.fc { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-sm); padding: 12px 14px; font-size: 14px; }
+.fc-t { display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; font-weight: 700; }
+.fc dl { margin: 8px 0 0; display: grid; grid-template-columns: auto 1fr; gap: 3px 12px; }
+.fc dt { color: var(--muted); } .fc dd { margin: 0; text-align: right; color: var(--ink-2); }
+.badge { font-size: 11px; font-weight: 700; border-radius: 999px; padding: 2px 9px; white-space: nowrap; border: 1px solid currentColor; }
+.badge.ok { color: var(--ok); } .badge.due { color: var(--warn); } .badge.old { color: #b3261e; } .badge.unknown { color: var(--muted); }
+:root[data-theme="dark"] .badge.old { color: #ff8b80; }
+.fc-d { color: var(--ink-2); font-size: 13px; margin-top: 4px; }

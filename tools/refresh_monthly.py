@@ -86,6 +86,8 @@ def main():
     with open(LAST_RUN, "w", encoding="utf-8", newline="\n") as f:
         f.write(json.dumps(note, indent=1) + "\n")
 
+    subprocess.call([sys.executable, os.path.join(HERE, "sync_schedule.py"), a.site])  # data/_schedule.json feeds the freshness bar
+
     if data_hash(a.site) == before:
         print("\nNo data changed, so no rebuild is needed.")
     elif a.no_build:
