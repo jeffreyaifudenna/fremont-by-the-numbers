@@ -249,9 +249,20 @@
   function cssVar(name) { return getComputedStyle(document.documentElement).getPropertyValue(name).trim(); }
   function seriesColor(i) { return cssVar('--s' + (((i - 1) % 5) + 1)); }
 
+  /* ---------- local sponsor box (one spot). Shown on every page: beside the About box on the home page,
+     above the footer everywhere else. To fill it, replace the contents; keep a "Sponsored" label. ---------- */
+  const AD_FORM = 'https://docs.google.com/forms/d/e/1FAIpQLSfLKXM5-mOgRRrkmQecmai8uK4hnng7TT1Hsj7tse_ygrfYFA/viewform';
+  const AD_SIGNUP = AD_FORM || 'mailto:Jeffreyaifudenna@gmail.com?subject=Advertising%20on%20Fremont%20by%20the%20Numbers';
+  function sponsorHtml() {
+    return '<aside class="ad-slot" aria-label="Local sponsor"><span class="ad-label">Local sponsor</span>' +
+      '<p class="ad-title">JeffreyAiFudenna</p>' +
+      '<p><a class="ad-btn" href="https://jeffrey-ai-portfolio.vercel.app" target="_blank" rel="noopener">Visit my portfolio ↗</a></p>' +
+      '<p class="ad-own"><strong>Only 1 sponsor spot.</strong> No ad clutter, no spam. Made by a Fremont native, for Fremont’s benefit. <a href="' + AD_SIGNUP + '"' + (AD_FORM ? ' target="_blank" rel="noopener"' : '') + '>Sign up to sponsor' + (AD_FORM ? ' ↗' : '') + '</a></p></aside>';
+  }
+
   /* ---------- chrome: header, nav, footer ---------- */
   function chrome(key) {
-    document.querySelectorAll('body > .site-header, body > .site-nav, body > .site-footer').forEach(e => e.remove());
+    document.querySelectorAll('body > .site-header, body > .site-nav, body > .site-footer, body > .sponsor-bottom').forEach(e => e.remove());
     const header = document.createElement('header');
     header.className = 'site-header';
     header.innerHTML = '<div class="wrap">' +
@@ -278,6 +289,12 @@
       '<span><a href="' + base + 'sources.html">About, methodology &amp; sources</a> · <a href="https://github.com/jeffreyaifudenna/fremont-by-the-numbers/issues" target="_blank" rel="noopener">Report an error</a> · <a href="https://jeffrey-ai-portfolio.vercel.app" target="_blank" rel="noopener">JeffreyAiPortfolio</a></span></div>';
     document.body.prepend(nav);
     document.body.prepend(header);
+    if (key !== 'index') {
+      const sp = document.createElement('section');
+      sp.className = 'sponsor-bottom';
+      sp.innerHTML = '<div class="wrap">' + sponsorHtml() + '</div>';
+      document.body.appendChild(sp);
+    }
     document.body.appendChild(footer);
     header.querySelector('.theme-toggle').addEventListener('click', () => setTheme(currentTheme() === 'dark' ? 'light' : 'dark'));
     setTheme(currentTheme());
@@ -692,5 +709,5 @@
     return sec;
   }
 
-  window.FBN = { page, section, card, chartPanel, tablePanel, factsPanel, load, data, row, norm, fmt, icon, esc, SITE, chrome, linkFor, compareHtml, freshnessBar, freshnessHtml, sparkline, rowLink, absUrl, catalog: () => catalog };
+  window.FBN = { page, section, card, chartPanel, tablePanel, factsPanel, load, data, row, norm, fmt, icon, esc, SITE, chrome, sponsorHtml, linkFor, compareHtml, freshnessBar, freshnessHtml, sparkline, rowLink, absUrl, catalog: () => catalog };
 })();

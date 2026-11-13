@@ -1,7 +1,4 @@
 /* Home page: headline numbers and one door into each category. */
-/* Advertiser signup: paste the Google Form share link between the quotes. While empty, the link falls back to email. */
-const AD_FORM = 'https://docs.google.com/forms/d/e/1FAIpQLSfLKXM5-mOgRRrkmQecmai8uK4hnng7TT1Hsj7tse_ygrfYFA/viewform';
-const AD_SIGNUP = AD_FORM || 'mailto:Jeffreyaifudenna@gmail.com?subject=Advertising%20on%20Fremont%20by%20the%20Numbers';
 FBN.page({
   key: 'index',
   bare: true,
@@ -80,12 +77,8 @@ FBN.page({
           '<p>It is free, with no account and no paywall. The code and data are open on <a href="https://github.com/jeffreyaifudenna/fremont-by-the-numbers" target="_blank" rel="noopener">GitHub</a>. The site runs no surveys of its own: it collects what the City of Fremont, the U.S. Census Bureau, California agencies, Zillow, Redfin and others have already published, and links every number back to them.</p>' +
           '<p>Built by JeffreyAiFudenna, with Claude (Anthropic’s AI model) gathering the figures and writing the code. AI can misread a source, so click any number to open its source and check.</p>' +
           '<p><strong>Cheers to Fremont. It’s why I made this.</strong> <a href="sources.html">Methodology and sources</a></p></div>' +
-          /* One sponsor slot, local Fremont businesses only. To fill it, replace the contents of .ad-slot
-             (keep the "Sponsored" label). Contact link below is the open-slot invitation. */
-          '<aside class="ad-slot" aria-label="Sponsor"><span class="ad-label">Builder of this site</span>' +
-          '<p class="ad-title">JeffreyAiFudenna</p>' +
-          '<p><a class="ad-btn" href="https://jeffrey-ai-portfolio.vercel.app" target="_blank" rel="noopener">Visit my portfolio ↗</a></p>' +
-          '<p class="ad-own"><strong>Own a Fremont business?</strong> Sponsor this free public resource and help keep it free. One business at a time, simple monthly fee. <a href="' + AD_SIGNUP + '"' + (AD_FORM ? ' target="_blank" rel="noopener"' : '') + '>Sign up to advertise' + (AD_FORM ? ' ↗' : '') + '</a>.</p></aside></div>'
+          /* The one local sponsor spot: defined once in js/fbn.js (sponsorHtml) and shown on every page. */
+          FBN.sponsorHtml() + '</div>'
       }
     ].filter(Boolean);
   },
