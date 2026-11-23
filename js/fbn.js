@@ -252,7 +252,7 @@
   /* ---------- local sponsor box (one spot). Shown on every page: beside the About box on the home page,
      above the footer everywhere else. To fill it, replace the contents; keep a "Sponsored" label. ---------- */
   const AD_FORM = 'https://docs.google.com/forms/d/e/1FAIpQLSfLKXM5-mOgRRrkmQecmai8uK4hnng7TT1Hsj7tse_ygrfYFA/viewform';
-  const AD_SIGNUP = AD_FORM || 'mailto:Jeffreyaifudenna@gmail.com?subject=Advertising%20on%20Fremont%20by%20the%20Numbers';
+  const AD_SIGNUP = AD_FORM;
   function sponsorHtml() {
     return '<aside class="ad-slot" aria-label="Local sponsor"><span class="ad-label">Local sponsor</span>' +
       '<p class="ad-title">JeffreyAiFudenna</p>' +
