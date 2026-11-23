@@ -21,6 +21,10 @@
    "url": "https://catalog.data.gov/dataset/bart-daily-station-exits",
    "name": "BART Daily Station Exits (DataSF)"
   },
+  "bart_monthly": {
+   "url": "https://www.bart.gov/sites/default/files/2026-10/202609%20Monthly%20Ridership%20Snapshot.pdf",
+   "name": "BART Monthly Ridership Snapshot, September 2026"
+  },
   "business": {
    "url": "https://data.census.gov/table/CBP2023.CB2300CBP?g=860XX00US94536,94538,94539,94555",
    "name": "U.S. Census Bureau: business patterns"

@@ -1,0 +1,12 @@
+[
+  {"month": "2025-12", "label": "Dec 2025", "warm_springs": 1149, "fremont": 1959},
+  {"month": "2026-01", "label": "Jan 2026", "warm_springs": 1212, "fremont": 2100},
+  {"month": "2026-02", "label": "Feb 2026", "warm_springs": 1279, "fremont": 2228},
+  {"month": "2026-03", "label": "Mar 2026", "warm_springs": 1379, "fremont": 2340},
+  {"month": "2026-04", "label": "Apr 2026", "warm_springs": 1381, "fremont": 2394},
+  {"month": "2026-05", "label": "May 2026", "warm_springs": 1372, "fremont": 2409},
+  {"month": "2026-06", "label": "Jun 2026", "warm_springs": 1494, "fremont": 2502},
+  {"month": "2026-07", "label": "Jul 2026", "warm_springs": 1482, "fremont": 2479},
+  {"month": "2026-08", "label": "Aug 2026", "warm_springs": 1546, "fremont": 2584},
+  {"month": "2026-09", "label": "Sep 2026", "warm_springs": 1634, "fremont": 2696}
+]

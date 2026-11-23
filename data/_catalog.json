@@ -19,6 +19,11 @@
   "description": "Average weekday exits at Fremont and Warm Springs stations, FY 2019, 2024 and 2025, averaged from BART daily station exits (DataSF). Read Oct 24, 2026.",
   "updated": "2026-10-24T19:00:00Z"
  },
+ "bart_monthly": {
+  "title": "BART weekday riders by month",
+  "description": "Average weekday riders at Fremont and Warm Springs / South Fremont stations, Dec 2025 to Sep 2026, from BART's Monthly Ridership Snapshots (preliminary, subject to restatement). Read Nov 22, 2026.",
+  "updated": "2026-11-22T12:00:00Z"
+ },
  "business": {
   "title": "Shopping and dining",
   "description": "Restaurant and retail counts, jobs, taxable sales and major centers, from Census County Business Patterns, CDTFA and the City of Fremont. Read Oct 24, 2026.",

@@ -3,7 +3,7 @@ FBN.page({
   key: 'city',
   title: 'City of Fremont: Official Data',
   lede: 'Who lives here, how the city is run, and what its own dashboards and reports say.',
-  uses: ['dof_population', 'census_population', 'census_profile', 'people_more', 'languages', 'asian_groups', 'city_facts', 'civic_facts', 'app_summary', 'app_top', 'homeless_pit', 'homeless_monthly', 'climate_kpis', 'ghg_sector', 'ev_zip', 'ev_permits', 'city_rankings', 'pavement', 'traffic_facts', 'highway_aadt', 'living_facts', 'commute_modes', 'bart_history', 'water_monthly'],
+  uses: ['dof_population', 'census_population', 'census_profile', 'people_more', 'languages', 'asian_groups', 'city_facts', 'civic_facts', 'app_summary', 'app_top', 'homeless_pit', 'homeless_monthly', 'climate_kpis', 'ghg_sector', 'ev_zip', 'ev_permits', 'city_rankings', 'pavement', 'traffic_facts', 'highway_aadt', 'living_facts', 'commute_modes', 'bart_history', 'bart_monthly', 'water_monthly'],
   sections: function (data, row) {
     const pop26 = row('dof_population', '2026-01-01', 'date') || {};
     const wm = data('water_monthly');
@@ -153,6 +153,11 @@ FBN.page({
           title: 'BART weekday exits, before and after the pandemic', sub: 'Average weekday, by fiscal year',
           series: [{ key: 'fy2019', label: 'FY 2019', color: 3 }, { key: 'fy2024', label: 'FY 2024', color: 2 }, { key: 'fy2025', label: 'FY 2025', color: 1 }],
           source: 'BART ridership via DataSF (dataset m2xz-p7ja).'
+        }, {
+          ds: 'bart_monthly', type: 'line', x: 'label', format: 'int',
+          title: 'BART weekday riders, month by month', sub: 'Average weekday, Dec 2025 to Sep 2026 (preliminary)',
+          series: [{ key: 'fremont', label: 'Fremont', color: 1 }, { key: 'warm_springs', label: 'Warm Springs / South Fremont', color: 2 }],
+          source: 'BART Monthly Ridership Snapshots, one per month. BART marks the figures preliminary and subject to restatement.'
         }, {
           ds: 'highway_aadt', type: 'hbar', x: 'label', format: 'int', sort: 'aadt',
           title: 'Busiest highway segments', sub: 'Average annual daily traffic, 2024',

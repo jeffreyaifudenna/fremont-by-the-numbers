@@ -406,6 +406,12 @@
    "method": "download",
    "next_check": "Sep 2027"
   },
+  "bart_monthly": {
+   "cadence": "monthly",
+   "typical_release": "BART Monthly Ridership Snapshot PDF, about 3-4 weeks after month end",
+   "method": "pdf",
+   "next_check": "Nov 28, 2026 (Oct 2026 snapshot)"
+  },
   "homeless_pit": {
    "cadence": "biennial",
    "typical_release": "Alameda County point-in-time count, every two years (2026 shown)",

@@ -1509,6 +1509,22 @@ Average weekday, by fiscal year
 | Warm Springs/South Fremont | 3,973 | 1,136 | 1,164 |
 Source note: BART ridership via DataSF (dataset m2xz-p7ja).View source: BART Daily Station Exits (DataSF)
 
+### BART weekday riders, month by month
+Average weekday, Dec 2025 to Sep 2026 (preliminary)
+| Item | Fremont | Warm Springs / South Fremont |
+| --- | --- | --- |
+| Dec 2025 | 1,959 | 1,149 |
+| Jan 2026 | 2,100 | 1,212 |
+| Feb 2026 | 2,228 | 1,279 |
+| Mar 2026 | 2,340 | 1,379 |
+| Apr 2026 | 2,394 | 1,381 |
+| May 2026 | 2,409 | 1,372 |
+| Jun 2026 | 2,502 | 1,494 |
+| Jul 2026 | 2,479 | 1,482 |
+| Aug 2026 | 2,584 | 1,546 |
+| Sep 2026 | 2,696 | 1,634 |
+Source note: BART Monthly Ridership Snapshots, one per month. BART marks the figures preliminary and subject to restatement.View source: BART Monthly Ridership Snapshot, September 2026
+
 ### Busiest highway segments
 Average annual daily traffic, 2024
 | Item | Vehicles per day |
@@ -1575,6 +1591,7 @@ Source note: WalletHub ranking pages and Trust for Public Land ParkScore. Rankin
 - Streets and traffic facts: Street network facts from the City of Fremont, Fremont PD and MTC, fatal-crash victim shares, and the 2025 Community Survey traffic results. Each row names its source. Read Oct 24, 2026.
 - How Fremont gets to work: Census ACS 2020–2024 table DP03: workers 16+ by way of getting to work. Read Oct 24, 2026.
 - BART weekday exits: Average weekday exits at Fremont and Warm Springs stations, FY 2019, 2024 and 2025, averaged from BART daily station exits (DataSF). Read Oct 24, 2026.
+- BART weekday riders by month: Average weekday riders at Fremont and Warm Springs / South Fremont stations, Dec 2025 to Sep 2026, from BART's Monthly Ridership Snapshots (preliminary, subject to restatement). Read Nov 22, 2026.
 - Highway traffic volumes: Caltrans 2024 annual average daily traffic at selected count points on highways through Fremont. Read Oct 24, 2026.
 - Pavement condition: MTC Pavement Condition Index (three-year moving average) 2022–2024 for Fremont and the Bay Area, Jan 2026 update. Read Oct 24, 2026.
 - City rankings: Fremont's rank in 2025–26 national city rankings, read from each WalletHub ranking table (and Trust for Public Land ParkScore) on Oct 24, 2026, with category ranks and publication dates.

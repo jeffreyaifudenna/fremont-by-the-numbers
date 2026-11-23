@@ -77,6 +77,7 @@
     "regional_parks":     {"cadence": "static",     "typical_release": "EBRPD park pages", "method": "page", "next_check": "2027"},
     "events":             {"cadence": "annual",     "typical_release": "event dates and prices change each season", "method": "manual", "next_check": "Mar 2027"},
     "bart_history":       {"cadence": "annual",     "typical_release": "BART fiscal year ends June; DataSF daily exits", "method": "download", "next_check": "Sep 2027"},
+    "bart_monthly":       {"cadence": "monthly",    "typical_release": "BART Monthly Ridership Snapshot PDF, about 3-4 weeks after month end", "method": "pdf", "next_check": "Nov 28, 2026 (Oct 2026 snapshot)", "note": "Read by hand with pdftotext -layout: the first number on the Fremont and Warm Springs / South Fremont rows of Ridership by Station (Average Weekday). The change columns do not extract cleanly; use the actuals only. Also update the two living_facts rows."},
     "homeless_pit":       {"cadence": "biennial",   "typical_release": "Alameda County point-in-time count, every two years (2026 shown)", "method": "dashboard", "next_check": "2028"},
     "startups":           {"cadence": "semiannual", "typical_release": "no schedule; Crunchbase and VCBacked counts drift", "method": "manual", "next_check": "Apr 2027"},
     "startup_rounds":     {"cadence": "semiannual", "typical_release": "no schedule; new funding rounds and IPOs", "method": "manual", "next_check": "Apr 2027"},
