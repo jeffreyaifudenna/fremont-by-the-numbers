@@ -143,5 +143,6 @@
   {"month": "2026-05", "label": "May 2026", "potable_supply_mgal": 1271, "residential_mgal": 642, "residential_gpcd": 60.2, "population": 344000, "shortage_level": 0},
   {"month": "2026-06", "label": "Jun 2026", "potable_supply_mgal": 1373, "residential_mgal": 808, "residential_gpcd": 78.3, "population": 344000, "shortage_level": 0},
   {"month": "2026-07", "label": "Jul 2026", "potable_supply_mgal": 1454, "residential_mgal": 816, "residential_gpcd": 76.5, "population": 344000, "shortage_level": 0},
-  {"month": "2026-08", "label": "Aug 2026", "potable_supply_mgal": 1504, "residential_mgal": 911, "residential_gpcd": 85.4, "population": 344000, "shortage_level": 0}
+  {"month": "2026-08", "label": "Aug 2026", "potable_supply_mgal": 1504, "residential_mgal": 911, "residential_gpcd": 85.4, "population": 344000, "shortage_level": 0},
+  {"month": "2026-09", "label": "Sep 2026", "potable_supply_mgal": 1447, "residential_mgal": 826, "residential_gpcd": 80.0, "population": 344000, "shortage_level": 0}
 ]

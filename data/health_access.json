@@ -9,7 +9,7 @@
   "source": "CMS Provider Data Catalog, Hospital General Information (xubh-q36u), facility 050195",
   "source_url": "https://data.cms.gov/provider-data/api/1/datastore/query/xubh-q36u/0?conditions[0][property]=citytown&conditions[0][value]=FREMONT&conditions[1][property]=state&conditions[1][value]=CA&limit=20",
   "kind": "Official count",
-  "note": "Read Oct 24, 2026.",
+  "note": "Fetched from the CMS data API Nov 22, 2026.",
   "geo": "Fremont"
  },
  {
@@ -22,7 +22,7 @@
   "source": "CMS Provider Data Catalog, Hospital General Information (xubh-q36u), facility 050512",
   "source_url": "https://data.cms.gov/provider-data/api/1/datastore/query/xubh-q36u/0?conditions[0][property]=citytown&conditions[0][value]=FREMONT&conditions[1][property]=state&conditions[1][value]=CA&limit=20",
   "kind": "Official count",
-  "note": "Read Oct 24, 2026.",
+  "note": "Fetched from the CMS data API Nov 22, 2026.",
   "geo": "Fremont"
  },
  {
@@ -31,11 +31,11 @@
   "label": "Washington Hospital — HCAHPS patient-survey summary star rating (out of 5)",
   "value": 3,
   "format": "int",
-  "period": "Oct 2024–Sep 2025 discharges",
+  "period": "Jan 2025–Dec 2025 discharges",
   "source": "CMS Provider Data Catalog, HCAHPS (dgck-syfz), H_STAR_RATING",
   "source_url": "https://data.cms.gov/provider-data/api/1/datastore/query/dgck-syfz/0?conditions[0][property]=facility_id&conditions[0][value]=050195&conditions[1][property]=hcahps_measure_id&conditions[1][value]=H_STAR_RATING&limit=10",
   "kind": "Survey estimate",
-  "note": "812 completed surveys, 19% response rate. Read Oct 24, 2026.",
+  "note": "989 completed surveys, 20% response rate. Fetched from the CMS data API Nov 22, 2026.",
   "geo": "Fremont"
  },
  {
@@ -44,11 +44,11 @@
   "label": "Kaiser Fremont — HCAHPS patient-survey summary star rating (out of 5)",
   "value": 3,
   "format": "int",
-  "period": "Oct 2024–Sep 2025 discharges",
+  "period": "Jan 2025–Dec 2025 discharges",
   "source": "CMS Provider Data Catalog, HCAHPS (dgck-syfz), H_STAR_RATING",
   "source_url": "https://data.cms.gov/provider-data/api/1/datastore/query/dgck-syfz/0?conditions[0][property]=facility_id&conditions[0][value]=050512&conditions[1][property]=hcahps_measure_id&conditions[1][value]=H_STAR_RATING&limit=10",
   "kind": "Survey estimate",
-  "note": "753 completed surveys, 23% response rate. Read Oct 24, 2026.",
+  "note": "770 completed surveys, 24% response rate. Fetched from the CMS data API Nov 22, 2026.",
   "geo": "Fremont"
  },
  {

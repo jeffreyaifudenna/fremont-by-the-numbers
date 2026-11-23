@@ -1,6 +1,6 @@
 # FremontCaByTheNumbers.com — full text
 
-> FremontCaByTheNumbers.com offers free, open access to public data, built with Claude. It republishes figures that public sources have already published about Fremont, California, and shows each figure with its source and date. Data as of 2026-11-13. Links in this file marked "source" go to the page a figure was read from.
+> FremontCaByTheNumbers.com offers free, open access to public data, built with Claude. It republishes figures that public sources have already published about Fremont, California, and shows each figure with its source and date. Data as of 2026-11-22. Links in this file marked "source" go to the page a figure was read from.
 
 
 ---
@@ -9,15 +9,15 @@
 
 Fremont, California in numbers: rent, home prices, schools, crime, jobs and health. Free and open public data. Every figure links to its source.
 - Residents: **233,974** — Jan 1, 2026 · CA Dept. of Finance E-1 [source](https://dof.ca.gov/forecasting/demographics/estimates-e1/)
-- Typical home value: **$1,439,805** (-1.5% vs a year ago) — Sep 30, 2026 · Zillow Research [source](https://www.zillow.com/fremont-ca/home-values/)
+- Typical home value: **$1,431,549** (-1.5% vs a year ago) — Oct 31, 2026 · Zillow Research [source](https://www.zillow.com/fremont-ca/home-values/)
 - Median household income: **$181,506** — 2020–2024 · Census QuickFacts profile [source](https://www.census.gov/quickfacts/fact/table/fremontcitycalifornia/PST045225)
 - Happiest city in America (WalletHub): **#1** — of 182 cities · Mar 10, 2026 [source](https://wallethub.com/edu/happiest-places-to-live/32619)
-- Typical asking rent (Zillow index): **$3,388** (+6.0% vs a year ago) — Sep 30, 2026 · Zillow Research [source](https://www.zillow.com/research/data/)
+- Typical asking rent (Zillow index): **$3,309** (+6.8% vs a year ago) — Oct 31, 2026 · Zillow Research [source](https://www.zillow.com/research/data/)
 - Unemployment rate, Fremont: **4.5%** — Sep 2026 · U.S. Bureau of Labor Statistics. Sep 2025: 4.7% [source](https://data.bls.gov/timeseries/LAUCT062600000000003)
 - Fremont Unified high schools in California’s top 50 (U.S. News): **3** — of 5 comprehensive high schools · 2026–27 · U.S. News Best High Schools [source](https://www.usnews.com/education/best-high-schools/california/districts/fremont-unified-school-district-111898)
 
 ## Explore by topic
-- [Rent & Housing](rent.html): $3,388 typical asking rent, Sep 2026 (Zillow)
+- [Rent & Housing](rent.html): $3,309 typical asking rent, Oct 2026 (Zillow)
 - [Schools](schools.html): 93.1% Fremont Unified four-year graduation rate, class of 2025
 - [Food](food.html): 451 restaurants, bars and food-service businesses (2022 Economic Census)
 - [Parks & Events](parks.html): 42.8% of the city is parkland, all agencies
@@ -42,9 +42,9 @@ Cheers to Fremont. It’s why I made this. Methodology and sources
 Fremont, CA rent, home values, housing stock, new homes, utility bills, internet and child care costs. Every figure links to its source.
 
 ## Headline numbers
-- Typical asking rent (Zillow ZORI): **$3,388** (+6.0% vs a year ago) — Sep 30, 2026 · Zillow Research [source](https://www.zillow.com/research/data/)
+- Typical asking rent (Zillow ZORI): **$3,309** (+6.8% vs a year ago) — Oct 31, 2026 · Zillow Research [source](https://www.zillow.com/research/data/)
 - Median gross rent, all renters (Census ACS): **$2,933** — 2020–2024 · Census QuickFacts profile [source](https://www.census.gov/quickfacts/fact/table/fremontcitycalifornia/PST045225)
-- Typical home value (Zillow ZHVI): **$1,439,805** (-1.5% vs a year ago) — Sep 30, 2026 · Zillow Research [source](https://www.zillow.com/fremont-ca/home-values/)
+- Typical home value (Zillow ZHVI): **$1,431,549** (-1.5% vs a year ago) — Oct 31, 2026 · Zillow Research [source](https://www.zillow.com/fremont-ca/home-values/)
 - Median sale price (Redfin): **$1,370,347** — Sep 2026 · Redfin. -6.5% vs a year ago [source](https://www.redfin.com/city/6671/CA/Fremont/housing-market)
 - Renters paying 30%+ of income on rent: **43.3%** — 2020–2024 · More resident facts. 12,894 of 29,747 renter households with a computed ratio [source](https://data.census.gov/table/ACSDT5Y2024.B25070?g=160XX00US0626000)
 Note: Zillow figures are modeled indexes of the middle tier of homes and rentals; Census figures are survey medians across everyone who already lives here, so they run lower than asking rents.
@@ -80,309 +80,307 @@ Source note: Census ACS table B25031, 5-year estimates. Each period is stated in
 Zillow Home Value Index, monthly
 | Item | Typical home value |
 | --- | --- |
-| Jan 2015 | $726,955 |
-| Feb 2015 | $738,236 |
-| Mar 2015 | $749,212 |
-| Apr 2015 | $758,911 |
-| May 2015 | $767,977 |
-| Jun 2015 | $776,859 |
-| Jul 2015 | $786,003 |
-| Aug 2015 | $795,647 |
-| Sep 2015 | $804,812 |
-| Oct 2015 | $814,676 |
-| Nov 2015 | $823,361 |
-| Dec 2015 | $833,144 |
-| Jan 2016 | $844,121 |
-| Feb 2016 | $856,252 |
-| Mar 2016 | $865,809 |
-| Apr 2016 | $871,224 |
-| May 2016 | $872,327 |
-| Jun 2016 | $870,533 |
-| Jul 2016 | $867,451 |
-| Aug 2016 | $865,643 |
-| Sep 2016 | $864,769 |
-| Oct 2016 | $865,504 |
-| Nov 2016 | $867,336 |
-| Dec 2016 | $872,830 |
-| Jan 2017 | $881,235 |
-| Feb 2017 | $889,892 |
-| Mar 2017 | $897,468 |
-| Apr 2017 | $904,060 |
-| May 2017 | $909,214 |
-| Jun 2017 | $913,988 |
-| Jul 2017 | $917,062 |
-| Aug 2017 | $921,467 |
-| Sep 2017 | $927,980 |
-| Oct 2017 | $938,258 |
-| Nov 2017 | $950,552 |
-| Dec 2017 | $966,821 |
-| Jan 2018 | $985,241 |
-| Feb 2018 | $1,003,558 |
-| Mar 2018 | $1,021,181 |
-| Apr 2018 | $1,039,464 |
-| May 2018 | $1,059,838 |
-| Jun 2018 | $1,077,429 |
-| Jul 2018 | $1,088,160 |
-| Aug 2018 | $1,095,500 |
-| Sep 2018 | $1,099,375 |
-| Oct 2018 | $1,102,222 |
-| Nov 2018 | $1,100,208 |
-| Dec 2018 | $1,094,646 |
-| Jan 2019 | $1,085,947 |
-| Feb 2019 | $1,075,279 |
-| Mar 2019 | $1,064,814 |
-| Apr 2019 | $1,057,079 |
-| May 2019 | $1,050,411 |
-| Jun 2019 | $1,045,473 |
-| Jul 2019 | $1,039,834 |
-| Aug 2019 | $1,036,018 |
-| Sep 2019 | $1,031,745 |
-| Oct 2019 | $1,028,293 |
-| Nov 2019 | $1,026,351 |
-| Dec 2019 | $1,026,240 |
-| Jan 2020 | $1,027,638 |
-| Feb 2020 | $1,030,354 |
-| Mar 2020 | $1,034,547 |
-| Apr 2020 | $1,038,338 |
-| May 2020 | $1,036,398 |
-| Jun 2020 | $1,030,490 |
-| Jul 2020 | $1,026,138 |
-| Aug 2020 | $1,029,181 |
-| Sep 2020 | $1,040,106 |
-| Oct 2020 | $1,054,660 |
-| Nov 2020 | $1,072,559 |
-| Dec 2020 | $1,090,904 |
-| Jan 2021 | $1,109,788 |
-| Feb 2021 | $1,128,368 |
-| Mar 2021 | $1,148,380 |
-| Apr 2021 | $1,172,071 |
-| May 2021 | $1,197,490 |
-| Jun 2021 | $1,222,593 |
-| Jul 2021 | $1,242,819 |
-| Aug 2021 | $1,253,968 |
-| Sep 2021 | $1,259,650 |
-| Oct 2021 | $1,265,136 |
-| Nov 2021 | $1,276,367 |
-| Dec 2021 | $1,294,510 |
-| Jan 2022 | $1,326,638 |
-| Feb 2022 | $1,373,093 |
-| Mar 2022 | $1,427,626 |
-| Apr 2022 | $1,472,097 |
-| May 2022 | $1,496,190 |
-| Jun 2022 | $1,496,863 |
-| Jul 2022 | $1,474,794 |
-| Aug 2022 | $1,437,148 |
-| Sep 2022 | $1,392,714 |
-| Oct 2022 | $1,357,403 |
-| Nov 2022 | $1,334,471 |
-| Dec 2022 | $1,322,000 |
-| Jan 2023 | $1,308,926 |
-| Feb 2023 | $1,296,080 |
-| Mar 2023 | $1,286,253 |
-| Apr 2023 | $1,284,504 |
-| May 2023 | $1,290,292 |
-| Jun 2023 | $1,301,306 |
-| Jul 2023 | $1,316,452 |
-| Aug 2023 | $1,334,238 |
-| Sep 2023 | $1,353,813 |
-| Oct 2023 | $1,371,887 |
-| Nov 2023 | $1,386,063 |
-| Dec 2023 | $1,393,240 |
-| Jan 2024 | $1,395,932 |
-| Feb 2024 | $1,400,289 |
-| Mar 2024 | $1,417,090 |
-| Apr 2024 | $1,445,321 |
-| May 2024 | $1,476,232 |
-| Jun 2024 | $1,496,370 |
-| Jul 2024 | $1,508,859 |
-| Aug 2024 | $1,514,621 |
-| Sep 2024 | $1,520,264 |
-| Oct 2024 | $1,523,483 |
-| Nov 2024 | $1,528,369 |
-| Dec 2024 | $1,532,927 |
-| Jan 2025 | $1,534,789 |
-| Feb 2025 | $1,536,842 |
-| Mar 2025 | $1,535,874 |
-| Apr 2025 | $1,531,757 |
-| May 2025 | $1,519,178 |
-| Jun 2025 | $1,500,728 |
-| Jul 2025 | $1,483,058 |
-| Aug 2025 | $1,467,437 |
-| Sep 2025 | $1,461,437 |
-| Oct 2025 | $1,462,267 |
-| Nov 2025 | $1,468,797 |
-| Dec 2025 | $1,475,451 |
-| Jan 2026 | $1,477,837 |
-| Feb 2026 | $1,478,060 |
-| Mar 2026 | $1,474,811 |
-| Apr 2026 | $1,467,593 |
-| May 2026 | $1,457,371 |
-| Jun 2026 | $1,446,745 |
-| Jul 2026 | $1,440,274 |
-| Aug 2026 | $1,438,714 |
-| Sep 2026 | $1,439,805 |
-Source note: Zillow Research, ZHVI (mid-tier, smoothed, seasonally adjusted), city of Fremont, through Sep 2026.View source: Zillow Research: ZHVI and ZORI
+| Jan 2015 | $722,413 |
+| Feb 2015 | $733,624 |
+| Mar 2015 | $744,531 |
+| Apr 2015 | $754,170 |
+| May 2015 | $763,178 |
+| Jun 2015 | $772,005 |
+| Jul 2015 | $781,092 |
+| Aug 2015 | $790,676 |
+| Sep 2015 | $799,784 |
+| Oct 2015 | $809,586 |
+| Nov 2015 | $818,217 |
+| Dec 2015 | $827,939 |
+| Jan 2016 | $838,847 |
+| Feb 2016 | $850,902 |
+| Mar 2016 | $860,399 |
+| Apr 2016 | $865,780 |
+| May 2016 | $866,877 |
+| Jun 2016 | $865,094 |
+| Jul 2016 | $862,032 |
+| Aug 2016 | $860,235 |
+| Sep 2016 | $859,367 |
+| Oct 2016 | $860,096 |
+| Nov 2016 | $861,917 |
+| Dec 2016 | $867,376 |
+| Jan 2017 | $875,729 |
+| Feb 2017 | $884,332 |
+| Mar 2017 | $891,861 |
+| Apr 2017 | $898,412 |
+| May 2017 | $903,533 |
+| Jun 2017 | $908,277 |
+| Jul 2017 | $911,332 |
+| Aug 2017 | $915,710 |
+| Sep 2017 | $922,182 |
+| Oct 2017 | $932,396 |
+| Nov 2017 | $944,613 |
+| Dec 2017 | $960,780 |
+| Jan 2018 | $979,085 |
+| Feb 2018 | $997,288 |
+| Mar 2018 | $1,014,800 |
+| Apr 2018 | $1,032,969 |
+| May 2018 | $1,053,216 |
+| Jun 2018 | $1,070,697 |
+| Jul 2018 | $1,081,362 |
+| Aug 2018 | $1,088,655 |
+| Sep 2018 | $1,092,506 |
+| Oct 2018 | $1,095,336 |
+| Nov 2018 | $1,093,334 |
+| Dec 2018 | $1,087,807 |
+| Jan 2019 | $1,079,162 |
+| Feb 2019 | $1,068,561 |
+| Mar 2019 | $1,058,161 |
+| Apr 2019 | $1,050,475 |
+| May 2019 | $1,043,849 |
+| Jun 2019 | $1,038,941 |
+| Jul 2019 | $1,033,338 |
+| Aug 2019 | $1,029,545 |
+| Sep 2019 | $1,025,299 |
+| Oct 2019 | $1,021,868 |
+| Nov 2019 | $1,019,939 |
+| Dec 2019 | $1,019,829 |
+| Jan 2020 | $1,021,218 |
+| Feb 2020 | $1,023,916 |
+| Mar 2020 | $1,028,083 |
+| Apr 2020 | $1,031,850 |
+| May 2020 | $1,029,923 |
+| Jun 2020 | $1,024,052 |
+| Jul 2020 | $1,019,727 |
+| Aug 2020 | $1,022,751 |
+| Sep 2020 | $1,033,607 |
+| Oct 2020 | $1,048,071 |
+| Nov 2020 | $1,065,858 |
+| Dec 2020 | $1,084,088 |
+| Jan 2021 | $1,102,854 |
+| Feb 2021 | $1,121,319 |
+| Mar 2021 | $1,141,205 |
+| Apr 2021 | $1,164,748 |
+| May 2021 | $1,190,008 |
+| Jun 2021 | $1,214,955 |
+| Jul 2021 | $1,235,054 |
+| Aug 2021 | $1,246,133 |
+| Sep 2021 | $1,251,780 |
+| Oct 2021 | $1,257,231 |
+| Nov 2021 | $1,268,393 |
+| Dec 2021 | $1,286,422 |
+| Jan 2022 | $1,318,349 |
+| Feb 2022 | $1,364,514 |
+| Mar 2022 | $1,418,706 |
+| Apr 2022 | $1,462,900 |
+| May 2022 | $1,486,842 |
+| Jun 2022 | $1,487,510 |
+| Jul 2022 | $1,465,580 |
+| Aug 2022 | $1,428,169 |
+| Sep 2022 | $1,384,012 |
+| Oct 2022 | $1,348,922 |
+| Nov 2022 | $1,326,134 |
+| Dec 2022 | $1,313,741 |
+| Jan 2023 | $1,300,748 |
+| Feb 2023 | $1,287,982 |
+| Mar 2023 | $1,278,217 |
+| Apr 2023 | $1,276,478 |
+| May 2023 | $1,282,231 |
+| Jun 2023 | $1,293,176 |
+| Jul 2023 | $1,308,227 |
+| Aug 2023 | $1,325,901 |
+| Sep 2023 | $1,345,354 |
+| Oct 2023 | $1,363,316 |
+| Nov 2023 | $1,377,403 |
+| Dec 2023 | $1,384,536 |
+| Jan 2024 | $1,387,210 |
+| Feb 2024 | $1,391,540 |
+| Mar 2024 | $1,408,236 |
+| Apr 2024 | $1,436,291 |
+| May 2024 | $1,467,009 |
+| Jun 2024 | $1,487,021 |
+| Jul 2024 | $1,499,432 |
+| Aug 2024 | $1,505,158 |
+| Sep 2024 | $1,510,766 |
+| Oct 2024 | $1,513,964 |
+| Nov 2024 | $1,518,820 |
+| Dec 2024 | $1,523,350 |
+| Jan 2025 | $1,525,200 |
+| Feb 2025 | $1,527,240 |
+| Mar 2025 | $1,526,278 |
+| Apr 2025 | $1,522,187 |
+| May 2025 | $1,509,686 |
+| Jun 2025 | $1,491,351 |
+| Jul 2025 | $1,473,792 |
+| Aug 2025 | $1,458,268 |
+| Sep 2025 | $1,452,306 |
+| Oct 2025 | $1,453,131 |
+| Nov 2025 | $1,459,620 |
+| Dec 2025 | $1,466,232 |
+| Jan 2026 | $1,468,604 |
+| Feb 2026 | $1,468,825 |
+| Mar 2026 | $1,465,597 |
+| Apr 2026 | $1,458,423 |
+| May 2026 | $1,448,266 |
+| Jun 2026 | $1,437,706 |
+| Jul 2026 | $1,431,276 |
+| Aug 2026 | $1,429,725 |
+| Sep 2026 | $1,430,809 |
+| Oct 2026 | $1,431,549 |
+Source note: Zillow Research, ZHVI (mid-tier, smoothed, seasonally adjusted), city of Fremont, through Oct 2026.View source: Zillow Research: ZHVI and ZORI
 
 ### Typical asking rent since 2015
 Zillow Observed Rent Index, monthly
 | Item | Typical asking rent |
 | --- | --- |
-| Jan 2015 | $2,286 |
-| Feb 2015 | $2,281 |
-| Mar 2015 | $2,282 |
-| Apr 2015 | $2,339 |
-| May 2015 | $2,400 |
-| Jun 2015 | $2,453 |
-| Jul 2015 | $2,489 |
-| Aug 2015 | $2,493 |
-| Sep 2015 | $2,491 |
-| Oct 2015 | $2,488 |
-| Nov 2015 | $2,496 |
-| Dec 2015 | $2,503 |
-| Jan 2016 | $2,506 |
-| Feb 2016 | $2,531 |
-| Mar 2016 | $2,541 |
-| Apr 2016 | $2,580 |
-| May 2016 | $2,575 |
-| Jun 2016 | $2,602 |
-| Jul 2016 | $2,586 |
-| Aug 2016 | $2,592 |
-| Sep 2016 | $2,584 |
-| Oct 2016 | $2,567 |
-| Nov 2016 | $2,550 |
-| Dec 2016 | $2,536 |
-| Jan 2017 | $2,555 |
-| Feb 2017 | $2,577 |
-| Mar 2017 | $2,611 |
-| Apr 2017 | $2,629 |
-| May 2017 | $2,643 |
-| Jun 2017 | $2,668 |
-| Jul 2017 | $2,681 |
-| Aug 2017 | $2,695 |
-| Sep 2017 | $2,690 |
-| Oct 2017 | $2,678 |
-| Nov 2017 | $2,679 |
-| Dec 2017 | $2,680 |
-| Jan 2018 | $2,681 |
-| Feb 2018 | $2,680 |
-| Mar 2018 | $2,693 |
-| Apr 2018 | $2,706 |
-| May 2018 | $2,723 |
-| Jun 2018 | $2,735 |
-| Jul 2018 | $2,755 |
-| Aug 2018 | $2,741 |
-| Sep 2018 | $2,733 |
-| Oct 2018 | $2,718 |
-| Nov 2018 | $2,712 |
-| Dec 2018 | $2,715 |
-| Jan 2019 | $2,711 |
-| Feb 2019 | $2,732 |
-| Mar 2019 | $2,731 |
-| Apr 2019 | $2,758 |
-| May 2019 | $2,773 |
-| Jun 2019 | $2,787 |
-| Jul 2019 | $2,785 |
-| Aug 2019 | $2,776 |
-| Sep 2019 | $2,762 |
-| Oct 2019 | $2,747 |
-| Nov 2019 | $2,746 |
-| Dec 2019 | $2,746 |
-| Jan 2020 | $2,770 |
-| Feb 2020 | $2,775 |
-| Mar 2020 | $2,792 |
-| Apr 2020 | $2,779 |
-| May 2020 | $2,779 |
-| Jun 2020 | $2,775 |
-| Jul 2020 | $2,771 |
-| Aug 2020 | $2,752 |
-| Sep 2020 | $2,735 |
-| Oct 2020 | $2,711 |
-| Nov 2020 | $2,701 |
-| Dec 2020 | $2,693 |
-| Jan 2021 | $2,686 |
-| Feb 2021 | $2,677 |
-| Mar 2021 | $2,679 |
-| Apr 2021 | $2,706 |
-| May 2021 | $2,727 |
-| Jun 2021 | $2,759 |
-| Jul 2021 | $2,800 |
-| Aug 2021 | $2,844 |
-| Sep 2021 | $2,849 |
-| Oct 2021 | $2,852 |
-| Nov 2021 | $2,838 |
-| Dec 2021 | $2,859 |
-| Jan 2022 | $2,863 |
-| Feb 2022 | $2,902 |
-| Mar 2022 | $2,942 |
-| Apr 2022 | $2,977 |
-| May 2022 | $3,010 |
-| Jun 2022 | $3,034 |
-| Jul 2022 | $3,069 |
-| Aug 2022 | $3,087 |
-| Sep 2022 | $3,082 |
-| Oct 2022 | $3,042 |
-| Nov 2022 | $2,992 |
-| Dec 2022 | $2,956 |
-| Jan 2023 | $2,956 |
-| Feb 2023 | $2,977 |
-| Mar 2023 | $3,022 |
-| Apr 2023 | $3,051 |
-| May 2023 | $3,075 |
-| Jun 2023 | $3,079 |
-| Jul 2023 | $3,089 |
-| Aug 2023 | $3,092 |
-| Sep 2023 | $3,074 |
-| Oct 2023 | $3,044 |
-| Nov 2023 | $3,012 |
-| Dec 2023 | $2,995 |
-| Jan 2024 | $2,989 |
-| Feb 2024 | $3,011 |
-| Mar 2024 | $3,042 |
-| Apr 2024 | $3,076 |
-| May 2024 | $3,098 |
-| Jun 2024 | $3,111 |
-| Jul 2024 | $3,121 |
-| Aug 2024 | $3,121 |
-| Sep 2024 | $3,118 |
-| Oct 2024 | $3,102 |
-| Nov 2024 | $3,081 |
-| Dec 2024 | $3,069 |
-| Jan 2025 | $3,068 |
-| Feb 2025 | $3,097 |
-| Mar 2025 | $3,125 |
-| Apr 2025 | $3,157 |
-| May 2025 | $3,176 |
-| Jun 2025 | $3,199 |
-| Jul 2025 | $3,213 |
-| Aug 2025 | $3,212 |
-| Sep 2025 | $3,197 |
-| Oct 2025 | $3,180 |
-| Nov 2025 | $3,167 |
-| Dec 2025 | $3,149 |
-| Jan 2026 | $3,161 |
-| Feb 2026 | $3,191 |
-| Mar 2026 | $3,239 |
-| Apr 2026 | $3,272 |
-| May 2026 | $3,307 |
-| Jun 2026 | $3,339 |
-| Jul 2026 | $3,368 |
-| Aug 2026 | $3,378 |
-| Sep 2026 | $3,388 |
-Source note: Zillow Research, ZORI (smoothed), city of Fremont, through Sep 2026.View source: Zillow Research: ZHVI and ZORI
+| Jan 2015 | $2,226 |
+| Feb 2015 | $2,224 |
+| Mar 2015 | $2,225 |
+| Apr 2015 | $2,280 |
+| May 2015 | $2,337 |
+| Jun 2015 | $2,389 |
+| Jul 2015 | $2,425 |
+| Aug 2015 | $2,429 |
+| Sep 2015 | $2,428 |
+| Oct 2015 | $2,424 |
+| Nov 2015 | $2,432 |
+| Dec 2015 | $2,438 |
+| Jan 2016 | $2,440 |
+| Feb 2016 | $2,465 |
+| Mar 2016 | $2,475 |
+| Apr 2016 | $2,515 |
+| May 2016 | $2,510 |
+| Jun 2016 | $2,536 |
+| Jul 2016 | $2,519 |
+| Aug 2016 | $2,526 |
+| Sep 2016 | $2,518 |
+| Oct 2016 | $2,502 |
+| Nov 2016 | $2,485 |
+| Dec 2016 | $2,471 |
+| Jan 2017 | $2,489 |
+| Feb 2017 | $2,509 |
+| Mar 2017 | $2,541 |
+| Apr 2017 | $2,559 |
+| May 2017 | $2,574 |
+| Jun 2017 | $2,600 |
+| Jul 2017 | $2,612 |
+| Aug 2017 | $2,626 |
+| Sep 2017 | $2,620 |
+| Oct 2017 | $2,609 |
+| Nov 2017 | $2,610 |
+| Dec 2017 | $2,610 |
+| Jan 2018 | $2,611 |
+| Feb 2018 | $2,611 |
+| Mar 2018 | $2,623 |
+| Apr 2018 | $2,636 |
+| May 2018 | $2,652 |
+| Jun 2018 | $2,665 |
+| Jul 2018 | $2,685 |
+| Aug 2018 | $2,672 |
+| Sep 2018 | $2,663 |
+| Oct 2018 | $2,647 |
+| Nov 2018 | $2,642 |
+| Dec 2018 | $2,646 |
+| Jan 2019 | $2,642 |
+| Feb 2019 | $2,662 |
+| Mar 2019 | $2,660 |
+| Apr 2019 | $2,686 |
+| May 2019 | $2,701 |
+| Jun 2019 | $2,714 |
+| Jul 2019 | $2,713 |
+| Aug 2019 | $2,704 |
+| Sep 2019 | $2,690 |
+| Oct 2019 | $2,676 |
+| Nov 2019 | $2,675 |
+| Dec 2019 | $2,675 |
+| Jan 2020 | $2,699 |
+| Feb 2020 | $2,703 |
+| Mar 2020 | $2,720 |
+| Apr 2020 | $2,707 |
+| May 2020 | $2,708 |
+| Jun 2020 | $2,700 |
+| Jul 2020 | $2,697 |
+| Aug 2020 | $2,679 |
+| Sep 2020 | $2,665 |
+| Oct 2020 | $2,641 |
+| Nov 2020 | $2,632 |
+| Dec 2020 | $2,624 |
+| Jan 2021 | $2,617 |
+| Feb 2021 | $2,607 |
+| Mar 2021 | $2,610 |
+| Apr 2021 | $2,635 |
+| May 2021 | $2,657 |
+| Jun 2021 | $2,690 |
+| Jul 2021 | $2,729 |
+| Aug 2021 | $2,771 |
+| Sep 2021 | $2,776 |
+| Oct 2021 | $2,778 |
+| Nov 2021 | $2,765 |
+| Dec 2021 | $2,786 |
+| Jan 2022 | $2,791 |
+| Feb 2022 | $2,828 |
+| Mar 2022 | $2,866 |
+| Apr 2022 | $2,901 |
+| May 2022 | $2,933 |
+| Jun 2022 | $2,958 |
+| Jul 2022 | $2,994 |
+| Aug 2022 | $3,011 |
+| Sep 2022 | $3,005 |
+| Oct 2022 | $2,962 |
+| Nov 2022 | $2,914 |
+| Dec 2022 | $2,880 |
+| Jan 2023 | $2,881 |
+| Feb 2023 | $2,902 |
+| Mar 2023 | $2,945 |
+| Apr 2023 | $2,972 |
+| May 2023 | $2,996 |
+| Jun 2023 | $3,000 |
+| Jul 2023 | $3,010 |
+| Aug 2023 | $3,013 |
+| Sep 2023 | $2,995 |
+| Oct 2023 | $2,965 |
+| Nov 2023 | $2,934 |
+| Dec 2023 | $2,917 |
+| Jan 2024 | $2,913 |
+| Feb 2024 | $2,934 |
+| Mar 2024 | $2,964 |
+| Apr 2024 | $2,997 |
+| May 2024 | $3,019 |
+| Jun 2024 | $3,032 |
+| Jul 2024 | $3,042 |
+| Aug 2024 | $3,042 |
+| Sep 2024 | $3,037 |
+| Oct 2024 | $3,019 |
+| Nov 2024 | $2,998 |
+| Dec 2024 | $2,987 |
+| Jan 2025 | $2,989 |
+| Feb 2025 | $3,019 |
+| Mar 2025 | $3,047 |
+| Apr 2025 | $3,077 |
+| May 2025 | $3,094 |
+| Jun 2025 | $3,117 |
+| Jul 2025 | $3,130 |
+| Aug 2025 | $3,131 |
+| Sep 2025 | $3,117 |
+| Oct 2025 | $3,099 |
+| Nov 2025 | $3,082 |
+| Dec 2025 | $3,064 |
+| Jan 2026 | $3,078 |
+| Feb 2026 | $3,110 |
+| Mar 2026 | $3,156 |
+| Apr 2026 | $3,188 |
+| May 2026 | $3,222 |
+| Jun 2026 | $3,253 |
+| Jul 2026 | $3,281 |
+| Aug 2026 | $3,292 |
+| Sep 2026 | $3,300 |
+| Oct 2026 | $3,309 |
+Source note: Zillow Research, ZORI (smoothed), city of Fremont, through Oct 2026.View source: Zillow Research: ZHVI and ZORI
 
 ## Mortgage rates
 The national average for a 30-year fixed loan, and what it means for a typical Fremont home.
-- 30-year fixed mortgage rate (U.S. average): **7.32%** — Week of Oct 22, 2026 · Freddie Mac via FRED. A year earlier: 6.19%. [source](https://fred.stlouisfed.org/series/MORTGAGE30US)
-- Estimated monthly payment on a typical Fremont home (principal and interest): **$7,912** — Estimate · Zillow home value (Sep 30, 2026) and the latest weekly rate. With 20% down on $1,439,805 over 30 years. Base property tax adds about $1,200 a month; insurance and any HOA are extra. [source](https://fred.stlouisfed.org/series/MORTGAGE30US)
+- 30-year fixed mortgage rate (U.S. average): **7.28%** — Week of Nov 19, 2026 · Freddie Mac via FRED. A year earlier: 6.26%. [source](https://fred.stlouisfed.org/series/MORTGAGE30US)
+- Estimated monthly payment on a typical Fremont home (principal and interest): **$7,836** — Estimate · Zillow home value (Oct 31, 2026) and the latest weekly rate. With 20% down on $1,431,549 over 30 years. Base property tax adds about $1,193 a month; insurance and any HOA are extra. [source](https://fred.stlouisfed.org/series/MORTGAGE30US)
 
 ### 30-year mortgage rate, past two years
 Weekly U.S. average
 | Item | 30-year fixed rate |
 | --- | --- |
-| Oct 24, 2024 | 6.54% |
-| Oct 31, 2024 | 6.72% |
-| Nov 7, 2024 | 6.79% |
-| Nov 14, 2024 | 6.78% |
 | Nov 21, 2024 | 6.84% |
 | Nov 27, 2024 | 6.81% |
 | Dec 5, 2024 | 6.69% |
@@ -484,6 +482,10 @@ Weekly U.S. average
 | Oct 8, 2026 | 7.40% |
 | Oct 15, 2026 | 7.40% |
 | Oct 22, 2026 | 7.32% |
+| Oct 29, 2026 | 7.24% |
+| Nov 5, 2026 | 7.18% |
+| Nov 12, 2026 | 7.11% |
+| Nov 19, 2026 | 7.28% |
 Source note: Freddie Mac Primary Mortgage Market Survey, via FRED (series MORTGAGE30US). A national average for borrowers with good credit; quotes in Fremont vary by lender and borrower.View source: FRED: 30-Year Fixed Rate Mortgage Average (Freddie Mac)
 
 ## Buying: the current market
@@ -1056,7 +1058,7 @@ Note: Attendance figures for Fremont events come from news coverage, not organiz
 
 ## Weather for the outdoors
 Thirty-year normals for Fremont: mild, dry summers and wet winters. Plus whether the county is in drought.
-- Alameda County drought status this week: **No drought** — Week of Oct 27, 2026 · U.S. Drought Monitor. 100% of the county is free of drought and abnormal dryness. [source](https://droughtmonitor.unl.edu/DmData/TimeSeries.aspx?aoi=county&fips=06001)
+- Alameda County drought status this week: **No drought** — Week of Nov 17, 2026 · U.S. Drought Monitor. 100% of the county is free of drought and abnormal dryness. [source](https://droughtmonitor.unl.edu/DmData/TimeSeries.aspx?aoi=county&fips=06001)
 - Weeks in drought in 2025: **0** — 2025 · U.S. Drought Monitor. Worst level reached: D0 abnormally dry. 41 weeks were at least abnormally dry. [source](https://droughtmonitor.unl.edu/DmData/TimeSeries.aspx?aoi=county&fips=06001)
 
 ### Weeks of drought in Alameda County, by year
@@ -1071,7 +1073,7 @@ Weeks with any part of the county abnormally dry, and in moderate drought or wor
 | 2024 | 17 | 0 |
 | 2025 | 41 | 0 |
 | 2026 | 4 | 0 |
-Source note: U.S. Drought Monitor county statistics, produced by the National Drought Mitigation Center with USDA, NOAA and NASA. 2021 reached exceptional drought (D4); the latest week is Oct 27, 2026.View source: U.S. Drought Monitor: Alameda County time series
+Source note: U.S. Drought Monitor county statistics, produced by the National Drought Mitigation Center with USDA, NOAA and NASA. 2021 reached exceptional drought (D4); the latest week is Nov 17, 2026.View source: U.S. Drought Monitor: Alameda County time series
 
 ### Typical daily high and low temperature (°F)
 | Item | Daily high | Daily low |
@@ -1295,7 +1297,7 @@ Source note: City of Fremont Homeless Response dashboard, read by hand.View sour
 - Pounds of food recovered in 2025: **641,741** — 2025 · Climate indicators [source](https://www.fremont.gov/government/citywide-initiatives/data-dashboards/climate-action)
 - Solar customer accounts: **12,148** — Jan 22, 2026 · Ava Community Energy, Fremont page [source](https://avaenergy.org/community/who-we-serve/fremont/)
 - Ava Community Energy accounts: **87,229** — Jan 22, 2026 · Ava Community Energy [source](https://avaenergy.org/community/who-we-serve/fremont/)
-- Residential water use per person per day (gallons), Aug 2026: **85.4** — Aug 2026 · State Water Board report by ACWD. Alameda County Water District serves Fremont, Newark and Union City. [source](https://data.ca.gov/dataset/urws-conservation-supply-demand)
+- Residential water use per person per day (gallons), Sep 2026: **80.0** — Sep 2026 · State Water Board report by ACWD. Alameda County Water District serves Fremont, Newark and Union City. [source](https://data.ca.gov/dataset/urws-conservation-supply-demand)
 
 ### Greenhouse gas emissions by sector
 Metric tons CO₂e; last bar is the 2030 goal
@@ -1477,6 +1479,7 @@ Gallons, Alameda County Water District, by month since 2014
 | Jun 2026 | 78.3 |
 | Jul 2026 | 76.5 |
 | Aug 2026 | 85.4 |
+| Sep 2026 | 80.0 |
 Source note: State Water Resources Control Board, urban retail water supplier monthly reports (data.ca.gov), Alameda County Water District, which serves Fremont, Newark and Union City. Summer use runs well above winter use.View source: California Open Data: urban retail water supplier conservation, supply and demand (State Water Board)
 
 ## Getting around
@@ -1625,9 +1628,9 @@ Note: Totals for the same year can differ between sources: websites that republi
 
 ## Crime by month, from the FBI
 What Fremont police reported to the FBI each month: a second source next to the state’s annual file.
-- Violent crimes reported, Dec 2025: **13** — Dec 2025 · FBI Crime Data Explorer. 4 cleared in the same month. [source](https://cde.ucr.cjis.gov/LATEST/webapp/#/pages/explorer/crime/crime-trend)
-- Property crimes reported, Dec 2025: **328** — Dec 2025 · FBI Crime Data Explorer. 9 cleared in the same month. [source](https://cde.ucr.cjis.gov/LATEST/webapp/#/pages/explorer/crime/crime-trend)
-- Violent crimes per 100,000 residents, Dec 2025: **5.7** — Dec 2025 · FBI rate for the month. California 33.8, United States 26.6 the same month. [source](https://cde.ucr.cjis.gov/LATEST/webapp/#/pages/explorer/crime/crime-trend)
+- Violent crimes reported, Sep 2026: **2** — Sep 2026 · FBI Crime Data Explorer. 2 cleared in the same month. [source](https://cde.ucr.cjis.gov/LATEST/webapp/#/pages/explorer/crime/crime-trend)
+- Property crimes reported, Sep 2026: **102** — Sep 2026 · FBI Crime Data Explorer. 3 cleared in the same month. [source](https://cde.ucr.cjis.gov/LATEST/webapp/#/pages/explorer/crime/crime-trend)
+- Violent crimes per 100,000 residents, Sep 2026: **0.9** — Sep 2026 · FBI rate for the month. California 33.2, United States 23.8 the same month. [source](https://cde.ucr.cjis.gov/LATEST/webapp/#/pages/explorer/crime/crime-trend)
 
 ### Violent crimes by month
 Reported to the FBI since 2019; the gap is 2021
@@ -1717,6 +1720,15 @@ Reported to the FBI since 2019; the gap is 2021
 | Oct 2025 | 20 |
 | Nov 2025 | 19 |
 | Dec 2025 | 13 |
+| Jan 2026 | 14 |
+| Feb 2026 | 19 |
+| Mar 2026 | 16 |
+| Apr 2026 | 14 |
+| May 2026 | 11 |
+| Jun 2026 | 11 |
+| Jul 2026 | 17 |
+| Aug 2026 | 7 |
+| Sep 2026 | 2 |
 Source note: FBI Crime Data Explorer, Fremont Police Department (agency CA0010500), monthly offense counts.View source: FBI Crime Data Explorer: crime trends by agency (choose Fremont Police Department)
 
 ### Property crimes by month
@@ -1807,6 +1819,15 @@ Reported to the FBI since 2019; the gap is 2021
 | Oct 2025 | 376 |
 | Nov 2025 | 334 |
 | Dec 2025 | 328 |
+| Jan 2026 | 442 |
+| Feb 2026 | 501 |
+| Mar 2026 | 348 |
+| Apr 2026 | 272 |
+| May 2026 | 304 |
+| Jun 2026 | 323 |
+| Jul 2026 | 274 |
+| Aug 2026 | 169 |
+| Sep 2026 | 102 |
 Source note: FBI Crime Data Explorer, Fremont Police Department (agency CA0010500), monthly offense counts.View source: FBI Crime Data Explorer: crime trends by agency (choose Fremont Police Department)
 
 ### FBI totals by year
@@ -1819,6 +1840,7 @@ Sum of the monthly figures; a clearance is counted in the month it happens, so t
 | 2023 | 486 | 31.5% | 6,429 | 4.4% [source](https://cde.ucr.cjis.gov/LATEST/webapp/#/pages/explorer/crime/crime-trend) |
 | 2024 | 447 | 29.8% | 5,450 | 4.2% [source](https://cde.ucr.cjis.gov/LATEST/webapp/#/pages/explorer/crime/crime-trend) |
 | 2025 | 241 | 35.3% | 4,051 | 3.7% [source](https://cde.ucr.cjis.gov/LATEST/webapp/#/pages/explorer/crime/crime-trend) |
+| 2026 (9 months) | 111 | 45.9% | 2,735 | 2.5% [source](https://cde.ucr.cjis.gov/LATEST/webapp/#/pages/explorer/crime/crime-trend) |
 Source note: FBI Crime Data Explorer, Fremont Police Department. Clearances are by arrest or exceptional means.View source: FBI Crime Data Explorer: crime trends by agency (choose Fremont Police Department)
 Note: The FBI and California DOJ figures can differ for the same year (2024 violent crimes: FBI 447, DOJ 436) because each applies its own counting rules. Fremont PD reported no 2021 data to the FBI while it switched to the NIBRS system. 2025 counts are well below earlier years, and the state file also marks Fremont’s 2025 reporting as incomplete, so treat 2025 as provisional until both sources settle.
 
@@ -1925,7 +1947,7 @@ Source note: City of Fremont Fire Department, incident summaries for 2025. About
 ## Earthquakes
 Fremont sits on the Hayward Fault. These are the earthquakes the U.S. Geological Survey recorded within 50 km (31 miles) of City Hall.
 - Earthquakes of magnitude 2.5+ within 50 km, 2025: **78** — 2025 · USGS. Largest: magnitude 4.3. [source](https://earthquake.usgs.gov/fdsnws/event/1/count?format=geojson&latitude=37.5483&longitude=-121.9886&maxradiuskm=50&eventtype=earthquake&starttime=2025-01-01&endtime=2026-01-01&minmagnitude=2.5)
-- Magnitude 2.5+ so far in 2026: **70** — Year to date through Oct 28 · USGS. Largest: magnitude 4.6. [source](https://earthquake.usgs.gov/fdsnws/event/1/count?format=geojson&latitude=37.5483&longitude=-121.9886&maxradiuskm=50&eventtype=earthquake&starttime=2026-01-01&endtime=2027-01-01&minmagnitude=2.5)
+- Magnitude 2.5+ so far in 2026: **72** — Year to date through Nov 22 · USGS. Largest: magnitude 4.6. [source](https://earthquake.usgs.gov/fdsnws/event/1/count?format=geojson&latitude=37.5483&longitude=-121.9886&maxradiuskm=50&eventtype=earthquake&starttime=2026-01-01&endtime=2027-01-01&minmagnitude=2.5)
 - Largest within 50 km since 2000: **5.5** — Oct 30, 2007 · USGS. 6 km NNE of East Foothills, California, about 23 km from City Hall. [source](https://earthquake.usgs.gov/earthquakes/eventpage/nc40204628)
 
 ### Earthquakes within 50 km, by year
@@ -1942,7 +1964,7 @@ Magnitude 2.5 or more; the current year is partial
 | 2023 | 37 | 3 |
 | 2024 | 26 | 0 |
 | 2025 | 78 | 9 |
-| 2026 | 70 | 6 |
+| 2026 | 72 | 6 |
 Source note: USGS earthquake catalog (ComCat) API, events within 50 km of Fremont City Hall. Click a bar to see that year’s count at USGS.View source: USGS: Earthquake catalog search
 
 ### The largest nearby earthquakes since 2000
@@ -2000,7 +2022,7 @@ State crash database, all police agencies. Hollow point: year to date
 | 2023 | 1,876 | 806 |
 | 2024 | 2,003 | 884 |
 | 2025 | 1,867 | 800 |
-| 2026 | 1,389 | 645 |
+| 2026 | 1,492 | 703 |
 Source note: California Highway Patrol, California Crash Reporting System (CCRS), on the California Open Data Portal. Counts every report for a crash inside city limits, including the freeway crashes the CHP handles; Fremont PD files only part of them.View source: California Open Data: California Crash Reporting System (CHP)
 
 ### Fatal crashes on city streets: two sources
@@ -2106,10 +2128,10 @@ Source note: The Leapfrog Group, hospital pages. Washington Hospital’s Spring 
 ### Hospital figures, in detail
 | Measure | Value | Covers | Source |
 | --- | --- | --- | --- |
-| Washington Hospital — CMS Care Compare overall star rating (out of 5) Read Oct 24, 2026. | 2 | CMS release Aug 2026 (data modified 2026-07-22) | CMS Provider Data Catalog, Hospital General Information (xubh-q36u), facility 050195 [source](https://data.cms.gov/provider-data/api/1/datastore/query/xubh-q36u/0?conditions[0][property]=citytown&conditions[0][value]=FREMONT&conditions[1][property]=state&conditions[1][value]=CA&limit=20) |
-| Kaiser Permanente Fremont Medical Center — CMS Care Compare overall star rating (out of 5) Read Oct 24, 2026. | 4 | CMS release Aug 2026 (data modified 2026-07-22) | CMS Provider Data Catalog, Hospital General Information (xubh-q36u), facility 050512 [source](https://data.cms.gov/provider-data/api/1/datastore/query/xubh-q36u/0?conditions[0][property]=citytown&conditions[0][value]=FREMONT&conditions[1][property]=state&conditions[1][value]=CA&limit=20) |
-| Washington Hospital — HCAHPS patient-survey summary star rating (out of 5) 812 completed surveys, 19% response rate. Read Oct 24, 2026. | 3 | Oct 2024–Sep 2025 discharges | CMS Provider Data Catalog, HCAHPS (dgck-syfz), H_STAR_RATING [source](https://data.cms.gov/provider-data/api/1/datastore/query/dgck-syfz/0?conditions[0][property]=facility_id&conditions[0][value]=050195&conditions[1][property]=hcahps_measure_id&conditions[1][value]=H_STAR_RATING&limit=10) |
-| Kaiser Fremont — HCAHPS patient-survey summary star rating (out of 5) 753 completed surveys, 23% response rate. Read Oct 24, 2026. | 3 | Oct 2024–Sep 2025 discharges | CMS Provider Data Catalog, HCAHPS (dgck-syfz), H_STAR_RATING [source](https://data.cms.gov/provider-data/api/1/datastore/query/dgck-syfz/0?conditions[0][property]=facility_id&conditions[0][value]=050512&conditions[1][property]=hcahps_measure_id&conditions[1][value]=H_STAR_RATING&limit=10) |
+| Washington Hospital — CMS Care Compare overall star rating (out of 5) Fetched from the CMS data API Nov 22, 2026. | 2 | CMS release Aug 2026 (data modified 2026-07-22) | CMS Provider Data Catalog, Hospital General Information (xubh-q36u), facility 050195 [source](https://data.cms.gov/provider-data/api/1/datastore/query/xubh-q36u/0?conditions[0][property]=citytown&conditions[0][value]=FREMONT&conditions[1][property]=state&conditions[1][value]=CA&limit=20) |
+| Kaiser Permanente Fremont Medical Center — CMS Care Compare overall star rating (out of 5) Fetched from the CMS data API Nov 22, 2026. | 4 | CMS release Aug 2026 (data modified 2026-07-22) | CMS Provider Data Catalog, Hospital General Information (xubh-q36u), facility 050512 [source](https://data.cms.gov/provider-data/api/1/datastore/query/xubh-q36u/0?conditions[0][property]=citytown&conditions[0][value]=FREMONT&conditions[1][property]=state&conditions[1][value]=CA&limit=20) |
+| Washington Hospital — HCAHPS patient-survey summary star rating (out of 5) 989 completed surveys, 20% response rate. Fetched from the CMS data API Nov 22, 2026. | 3 | Jan 2025–Dec 2025 discharges | CMS Provider Data Catalog, HCAHPS (dgck-syfz), H_STAR_RATING [source](https://data.cms.gov/provider-data/api/1/datastore/query/dgck-syfz/0?conditions[0][property]=facility_id&conditions[0][value]=050195&conditions[1][property]=hcahps_measure_id&conditions[1][value]=H_STAR_RATING&limit=10) |
+| Kaiser Fremont — HCAHPS patient-survey summary star rating (out of 5) 770 completed surveys, 24% response rate. Fetched from the CMS data API Nov 22, 2026. | 3 | Jan 2025–Dec 2025 discharges | CMS Provider Data Catalog, HCAHPS (dgck-syfz), H_STAR_RATING [source](https://data.cms.gov/provider-data/api/1/datastore/query/dgck-syfz/0?conditions[0][property]=facility_id&conditions[0][value]=050512&conditions[1][property]=hcahps_measure_id&conditions[1][value]=H_STAR_RATING&limit=10) |
 | Washington Hospital — Leapfrog Hospital Safety Grade First A on record; prior grades were B (Spring 2025), C (Fall 2025, Fall 2024, Spring 2024, Spring 2023), B (Fall 2023). Hospital press release dated May 6, 2026 confirms. Read Oct 24, 2026. | A | Spring 2026 | The Leapfrog Group, Hospital Safety Grade [source](https://www.hospitalsafetygrade.org/h/washington-hospital-healthcare-system) |
 | Kaiser Fremont Medical Center — Leapfrog Hospital Safety Grade Prior: B Fall 2025, B Spring 2025, B Fall 2024, C Spring 2024, B Fall 2023, A Spring 2023. Read Oct 24, 2026. | B | Spring 2026 | The Leapfrog Group, Hospital Safety Grade [source](https://www.hospitalsafetygrade.org/h/kaiser-permanente-fremont-medical-center) |
 | Washington Hospital — median minutes patients spent in the ER before leaving (OP-18b) Excludes psychiatric and transferred patients; sample 372. Including those patients (OP-18a): 173 min. CMS rates Washington's ED volume 'very high'. Kaiser Fremont reports 'Not Available' for this measure. Read Oct 24, 2026. | 169 | Oct 2024–Sep 2025 | CMS Provider Data Catalog, Timely & Effective Care (yv7e-xc69) [source](https://data.cms.gov/provider-data/api/1/datastore/query/yv7e-xc69/0?conditions[0][property]=facility_id&conditions[0][value]=050195&limit=50) |
@@ -2581,7 +2603,7 @@ Why FremontCaByTheNumbers.com exists (fair, free access to public data), plus it
 
 ## Datasets behind the site
 Each dataset is one file. For each: what it holds, when it was last read, and whether a check is due.
-Note: “We last read it” is the date this site last copied the figures from the publisher. “Next check” is this site’s own plan (refreshes are run by hand, once a month), not a date the publisher announced. A dataset is flagged Check due when it is older than one cycle of its schedule (monthly 45 days, quarterly 105, twice a year 200, yearly 400, every two years 800) and Old at twice that. Judged as of Nov 13, 2026. A yearly dataset can show Check due only because the publisher has not released a newer edition yet.
+Note: “We last read it” is the date this site last copied the figures from the publisher. “Next check” is this site’s own plan (refreshes are run by hand, once a month), not a date the publisher announced. A dataset is flagged Check due when it is older than one cycle of its schedule (monthly 45 days, quarterly 105, twice a year 200, yearly 400, every two years 800) and Old at twice that. Judged as of Nov 22, 2026. A yearly dataset can show Check due only because the publisher has not released a newer edition yet.
 
 ## Why this site exists
 Fair, free access to public data. Public data should be easy for everyone to find, not just people with money or technical skill. Anyone with time and the right tools can gather these figures; this site does it once, in the open, so no one has to. A more equitable world starts with fair and free access. The code and data are open on GitHub. Cheers to Fremont: it’s why I made this.

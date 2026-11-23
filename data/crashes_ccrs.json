@@ -9,5 +9,5 @@
   {"year": 2023, "reports": 1876, "injury_crashes": 806, "fatal_crashes": 11, "killed": 11, "injured": 1101, "fpd_reports": 572, "fpd_fatal": 6, "status": "Full year"},
   {"year": 2024, "reports": 2003, "injury_crashes": 884, "fatal_crashes": 17, "killed": 20, "injured": 1204, "fpd_reports": 583, "fpd_fatal": 9, "status": "Full year"},
   {"year": 2025, "reports": 1867, "injury_crashes": 800, "fatal_crashes": 13, "killed": 14, "injured": 1070, "fpd_reports": 405, "fpd_fatal": 6, "status": "Full year"},
-  {"year": 2026, "reports": 1389, "injury_crashes": 645, "fatal_crashes": 4, "killed": 4, "injured": 902, "fpd_reports": 307, "fpd_fatal": 2, "status": "Year to date through Oct 23"}
+  {"year": 2026, "reports": 1492, "injury_crashes": 703, "fatal_crashes": 4, "killed": 4, "injured": 986, "fpd_reports": 349, "fpd_fatal": 2, "status": "Year to date through Nov 13"}
 ]
