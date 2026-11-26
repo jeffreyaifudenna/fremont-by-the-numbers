@@ -8,7 +8,7 @@
     name: 'FremontCaByTheNumbers.com',
     updated: 'Nov 22, 2026',
     nav: [
-      { key: 'index', href: 'index.html', label: 'Overview' },
+      { key: 'index', href: './', label: 'Overview' },
       { key: 'rent', href: 'rent.html', label: 'Rent & Housing' },
       { key: 'schools', href: 'schools.html', label: 'Schools' },
       { key: 'food', href: 'food.html', label: 'Food' },
@@ -266,7 +266,7 @@
     const header = document.createElement('header');
     header.className = 'site-header';
     header.innerHTML = '<div class="wrap">' +
-      '<a class="brand" href="' + base + 'index.html"><span class="eyebrow">Fremont, California</span><span class="name">' + SITE.name + '</span></a>' +
+      '<a class="brand" href="' + base + './"><span class="eyebrow">Fremont, California</span><span class="name">' + SITE.name + '</span></a>' +
       '<div class="header-right"><span class="updated">Data as of ' + SITE.updated + '</span>' +
       '<button class="theme-toggle" type="button" aria-label="Switch between light and dark mode"></button></div></div>';
     const nav = document.createElement('nav');
