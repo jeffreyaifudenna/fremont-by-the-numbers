@@ -138,7 +138,7 @@ function shell(p, bodyHtml, jsonld) {
       creditText: 'Compiled by Claude (Anthropic) from public sources. Each figure is credited to its source on the page.', isBasedOn: r.urls.slice(0, 200) };
     if (p.type) delete main.isBasedOn;
     if (p.type === 'WebSite') { Object.assign(main, site, { description: p.desc, about: { '@type': 'Place', name: 'Fremont, California' } }); delete main.spatialCoverage; }
-    else if (main['@type'] === 'Dataset') main.includedInDataCatalog = { '@type': 'DataCatalog', name: NAME, url: ORIGIN + '/' };
+    else if (main['@type'] === 'Dataset') { main.includedInDataCatalog = { '@type': 'DataCatalog', name: NAME, url: ORIGIN + '/' }; main.license = 'https://creativecommons.org/licenses/by/4.0/'; }
     else main.isPartOf = { '@id': ORIGIN + '/#website' };
     const graph = p.type === 'WebSite' ? [main] : [site, main, { '@type': 'BreadcrumbList', itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Overview', item: ORIGIN + '/' }, { '@type': 'ListItem', position: 2, name: p.label, item: pageUrl(p) }] }];
